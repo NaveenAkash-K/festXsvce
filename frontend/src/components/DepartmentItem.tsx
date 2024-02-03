@@ -8,16 +8,15 @@ const DepartmentItem: React.FC<{
 }> = (props) => {
   return (
     <Link to={`/departments/${props.id}`}>
-    
-    <div
-      className={styles.department}
-      style={{ backgroundImage: `url(${props.image})` }}
-    >
-      <div className={styles.nameDiv}>
-        <p>{props.name}</p>
-        <img src={arrow} alt="arrow" />
+      <div
+        className={styles.department}
+        style={{ backgroundImage: `url(${props.image})` }}
+      >
+        <div className={styles.nameDiv}>
+          <p>{props.name}</p>
+          <img src={arrow} alt="arrow" />
+        </div>
       </div>
-    </div>
     </Link>
   );
 };
