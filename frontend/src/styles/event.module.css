@@ -11,9 +11,11 @@
 }
 
 .departmentGrid {
-  display: grid;
+  /* display: grid; */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); */
   max-width: 830px; /* Maximum width for three elements */
   margin: auto auto;
   gap: 100px;
