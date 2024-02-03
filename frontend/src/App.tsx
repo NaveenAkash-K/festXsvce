@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Event from "./page/Event";
 import Home from "./page/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import EventAddInfo from "./page/EventAddInfo";
 
 const router = createBrowserRouter([
   {
@@ -14,6 +15,10 @@ const router = createBrowserRouter([
     path: "/events",
     element: <Event />,
   },
+  {
+    path:"/events/info",
+    element:<EventAddInfo/>,
+  }
 ]);
 
 function App() {
