@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Amarante&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+*{
+  padding: 0;
+  margin: 0;
+  font-family: "Amarante", serif;
+}
+
+body{
+  background-image: url("./assets/vintage\ wallpaper\ bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-color: #b3966a;
+}

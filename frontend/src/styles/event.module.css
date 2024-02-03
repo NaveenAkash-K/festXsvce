@@ -1,0 +1,20 @@
+.event {
+  padding: 7rem 0 0 0;
+}
+
+.heading {
+  color: #4d291a;
+  font-weight: normal;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.departmentGrid {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  max-width: 830px; /* Maximum width for three elements */
+  margin: auto auto;
+  gap: 100px;
+}

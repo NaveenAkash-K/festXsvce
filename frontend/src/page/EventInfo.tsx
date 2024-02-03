@@ -1,5 +1,5 @@
-import styles from '../../styles/events/eventInfo.module.css';
-import eve from '../../assets/Ticket_img_svg_file_page-0001-removebg-preview.png';
+import styles from '../styles/eventInfo.module.css';
+import eve from '../assets/Ticket_img_svg_file_page-0001-removebg-preview.png';
 
 function Events() {
   interface event{

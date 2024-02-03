@@ -1,14 +1,23 @@
-import Home from "./pages/Home";
 import "./App.css";
-import EventInfo from "./page/events/EventInfo";
-import Header from "./components/common/Header";
-import Event from "./page/events/Event";
+import EventInfo from "./page/EventInfo";
+import Header from "./components/Header";
+import Event from "./page/Event";
+import Home from "./page/Home";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home />,
+  },
+  {
+    path: "/events",
+    element: <Event />,
+  },
+]);
+
 function App() {
-  return <>
-  <Header/>
-  {/* <EventInfo/> */}
-  <Event/>
-  </>;
+  return <RouterProvider router={router} />;
 }
 
 export default App;
