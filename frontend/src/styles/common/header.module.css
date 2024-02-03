@@ -1,0 +1,25 @@
+.container{
+    position: absolute;
+    /* background-color: aqua; */
+    background-color: rgba(0, 0, 0, 0.232);
+    height: 16vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.anContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 80%;
+    /* background-color: red; */
+
+    & a{
+        font-size: 24px;
+        text-decoration: none;
+        color: white;
+    }
+}
+
