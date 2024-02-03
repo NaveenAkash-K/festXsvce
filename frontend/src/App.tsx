@@ -5,6 +5,7 @@ import Home from "./page/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import EventInfo from "./page/EventInfo";
 import Location from "./page/Location";
+import About from "./page/About";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: "/departments/:department/:event",
     element: <EventInfo />,
+  },
+  {
+    path:"/about",
+    element:<About/>,
   },
 ]);
 
