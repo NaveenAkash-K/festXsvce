@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import eventCard from '../assets/eventCard.png'
-import styles from '../styles/eventAddInfo.module.css'
+import styles from '../styles/page/eventInfo.module.css'
 const EventInfo: React.FC = () => {
     return (
         <>

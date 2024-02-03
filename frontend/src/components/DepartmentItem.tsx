@@ -1,4 +1,4 @@
-import styles from "../styles/department.module.css";
+import styles from "../styles/components/departmentItem.module.css";
 import arrow from "../assets/arrow.png";
 import { Link } from "react-router-dom";
 const DepartmentItem: React.FC<{

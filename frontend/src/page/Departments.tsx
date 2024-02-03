@@ -1,4 +1,4 @@
-import styles from "../styles/event.module.css";
+import styles from "../styles/page/departments.module.css";
 import Header from "../components/Header";
 import DepartmentItem from "../components/DepartmentItem";
 import departments from "../data/departments";

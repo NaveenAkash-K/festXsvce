@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import styles from "../styles/location.module.css";
+import styles from "../styles/page/location.module.css";
 
 const Location = () => {
   return (

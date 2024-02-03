@@ -1,4 +1,4 @@
-import styles from "../styles/eventInfo.module.css";
+import styles from "../styles/page/events.module.css";
 import eve from "../assets/Ticket_img_svg_file_page-0001-removebg-preview.png";
 import { useLoaderData, useParams, useRouteLoaderData } from "react-router";
 

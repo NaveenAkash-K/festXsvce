@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../styles/header.module.css";
+import styles from "../styles/components/header.module.css";
 import logo from "../assets/festXsvce_logo.png";
 import { Link } from "react-router-dom";
 
