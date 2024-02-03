@@ -1,5 +1,5 @@
 import styles from "../styles/page/events.module.css";
-import eve from "../assets/Ticket_img_svg_file_page-0001-removebg-preview.png";
+import eve from "../assets/images/eventCard.png";
 import Header from "../components/Header";
 // import { useParams } from "react-router";
 
