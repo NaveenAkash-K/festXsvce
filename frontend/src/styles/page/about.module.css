@@ -1,0 +1,44 @@
+.container{
+    padding-top: 7rem;
+    width: 80%;
+    margin: auto;
+}
+.title{
+    margin-bottom: 2%;
+    color: #4D291A;
+}
+
+.about{
+    & h3{
+        font-weight: 1;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.4rem;
+        margin-bottom: 2%;
+        color: #4D291A;
+    }
+}
+.aboutSvce{
+    /* text-align: end; */
+    display: flex;
+    /* flex-wrap: wrap; */
+    flex-direction: row;
+    /* background-color: red; */
+}
+
+.wrapper{
+    flex-direction: column;
+    flex: 1;
+    & h3{
+        font-weight: 1;
+        letter-spacing: 0.2rem;
+        word-spacing: 0.4rem;
+        margin-bottom: 2%;
+        color: #4D291A;
+    }
+}
+
+.img{
+    width: 25vw;
+    margin-top: 3%;
+    border-radius: 50% 0 0 50% / 40% 0 0 40%;
+}
