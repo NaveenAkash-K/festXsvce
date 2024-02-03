@@ -1,10 +1,14 @@
 import styles from "../styles/department.module.css";
 import arrow from "../assets/arrow.png";
-const Department: React.FC<{
+import { Link } from "react-router-dom";
+const DepartmentItem: React.FC<{
   image: string;
   name: string;
+  id: string;
 }> = (props) => {
   return (
+    <Link to={`/departments/${props.id}`}>
+    
     <div
       className={styles.department}
       style={{ backgroundImage: `url(${props.image})` }}
@@ -14,7 +18,8 @@ const Department: React.FC<{
         <img src={arrow} alt="arrow" />
       </div>
     </div>
+    </Link>
   );
 };
 
-export default Department;
+export default DepartmentItem;

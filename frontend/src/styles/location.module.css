@@ -1,0 +1,40 @@
+.location{
+  padding-top: 7rem;
+}
+
+.heading{
+  color: #4D291A;
+  padding-bottom: 3rem;
+}
+
+.flexContainer{
+  margin: 0 2rem 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.map {
+  border-radius: 20px;
+  width: 600px;
+  height: 450px;
+}
+
+.locationDetails{
+  margin: 0 0rem 0 4rem;
+  color: #4D291A;
+}
+
+.locationDetails > p {
+  padding: 1rem 0 1rem 0;
+  font-family: "DM Sans";
+  font-size: large;
+}
+
+.routeButton{
+  padding: 10px 20px 10px 20px;
+  border: none;
+  border-radius: 10px;
+  background-color: #4D291A;
+  color: white;
+}

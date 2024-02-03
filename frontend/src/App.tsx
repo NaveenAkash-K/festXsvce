@@ -1,10 +1,10 @@
 import "./App.css";
-import EventInfo from "./page/EventInfo";
-import Header from "./components/Header";
-import Event from "./page/Event";
+import Events from "./page/Events";
+import DepartmentsPage from "./page/Departments";
 import Home from "./page/Home";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import EventAddInfo from "./page/EventAddInfo";
+import EventInfo from "./page/EventAddInfo";
+import Location from "./page/Location";
 
 const router = createBrowserRouter([
   {
@@ -12,13 +12,21 @@ const router = createBrowserRouter([
     element: <Home />,
   },
   {
-    path: "/events",
-    element: <Event />,
+    path: "/location",
+    element: <Location />,
   },
   {
-    path:"/events/info",
-    element:<EventAddInfo/>,
-  }
+    path: "/departments",
+    element: <DepartmentsPage />,
+  },
+  {
+    path: "/departments/:department",
+    element: <Events />,
+  },
+  {
+    path: "/departments/:department/:event",
+    element: <EventInfo />,
+  },
 ]);
 
 function App() {

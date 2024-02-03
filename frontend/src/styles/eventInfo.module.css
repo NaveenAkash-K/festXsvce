@@ -1,11 +1,3 @@
-.body{
-    background-image: url('../../assets/vintage\ wallpaper\ bg.jpg');
-    background-size: cover;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-}
-
 .container{
     height: 70%;
     width: 80%;

@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import eventCard from '../assets/eventCard.png'
 import styles from '../styles/eventAddInfo.module.css'
-const EventAddInfo: React.FC = () => {
+const EventInfo: React.FC = () => {
     return (
         <>
             <Header />
@@ -37,4 +37,4 @@ const EventAddInfo: React.FC = () => {
     )
 }
 
-export default EventAddInfo
+export default EventInfo;

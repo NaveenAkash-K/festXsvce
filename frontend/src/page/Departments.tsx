@@ -1,17 +1,22 @@
 import styles from "../styles/event.module.css";
 import Header from "../components/Header";
-import Department from "../components/Department";
-import departments from "../data/events";
+import DepartmentItem from "../components/DepartmentItem";
+import departments from "../data/departments";
 
-const Event: React.FC = () => {
+const DepartmentsPage: React.FC = () => {
   return (
     <>
       <Header />
       <div className={styles.event}>
-        <h1 className={styles.heading}>Events</h1>
+        <h1 className={styles.heading}>Departments</h1>
         <div className={styles.departmentGrid}>
           {departments.map((ele) => (
-            <Department image={ele.img} name={ele.name} />
+            <DepartmentItem
+              image={ele.img}
+              name={ele.name}
+              key={ele.id}
+              id={ele.id}
+            />
           ))}
         </div>
 
@@ -52,4 +57,4 @@ const Event: React.FC = () => {
   );
 };
 
-export default Event;
+export default DepartmentsPage;
