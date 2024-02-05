@@ -3,6 +3,7 @@
   background-color: rgba(0, 0, 0, 0.232);
   width: 100%;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   overflow: hidden;
 }
@@ -10,15 +11,69 @@
 .logo {
   height: 70px;
   margin: 0.5rem 0.5rem 0.5rem 2rem;
-  /* width: 80px; */
 }
 
-nav {
+.menu {
+  display: none;
+  height: 2rem;
+  width: 2rem;
+  color: white;
+  margin: 0 2rem 0 0;
+}
+
+.close {
+  height: 2rem;
+  width: 2rem;
+  color: #4d291a;
+  margin: 1.8rem 0rem 0 0rem;
+  position: absolute;
+  right: 2rem;
+}
+
+.navMobile {
+  background-color: #a37b51;
+  right: 0;
+  position: absolute;
+  z-index: 10;
+  height: 100%;
+  width: 70%;
+  padding: 0rem 0 0 1rem;
+  font-size: x-large;
+}
+
+.navMobile > nav > a {
+  text-decoration: none;
+  font-family: "DM Sans";
+  color: #4d291a;
+}
+
+.navMobile > nav {
+  margin: 6rem 0 0 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.navDesktop {
   display: flex;
   justify-content: space-evenly;
   width: 100%;
   & a {
     text-decoration: none;
     color: white;
+  }
+}
+
+@media screen and (width < 770px) {
+  .navDesktop {
+    display: none;
+  }
+
+  .navMobile {
+    /* display: none; */
+  }
+
+  .menu {
+    display: block;
   }
 }

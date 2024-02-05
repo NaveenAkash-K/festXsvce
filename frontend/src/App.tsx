@@ -8,6 +8,7 @@ import Location from "./page/Location";
 import About from "./page/About";
 import Login from "./page/Login";
 import Signup from "./page/Signup";
+import FestXsvce from "./components/FestXsvce_text";
 
 const router = createBrowserRouter([
   {
@@ -45,7 +46,12 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <>
+      <RouterProvider router={router} />
+      <FestXsvce />
+    </>
+  );
 }
 
 export default App;

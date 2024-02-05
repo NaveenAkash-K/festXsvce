@@ -11,6 +11,8 @@
 }
 
 .departmentGrid {
+  margin: 0 2rem 0rem 2rem;
+  padding-bottom: 3rem;
   /* display: grid; */
   display: flex;
   flex-wrap: wrap;
@@ -19,4 +21,10 @@
   max-width: 830px; /* Maximum width for three elements */
   margin: auto auto;
   gap: 100px;
+}
+
+@media screen and (width < 565px) {
+  .departmentGrid {
+    gap: 30px;
+  }
 }

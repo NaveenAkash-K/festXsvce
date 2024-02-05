@@ -51,3 +51,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
+
+@media screen and (width < 625px) {
+  .input {
+    width: 60vw;
+  }
+}

@@ -1,6 +1,7 @@
 import styles from "../styles/page/events.module.css";
 import eve from "../assets/images/eventCard.png";
 import Header from "../components/Header";
+import FestXsvce from "../components/FestXsvce_text";
 // import { useParams } from "react-router";
 
 const Events: React.FC = () => {

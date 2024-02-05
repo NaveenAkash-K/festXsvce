@@ -11,27 +11,23 @@
 }
 
 .content > h1 {
-  font-weight: 400;
   letter-spacing: 15px;
   font-size: 5vw;
 }
 
 .content > p {
   letter-spacing: 15px;
+  font-weight: bold;
   font-family: "DM Sans", sans-serif;
 }
 
-.festxsvce {
-  position: fixed;
-  bottom: 0px;
-  font-size: 5vw;
-  -webkit-text-stroke: 1px #8d633a;
-  color: transparent;
-}
-
-.festxsvce > p {
-  font-weight: bolder;
-  letter-spacing: 5px;
-  text-wrap: nowrap;
-  font-family: "DM Sans", sans-serif;
+@media screen and (width < 600px) {
+  .content > h1 {
+    letter-spacing: 5px;
+    font-size: 10vw;
+  }
+  .content > p {
+    letter-spacing: 10px;
+    font-family: "DM Sans", sans-serif;
+  }
 }

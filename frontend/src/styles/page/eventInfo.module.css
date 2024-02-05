@@ -1,35 +1,51 @@
-.container{
-    /* background-color: red; */
-    /* padding: 7rem 0 0 7rem; */
-    height: 80vh;
-    width: 80%;
-    margin: auto;
-    /* position: relative; */
+.container {
+  /* background-color: red; */
+  /* padding: 7rem 0 0 7rem; */
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  /* position: relative; */
 }
 
-.wrapper{
-    padding: 7rem 0 0 0;
-    position: absolute;
-    width: 80%;
+.wrapper {
+  padding: 7rem 0 3rem 0;
 }
 
-.img{
-    height: 80vh;
-    position: relative;
-    width: 100%;
-    margin: auto;
+.img {
+  height: 80vh;
+  position: relative;
+  width: 100%;
+  margin: auto;
 }
 
-.contextContainer{
-    position: absolute;
-    top:25%;
-    left: 30%;
-    line-height: 2rem;
-    width: 60%;
+.contextContainer {
+  background: url("../../assets/images/eventCard.png");
+  background-size: 100% 100%;
+  padding: 2rem 2rem 2rem 25vw;
+  /* position: absolute; */
+  /* top:25%; */
+  /* left: 30%; */
+  line-height: 2rem;
+  /* width: 60%; */
 }
 
-.details{
-    display: flex;
-    /* background-color: red; */
-    justify-content: space-around;
+.contextContainer > ul{
+    margin-left: 1rem;
 }
+
+.details {
+  display: flex;
+  margin: 1rem 0 1rem 0;
+  justify-content: space-around;
+}
+
+@media screen and (width < 1360px) {
+  .contextContainer {
+    background-size: contain;
+    background-repeat: repeat-y;
+  }
+  .details {
+    display: block;
+  }
+}
+
