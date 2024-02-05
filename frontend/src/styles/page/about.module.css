@@ -1,7 +1,42 @@
-.container {
-  padding-top: 7rem;
-  width: 80%;
-  margin: auto;
+@media screen and (max-width: 480px){
+    .aboutSvce{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* background-color: red; */
+        position: relative;
+        & img{
+            position: relative;
+            right: -20%;
+            /* justify-self: end; */
+            width: 75%;
+            margin-bottom: 15%;
+        }
+    }
+}
+
+@media screen and (min-width:480px) and (max-width:1000px) {
+    .aboutSvce{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        /* background-color: red; */
+        position: relative;
+        & img{
+            position: relative;
+            right: -20%;
+            /* justify-self: end; */
+            width: 75%;
+            margin-bottom: 15%;
+        }
+    }
+}
+
+.container{
+    padding-top: 7rem;
+    width: 80%;
+    margin: auto;
+
 }
 .title {
   margin-bottom: 2%;
@@ -9,37 +44,41 @@
   font-size: 50px;
 }
 
-.about {
-  & h3 {
-    font-weight: normal;
-    word-spacing: 0.4rem;
-    color: #4d291a;
-  }
+.about{
+    & h3{
+        font-weight: 1;
+        /* letter-spacing: 0.2rem; */
+        word-spacing: 0.4rem;
+        margin-bottom: 2%;
+        color: #4D291A;
+    }
+}
+.aboutSvce{
+    /* text-align: end; */
+    display: flex;
+    flex-wrap: wrap;
+    /* flex-direction: row; */
+    /* background-color: red; */
 }
 
-.aboutSvce > h1 {
-  font-size: xx-large;
+.wrapper{
+    flex-direction: column;
+    flex: 1;
+    & h3{
+        font-weight: 1;
+        word-spacing: 0.4rem;
+        margin-bottom: 2%;
+        color: #4D291A;
+    }
 }
 
-.aboutSvce {
-  display: flex;
-  align-items: center;
+
+
+
+
+.img{
+    width: 25%;
+    margin-top: 3%;
+    border-radius: 50% 0 0 50% / 40% 0 0 40%;
 }
 
-.wrapper {
-  flex-direction: column;
-  flex: 1;
-  margin: 40px 0 0px 0;
-  & h3 {
-    font-weight: normal;
-    word-spacing: 0.4rem;
-    color: #4d291a;
-  }
-}
-
-.img {
-  width: 300px;
-  height: 200px;
-  margin-top: 3%;
-  border-radius: 30% 0 0 30% / 50% 0 0 50%;
-}
