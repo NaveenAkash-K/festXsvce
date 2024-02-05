@@ -12,13 +12,13 @@ function Header() {
       </>
       <nav>
         <Link to={"/"}>Home</Link>
-        <Link to={"/"}>About</Link>
-        <Link to={"/events"}>Events</Link>
+        <Link to={"/about"}>About</Link>
+        <Link to={"/departments"}>Events</Link>
         <Link to={"/"}>Get</Link>
         <Link to={"/"}>Workshops</Link>
         <Link to={"/"}>Proshows</Link>
         <Link to={"/"}>Sponsors</Link>
-        <Link to={"/"}>Location</Link>
+        <Link to={"/location"}>Location</Link>
         <Link to={"/"}>Contact</Link>
       </nav>
     </div>

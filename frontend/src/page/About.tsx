@@ -13,7 +13,7 @@ const About: React.FC = () => {
                 </div>
                 <div className={styles.aboutSvce}>
                     <div className={styles.wrapper}>
-                        <h1 className={styles.title} style={{textAlign:'end',marginBottom:'3%'}}>About SVCE</h1>
+                        <h1 className={styles.title} style={{ textAlign: 'end', marginBottom: '3%' }}>About SVCE</h1>
                         <h3 className={styles.text}>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius optio et fuga cupiditate, perspiciatis qui ex dolores deleniti ratione natus commodi error, tempore impedit beatae iste asperiores autem? Amet, est debitis harum quia corporis illo consequatur quod vel sapiente. Ipsa sequi facilis delectus. Exercitationem voluptas eaque atque, quo, illo explicabo quia ex optio natus at libero vel. Eaque quisquam rerum tempore voluptatibus fugiat earum ullam voluptates architecto dolores et saepe assumenda repellendus, omnis, repellat quod debitis commodi minima ipsum necessitatibus.</h3>
                     </div>
                     <img src={svce} alt="SVCE COLLEGE" className={styles.img} />
