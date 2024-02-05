@@ -36,10 +36,12 @@
     padding-top: 7rem;
     width: 80%;
     margin: auto;
+
 }
-.title{
-    margin-bottom: 2%;
-    color: #4D291A;
+.title {
+  margin-bottom: 2%;
+  color: #4d291a;
+  font-size: 50px;
 }
 
 .about{
@@ -79,3 +81,4 @@
     margin-top: 3%;
     border-radius: 50% 0 0 50% / 40% 0 0 40%;
 }
+

@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import styles from "../styles/page/about.module.css";
-import svce from '../assets/svce.jpg';
+import svce from "../assets/images/svce.jpg";
 
 const About: React.FC = () => {
     return (
@@ -22,5 +22,6 @@ const About: React.FC = () => {
         </>
     )
 }
+
 
 export default About;

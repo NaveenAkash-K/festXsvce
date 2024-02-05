@@ -1,5 +1,6 @@
 import styles from "../styles/page/events.module.css";
-import eve from "../assets/Ticket_img_svg_file_page-0001-removebg-preview.png";
+import eve from "../assets/images/eventCard.png";
+import Header from "../components/Header";
 // import { useParams } from "react-router";
 
 const Events: React.FC = () => {
@@ -9,26 +10,29 @@ const Events: React.FC = () => {
     name: string;
     km: string;
   }[] = [
-      { id: 1, name: "Event - 1 Name", km: "#know" },
-      { id: 2, name: "Event - 2 Name", km: "#know" },
-      { id: 3, name: "Event - 3 Name", km: "#know" },
-      { id: 4, name: "Event - 4 Name", km: "#know" },
-    ];
+    { id: 1, name: "Event - 1 Name", km: "#know" },
+    { id: 2, name: "Event - 2 Name", km: "#know" },
+    { id: 3, name: "Event - 3 Name", km: "#know" },
+    { id: 4, name: "Event - 4 Name", km: "#know" },
+  ];
 
   return (
-    <div className={styles.body}>
-      <div className={styles.container}>
-        <div className={styles.list}>
-          {eventDetail.map((data) => (
-            <div key={data.id} className={styles.cardContainer}>
-              <img src={eve} alt="asda" className={styles.img} />
-              <h4 className={styles.title}>{data.name}</h4>
-              <h4 className={styles.know}>Know More</h4>
-            </div>
-          ))}
+    <>
+      <Header />
+      <div className={styles.body}>
+        <div className={styles.container}>
+          <div className={styles.list}>
+            {eventDetail.map((data) => (
+              <div key={data.id} className={styles.cardContainer}>
+                <img src={eve} alt="asda" className={styles.img} />
+                <h4 className={styles.title}>{data.name}</h4>
+                <h4 className={styles.know}>Know More</h4>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

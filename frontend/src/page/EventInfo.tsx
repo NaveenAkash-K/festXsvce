@@ -1,10 +1,10 @@
 import Header from "../components/Header";
-import eventCard from '../assets/eventCard.png'
+import eventCard from '../assets/images/eventCard.png'
 import styles from '../styles/page/eventInfo.module.css'
-import calIcon from '../assets/calIcon.png';
-import timeIcon from '../assets/timeIcon.png';
-import userIcon from '../assets/userIcon.png'
-import classIcon from '../assets/classroomIcon.png';
+import calIcon from '../assets/images/icons/calIcon.png';
+import timeIcon from '../assets/images/icons/timeIcon.png';
+import userIcon from '../assets/images/icons/userIcon.png'
+import classIcon from '../assets/images/icons/classroomIcon.png';
 
 const EventInfo: React.FC = () => {
     interface locStruct {

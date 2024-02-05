@@ -1,13 +1,13 @@
-.location{
+.location {
   padding-top: 7rem;
 }
 
-.heading{
-  color: #4D291A;
+.heading {
+  color: #4d291a;
   padding-bottom: 3rem;
 }
 
-.flexContainer{
+.flexContainer {
   margin: 0 2rem 0 2rem;
   display: flex;
   align-items: center;
@@ -16,13 +16,14 @@
 
 .map {
   border-radius: 20px;
+  border: #4d291a 2px solid;
   width: 600px;
   height: 450px;
 }
 
-.locationDetails{
+.locationDetails {
   margin: 0 0rem 0 4rem;
-  color: #4D291A;
+  color: #4d291a;
 }
 
 .locationDetails > p {
@@ -31,10 +32,10 @@
   font-size: large;
 }
 
-.routeButton{
+.routeButton {
   padding: 10px 20px 10px 20px;
   border: none;
   border-radius: 10px;
-  background-color: #4D291A;
+  background-color: #4d291a;
   color: white;
 }
