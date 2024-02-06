@@ -2,7 +2,6 @@ import styles from "../styles/page/departments.module.css";
 import Header from "../components/Header";
 import DepartmentItem from "../components/DepartmentItem";
 import departments from "../data/departments";
-import FestXsvce from "../components/FestXsvce_text";
 
 const DepartmentsPage: React.FC = () => {
   return (
@@ -54,7 +53,6 @@ const DepartmentsPage: React.FC = () => {
           </div>
           {/* <p>Copyright &copy; 2024 All Rights Reserved</p> */}
       </div>
-      <FestXsvce/>
     </>
   );
 };

@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import eventCard from "../assets/images/eventCard.png";
 import styles from "../styles/page/eventInfo.module.css";
 import calIcon from "../assets/images/icons/calIcon.png";
 import timeIcon from "../assets/images/icons/timeIcon.png";

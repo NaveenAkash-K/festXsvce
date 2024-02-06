@@ -9,6 +9,8 @@ import About from "./page/About";
 import Login from "./page/Login";
 import Signup from "./page/Signup";
 import FestXsvce from "./components/FestXsvce_text";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from "react-toastify";
 
 const router = createBrowserRouter([
   {
@@ -48,6 +50,7 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+      <ToastContainer position="top-center" theme="dark" />
       <RouterProvider router={router} />
       <FestXsvce />
     </>
