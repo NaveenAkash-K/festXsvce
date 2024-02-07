@@ -4,6 +4,7 @@ import calIcon from "../assets/images/icons/calIcon.png";
 import timeIcon from "../assets/images/icons/timeIcon.png";
 import userIcon from "../assets/images/icons/userIcon.png";
 import classIcon from "../assets/images/icons/classroomIcon.png";
+import { Link } from "react-router-dom";
 
 const EventInfo: React.FC = () => {
   interface locStruct {
@@ -37,7 +38,7 @@ const EventInfo: React.FC = () => {
                   style={{ display: "flex", alignItems: "center", gap: "10px" }}
                   key={index}
                 >
-                  <img src={data.logo} alt="~" width={"19vw"} height={"19vh"} />
+                  <img src={data.logo} alt="~" width={"18vw"} height={"19vh"} />
                   <h3>{data.info}</h3>
                 </div>
               ))}
@@ -67,6 +68,9 @@ const EventInfo: React.FC = () => {
                 odio.
               </li>
             </ul>
+            <Link to="/">
+              <button className={styles.getPass}>Get Pass</button>
+            </Link>
             <br />
             <h2>Event Coordinator</h2>
             <p>Name 1 9898989898</p>

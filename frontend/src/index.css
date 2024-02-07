@@ -9,7 +9,6 @@
 
 body{
   background-image: url("./assets/images/background.jpg");
-  /* height: 110%; */
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;

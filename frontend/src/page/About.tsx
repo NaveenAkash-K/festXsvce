@@ -5,7 +5,7 @@ import svce from "../assets/images/svce.jpg";
 const About: React.FC = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <div className={styles.container}>
         <div className={styles.about}>
           <h1 className={styles.title}>About</h1>

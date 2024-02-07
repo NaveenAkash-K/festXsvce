@@ -30,6 +30,7 @@
   max-width: 600px;
   position: relative;
 }
+
 .img {
   position: relative;
   width: 100%;
@@ -53,15 +54,15 @@
 }
 
 @media screen and (width < 1200px) {
-    .title {
-        position: absolute;
-        top: 10%;
-        left: 32%;
-        font-size: 2vw;
-      }
-      .know {
-        font-size: 1.5vw;
-      }
+  .title {
+    position: absolute;
+    top: 10%;
+    left: 32%;
+    font-size: 2vw;
+  }
+  .know {
+    font-size: 1.5vw;
+  }
 }
 
 @media screen and (width < 600px) {

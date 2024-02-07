@@ -1,11 +1,13 @@
 .container {
-  position: absolute;
+  position: fixed;
   background-color: rgba(0, 0, 0, 0.232);
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   overflow: hidden;
+  border-radius: 0 0 5% 5% / 0 0 80% 80%;
+  z-index: 5;
 }
 
 .logo {
@@ -32,9 +34,9 @@
 
 .navMobile {
   display: none;
+  position: fixed;
   background-color: #a37b51;
   right: 0;
-  position: absolute;
   z-index: 10;
   height: 100%;
   width: 70%;
@@ -58,14 +60,25 @@
 .navDesktop {
   display: flex;
   justify-content: space-evenly;
-  width: 100%;
+  width: 90%;
   & a {
     text-decoration: none;
     color: white;
   }
 }
 
+.userDetails {
+  /* position: relative; */
+  color: white;
+  display: flex;
+  gap: 1rem;
+  margin-right: 3rem;
+}
+
 @media screen and (width < 770px) {
+  .container {
+    border-radius: 0 0 15% 15% / 0 0 60% 60%;
+  }
   .navDesktop {
     display: none;
   }

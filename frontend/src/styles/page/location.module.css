@@ -1,5 +1,7 @@
 .location {
-  padding-top: 7rem;
+  min-height: 85vh;
+  padding-top: 10rem;
+  margin: auto;
 }
 
 .heading {

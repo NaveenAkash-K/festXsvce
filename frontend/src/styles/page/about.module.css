@@ -7,7 +7,7 @@
     /* background-color: red; */
     position: relative;
     & img {
-        height: 170px;
+      height: 170px;
       position: relative;
       right: -20%;
       /* justify-self: end; */
@@ -37,12 +37,13 @@
 }
 
 .container {
-  padding-top: 7rem;
+  min-height: 85vh;
+  padding-top: 10rem;
   width: 80%;
   margin: auto;
 }
 .title {
-  margin-bottom: 2%;
+  margin: 2%;
   color: #4d291a;
   font-size: 50px;
 }
@@ -52,11 +53,12 @@
     font-weight: 1;
     /* letter-spacing: 0.2rem; */
     word-spacing: 0.4rem;
-    margin-bottom: 2%;
+    margin: 2%;
     color: #4d291a;
   }
 }
 .aboutSvce {
+  margin-top: 3rem;
   /* text-align: end; */
   display: flex;
   flex-wrap: wrap;

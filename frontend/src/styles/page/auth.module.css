@@ -38,7 +38,7 @@
   border: transparent;
   color: white;
   border-radius: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 .redirectButton {
@@ -49,7 +49,7 @@
   border: #1f171391 solid 2px;
   color: #1f1713;
   border-radius: 5px;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 @media screen and (width < 625px) {

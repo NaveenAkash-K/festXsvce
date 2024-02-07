@@ -12,30 +12,30 @@ router.post("/signup", async (req, res, next) => {
   var user;
 
   if (!isEmail(email)) {
-    return res.status(400).json({ error: "Invalid Email" });
+    return res.status(400).json({ message: "Invalid Email" });
   }
   if (!isUsername(username)) {
     return res
       .status(400)
-      .json({ error: "Username must contain greater than 3 characters" });
+      .json({ message: "Username must contain greater than 3 characters" });
   }
   if (!isPassword(password)) {
     return res.status(400).json({
-      error: "Password must be atleast greater than 5 characters",
+      message: "Password must be atleast greater than 5 characters",
     });
   }
   if (password !== confirmPassword) {
-    return res.status(400).json({ error: "Passwords don't match" });
+    return res.status(400).json({ message: "Passwords don't match" });
   }
 
   try {
     user = await User.findOne({ email: email });
   } catch {
-    return res.status(500).json({ error: "Internal Server Error" });
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 
   if (user) {
-    return res.status(400).json({ error: "User with email already exist" });
+    return res.status(400).json({ message: "User with email already exist" });
   }
 
   const hashedPassword = await bcrypt.hash(password, 12);
@@ -48,7 +48,7 @@ router.post("/signup", async (req, res, next) => {
       password: hashedPassword,
     }).save();
   } catch {
-    return res.status(500).json({ error: "Internal server error" });
+    return res.status(500).json({ message: "Internal server error" });
   }
 
   const token = jwt.sign(
@@ -76,24 +76,24 @@ router.post("/login", async (req, res, next) => {
   var user;
 
   if (!isEmail(email)) {
-    return res.status(400).json({ error: "Invalid email" });
+    return res.status(400).json({ message: "Invalid email" });
   }
   if (!isPassword(password)) {
-    return res.status(400).json({ error: "Invalid password" });
+    return res.status(400).json({ message: "Invalid password" });
   }
 
   try {
     user = await User.findOne({ email: email });
   } catch {
-    return res.status(500).json({ error: "Internal Server Error" });
+    return res.status(500).json({ message: "Internal Server Error" });
   }
 
   if (!user) {
-    return res.status(400).json({ error: "Cannot find user, Signup first." });
+    return res.status(400).json({ message: "Cannot find user, Signup first." });
   }
 
   if (!(await bcrypt.compare(password, user.password))) {
-    return res.status(400).json({ error: "Password incorrect" });
+    return res.status(400).json({ message: "Password incorrect" });
   }
 
   const token = jwt.sign(
@@ -102,7 +102,7 @@ router.post("/login", async (req, res, next) => {
       email: user.email,
       username: user.username,
     },
-    process.env.JWT_KEY,
+    process.env.JWT_KEY
   );
 
   res.status(200).json({
@@ -112,7 +112,6 @@ router.post("/login", async (req, res, next) => {
       username: user.username,
       email: user.email,
     },
-
   });
 });
 

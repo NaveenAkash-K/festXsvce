@@ -16,7 +16,11 @@ const schema = new mongoose.Schema({
   password: {
     type: String,
     required: true,
-  }
+  },
+  otpSecret: {
+    type: String,
+    required: false,
+  },
 });
 
 const User = mongoose.model("User", schema);

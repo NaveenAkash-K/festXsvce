@@ -1,9 +1,18 @@
 import styles from "../styles/components/header.module.css";
 import logo from "../assets/images/festXsvce_logo.png";
-import { Link } from "react-router-dom";
-import { IoMenu, IoClose } from "react-icons/io5";
+import { Link, useNavigate } from "react-router-dom";
+import { IoMenu, IoClose, IoChevronDownOutline } from "react-icons/io5";
 
 function Header() {
+  const localData = localStorage.getItem("user");
+  var user;
+
+  if (localData !== null) {
+    user = JSON.parse(localData);
+  }
+  const navigate = useNavigate();
+  const revealLogout = () => {};
+
   return (
     <>
       <div className={styles.navMobile}>
@@ -47,13 +56,17 @@ function Header() {
           <Link to={"/"}>Home</Link>
           <Link to={"/about"}>About</Link>
           <Link to={"/departments"}>Events</Link>
-          <Link to={"/"}>Get</Link>
-          <Link to={"/"}>Workshops</Link>
-          <Link to={"/"}>Proshows</Link>
-          <Link to={"/"}>Sponsors</Link>
           <Link to={"/location"}>Location</Link>
           <Link to={"/"}>Contact</Link>
         </nav>
+        {localData !== null ? (
+          <>
+            <p style={{ color: "white" }}>Logout</p>
+            <p style={{ color: "white" }}>{user.username}</p>
+          </>
+        ) : (
+          <p style={{ color: "white" }}>Signin</p>
+        )}
       </div>
     </>
   );
