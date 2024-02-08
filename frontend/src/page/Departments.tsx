@@ -7,7 +7,7 @@ const DepartmentsPage: React.FC = () => {
   return (
     <>
       <Header />
-      <div className={styles.event}>
+      <div className={styles.event} id="departments">
         <h1 className={styles.heading}>Departments</h1>
         <div className={styles.departmentGrid}>
           {departments.map((ele) => (

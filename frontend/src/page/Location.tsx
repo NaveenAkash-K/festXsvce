@@ -5,7 +5,7 @@ const Location = () => {
   return (
     <>
       <Header />
-      <div className={styles.location}>
+      <div className={styles.location} id="location">
         <center>
           <h1 className={styles.heading}>Location</h1>
           <div className={styles.flexContainer}>

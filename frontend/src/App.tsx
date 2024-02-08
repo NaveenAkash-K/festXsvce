@@ -11,6 +11,7 @@ import Signup from "./page/Signup";
 import FestXsvce from "./components/FestXsvce_text";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
+import bg from "./assets/images/background.jpg";
 
 const router = createBrowserRouter([
   {
@@ -50,6 +51,9 @@ const router = createBrowserRouter([
 function App() {
   return (
     <>
+      <div className="background-container">
+        <img src={bg} alt="Background Image" className="background-image" />
+      </div>
       <ToastContainer position="top-center" theme="dark" />
       <RouterProvider router={router} />
       <FestXsvce />

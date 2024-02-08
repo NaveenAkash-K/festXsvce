@@ -2,7 +2,7 @@
   position: fixed;
   bottom: 0px;
   font-size: 5vw;
-  -webkit-text-stroke: 2px #775532;
+  -webkit-text-stroke: 1px #775532;
   color: transparent;
   z-index: -1;
 }

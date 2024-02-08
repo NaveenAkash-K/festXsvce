@@ -33,7 +33,7 @@
 }
 
 .navMobile {
-  display: none;
+  /* display: none; */
   position: fixed;
   background-color: #a37b51;
   right: 0;
@@ -80,10 +80,6 @@
     border-radius: 0 0 15% 15% / 0 0 60% 60%;
   }
   .navDesktop {
-    display: none;
-  }
-
-  .navMobile {
     display: none;
   }
 

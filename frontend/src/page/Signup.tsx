@@ -14,6 +14,9 @@ import axios from "axios";
 const Signup = () => {
   const navigate = useNavigate();
   const [email, setEmail] = useState<string>("");
+  const [department, setDepartment] = useState<string>("");
+  const [college, setCollege] = useState<string>("");
+  const [regNo, setRegNo] = useState<string>("");
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [phoneNo, setPhoneNo] = useState<string>("");
@@ -38,7 +41,7 @@ const Signup = () => {
       if (username.length > 2) {
         return toast("Username should not contain space");
       }
-      return toast("Username should contain grater than 3 characters");
+      return toast("Username must be atleast 3 characters");
     }
     if (!isEmail(email)) {
       return toast("Invalid Email");
@@ -47,7 +50,16 @@ const Signup = () => {
       return toast("Phone number must contain only 10 digit");
     }
     if (!isPassword(password)) {
-      return toast("Password must be atleast greater than 5 characters");
+      return toast("Password must be atleast 6 characters");
+    }
+    if (!(regNo.trim().length === 0)) {
+      return toast("Please enter your registration number");
+    }
+    if (!(college.trim().length === 0)) {
+      return toast("Please enter your college name");
+    }
+    if (!(department.trim().length === 0)) {
+      return toast("Please enter your department");
     }
     if (password !== confirmPassword) {
       return toast("Passwords don't match");
@@ -77,48 +89,80 @@ const Signup = () => {
       <div className={styles.auth}>
         <div className={styles.authContainer}>
           <h1>Signup</h1>
-          <p>Username</p>
-          <input
-            type="text"
-            className={styles.input}
-            onChange={(username) => {
-              setUsername(username.target.value);
-            }}
-          />
-          <p>Email</p>
-          <input
-            type="email"
-            className={styles.input}
-            onChange={(email) => {
-              setEmail(email.target.value);
-            }}
-          />
-          <p>Phone Number</p>
-          <input
-            type="text"
-            className={styles.input}
-            onChange={(phoneNo) => {
-              setPhoneNo(phoneNo.target.value);
-            }}
-          />
-          <p>Password</p>
-          <input
-            type="text"
-            className={styles.input}
-            onChange={(password) => {
-              setPassword(password.target.value);
-            }}
-          />
-          <p>Confirm Password</p>
-          <input
-            type="text"
-            className={styles.input}
-            onChange={(confirmPassword) => {
-              setConfirmPassword(confirmPassword.target.value);
-            }}
-          />
+          <div className={styles.inputSection}>
+            <section>
+              <p className={styles.label}>Username</p>
+              <input
+                type="text"
+                className={styles.input}
+                onChange={(username) => {
+                  setUsername(username.target.value);
+                }}
+              />
+              <p className={styles.label}>Email</p>
+              <input
+                type="email"
+                className={styles.input}
+                onChange={(email) => {
+                  setEmail(email.target.value);
+                }}
+              />
+              <p className={styles.label}>Phone Number</p>
+              <input
+                type="text"
+                className={styles.input}
+                onChange={(phoneNo) => {
+                  setPhoneNo(phoneNo.target.value);
+                }}
+              />
+              <p className={styles.label}>College Name</p>
+              <input
+                type="text"
+                className={styles.input}
+                onChange={(college) => {
+                  setCollege(college.target.value);
+                }}
+              />
+            </section>
+            <section>
+              <p className={styles.label}>Registration Number</p>
+              <input
+                type="text"
+                className={styles.input}
+                onChange={(regNo) => {
+                  setRegNo(regNo.target.value);
+                }}
+              />
+              <p className={styles.label}>Department</p>
+              <input
+                type="text"
+                className={styles.input}
+                onChange={(dept) => {
+                  setDepartment(dept.target.value);
+                }}
+              />
+              <p className={styles.label}>Password</p>
+              <input
+                type="password"
+                className={styles.input}
+                onChange={(password) => {
+                  setPassword(password.target.value);
+                }}
+              />
+              <p className={styles.label}>Confirm Password</p>
+              <input
+                type="password"
+                className={styles.input}
+                onChange={(confirmPassword) => {
+                  setConfirmPassword(confirmPassword.target.value);
+                }}
+              />
+            </section>
+          </div>
           <br />
-          <button className={styles.submitButton} onClick={handleSignup}>Signup</button>
+          <button className={styles.submitButton} onClick={handleSignup}>
+            Signup
+          </button>
           <hr color="#635047" />
           <Link to="/login">
             <button className={styles.redirectButton}>
