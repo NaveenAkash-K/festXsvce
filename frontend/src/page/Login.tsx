@@ -60,7 +60,7 @@ const Login = () => {
       });
   };
 
-  const forgetPasswordHandle = () => {
+  const forgotPasswordHandle = () => {
     if (!isEmail(email)) {
       toast("Please provide valid email");
       return;
@@ -203,7 +203,7 @@ const Login = () => {
                 }}
               />
               <p
-                onClick={forgetPasswordHandle}
+                onClick={forgotPasswordHandle}
                 style={{ textDecoration: "underline" }}
               >
                 Forgot Password?

@@ -145,7 +145,7 @@ function Header() {
                 navigate("/login");
               }}
             >
-              Signin
+              Signup
             </p>
           ) : null}
         </nav>
