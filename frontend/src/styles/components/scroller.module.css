@@ -20,7 +20,6 @@
   animation-name: scroll;
   animation-duration: 1.2s;
   animation-timing-function: cubic-bezier(.55,0,.55,1);
-  /* animation-timing-function: ease-in-out; */
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
 }

@@ -3,7 +3,7 @@ import logo from "../assets/images/festXsvce_logo.png";
 import { useLocation, useNavigate } from "react-router-dom";
 import { Link } from "react-scroll";
 import { useState } from "react";
-import { IoMenu, IoClose, IoChevronDownOutline } from "react-icons/io5";
+import { IoMenu, IoClose } from "react-icons/io5";
 
 function Header() {
   const localData = localStorage.getItem("user");
