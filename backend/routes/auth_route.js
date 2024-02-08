@@ -8,7 +8,15 @@ const checkAuth = require("../middlewares/checkAuth");
 
 router.post("/signup", async (req, res, next) => {
   const email = req.body.email.toLowerCase();
-  const { username, password, confirmPassword, phoneNo } = req.body;
+  const {
+    username,
+    regNo,
+    college,
+    department,
+    password,
+    confirmPassword,
+    phoneNo,
+  } = req.body;
   var user;
 
   if (!isEmail(email)) {
@@ -18,6 +26,15 @@ router.post("/signup", async (req, res, next) => {
     return res
       .status(400)
       .json({ message: "Username must contain greater than 3 characters" });
+  }
+  if (college.trim().length === 0) {
+    return toast("Please enter your college name");
+  }
+  if (regNo.trim().length === 0) {
+    return toast("Please enter your registration number");
+  }
+  if (department.trim().length === 0) {
+    return toast("Please enter your department");
   }
   if (!isPassword(password)) {
     return res.status(400).json({
@@ -45,6 +62,9 @@ router.post("/signup", async (req, res, next) => {
       email: email,
       username: username,
       phoneNo: phoneNo,
+      college: college,
+      regNo: regNo,
+      department: department,
       password: hashedPassword,
     }).save();
   } catch {

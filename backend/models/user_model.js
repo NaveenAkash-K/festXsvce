@@ -17,6 +17,18 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  regNo: {
+    type: String,
+    required: true,
+  },
+  college: {
+    type: String,
+    required: true,
+  },
+  department: {
+    type: String,
+    required: true,
+  },
   otpSecret: {
     type: String,
     required: false,

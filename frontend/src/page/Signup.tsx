@@ -49,17 +49,17 @@ const Signup = () => {
     if (!isPhoneNumber(phoneNo)) {
       return toast("Phone number must contain only 10 digit");
     }
-    if (!isPassword(password)) {
-      return toast("Password must be atleast 6 characters");
-    }
-    if (!(regNo.trim().length === 0)) {
-      return toast("Please enter your registration number");
-    }
-    if (!(college.trim().length === 0)) {
+    if (college.trim().length === 0) {
       return toast("Please enter your college name");
     }
-    if (!(department.trim().length === 0)) {
+    if (regNo.trim().length === 0) {
+      return toast("Please enter your registration number");
+    }
+    if (department.trim().length === 0) {
       return toast("Please enter your department");
+    }
+    if (!isPassword(password)) {
+      return toast("Password must be atleast 6 characters");
     }
     if (password !== confirmPassword) {
       return toast("Passwords don't match");
@@ -67,11 +67,14 @@ const Signup = () => {
 
     axios
       .post(process.env.REACT_APP_API_BASE_URL + "/auth/signup", {
-        email: email,
-        username: username,
-        phoneNo: phoneNo,
-        password: password,
-        confirmPassword: confirmPassword,
+        email,
+        username,
+        phoneNo,
+        college,
+        regNo,
+        department,
+        password,
+        confirmPassword,
       })
       .then((result) => {
         localStorage.setItem("token", result.data.token);
