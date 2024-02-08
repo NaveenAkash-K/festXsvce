@@ -4,10 +4,10 @@
 
 .heading {
   color: #4d291a;
-  font-weight: normal;
   align-items: center;
   text-align: center;
   margin-bottom: 3rem;
+  font-size: 50px;
 }
 
 .departmentGrid {
