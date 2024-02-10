@@ -15,19 +15,26 @@
   /* background-color: red; */
 }
 
+.container > h1 {
+  text-align: center;
+  color: #4d291a;
+}
+
 .list {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   justify-content: center;
   margin: auto auto;
-  gap: 100px;
+  column-gap: 100px;
+  row-gap: 50px;
   margin: 0 0 3rem 0;
 }
 
 .cardContainer {
+  cursor: pointer;
   /* flex: 1; */
-  max-width: 600px;
+  max-width: 550px;
   position: relative;
 }
 
@@ -42,7 +49,6 @@
   position: absolute;
   top: 10%;
   left: 32%;
-  font-size: 1.5vw;
 }
 
 .know {
@@ -58,10 +64,10 @@
     position: absolute;
     top: 10%;
     left: 32%;
-    font-size: 2vw;
+    font-size: 1.5vw;
   }
   .know {
-    font-size: 1.5vw;
+    font-size: 1vw;
   }
 }
 
@@ -73,12 +79,26 @@
 
 @media screen and (width < 1000px) {
   .title {
-    position: absolute;
-    top: 10%;
-    left: 32%;
-    font-size: 2.75vw;
+    font-size: 2vw;
+  }
+  .know {
+    font-size: 1.5vw;
+  }
+}
+
+@media screen and (width < 900px) {
+  .title {
+    font-size: 2.5vw;
   }
   .know {
     font-size: 2vw;
+  }
+}
+@media screen and (width < 600px) {
+  .title {
+    font-size: 3vw;
+  }
+  .know {
+    font-size: 2.5vw;
   }
 }

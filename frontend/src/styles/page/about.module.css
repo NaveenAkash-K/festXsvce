@@ -1,40 +1,4 @@
-@media screen and (max-width: 480px) {
-  .aboutSvce {
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* background-color: red; */
-    position: relative;
-    & img {
-      height: 170px;
-      position: relative;
-      right: -20%;
-      /* justify-self: end; */
-      width: 75%;
-      margin-bottom: 15%;
-    }
-  }
-}
 
-@media screen and (min-width: 480px) and (max-width: 1000px) {
-  .aboutSvce {
-    margin-top: 3rem;
-
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    /* background-color: red; */
-    position: relative;
-    & img {
-      position: relative;
-      right: -20%;
-      /* justify-self: end; */
-      width: 40vw;
-      margin-bottom: 15%;
-    }
-  }
-}
 
 .container {
   min-height: 85vh;
@@ -80,7 +44,46 @@
 
 .img {
   width: 30%;
-  height: 200px;
+  /* height: 200px; */
+  margin: 0 0% 0 2%;
   margin-top: 3%;
-  border-radius: 50% 0 0 50% / 60% 0 0 60%;
+}
+
+
+@media screen and (max-width: 480px) {
+  .aboutSvce {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: red; */
+    position: relative;
+    & img {
+      height: 170px;
+      position: relative;
+      right: -20%;
+      /* justify-self: end; */
+      width: 75%;
+      margin: 1rem 2rem 15% 2%;
+    }
+  }
+}
+
+@media screen and (min-width: 480px) and (max-width: 1000px) {
+  .aboutSvce {
+    margin-top: 3rem;
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    /* background-color: red; */
+    position: relative;
+    & img {
+      position: relative;
+      right: -20%;
+      /* justify-self: end; */
+      width: 40vw;
+      margin-bottom: 15%;
+    }
+  }
 }

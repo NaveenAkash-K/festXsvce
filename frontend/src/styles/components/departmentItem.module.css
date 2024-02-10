@@ -6,6 +6,11 @@
   background-size: cover;
   background-position: center center;
   position: relative;
+  transition: all 300ms ease-in-out;
+
+  &:hover{
+    transform: scale(1.1);
+  }
 }
 
 .nameDiv {

@@ -8,7 +8,7 @@ import Location from "./page/Location";
 import About from "./page/About";
 import Login from "./page/Login";
 import Signup from "./page/Signup";
-import FestXsvce from "./components/FestXsvce_text";
+import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import bg from "./assets/images/background.jpg";

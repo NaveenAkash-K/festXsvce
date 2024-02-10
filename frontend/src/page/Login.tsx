@@ -204,7 +204,7 @@ const Login = () => {
               />
               <p
                 onClick={forgotPasswordHandle}
-                style={{ textDecoration: "underline" }}
+                style={{ textDecoration: "underline", cursor:"pointer" }}
               >
                 Forgot Password?
               </p>

@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import styles from "../styles/page/about.module.css";
-import svce from "../assets/images/svce.jpg";
+import svce from "../assets/images/svce.png";
 
 const About: React.FC = () => {
   return (
@@ -10,19 +10,19 @@ const About: React.FC = () => {
         <div className={styles.about}>
           <h1 className={styles.title}>About</h1>
           <h3>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel
-            repudiandae unde fugiat consequatur minima exercitationem blanditiis
-            velit temporibus nobis animi molestias porro doloribus ut quis
-            explicabo numquam tempore laudantium, dolorum a tempora, quasi atque
-            aliquid! Repellat rerum dicta vero qui, suscipit reiciendis
-            distinctio, eaque ipsam consectetur, officiis optio fugit. Unde
-            omnis deleniti illum laborum dolore repellat reprehenderit ipsam
-            alias obcaecati aut quod voluptatibus est molestiae inventore
-            accusantium voluptatum esse asperiores, consectetur quidem quaerat
-            consequuntur neque? Totam excepturi eligendi modi, cupiditate facere
-            corporis, alias impedit, deleniti ipsam odio sed! Deserunt ut
-            consequuntur at nesciunt vero veniam nobis. Doloremque vitae
-            veritatis omnis.
+            TechFest, SVCE's inaugural interdisciplinary technical event,
+            highlights technology, innovation, and creativity on March
+            15th-16th. It offers a vibrant platform for students to exhibit
+            engineering skills and creative flair. The festival unites students,
+            faculty, and industry professionals, promoting collaboration and
+            showcasing the power of collective intelligence. Tech-Fest embraces
+            a holistic approach to technology, transcending academic boundaries
+            and encouraging exploration of interdisciplinary intersections.
+            Participants engage in hands-on experiences, competitions, and
+            workshops, gaining insights into emerging trends. The event
+            catalyzes innovation, with prototypes paving the way for future
+            breakthroughs. With a generous prize pool of 2.5 Lakhs, Tech-Fest
+            celebrates and rewards the brilliance of young minds.
           </h3>
         </div>
         <div className={styles.aboutSvce}>
@@ -34,16 +34,16 @@ const About: React.FC = () => {
               About SVCE
             </h1>
             <h3 className={styles.text}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
-              optio et fuga cupiditate, perspiciatis qui ex dolores deleniti
-              ratione natus commodi error, tempore impedit beatae iste
-              asperiores autem? Amet, est debitis harum quia corporis illo
-              consequatur quod vel sapiente. Ipsa sequi facilis delectus.
-              Exercitationem voluptas eaque atque, quo, illo explicabo quia ex
-              optio natus at libero vel. Eaque quisquam rerum tempore
-              voluptatibus fugiat earum ullam voluptates architecto dolores et
-              saepe assumenda repellendus, omnis, repellat quod debitis commodi
-              minima ipsum necessitatibus.
+              SVCE is a unit of Sri Venkateswara Educational and Health Trust
+              (SVEHT). The Trust was founded on 1 August 1985 at the behest and
+              benign blessings of His Holiness Pujashree Kanchi Kamakoti
+              Peedathipathi Sri Jayendra Saraswathi Swamigal. Dr. A. C. Muthiah,
+              a renowned engineer, industrialist and philanthropist, is the
+              Chairman of the Governing Council of the college. The college is
+              in a 95 acre lush green Campus. It is housed in architecturally
+              exquisite buildings with ample infrastructure such as classrooms,
+              laboratories, libraries, sports arena, canteen, hostels,
+              dispensary, bank etc.,
             </h3>
           </div>
           <img src={svce} alt="SVCE COLLEGE" className={styles.img} />

@@ -1,7 +1,7 @@
 import styles from "../styles/page/departments.module.css";
 import Header from "../components/Header";
 import DepartmentItem from "../components/DepartmentItem";
-import departments from "../data/departments";
+import departmentsData from "../data/departmentsData";
 
 const DepartmentsPage: React.FC = () => {
   return (
@@ -10,7 +10,7 @@ const DepartmentsPage: React.FC = () => {
       <div className={styles.event} id="departments">
         <h1 className={styles.heading}>Departments</h1>
         <div className={styles.departmentGrid}>
-          {departments.map((ele) => (
+          {departmentsData.map((ele) => (
             <DepartmentItem
               image={ele.img}
               name={ele.name}

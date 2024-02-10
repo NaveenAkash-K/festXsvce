@@ -1,4 +1,4 @@
-.festxsvce {
+.bottomText {
   position: fixed;
   bottom: 0px;
   font-size: 5vw;
@@ -7,7 +7,7 @@
   z-index: -1;
 }
 
-.festxsvce > p {
+.bottomText > p {
   font-weight: bolder;
   letter-spacing: 5px;
   text-align: center;
@@ -15,20 +15,20 @@
   font-family: "DM Sans", sans-serif;
 }
 
-.festxsvce > p:nth-child(1) {
+.bottomText > p:nth-child(1) {
   position: fixed;
   bottom: 5vw;
   right: 0%;
 }
 
 @media screen and (width < 600px) {
-  .festxsvce {
+  .bottomText {
     font-size: 10vw;
   }
-  .festxsvce > p {
+  .bottomText > p {
     letter-spacing: 0px;
   }
-  .festxsvce > p:nth-child(1) {
+  .bottomText > p:nth-child(1) {
     bottom: 10vw;
   }
 }

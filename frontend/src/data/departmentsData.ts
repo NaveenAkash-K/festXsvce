@@ -11,7 +11,7 @@ import club from "../assets/images/departments/clubs.png";
 import workshops from "../assets/images/departments/workshop.jpg";
 import pros from "../assets/images/proshow.jpg";
 
-const departments: {
+const departmentsData: {
   id: string;
   name: string;
   img: string;
@@ -30,4 +30,4 @@ const departments: {
   { id: "proshows", name: "Proshows", img: pros },
 ];
 
-export default departments;
+export default departmentsData;

@@ -1,6 +1,6 @@
 .container {
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.232);
+  background-color: rgba(0, 0, 0, 0.325);
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -33,15 +33,17 @@
 }
 
 .navMobile {
-  /* display: none; */
+  display: none;
   position: fixed;
   background-color: #a37b51;
-  right: 0;
+  /* right: 0; */
+  /* right: -30rem; */
   z-index: 10;
-  height: 100%;
   width: 70%;
+  height: 100%;
   padding: 0rem 0 0 1rem;
   font-size: x-large;
+  transition: all cubic-bezier(.24,.23,0,1) 400ms;
 }
 
 .navMobile > nav > a {
@@ -67,6 +69,14 @@
   }
 }
 
+.navMobile.hide {
+  right: -35rem;
+}
+
+.navMobile.open {
+  right: 0;
+}
+
 .userDetails {
   /* position: relative; */
   color: white;
@@ -81,6 +91,9 @@
   }
   .navDesktop {
     display: none;
+  }
+  .navMobile{
+    display: block;
   }
   .menu {
     display: block;

@@ -5,4 +5,5 @@
   padding: 0;
   margin: 0;
   font-family: "Amarante", serif;
+  -webkit-tap-highlight-color: transparent;
 }

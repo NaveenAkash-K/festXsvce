@@ -33,8 +33,9 @@ function Header() {
   return (
     <>
       <div
-        className={styles.navMobile}
-        style={{ display: `${isNavOpen ? "block" : "none"}` }}
+        className={`${styles.navMobile} ${
+          isNavOpen ? styles.open : styles.hide
+        }`}
       >
         {/* <section> */}
         <IoClose
@@ -50,6 +51,7 @@ function Header() {
             to={"home"}
             smooth={true}
             duration={700}
+            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Home
@@ -59,6 +61,7 @@ function Header() {
             to={"about"}
             smooth={true}
             duration={700}
+            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             About
@@ -68,6 +71,7 @@ function Header() {
             to={"departments"}
             smooth={true}
             duration={700}
+            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Events
@@ -77,6 +81,7 @@ function Header() {
             to={"passes"}
             smooth={true}
             duration={700}
+            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Get Passes
@@ -86,6 +91,7 @@ function Header() {
             to={"sponsers"}
             smooth={true}
             duration={700}
+            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Sponsers
@@ -95,6 +101,7 @@ function Header() {
             to={"location"}
             smooth={true}
             duration={700}
+            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Location
@@ -111,22 +118,58 @@ function Header() {
           }}
         />
         <nav className={styles.navDesktop}>
-          <Link to={"home"} smooth={true} duration={700}>
+          <Link
+            to={"home"}
+            smooth={true}
+            duration={700}
+            onClick={navItemHandle}
+            style={{ cursor: "pointer" }}
+          >
             Home
           </Link>
-          <Link to={"about"} smooth={true} duration={700}>
+          <Link
+            to={"about"}
+            smooth={true}
+            duration={700}
+            style={{ cursor: "pointer" }}
+            onClick={navItemHandle}
+          >
             About
           </Link>
-          <Link to={"departments"} smooth={true} duration={700}>
+          <Link
+            to={"departments"}
+            smooth={true}
+            duration={700}
+            style={{ cursor: "pointer" }}
+            onClick={navItemHandle}
+          >
             Events
           </Link>
-          <Link to={"passes"} smooth={true} duration={700}>
+          <Link
+            to={"passes"}
+            smooth={true}
+            duration={700}
+            style={{ cursor: "pointer" }}
+            onClick={navItemHandle}
+          >
             Get Passes
           </Link>
-          <Link to={"sponsers"} smooth={true} duration={700}>
+          <Link
+            to={"sponsers"}
+            smooth={true}
+            duration={700}
+            style={{ cursor: "pointer" }}
+            onClick={navItemHandle}
+          >
             Sponsers
           </Link>
-          <Link to={"location"} smooth={true} duration={700}>
+          <Link
+            to={"location"}
+            smooth={true}
+            duration={700}
+            style={{ cursor: "pointer" }}
+            onClick={navItemHandle}
+          >
             Location
           </Link>
           <hr style={{ transform: "rotate(180deg)" }} />
