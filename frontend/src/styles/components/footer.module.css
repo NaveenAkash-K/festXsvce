@@ -1,0 +1,92 @@
+@media screen and (width < 565px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column-reverse;
+        /* margin: 3% 10%; */
+        flex-wrap: wrap;
+        gap: 30px;
+        height: auto;
+        /* Allow content to dictate height */
+    }
+
+    .container {
+        overflow: hidden;
+        height: 85vh;
+        /* background-color: blue; */
+        background-image: url('../../assets/images/footer.webp');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: #D2D2D2;
+        /* overflow: hidden; */
+        /* margin: 1rem; */
+    }
+    .svce{
+        position: relative;
+        /* background-color: aliceblue; */
+        width: 700px;
+        left: -200px;
+        margin-left: 200px;
+    }
+}
+
+@media screen and (width > 566px) {
+    .container {
+        height: 45vh;
+        /* background-color: blue; */
+        background-image: url('../../assets/images/footer.webp');
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        color: #D2D2D2;
+        /* overflow: hidden; */
+        /* margin: 1rem; */
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    /* align-items: space-evenly; */
+    margin: 3% 10%;
+    height: 80%;
+    flex-wrap: wrap;
+    /* max-width: 830px; */
+    /* Maximum width for three elements */
+    /* margin: auto auto; */
+}
+
+.svceContainer{
+    flex: 2;
+}
+
+.svce h3 {
+    margin-top: 1%;
+}
+
+.svce img:first-child {
+    /* margin-top: 4%; */
+    height: 30%;
+}
+
+.mediaimage {
+    margin-top: 1%;
+}
+
+.menu {
+    flex: 1;
+}
+
+.contact {
+    flex: 1;
+}
+
+.connector {
+    margin-top: 2%;
+    display: flex;
+}
+
+.copyrights {
+    color: #D2D2D2;
+    text-align: center;
+}

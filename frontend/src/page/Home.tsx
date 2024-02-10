@@ -5,6 +5,7 @@ import Location from "./Location";
 import Scroller from "../components/Scroller";
 import DepartmentsPage from "./Departments";
 import Timer from "../components/Timer";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -23,6 +24,7 @@ const Home = () => {
       <About />
       <DepartmentsPage />
       <Location />
+      <Footer/>
     </>
   );
 };
