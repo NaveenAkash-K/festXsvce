@@ -25,7 +25,8 @@ const departmentsData: {
   { id: "eee", name: "EEE", img: eee },
   { id: "int", name: "Information Technology", img: it },
   { id: "mech", name: "Mechanical Engineering", img: me },
-  { id: "clubs", name: "Clubs", img: club },
+  { id: "ieee_club", name: "IEEE", img: club },
+  { id: "csi_club", name: "CSI", img: club },
   { id: "workshops", name: "Workshops", img: workshops },
   { id: "proshows", name: "Proshows", img: pros },
 ];
