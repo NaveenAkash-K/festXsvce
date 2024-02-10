@@ -18,7 +18,7 @@ const departmentsData: {
 }[] = [
   { id: "auto", name: "Automobile Engineering", img: ae },
   { id: "bio", name: "BioTechnology", img: bt },
-  { id: "chm", name: "Chemical Engineering", img: ce },
+  { id: "chem", name: "Chemical Engineering", img: ce },
   { id: "civil", name: "Civil Engineering", img: civil },
   { id: "cse", name: "Computer Science", img: cs },
   { id: "ece", name: "ECE", img: ece },
