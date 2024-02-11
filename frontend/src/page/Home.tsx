@@ -13,7 +13,7 @@ const Home = () => {
       <Header />
       <div className={styles.home} id="home">
         <div className={styles.content}>
-          <h1>TECHFEST-SVCE</h1>
+          <h1>TECHNOWAYS</h1>
           <br />
           <p>RETROTECH REVIVAL | MAR 15,16 2024</p>
           <br />

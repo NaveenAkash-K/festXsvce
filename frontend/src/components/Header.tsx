@@ -51,7 +51,6 @@ function Header() {
             to={"home"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Home
@@ -61,8 +60,8 @@ function Header() {
             to={"about"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
+            offset={80}
           >
             About
           </Link>
@@ -71,7 +70,6 @@ function Header() {
             to={"departments"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Events
@@ -81,7 +79,6 @@ function Header() {
             to={"passes"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Get Passes
@@ -91,7 +88,6 @@ function Header() {
             to={"sponsers"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Sponsers
@@ -101,12 +97,29 @@ function Header() {
             to={"location"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Location
           </Link>
         </nav>
+        <section>
+          <br />
+          {localData !== null ? <p>{user.username}</p> : null}
+          <br />
+          {localData !== null ? <p onClick={logout}>Logout</p> : null}
+          <br />
+          {localData === null ? (
+            <p
+              onClick={() => {
+                setIsNavOpen(false);
+                navigate("/login");
+              }}
+            >
+              Signup
+            </p>
+          ) : null}
+          <br />
+        </section>
       </div>
 
       <div className={styles.container}>
@@ -123,7 +136,6 @@ function Header() {
             smooth={true}
             duration={700}
             onClick={navItemHandle}
-            style={{ cursor: "pointer" }}
           >
             Home
           </Link>
@@ -131,8 +143,8 @@ function Header() {
             to={"about"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
+            offset={80}
           >
             About
           </Link>
@@ -140,7 +152,6 @@ function Header() {
             to={"departments"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Events
@@ -149,7 +160,6 @@ function Header() {
             to={"passes"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Get Passes
@@ -158,7 +168,6 @@ function Header() {
             to={"sponsers"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Sponsers
@@ -167,23 +176,22 @@ function Header() {
             to={"location"}
             smooth={true}
             duration={700}
-            style={{ cursor: "pointer" }}
             onClick={navItemHandle}
           >
             Location
           </Link>
           <hr style={{ transform: "rotate(180deg)" }} />
           {localData !== null ? (
-            <p style={{ color: "white", cursor: "pointer" }}>{user.username}</p>
+            <p style={{ color: "white" }}>{user.username}</p>
           ) : null}
           {localData !== null ? (
-            <p style={{ color: "white", cursor: "pointer" }} onClick={logout}>
+            <p style={{ color: "white" }} onClick={logout}>
               Logout
             </p>
           ) : null}
           {localData === null ? (
             <p
-              style={{ color: "white", cursor: "pointer" }}
+              style={{ color: "white" }}
               onClick={() => {
                 navigate("/login");
               }}

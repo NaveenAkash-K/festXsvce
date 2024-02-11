@@ -12,6 +12,8 @@ import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import bg from "./assets/images/background.jpg";
+import AnimatedCursor from "react-animated-cursor";
+import { useEffect, useState } from "react";
 
 const router = createBrowserRouter([
   {
@@ -49,8 +51,33 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const [screenWidth, setScreenWidth] = useState<number>(0);
+  useEffect(() => {
+    setScreenWidth(window.innerWidth);
+    window.addEventListener("resize", () => {
+      setScreenWidth(window.innerWidth);
+    });
+  }, []);
+
   return (
     <>
+      {screenWidth > 770 ? (
+        <AnimatedCursor
+          innerSize={5}
+          outerSize={30}
+          innerScale={0}
+          outerScale={2}
+          outerStyle={{
+            mixBlendMode: "difference",
+            // backgroundColor: "#4d291a90",
+            backgroundColor: "#d0c19c",
+          }}
+          innerStyle={{
+            backgroundColor: "white",
+            mixBlendMode: "difference",
+          }}
+        />
+      ) : null}
       <div className="background-container">
         <img src={bg} alt="Background Image" className="background-image" />
       </div>

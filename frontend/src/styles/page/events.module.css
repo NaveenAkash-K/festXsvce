@@ -32,7 +32,7 @@
 }
 
 .cardContainer {
-  cursor: pointer;
+  /* cursor: pointer; */
   /* flex: 1; */
   max-width: 550px;
   position: relative;
