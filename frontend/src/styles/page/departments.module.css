@@ -1,5 +1,16 @@
 .event {
   padding: 7rem 0 0 0;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.whiteHeader{
+  color: white;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 50px;
 }
 
 .heading {

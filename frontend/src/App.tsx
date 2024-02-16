@@ -14,6 +14,7 @@ import { ToastContainer } from "react-toastify";
 import bg from "./assets/images/background.jpg";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect, useState } from "react";
+import React from "react";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
+  const AnimatedCursorMemo = React.memo(AnimatedCursor);
   const [screenWidth, setScreenWidth] = useState<number>(0);
   useEffect(() => {
     setScreenWidth(window.innerWidth);
@@ -62,7 +64,7 @@ function App() {
   return (
     <>
       {screenWidth > 770 ? (
-        <AnimatedCursor
+        <AnimatedCursorMemo
           innerSize={5}
           outerSize={30}
           innerScale={0}
