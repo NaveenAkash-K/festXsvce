@@ -10,6 +10,7 @@
 
   &:hover{
     transform: scale(1.1);
+    box-shadow: 0 0 10px 10px rgba(214, 174, 115, 0.8); 
   }
 }
 

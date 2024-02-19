@@ -1,16 +1,33 @@
 .event {
+  position: relative;
   padding: 7rem 0 0 0;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.whiteHeader{
+.blurBackground {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: inherit;
+  z-index: 0;
+  filter: blur(15px);
+}
+
+.whiteHeader {
   color: white;
   align-items: center;
   text-align: center;
   margin-bottom: 3rem;
   font-size: 50px;
+  position: relative;
+  z-index: 999;
 }
 
 .heading {
@@ -19,22 +36,21 @@
   text-align: center;
   margin-bottom: 3rem;
   font-size: 50px;
+  z-index: 999;
 }
 
 .departmentGrid {
   margin: 0 2rem 0rem 2rem;
   padding-bottom: 3rem;
-  /* display: grid; */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); */
-  max-width: 830px; /* Maximum width for three elements */
+  max-width: 830px;
   margin: auto auto;
   gap: 100px;
 }
 
-@media screen and (width < 565px) {
+@media screen and (max-width: 565px) {
   .departmentGrid {
     gap: 30px;
   }
