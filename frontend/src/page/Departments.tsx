@@ -13,7 +13,10 @@ const DepartmentsPage: React.FC = () => {
         {bg && (
           <div
             className={styles.blurBackground}
-            style={{ backgroundImage: `url(${bg})` }}
+            style={{
+              backgroundImage: `url(${bg})`,
+              backgroundPosition: "center",
+            }}
           />
         )}
         <h1 className={!bg ? styles.heading : styles.whiteHeader}>
