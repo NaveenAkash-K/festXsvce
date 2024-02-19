@@ -18,6 +18,7 @@ import React from "react";
 import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
 import ReactGA from "react-ga";
+import Footer from "./components/Footer";
 
 ReactGA.initialize("G-EGQRVRM8QK");
 
@@ -33,23 +34,34 @@ const router = createBrowserRouter([
   },
   {
     path: "/location",
-    element: <Location />,
+    element: (
+      <>
+        <Location />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/departments",
-    element: <DepartmentsPage />,
+    element: (
+      <>
+        <DepartmentsPage />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/departments/:department",
-    element: <Events />,
+    element: (
+      <>
+        <Events />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/departments/:department/:eventId",
     element: <EventInfo />,
-  },
-  {
-    path: "/about",
-    element: <About />,
   },
   {
     path: "/login",
@@ -64,8 +76,13 @@ const router = createBrowserRouter([
     element: <GetPass />,
   },
   {
-    path: "/sponsers",
-    element: <Sponsers />,
+    path: "/sponsors",
+    element: (
+      <>
+        <Sponsers />,
+        <Footer />
+      </>
+    ),
   },
 ]);
 

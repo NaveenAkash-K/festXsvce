@@ -5,6 +5,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import { isEmail, isPassword } from "../utils/validators";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 const Login = () => {
   const navigate = useNavigate();
@@ -221,6 +222,7 @@ const Login = () => {
           )}
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

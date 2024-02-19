@@ -62,6 +62,12 @@ const Footer = () => {
           </p>
           <br />
           <p>
+            <Link style={{ color: "white" }} to={"/sponsors"}>
+              Sponsors
+            </Link>
+          </p>
+          <br />
+          <p>
             <Link style={{ color: "white" }} to={"/location"}>
               Location
             </Link>

@@ -2,6 +2,7 @@ import Header from "../components/Header";
 import styles from "../styles/page/getpass.module.css";
 import eve from "../assets/images/eventCard.png";
 import { passesData } from "../data/passesData";
+import Footer from "../components/Footer";
 
 const GetPass: React.FC = () => {
   return (
@@ -16,12 +17,13 @@ const GetPass: React.FC = () => {
               <div className={styles.detailContainer} key={index}>
                 <img src={eve} alt="~" className={styles.img} />
                 <h2 className={styles.title}>{data.name}</h2>
-                <h3>{data.price}</h3>
+                {/* <h3>{data.price}</h3> */}
               </div>
             ))}
           </div>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };

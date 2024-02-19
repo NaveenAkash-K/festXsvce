@@ -10,6 +10,7 @@ import {
   isPhoneNumber,
 } from "../utils/validators";
 import axios from "axios";
+import Footer from "../components/Footer";
 
 const Signup = () => {
   const navigate = useNavigate();
@@ -174,6 +175,7 @@ const Signup = () => {
           </Link>
         </div>
       </div>
+      <Footer/>
     </>
   );
 };
