@@ -79,7 +79,9 @@ function Header() {
             to={"passes"}
             smooth={true}
             duration={700}
-            onClick={navItemHandle}
+            onClick={() => {
+              navigate("/getPass");
+            }}
           >
             Get Passes
           </Link>
@@ -160,7 +162,9 @@ function Header() {
             to={"passes"}
             smooth={true}
             duration={700}
-            onClick={navItemHandle}
+            onClick={() => {
+              navigate("/getPass");
+            }}
           >
             Get Passes
           </Link>

@@ -17,6 +17,14 @@ import { useEffect, useState } from "react";
 import React from "react";
 import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
+import ReactGA from "react-ga";
+
+ReactGA.initialize("G-EGQRVRM8QK");
+
+ReactGA.send({
+  hitType: "pageview",
+  page: window.location.pathname,
+});
 
 const router = createBrowserRouter([
   {
@@ -52,13 +60,13 @@ const router = createBrowserRouter([
     element: <Signup />,
   },
   {
-    path:"/getPass",
-    element:<GetPass/>
+    path: "/getPass",
+    element: <GetPass />,
   },
   {
-    path:"/sponsers",
-    element:<Sponsers/>
-  }
+    path: "/sponsers",
+    element: <Sponsers />,
+  },
 ]);
 
 function App() {

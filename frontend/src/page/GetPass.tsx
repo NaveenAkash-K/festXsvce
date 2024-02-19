@@ -15,7 +15,8 @@ const GetPass: React.FC = () => {
             {passesData.map((data, index) => (
               <div className={styles.detailContainer} key={index}>
                 <img src={eve} alt="~" className={styles.img} />
-                <h4 className={styles.title}>{data.name}</h4>
+                <h2 className={styles.title}>{data.name}</h2>
+                <h3>{data.price}</h3>
               </div>
             ))}
           </div>
