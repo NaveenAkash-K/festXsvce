@@ -85,7 +85,7 @@ function Header() {
           </Link>
           <Link
             className={styles.mobileLink}
-            to={"sponsers"}
+            to={"sponsors"}
             smooth={true}
             duration={700}
             onClick={navItemHandle}
@@ -165,7 +165,7 @@ function Header() {
             Get Passes
           </Link>
           <Link
-            to={"sponsers"}
+            to={"sponsors"}
             smooth={true}
             duration={700}
             onClick={navItemHandle}
