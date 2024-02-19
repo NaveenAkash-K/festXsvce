@@ -15,13 +15,13 @@ const About: React.FC = () => {
             15th-16th. It offers a vibrant platform for students to exhibit
             engineering skills and creative flair. The festival unites students,
             faculty, and industry professionals, promoting collaboration and
-            showcasing the power of collective intelligence. Tech-Fest embraces
+            showcasing the power of collective intelligence. Technoways embraces
             a holistic approach to technology, transcending academic boundaries
             and encouraging exploration of interdisciplinary intersections.
             Participants engage in hands-on experiences, competitions, and
             workshops, gaining insights into emerging trends. The event
             catalyzes innovation, with prototypes paving the way for future
-            breakthroughs. With a generous prize pool of 2.5 Lakhs, Tech-Fest
+            breakthroughs. With a generous prize pool of 2.5 Lakhs, Technoways
             celebrates and rewards the brilliance of young minds.
           </h3>
         </div>
