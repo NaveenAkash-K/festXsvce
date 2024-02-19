@@ -9,12 +9,14 @@ const DepartmentsPage: React.FC = () => {
   return (
     <>
       <Header />
-      <div
-        className={styles.event}
-        id="departments"
-        style={{ backgroundImage: `url(${bg})` }}
-      >
-        <h1 className={!bg ? styles.heading : ` ${styles.whiteHeader}`}>
+      <div className={styles.event} id="departments">
+        {bg && (
+          <div
+            className={styles.blurBackground}
+            style={{ backgroundImage: `url(${bg})` }}
+          />
+        )}
+        <h1 className={!bg ? styles.heading : styles.whiteHeader}>
           Departments
         </h1>
         <div className={styles.departmentGrid}>
