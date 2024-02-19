@@ -10,7 +10,7 @@ const About: React.FC = () => {
         <div className={styles.about}>
           <h1 className={styles.title}>About</h1>
           <h3>
-            TechFest, SVCE's inaugural interdisciplinary technical event,
+            Technoways, SVCE's inaugural interdisciplinary technical event,
             highlights technology, innovation, and creativity on March
             15th-16th. It offers a vibrant platform for students to exhibit
             engineering skills and creative flair. The festival unites students,
