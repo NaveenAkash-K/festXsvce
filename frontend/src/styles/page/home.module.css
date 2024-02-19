@@ -1,3 +1,18 @@
+@keyframes drop {
+  0% {
+    top: -40rem;
+  }
+  80% {
+    top: 0rem;
+  }
+  90% {
+    top: -0.5rem;
+  }
+  100% {
+    top: 0rem;
+  }
+}
+
 .home {
   display: flex;
   justify-content: center;
@@ -14,14 +29,81 @@
 }
 
 .content > h1 {
+  position: relative;
+  top: 0rem;
   letter-spacing: 15px;
   font-size: 7vw;
 }
 
+.content > h1 > span:nth-child(1) {
+  animation: drop 800ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(2) {
+  animation: drop 900ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(3) {
+  animation: drop 1000ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(4) {
+  animation: drop 1100ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(5) {
+  animation: drop 1200ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(6) {
+  animation: drop 1300ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(7) {
+  animation: drop 1400ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(8) {
+  animation: drop 1500ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(9) {
+  animation: drop 1600ms ease-in;
+  position: relative;
+  top: 0px;
+}
+.content > h1 > span:nth-child(10) {
+  animation: drop 1700ms ease-in;
+  position: relative;
+  top: 0px;
+}
+
 .content > p {
+  position: relative;
+  top: 0rem;
   letter-spacing: 15px;
   font-weight: bold;
+}
+
+.content > p:nth-child(3) {
   font-family: "DM Sans", sans-serif;
+  animation: drop 800ms ease-in;
+}
+.content > p:nth-child(5) {
+  font-family: "DM Sans", sans-serif;
+  animation: drop 700ms ease-in;
+}
+.content > p:nth-child(6) {
+  font-family: "DM Sans", sans-serif;
+  animation: drop 600ms ease-in;
 }
 
 @media screen and (width < 600px) {

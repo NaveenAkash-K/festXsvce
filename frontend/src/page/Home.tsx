@@ -6,6 +6,7 @@ import Scroller from "../components/Scroller";
 import DepartmentsPage from "./Departments";
 import Timer from "../components/Timer";
 import Footer from "../components/Footer";
+import Sponsers from "./Sponsers";
 
 const Home = () => {
   return (
@@ -13,18 +14,34 @@ const Home = () => {
       <Header />
       <div className={styles.home} id="home">
         <div className={styles.content}>
-          <h1>TECHNOWAYS</h1>
+          <h1>
+            <span>T</span>
+            <span>E</span>
+            <span>C</span>
+            <span>H</span>
+            <span>N</span>
+            <span>O</span>
+            <span>W</span>
+            <span>A</span>
+            <span>Y</span>
+            <span>S</span>
+          </h1>
           <br />
           <p>RETROTECH REVIVAL | MAR 15,16 2024</p>
           <br />
-          <Timer />
-          <Scroller />
+          <p>
+            <Timer />
+          </p>
+          <p>
+            <Scroller />
+          </p>
         </div>
       </div>
       <About />
       <DepartmentsPage />
       <Location />
-      <Footer/>
+      <Sponsers />
+      <Footer />
     </>
   );
 };

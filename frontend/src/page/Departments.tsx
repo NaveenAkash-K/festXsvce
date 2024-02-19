@@ -5,16 +5,22 @@ import departmentsData from "../data/departmentsData";
 import { useState } from "react";
 
 const DepartmentsPage: React.FC = () => {
-  const [bg,setBg] = useState('');
+  const [bg, setBg] = useState("");
   return (
     <>
       <Header />
-      <div className={styles.event} id="departments" style={{backgroundImage:`url(${bg})`}}>
-        <h1 className={ !bg ? styles.heading  : ` ${styles.whiteHeader}` }>Departments</h1>
+      <div
+        className={styles.event}
+        id="departments"
+        style={{ backgroundImage: `url(${bg})` }}
+      >
+        <h1 className={!bg ? styles.heading : ` ${styles.whiteHeader}`}>
+          Departments
+        </h1>
         <div className={styles.departmentGrid}>
           {departmentsData.map((ele) => (
             <DepartmentItem
-              setBG = {setBg}
+              setBG={setBg}
               image={ele.img}
               name={ele.name}
               key={ele.id}

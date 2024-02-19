@@ -4,7 +4,21 @@
     align-items: center;
 }
 
-.container {
+@keyframes slideFromLeft {
+    0% {
+      opacity: 0%;
+      left: -10rem;
+    }
+    100% {
+      opacity: 100%;
+      left: 0rem;
+    }
+  }
+  
+  .container {
+    position: relative;
+    left: 0rem;
+    animation: slideFromLeft 0.8s ease-in-out;
     padding: 7rem 2rem 0 2rem;
 
     & h1 {

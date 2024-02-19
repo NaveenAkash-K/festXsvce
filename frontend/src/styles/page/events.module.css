@@ -4,9 +4,23 @@
   justify-content: center;
 }
 
+@keyframes slideFromLeft {
+  0% {
+    opacity: 0%;
+    left: -10rem;
+  }
+  100% {
+    opacity: 100%;
+    left: 0rem;
+  }
+}
+
 .container {
   /* width: 80%; */
   /* background-color: red; */
+  position: relative;
+  left: 0rem;
+  animation: slideFromLeft 0.8s ease-in-out;
   padding: 7rem 2rem 0 2rem;
   & a {
     color: white;
@@ -39,7 +53,7 @@
   position: relative;
 }
 
-.cardContainer:hover{
+.cardContainer:hover {
   transform: scale(1.1);
 }
 

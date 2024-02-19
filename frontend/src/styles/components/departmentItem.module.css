@@ -1,5 +1,5 @@
 .department {
-  cursor: pointer;
+  /* cursor: pointer; */
   height: 250px;
   width: 210px;
   border-radius: 50% 50% 0 0 / 40% 40% 0 0;

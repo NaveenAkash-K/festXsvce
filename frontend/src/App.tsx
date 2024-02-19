@@ -95,7 +95,7 @@ function App() {
       </div>
       <ToastContainer position="top-center" theme="dark" />
       <RouterProvider router={router} />
-      <FestXsvce />
+      {/* <FestXsvce /> */}
     </>
   );
 }
