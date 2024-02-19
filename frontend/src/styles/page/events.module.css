@@ -32,10 +32,15 @@
 }
 
 .cardContainer {
-  /* cursor: pointer; */
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
   /* flex: 1; */
   max-width: 550px;
   position: relative;
+}
+
+.cardContainer:hover{
+  transform: scale(1.1);
 }
 
 .img {

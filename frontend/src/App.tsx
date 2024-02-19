@@ -15,6 +15,8 @@ import bg from "./assets/images/background.jpg";
 import AnimatedCursor from "react-animated-cursor";
 import { useEffect, useState } from "react";
 import React from "react";
+import GetPass from "./page/GetPass";
+import Sponsers from "./page/Sponsers";
 
 const router = createBrowserRouter([
   {
@@ -49,6 +51,14 @@ const router = createBrowserRouter([
     path: "/signup",
     element: <Signup />,
   },
+  {
+    path:"/getpass",
+    element:<GetPass/>
+  },
+  {
+    path:"/sponsers",
+    element:<Sponsers/>
+  }
 ]);
 
 function App() {
