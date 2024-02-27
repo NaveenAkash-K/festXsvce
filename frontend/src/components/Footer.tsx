@@ -1,5 +1,5 @@
 import styles from "../styles/components/footer.module.css";
-import svce from "../assets/images/svcelogo.png";
+// import svce from "../assets/images/svcelogo.png";
 import { Link } from "react-router-dom";
 import {
   IoLogoFacebook,
@@ -13,7 +13,7 @@ const Footer = () => {
   return (
     <div className={styles.footer}>
       <div className={styles.svceContainer}>
-        <img src={svce} alt="SVCE" className={styles.img} />
+        
         <h2>A National Level Technical Fest</h2>
         <IoCall className={styles.footerLogo} />
         <IoLocation className={styles.footerLogo} />
@@ -32,7 +32,7 @@ const Footer = () => {
           </p>
           <br />
           <p>
-            <Link style={{ color: "white" }} to={"/"}>
+            <Link style={{ color: "white" }} to={"/about"}>
               About
             </Link>
           </p>
@@ -48,7 +48,7 @@ const Footer = () => {
               Get Passes
             </Link>
           </p>
-          <br />
+          {/* <br />
           <p>
             <Link style={{ color: "white" }} to={"/departments"}>
               Workshops
@@ -59,7 +59,7 @@ const Footer = () => {
             <Link style={{ color: "white" }} to={"/departments"}>
               Proshows
             </Link>
-          </p>
+          </p> */}
           <br />
           <p>
             <Link style={{ color: "white" }} to={"/sponsors"}>

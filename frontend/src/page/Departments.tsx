@@ -2,31 +2,30 @@ import styles from "../styles/page/departments.module.css";
 import Header from "../components/Header";
 import DepartmentItem from "../components/DepartmentItem";
 import departmentsData from "../data/departmentsData";
-import { useState } from "react";
-import Footer from "../components/Footer";
+// import { useState } from "react";
+// import Footer from "../components/Footer";
 
 const DepartmentsPage: React.FC = () => {
-  const [bg, setBg] = useState("");
+  // const [bg, setBg] = useState("");
   return (
     <>
       <Header />
       <div className={styles.event} id="departments">
-        {bg && (
+        {/* {bg && (
           <div
             className={styles.blurBackground}
-            style={{
-              backgroundImage: `url(${bg})`,
-              backgroundPosition: "center",
-            }}
+            // style={{
+            //   backgroundImage: `url(${bg})`,
+            //   backgroundPosition: "center",
+            // }}
           />
-        )}
-        <h1 className={!bg ? styles.heading : styles.whiteHeader}>
-          Departments
+        )} */}
+        <h1 className={styles.heading}>
+          Events
         </h1>
         <div className={styles.departmentGrid}>
           {departmentsData.map((ele) => (
             <DepartmentItem
-              setBG={setBg}
               image={ele.img}
               name={ele.name}
               key={ele.id}

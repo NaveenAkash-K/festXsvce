@@ -5,6 +5,10 @@
 * {
   padding: 0;
   margin: 0;
+<<<<<<< HEAD
+  /* font-family: "Amarante", serif; */
+=======
+>>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
   font-family: "Space Grotesk", sans-serif;
   -webkit-tap-highlight-color: transparent;
 }

@@ -45,7 +45,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  max-width: 830px;
+  /* background-color: red; */
+  max-width: 60%;
   margin: auto auto;
   gap: 100px;
 }
@@ -53,5 +54,6 @@
 @media screen and (max-width: 565px) {
   .departmentGrid {
     gap: 30px;
+    max-width: 100%;
   }
 }

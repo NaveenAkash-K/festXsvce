@@ -1,11 +1,17 @@
 import Header from "../components/Header";
 import styles from "../styles/page/about.module.css";
 import svce from "../assets/images/svce.png";
+import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 const About: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
-      {/* <Header /> */}
+      <Header />
+        <div className={styles.space}></div>
       <div className={styles.container} id="about">
         <div className={styles.about}>
           <h1 className={styles.title}>About</h1>

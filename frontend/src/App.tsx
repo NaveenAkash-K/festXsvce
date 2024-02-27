@@ -11,7 +11,7 @@ import About from "./page/About";
 import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import bg from "./assets/images/newBackground.png";
+import bg from "./assets/images/newBackground.webp";
 // import AnimatedCursor from "react-animated-cursor";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -19,7 +19,12 @@ import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
 import ReactGA from "react-ga";
 import Footer from "./components/Footer";
+<<<<<<< HEAD
+import Workshops from "./page/Workshops";
+import Proshows from "./page/Proshows";
+=======
 import EventForm from "./page/EventForm";
+>>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
 
 ReactGA.initialize("G-EGQRVRM8QK");
 
@@ -64,6 +69,8 @@ const router = createBrowserRouter([
     path: "/departments/:department/:eventId",
     element: <EventInfo />,
   },
+<<<<<<< HEAD
+=======
   // {
   //   path: "/login",
   //   element: <Login />,
@@ -72,13 +79,40 @@ const router = createBrowserRouter([
   //   path: "/signup",
   //   element: <Signup />,
   // },
+>>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
   {
     path: "/getPass",
     element: <GetPass />,
   },
   {
+<<<<<<< HEAD
+    path: "/about",
+    element: (
+      <>
+        <About />
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/workshops",
+    element: (
+      <>
+        <Workshops />
+      </>
+    ),
+  },
+  {
+    path: "/proshows",
+    element: (
+      <>
+        <Proshows />
+      </>
+    ),
+=======
     path: "/eventForm",
     element: <EventForm />,
+>>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
   },
   {
     path: "/sponsors",

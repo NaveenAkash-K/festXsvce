@@ -3,12 +3,12 @@
   height: 3.3rem;
   position: relative;
   width: 1.7rem;
-  border: #4d291a 2px solid;
+  border: #fff 2px solid;
   border-radius: 100px;
   display: flex;
   /* align-items: center; */
   justify-content: center;
-  /* cursor: pointer; */
+  cursor: pointer;
 }
 
 .circle {
@@ -16,11 +16,11 @@
   position: absolute;
   width: 1.4rem;
   height: 1.4rem;
-  background-color: #4d291a;
+  background-color: #fff;
   border-radius: 15px;
   animation-name: scroll;
   animation-duration: 1.2s;
-  animation-timing-function: cubic-bezier(.55,0,.55,1);
+  animation-timing-function: ease-out;
   animation-direction: alternate-reverse;
   animation-iteration-count: infinite;
 }
