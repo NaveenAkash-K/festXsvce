@@ -55,25 +55,25 @@ const EventInfo: React.FC = () => {
           <div className={styles.contextContainer}>
             <p></p>
             <div className={styles.details}>
-              <div
+              <div className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={calIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{event.date}</h3>
               </div>
-              <div
+              <div className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={timeIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{event.time}</h3>
               </div>
-              <div
+              <div className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={classIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{event.venue}</h3>
               </div>
-              <div
+              <div className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={userIcon} alt="~" width={"18vw"} height={"19vh"} />

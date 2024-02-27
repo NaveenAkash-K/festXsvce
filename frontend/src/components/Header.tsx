@@ -1,6 +1,6 @@
 import styles from "../styles/components/header.module.css";
 import logo from "../assets/images/festXsvce_logo.png";
-import { useLocation, useNavigate } from "react-router-dom";
+import { useLocation, useNavigate, NavLink } from "react-router-dom";
 import { Link } from "react-scroll";
 import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
@@ -23,9 +23,10 @@ function Header() {
     navigate("/login");
   };
 
-  const navItemHandle = () => {
+  const navItemHandle = (str:string) => {
     if (currentPath !== "/") {
-      navigate("/");
+      // navigate("/");
+      window.location.href = `http://localhost:3000/#${str}`
     }
     setIsNavOpen(false);
   };
@@ -46,20 +47,16 @@ function Header() {
         />
         {/* </section> */}
         <nav>
-          <Link
+          {/* <Link
             className={styles.mobileLink}
-            to={"home"}
-            smooth={true}
-            duration={700}
+            to={"/home"}
             onClick={navItemHandle}
           >
             Home
           </Link>
           <Link
             className={styles.mobileLink}
-            to={"about"}
-            smooth={true}
-            duration={700}
+            to={"/about"}
             onClick={navItemHandle}
             offset={80}
           >
@@ -67,18 +64,14 @@ function Header() {
           </Link>
           <Link
             className={styles.mobileLink}
-            to={"departments"}
-            smooth={true}
-            duration={700}
+            to={"/departments"}
             onClick={navItemHandle}
           >
             Events
           </Link>
           <Link
             className={styles.mobileLink}
-            to={"passes"}
-            smooth={true}
-            duration={700}
+            to={"/passes"}
             onClick={() => {
               navigate("/getPass");
             }}
@@ -87,41 +80,49 @@ function Header() {
           </Link>
           <Link
             className={styles.mobileLink}
-            to={"sponsors"}
-            smooth={true}
-            duration={700}
+            to={"/sponsors"}
             onClick={navItemHandle}
           >
             Sponsers
           </Link>
           <Link
             className={styles.mobileLink}
-            to={"location"}
-            smooth={true}
-            duration={700}
+            to={"/location"}
             onClick={navItemHandle}
           >
             Location
-          </Link>
+          </Link> */}
+          <NavLink
+            to={"/"}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to={"/about"}
+          >
+            About
+          </NavLink>
+          <NavLink
+            to={"/departments"}
+          >
+            Events
+          </NavLink>
+          <NavLink
+            to={"/getPass"}
+          >
+            Get Passes
+          </NavLink>
+          <NavLink
+            to={"/sponsors"}
+          >
+            Sponsers
+          </NavLink>
+          <NavLink
+            to={"/location"}
+          >
+            Location
+          </NavLink>
         </nav>
-        <section>
-          <br />
-          {localData !== null ? <p>{user.username}</p> : null}
-          <br />
-          {localData !== null ? <p onClick={logout}>Logout</p> : null}
-          <br />
-          {localData === null ? (
-            <p
-              onClick={() => {
-                setIsNavOpen(false);
-                navigate("/login");
-              }}
-            >
-              Signup
-            </p>
-          ) : null}
-          <br />
-        </section>
       </div>
 
       <div className={styles.container}>
@@ -133,76 +134,44 @@ function Header() {
           }}
         />
         <nav className={styles.navDesktop}>
-          <Link
-            to={"home"}
-            smooth={true}
-            duration={700}
-            onClick={navItemHandle}
+          <NavLink
+            to={"/"}
           >
             Home
-          </Link>
-          <Link
-            to={"about"}
-            smooth={true}
-            duration={700}
-            onClick={navItemHandle}
-            offset={80}
+          </NavLink>
+          <NavLink
+            to={"/about"}
           >
             About
-          </Link>
-          <Link
-            to={"departments"}
-            smooth={true}
-            duration={700}
-            onClick={navItemHandle}
+          </NavLink>
+          <NavLink
+            to={"/departments"}
           >
             Events
-          </Link>
-          <Link
-            to={"passes"}
-            smooth={true}
-            duration={700}
-            onClick={() => {
-              navigate("/getPass");
-            }}
+          </NavLink>
+          <NavLink
+            to={"/getPass"}
           >
             Get Passes
-          </Link>
-          <Link
-            to={"sponsors"}
-            smooth={true}
-            duration={700}
-            onClick={navItemHandle}
+          </NavLink>
+          <NavLink
+            to={"/sponsors"}
           >
             Sponsers
-          </Link>
-          <Link
-            to={"location"}
-            smooth={true}
-            duration={700}
-            onClick={navItemHandle}
+          </NavLink>
+          <NavLink
+            to={"/location"}
           >
             Location
-          </Link>
-          <hr style={{ transform: "rotate(180deg)" }} />
-          {localData !== null ? (
-            <p style={{ color: "white" }}>{user.username}</p>
-          ) : null}
-          {localData !== null ? (
-            <p style={{ color: "white" }} onClick={logout}>
-              Logout
-            </p>
-          ) : null}
-          {localData === null ? (
-            <p
-              style={{ color: "white" }}
-              onClick={() => {
-                navigate("/login");
-              }}
-            >
-              Signup
-            </p>
-          ) : null}
+          </NavLink>
+          {/* <a href="/#home" className={styles.mobileLink}>
+            Home
+          </a>
+          <p onClick={navItemHandle}  className={styles.mobileLink}>Events</p>
+          <p onClick={navItemHandle}  className={styles.mobileLink}>About</p>
+          <p onClick={navItemHandle}  className="">Get Passes</p>
+          <p onClick={navItemHandle}  className={styles.mobileLink}>Sponsers</p>
+          <p onClick={navItemHandle}  className={styles.mobileLink}>Location</p> */}
         </nav>
       </div>
     </>

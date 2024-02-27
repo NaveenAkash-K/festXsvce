@@ -64,12 +64,22 @@
   .container {
     width: 90%;
   }
-
+  .wrapper{
+    &h1{
+      font-size: 18px;
+    }
+  }
   .contextContainer {
     background-size: contain;
-    padding: 2rem 2rem 2rem 28vw;
+    padding: 2rem ;
   }
   .details {
     display: block;
+    /* display: flex;
+    flex-wrap: wrap;
+    gap: 15px; */
+  }
+  .text{
+    /* font-size: 10px; */
   }
 }

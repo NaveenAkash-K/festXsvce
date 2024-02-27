@@ -4,9 +4,11 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
   /* border-radius: 44px; */
-    background-color: #0a121a67;
-    border: 1px solid #503938;
+  background-color: #0a121a67;
+  border: 1px solid #503938;
   align-items: center;
   overflow: hidden;
   border-radius: 0 0 5% 5% / 0 0 80% 80%;
@@ -29,7 +31,8 @@
 .close {
   height: 2rem;
   width: 2rem;
-  color: #4d291a;
+  color: white;
+  transition: all 0.4s ease-in;
   margin: 1.8rem 0rem 0 0rem;
   position: absolute;
   right: 2rem;
@@ -37,8 +40,11 @@
 
 .navMobile {
   display: none;
+  border-radius: 30px 0 0 30px;
+  border: 1px solid #503938;
   position: fixed;
-  background-color: #a37b51;
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
   /* right: 0; */
   /* right: -30rem; */
   z-index: 10;
@@ -46,31 +52,34 @@
   height: 100%;
   padding: 0rem 0 0 1rem;
   font-size: x-large;
-  transition: all cubic-bezier(0.24, 0.23, 0, 1) 400ms;
+  transition: all  400ms ease-out;
 }
 
-.navMobile > nav > a {
+.navMobile>nav>a {
   text-decoration: none;
   font-family: "DM Sans";
-  color: #4d291a;
+  color: white;
+  
 }
 
-.navMobile > nav {
+.navMobile>nav {
   margin: 6rem 0 0 1rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
 }
 
-.navMobile > section {
+.navMobile>section {
   padding: 0rem 0 0 1rem;
   bottom: 0;
-  color: #4d291a;
+  color: white;
+  
   position: absolute;
 }
 
-.navMobile > section > p {
-  color: #4d291a;
+.navMobile>section>p {
+  color: white;
+  
   font-family: "DM Sans";
 }
 
@@ -82,6 +91,7 @@
     text-decoration: none;
     color: white;
     transition: all 200ms ease-in-out;
+
     &:hover {
       transform: translateY(-5px);
       color: #ffba7a;
@@ -109,12 +119,15 @@
   .container {
     border-radius: 0 0 15% 15% / 0 0 60% 60%;
   }
+
   .navDesktop {
     display: none;
   }
+
   .navMobile {
     display: block;
   }
+
   .menu {
     display: block;
   }

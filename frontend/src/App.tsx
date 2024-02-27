@@ -11,7 +11,7 @@ import Signup from "./page/Signup";
 import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import bg from "./assets/images/newBackground.png";
+import bg from "./assets/images/newBackground.webp";
 // import AnimatedCursor from "react-animated-cursor";
 import { useEffect, useState } from "react";
 import React from "react";
@@ -64,16 +64,17 @@ const router = createBrowserRouter([
     element: <EventInfo />,
   },
   {
-    path: "/login",
-    element: <Login />,
-  },
-  {
-    path: "/signup",
-    element: <Signup />,
-  },
-  {
     path: "/getPass",
     element: <GetPass />,
+  },
+  {
+    path: "/about",
+    element: (
+      <>
+        <About />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/sponsors",

@@ -5,14 +5,11 @@ const DepartmentItem: React.FC<{
   image: string;
   name: string;
   id: string;
-  setBG: (bg: string) => void;
 }> = (props) => {
   return (
     <Link to={`/departments/${props.id}`}>
       <div
         className={styles.department}
-        onMouseEnter={()=>props.setBG(props.image)}
-        onMouseLeave={()=>props.setBG("")}
         style={{ backgroundImage: `url(${props.image})` }}
       >
         <div className={styles.nameDiv}>

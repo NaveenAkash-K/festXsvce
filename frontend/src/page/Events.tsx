@@ -4,11 +4,13 @@ import Header from "../components/Header";
 import eventsData from "../data/eventsData";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router";
-
+import { useEffect } from "react";
 const Events: React.FC = () => {
   const { department } = useParams();
   const navigate = useNavigate();
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Header />
@@ -27,8 +29,6 @@ const Events: React.FC = () => {
                       navigate(`./${index}`);
                     }}
                   >
-                    {/* <img src={eve} alt="asda" className={styles.img} /> */}
-                    <div className={styles.img}/>
                     <h4 className={styles.title}>{event.name}</h4>
                     <h4 className={styles.know}>Know More</h4>
                   </div>

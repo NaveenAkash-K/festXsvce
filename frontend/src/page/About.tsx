@@ -1,11 +1,12 @@
 import Header from "../components/Header";
 import styles from "../styles/page/about.module.css";
 import svce from "../assets/images/svce.png";
+import Footer from "../components/Footer";
 
 const About: React.FC = () => {
   return (
     <>
-      {/* <Header /> */}
+      <Header />
       <div className={styles.container} id="about">
         <div className={styles.about}>
           <h1 className={styles.title}>About</h1>
