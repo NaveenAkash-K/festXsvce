@@ -11,8 +11,8 @@ import About from "./page/About";
 import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import bg from "./assets/images/background.jpg";
-import AnimatedCursor from "react-animated-cursor";
+import bg from "./assets/images/newBackground.png";
+// import AnimatedCursor from "react-animated-cursor";
 import { useEffect, useState } from "react";
 import React from "react";
 import GetPass from "./page/GetPass";
@@ -92,18 +92,18 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  const AnimatedCursorMemo = React.memo(AnimatedCursor);
-  const [screenWidth, setScreenWidth] = useState<number>(0);
-  useEffect(() => {
-    setScreenWidth(window.innerWidth);
-    window.addEventListener("resize", () => {
-      setScreenWidth(window.innerWidth);
-    });
-  }, []);
+  // const AnimatedCursorMemo = React.memo(AnimatedCursor);
+  // const [screenWidth, setScreenWidth] = useState<number>(0);
+  // useEffect(() => {
+  //   setScreenWidth(window.innerWidth);
+  //   window.addEventListener("resize", () => {
+  //     setScreenWidth(window.innerWidth);
+  //   });
+  // }, []);
 
   return (
     <>
-      {screenWidth > 770 ? (
+      {/* {screenWidth > 770 ? (
         <AnimatedCursorMemo
           innerSize={5}
           outerSize={30}
@@ -119,7 +119,7 @@ function App() {
             mixBlendMode: "difference",
           }}
         />
-      ) : null}
+      ) : null} */}
       <div className="background-container">
         <img src={bg} alt="Background Image" className="background-image" />
       </div>

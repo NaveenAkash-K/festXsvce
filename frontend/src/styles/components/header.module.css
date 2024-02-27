@@ -4,6 +4,9 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  /* border-radius: 44px; */
+    background-color: #0a121a67;
+    border: 1px solid #503938;
   align-items: center;
   overflow: hidden;
   border-radius: 0 0 5% 5% / 0 0 80% 80%;
