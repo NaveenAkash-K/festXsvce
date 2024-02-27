@@ -1,7 +1,7 @@
 import styles from "../styles/components/header.module.css";
 import logo from "../assets/images/festXsvce_logo.png";
 import { useLocation, useNavigate, NavLink } from "react-router-dom";
-import { Link } from "react-scroll";
+// import { Link } from "react-scroll";
 import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
@@ -113,6 +113,16 @@ function Header() {
             Get Passes
           </NavLink>
           <NavLink
+            to={"/workshops"}
+          >
+            Workshops
+          </NavLink>
+          <NavLink
+            to={"/proshows"}
+          >
+            Proshows
+          </NavLink>
+          <NavLink
             to={"/sponsors"}
           >
             Sponsers
@@ -122,6 +132,7 @@ function Header() {
           >
             Location
           </NavLink>
+          
         </nav>
       </div>
 
@@ -153,6 +164,16 @@ function Header() {
             to={"/getPass"}
           >
             Get Passes
+          </NavLink>
+          <NavLink
+            to={"/workshops"}
+          >
+            Workshops
+          </NavLink>
+          <NavLink
+            to={"/proshows"}
+          >
+            Proshows
           </NavLink>
           <NavLink
             to={"/sponsors"}

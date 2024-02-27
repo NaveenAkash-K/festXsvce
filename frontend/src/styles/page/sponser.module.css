@@ -1,11 +1,14 @@
-.body{
+.body {
     padding: 7rem 2rem 0 2rem;
-    & h1{
+
+    & h1 {
         text-align: center;
     }
+
     min-height: 100vh;
 }
-.comingSoon{
+
+.comingSoon {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,13 +16,12 @@
     margin: auto;
     min-height: 70vh;
     text-align: center;
-    border: 1px solid #4d291a;
+    background-color: rgba(50, 44, 44, 0.258);
+    backdrop-filter: blur(10px);
+    border: 1px solid #503938;
     border-radius: 30px;
     color: white;
-    background-color: #4d291aaa;
     margin-top: 1rem;
     transition: all 0.2s ease-in-out;
-    &:hover{
-        transform: scale(1.1);
-    }
+
 }

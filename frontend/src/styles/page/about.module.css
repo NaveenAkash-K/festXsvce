@@ -1,14 +1,18 @@
-
-
 .container {
   min-height: 85vh;
-  padding-top: 10rem;
+  padding: 2rem;
   width: 80%;
   margin: auto;
+  border: 1px solid #503938;
+  border-radius: 44px;
+  /* background-color: red; */
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
+}
+.space{
+  height: 7rem ;
 }
 .title {
-  margin: 2%;
-  /* color: #4d291a; */
   font-size: 50px;
 }
 
@@ -18,14 +22,14 @@
     font-weight: 1;
     /* letter-spacing: 0.2rem; */
     word-spacing: 0.4rem;
-    margin: 2%;
+    /* margin: 2%; */
     /* color: #4d291a; */
   }
 }
 .aboutSvce {
   text-align: justify;
 
-  margin-top: 3rem;
+  /* margin-top: 3rem; */
   /* text-align: end; */
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +44,7 @@
   & h3 {
     font-weight: 1;
     word-spacing: 0.4rem;
-    margin-bottom: 2%;
+    /* margin-bottom: 2%; */
     /* color: #4d291a; */
   }
 }
@@ -49,7 +53,7 @@
   width: 30%;
   /* height: 200px; */
   margin: 0 0% 0 2%;
-  margin-top: 3%;
+  margin-top: 5%;
 }
 
 

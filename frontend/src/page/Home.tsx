@@ -7,12 +7,14 @@ import DepartmentsPage from "./Departments";
 import Timer from "../components/Timer";
 import Footer from "../components/Footer";
 import Sponsers from "./Sponsers";
-
+import {Link} from 'react-scroll';
+import {NavLink} from 'react-router-dom'
 const Home = () => {
   return (
     <>
       <Header />
       <div className={styles.home} id="home">
+      <div style={{marginTop:'4%'}}></div>
         <div className={styles.content}>
           <h1>
             <span>T</span>
@@ -35,6 +37,32 @@ const Home = () => {
           <p>
             <Scroller />
           </p>
+        </div>
+        <div style={{height:'8%'}}></div>
+        <div className={styles.eventInfo}>
+          <div className={styles.title}>
+          <Link
+          to="departments"
+          smooth={true} duration={700}
+          >
+            Events
+          </Link>
+            </div>
+          <div className={styles.title}>
+            <NavLink to={"/workshops"} style={{textDecoration:'none',color:'white'}}>
+            Workshops
+            </NavLink>
+            </div>
+            <div className={styles.title}>
+            <NavLink to={"/proshows"} style={{textDecoration:'none',color:'white'}}>
+            Proshows
+            </NavLink>
+            </div>
+            <div className={styles.title}>
+            <NavLink to={"/"} style={{textDecoration:'none',color:'white'}}>
+              Auto Expo
+              </NavLink>
+              </div>
         </div>
       </div>
       <About />

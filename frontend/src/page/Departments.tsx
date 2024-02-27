@@ -2,8 +2,8 @@ import styles from "../styles/page/departments.module.css";
 import Header from "../components/Header";
 import DepartmentItem from "../components/DepartmentItem";
 import departmentsData from "../data/departmentsData";
-import { useState } from "react";
-import Footer from "../components/Footer";
+// import { useState } from "react";
+// import Footer from "../components/Footer";
 
 const DepartmentsPage: React.FC = () => {
   // const [bg, setBg] = useState("");
@@ -21,7 +21,7 @@ const DepartmentsPage: React.FC = () => {
           />
         )} */}
         <h1 className={styles.heading}>
-          Departments
+          Events
         </h1>
         <div className={styles.departmentGrid}>
           {departmentsData.map((ele) => (

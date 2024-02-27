@@ -6,8 +6,12 @@ import userIcon from "../assets/images/icons/userIcon.png";
 import classIcon from "../assets/images/icons/classroomIcon.png";
 import eventsData from "../data/eventsData";
 import { Link, useParams } from "react-router-dom";
+import { useEffect } from "react";
 
 const EventInfo: React.FC = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+  },[])
   const { department, eventId } = useParams();
   var event: {
     name: string;

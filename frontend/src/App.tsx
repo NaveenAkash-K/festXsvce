@@ -19,6 +19,8 @@ import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
 import ReactGA from "react-ga";
 import Footer from "./components/Footer";
+import Workshops from "./page/Workshops";
+import Proshows from "./page/Proshows";
 
 ReactGA.initialize("G-EGQRVRM8QK");
 
@@ -73,6 +75,22 @@ const router = createBrowserRouter([
       <>
         <About />
         <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/workshops",
+    element: (
+      <>
+        <Workshops />
+      </>
+    ),
+  },
+  {
+    path: "/proshows",
+    element: (
+      <>
+        <Proshows />
       </>
     ),
   },
