@@ -6,16 +6,16 @@ import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 function Header() {
-  const localData = localStorage.getItem("user");
+  // const localData = localStorage.getItem("user");
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
-  var user;
+  // var user;
 
   const location = useLocation();
   const currentPath = location.pathname;
 
-  if (localData !== null) {
-    user = JSON.parse(localData);
-  }
+  // if (localData !== null) {
+  //   user = JSON.parse(localData);
+  // }
   const navigate = useNavigate();
 
   const logout = () => {
@@ -104,7 +104,7 @@ function Header() {
             Location
           </Link>
         </nav>
-        <section>
+        {/* <section>
           <br />
           {localData !== null ? <p>{user.username}</p> : null}
           <br />
@@ -121,7 +121,7 @@ function Header() {
             </p>
           ) : null}
           <br />
-        </section>
+        </section> */}
       </div>
 
       <div className={styles.container}>
@@ -184,8 +184,8 @@ function Header() {
           >
             Location
           </Link>
-          <hr style={{ transform: "rotate(180deg)" }} />
-          {localData !== null ? (
+          {/* <hr style={{ transform: "rotate(180deg)" }} /> */}
+          {/* {localData !== null ? (
             <p style={{ color: "white" }}>{user.username}</p>
           ) : null}
           {localData !== null ? (
@@ -202,7 +202,7 @@ function Header() {
             >
               Signup
             </p>
-          ) : null}
+          ) : null} */}
         </nav>
       </div>
     </>
