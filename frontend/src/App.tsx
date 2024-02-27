@@ -19,12 +19,9 @@ import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
 import ReactGA from "react-ga";
 import Footer from "./components/Footer";
-<<<<<<< HEAD
 import Workshops from "./page/Workshops";
 import Proshows from "./page/Proshows";
-=======
 import EventForm from "./page/EventForm";
->>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
 
 ReactGA.initialize("G-EGQRVRM8QK");
 
@@ -69,8 +66,6 @@ const router = createBrowserRouter([
     path: "/departments/:department/:eventId",
     element: <EventInfo />,
   },
-<<<<<<< HEAD
-=======
   // {
   //   path: "/login",
   //   element: <Login />,
@@ -79,13 +74,11 @@ const router = createBrowserRouter([
   //   path: "/signup",
   //   element: <Signup />,
   // },
->>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
   {
     path: "/getPass",
     element: <GetPass />,
   },
   {
-<<<<<<< HEAD
     path: "/about",
     element: (
       <>
@@ -109,10 +102,10 @@ const router = createBrowserRouter([
         <Proshows />
       </>
     ),
-=======
+  },
+  {
     path: "/eventForm",
     element: <EventForm />,
->>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
   },
   {
     path: "/sponsors",
