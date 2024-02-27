@@ -8,7 +8,7 @@
 }
 .title {
   margin: 2%;
-  color: #4d291a;
+  /* color: #4d291a; */
   font-size: 50px;
 }
 
@@ -19,7 +19,7 @@
     /* letter-spacing: 0.2rem; */
     word-spacing: 0.4rem;
     margin: 2%;
-    color: #4d291a;
+    /* color: #4d291a; */
   }
 }
 .aboutSvce {
@@ -41,7 +41,7 @@
     font-weight: 1;
     word-spacing: 0.4rem;
     margin-bottom: 2%;
-    color: #4d291a;
+    /* color: #4d291a; */
   }
 }
 

@@ -1,5 +1,5 @@
 import styles from "../styles/page/events.module.css";
-import eve from "../assets/images/eventCard.png";
+// import eve from "../assets/images/eventCard.png";
 import Header from "../components/Header";
 import eventsData from "../data/eventsData";
 import { useParams } from "react-router";
@@ -27,7 +27,8 @@ const Events: React.FC = () => {
                       navigate(`./${index}`);
                     }}
                   >
-                    <img src={eve} alt="asda" className={styles.img} />
+                    {/* <img src={eve} alt="asda" className={styles.img} /> */}
+                    <div className={styles.img}/>
                     <h4 className={styles.title}>{event.name}</h4>
                     <h4 className={styles.know}>Know More</h4>
                   </div>
