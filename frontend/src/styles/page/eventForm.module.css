@@ -1,0 +1,13 @@
+.container {
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 7rem;
+  border-radius: 44px;
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
+  background-size: 100% 100%;
+  padding: 2rem 2rem 2rem 2rem;
+  line-height: 1.7rem;
+  border: 1px solid #503938;
+}
