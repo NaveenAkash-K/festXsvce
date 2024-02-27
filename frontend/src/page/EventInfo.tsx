@@ -51,8 +51,8 @@ const EventInfo: React.FC = () => {
       <Header />
       <div className={styles.container}>
         <div className={styles.wrapper}>
+            <h1 style={{textAlign:'center',paddingBottom:'30px'}}>{event.name}</h1>
           <div className={styles.contextContainer}>
-            <h2>{event.name}</h2>
             <p></p>
             <div className={styles.details}>
               <div

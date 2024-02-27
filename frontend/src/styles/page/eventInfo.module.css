@@ -8,18 +8,23 @@
   padding: 7rem 0 3rem 0;
 }
 
-.img {
+/* .img {
   height: 80vh;
   position: relative;
   width: 100%;
   margin: auto;
-}
+} */
 
 .contextContainer {
-  background: url("../../assets/images/eventCard.png");
+  /* background: url("../../assets/images/eventCard.png"); */
+  border-radius: 44px;
+  /* background-color: red; */
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
   background-size: 100% 100%;
-  padding: 2rem 2rem 2rem 25vw;
+  padding: 2rem 2rem 2rem 2rem;
   line-height: 1.7rem;
+  border: 1px solid #503938;
 }
 
 .contextContainer > p:nth-child(2) {
