@@ -1,8 +1,8 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
-import styles from "../styles/page/proshows.module.css";
+import styles from "../styles/page/autoexpo.module.css";
 import { NavLink } from "react-router-dom";
-const Proshows: React.FC = () => {
+const AutoExpo: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -11,7 +11,7 @@ const Proshows: React.FC = () => {
       <Header />
       <div className={styles.space}></div>
       <div className={styles.container}>
-        <h1 className={styles.title}>Proshows</h1>
+        <h1 className={styles.title}>Auto Expo</h1>
         <div className={styles.workContainer}>
           <NavLink to={"/"} className={styles.button}>
             Coming Soon!!
@@ -23,4 +23,4 @@ const Proshows: React.FC = () => {
   );
 };
 
-export default Proshows;
+export default AutoExpo;

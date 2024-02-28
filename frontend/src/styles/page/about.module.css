@@ -1,3 +1,19 @@
+.aboutData{
+  font-family: "Space Grotesk", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* background-color: red; */
+  flex-wrap: wrap;
+  margin-bottom: 3vh;
+}
+.aboutContainer{
+  display: flex;
+  flex-direction: column;
+}
+.aboutContainer > h4{
+  text-align: center;
+}
 .container {
   min-height: 5vh;
   padding: 2rem;
@@ -9,12 +25,18 @@
   backdrop-filter: blur(10px);
   font-family: "Space Grotesk", sans-serif;
 }
+
 .space{
   height: 7rem ;
 }
-.title {
+.title{
+  margin-top: 2vh;
   font-size: 40px;
   font-family: "Space Grotesk", sans-serif;
+}
+
+.title:nth-child(1) {
+  margin: 3vh 0;
 }
 
 .about {
@@ -48,6 +70,9 @@
 
 
 @media screen and (max-width: 480px) {
+  .aboutData{
+    flex-wrap: wrap;
+  }
   .aboutSvce {
     margin-top: 3rem;
     display: flex;
@@ -65,6 +90,9 @@
 }
 
 @media screen and (min-width: 480px) and (max-width: 1000px) {
+  .aboutData{
+    flex-wrap: wrap;
+  }
   .aboutSvce {
     margin-top: 3rem;
 

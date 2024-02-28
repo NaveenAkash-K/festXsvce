@@ -1,6 +1,10 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import styles from "../styles/page/sponser.module.css";
 const Sponsers: React.FC = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div id="sponsors">
       <Header />

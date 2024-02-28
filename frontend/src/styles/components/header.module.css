@@ -1,4 +1,5 @@
 .container {
+  font-family: "Space Grotesk", sans-serif;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.325);
   width: 100%;
@@ -7,7 +8,6 @@
   background-color: rgba(50, 44, 44, 0.258);
   backdrop-filter: blur(10px);
   border: 1px solid #503938;
-  /* border-radius: 44px; */
   background-color: #0a121a67;
   align-items: center;
   overflow: hidden;
@@ -16,6 +16,12 @@
   font-weight: bold;
 }
 
+.active{
+  color: red;
+}
+.inactive{
+  color: white;
+}
 .logo {
   height: 70px;
   margin: 0.5rem 0.5rem 0.5rem 2rem;
@@ -46,8 +52,6 @@
   position: fixed;
   background-color: rgba(50, 44, 44, 0.258);
   backdrop-filter: blur(10px);
-  /* right: 0; */
-  /* right: -30rem; */
   z-index: 10;
   width: 70%;
   height: 100%;
@@ -59,8 +63,6 @@
 .navMobile>nav>a {
   text-decoration: none;
   font-family: "DM Sans";
-  color: white;
-  
 }
 
 .navMobile>nav {
@@ -90,11 +92,11 @@
   width: 60%;
   & a {
     text-decoration: none;
-    color: white;
     transition: all 200ms ease-in-out;
-
     &:hover {
       transform: translateY(-5px);
+      text-decoration: none;
+      display: inline-block;
       color: #eb0029;
     }
   }
@@ -109,16 +111,15 @@
 }
 
 .userDetails {
-  /* position: relative; */
   color: white;
   display: flex;
   gap: 1rem;
   margin-right: 3rem;
 }
 
-@media screen and (width < 770px) {
+@media screen and (max-width: 770px) {
   .container {
-    border-radius: 0 0 15% 15% / 0 0 60% 60%;
+    border-radius: 0 0 22px 22px;
   }
 
   .navDesktop {

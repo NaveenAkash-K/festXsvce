@@ -94,48 +94,55 @@ function Header() {
           </Link> */}
           <NavLink
             to={"/"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Home
           </NavLink>
           <NavLink
             to={"/about"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             About
           </NavLink>
           <NavLink
             to={"/departments"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Events
           </NavLink>
           <NavLink
             to={"/getPass"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Get Passes
           </NavLink>
           <NavLink
             to={"/workshops"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Workshops
           </NavLink>
           <NavLink
             to={"/proshows"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Proshows
           </NavLink>
           <NavLink
             to={"/sponsors"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Sponsers
           </NavLink>
           <NavLink
             to={"/location"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Location
           </NavLink>
           
         </nav>
       </div>
-
       <div className={styles.container}>
         <img src={logo} alt="Tech Fest" className={styles.logo} />
         <IoMenu
@@ -147,52 +154,52 @@ function Header() {
         <nav className={styles.navDesktop}>
           <NavLink
             to={"/"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Home
           </NavLink>
           <NavLink
             to={"/about"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             About
           </NavLink>
           <NavLink
             to={"/departments"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Events
           </NavLink>
           <NavLink
             to={"/getPass"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Get Passes
           </NavLink>
           <NavLink
             to={"/workshops"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Workshops
           </NavLink>
           <NavLink
             to={"/proshows"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Proshows
           </NavLink>
           <NavLink
             to={"/sponsors"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Sponsers
           </NavLink>
           <NavLink
             to={"/location"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Location
           </NavLink>
-          {/* <a href="/#home" className={styles.mobileLink}>
-            Home
-          </a>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>Events</p>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>About</p>
-          <p onClick={navItemHandle}  className="">Get Passes</p>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>Sponsers</p>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>Location</p> */}
         </nav>
       </div>
     </>
