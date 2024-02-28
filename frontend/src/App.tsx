@@ -68,6 +68,24 @@ const router = createBrowserRouter([
     element: <GetPass />,
   },
   {
+    path: "/workshops",
+    element: (
+      <>
+        <Workshops />,
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/proshows",
+    element: (
+      <>
+        <Proshows />,
+        <Footer />
+      </>
+    ),
+  },
+  {
     path: "/about",
     element: (
       <>

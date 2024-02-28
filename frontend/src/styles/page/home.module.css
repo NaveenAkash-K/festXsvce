@@ -227,6 +227,11 @@
   text-align: center;
 }
 
+.content >h1{
+  font-size: 5vw;
+
+}
+
 .content > h1 > span:nth-child(1) {
   animation: drop 800ms ease-in;
   position: relative;
