@@ -9,8 +9,9 @@ import About from "./page/About";
 // import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import bg from "./assets/images/newBackground.png";
-// import { useEffect, useState } from "react";
+import bg from "./assets/images/newBackground.webp";
+// import AnimatedCursor from "react-animated-cursor";
+import { useEffect, useState } from "react";
 import React from "react";
 import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
@@ -73,22 +74,6 @@ const router = createBrowserRouter([
       <>
         <About />
         <Footer />
-      </>
-    ),
-  },
-  {
-    path: "/workshops",
-    element: (
-      <>
-        <Workshops />
-      </>
-    ),
-  },
-  {
-    path: "/proshows",
-    element: (
-      <>
-        <Proshows />
       </>
     ),
   },
