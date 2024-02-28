@@ -185,14 +185,6 @@ function Header() {
           >
             Location
           </NavLink>
-          {/* <a href="/#home" className={styles.mobileLink}>
-            Home
-          </a>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>Events</p>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>About</p>
-          <p onClick={navItemHandle}  className="">Get Passes</p>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>Sponsers</p>
-          <p onClick={navItemHandle}  className={styles.mobileLink}>Location</p> */}
         </nav>
       </div>
     </>

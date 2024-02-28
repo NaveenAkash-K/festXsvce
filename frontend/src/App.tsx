@@ -18,6 +18,7 @@ import ReactGA from "react-ga";
 import Footer from "./components/Footer";
 import Workshops from "./page/Workshops";
 import Proshows from "./page/Proshows";
+import EventForm from "./page/EventForm";
 
 ReactGA.initialize("G-EGQRVRM8QK");
 
@@ -90,6 +91,11 @@ const router = createBrowserRouter([
         <Proshows />
       </>
     ),
+
+  },
+  {
+    path: "/eventForm",
+    element: <EventForm />,
   },
   {
     path: "/sponsors",
