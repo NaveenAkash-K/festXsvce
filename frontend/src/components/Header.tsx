@@ -94,66 +94,55 @@ function Header() {
           </Link> */}
           <NavLink
             to={"/"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Home
           </NavLink>
           <NavLink
             to={"/about"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             About
           </NavLink>
           <NavLink
             to={"/departments"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Events
           </NavLink>
           <NavLink
             to={"/getPass"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Get Passes
           </NavLink>
           <NavLink
             to={"/workshops"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Workshops
           </NavLink>
           <NavLink
             to={"/proshows"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Proshows
           </NavLink>
           <NavLink
             to={"/sponsors"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Sponsers
           </NavLink>
           <NavLink
             to={"/location"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Location
           </NavLink>
           
         </nav>
-        {/* <section>
-          <br />
-          {localData !== null ? <p>{user.username}</p> : null}
-          <br />
-          {localData !== null ? <p onClick={logout}>Logout</p> : null}
-          <br />
-          {localData === null ? (
-            <p
-              onClick={() => {
-                setIsNavOpen(false);
-                navigate("/login");
-              }}
-            >
-              Signup
-            </p>
-          ) : null}
-          <br />
-        </section> */}
       </div>
-
       <div className={styles.container}>
         <img src={logo} alt="Tech Fest" className={styles.logo} />
         <IoMenu
@@ -165,41 +154,49 @@ function Header() {
         <nav className={styles.navDesktop}>
           <NavLink
             to={"/"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Home
           </NavLink>
           <NavLink
             to={"/about"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             About
           </NavLink>
           <NavLink
             to={"/departments"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Events
           </NavLink>
           <NavLink
             to={"/getPass"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Get Passes
           </NavLink>
           <NavLink
             to={"/workshops"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Workshops
           </NavLink>
           <NavLink
             to={"/proshows"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Proshows
           </NavLink>
           <NavLink
             to={"/sponsors"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Sponsers
           </NavLink>
           <NavLink
             to={"/location"}
+            className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
             Location
           </NavLink>

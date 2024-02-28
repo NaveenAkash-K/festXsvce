@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import styles from "../styles/page/about.module.css";
-import svce from "../assets/images/svce.png";
-import Footer from "../components/Footer";
+// import svce from "../assets/images/svce.png";
+// import Footer from "../components/Footer";
 import { useEffect } from "react";
 
 const About: React.FC = () => {
@@ -12,7 +12,29 @@ const About: React.FC = () => {
     <>
       <Header />
         <div className={styles.space}></div>
-      <div className={styles.container} id="about">
+        <div className={styles.aboutData} id="about">
+          <div className={styles.aboutContainer}>
+            <h4>30+</h4>
+            <br />
+            <h3>Events</h3>
+          </div>
+          <div className={styles.aboutContainer}>
+            <h4>4</h4>
+            <br />
+            <h3>Workshops</h3>
+          </div>
+          <div className={styles.aboutContainer}>
+            <h4>1</h4>
+            <br />
+            <h3>Proshow</h3>
+          </div>
+          <div className={styles.aboutContainer}>
+            <h4>1</h4>
+            <br />
+            <h3>Auto Expo</h3>
+          </div>
+        </div>
+      <div className={styles.container}>
         <div className={styles.about}>
           <h1 className={styles.title}>About</h1>
           <h3>
@@ -35,7 +57,6 @@ const About: React.FC = () => {
           <div className={styles.wrapper}>
             <h1
               className={styles.title}
-              style={{ textAlign: "end", marginBottom: "3%" }}
             >
               About SVCE
             </h1>
@@ -52,7 +73,6 @@ const About: React.FC = () => {
               dispensary, bank etc.,
             </h3>
           </div>
-          <img src={svce} alt="SVCE COLLEGE" className={styles.img} />
         </div>
       </div>
     </>

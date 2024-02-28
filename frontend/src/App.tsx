@@ -6,9 +6,7 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import EventInfo from "./page/EventInfo";
 import Location from "./page/Location";
 import About from "./page/About";
-// import Login from "./page/Login";
-// import Signup from "./page/Signup";
-import FestXsvce from "./components/BottomText";
+// import FestXsvce from "./components/BottomText";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import bg from "./assets/images/newBackground.png";
@@ -20,7 +18,7 @@ import ReactGA from "react-ga";
 import Footer from "./components/Footer";
 import Workshops from "./page/Workshops";
 import Proshows from "./page/Proshows";
-import EventForm from "./page/EventForm";
+import AutoExpo from "./page/AutoExpo";
 
 ReactGA.initialize("G-EGQRVRM8QK");
 
@@ -65,14 +63,6 @@ const router = createBrowserRouter([
     path: "/departments/:department/:eventId",
     element: <EventInfo />,
   },
-  // {
-  //   path: "/login",
-  //   element: <Login />,
-  // },
-  // {
-  //   path: "/signup",
-  //   element: <Signup />,
-  // },
   {
     path: "/getPass",
     element: <GetPass />,
@@ -87,30 +77,19 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path: "/workshops",
-    element: (
-      <>
-        <Workshops />
-      </>
-    ),
-  },
-  {
-    path: "/proshows",
-    element: (
-      <>
-        <Proshows />
-      </>
-    ),
-  },
-  {
-    path: "/eventForm",
-    element: <EventForm />,
-  },
-  {
     path: "/sponsors",
     element: (
       <>
         <Sponsers />,
+        <Footer />
+      </>
+    ),
+  },
+  {
+    path: "/autoexpo",
+    element: (
+      <>
+        <AutoExpo />,
         <Footer />
       </>
     ),

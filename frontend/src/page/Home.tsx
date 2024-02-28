@@ -16,7 +16,8 @@ const Home = () => {
       <div className={styles.home} id="home">
         <div style={{ marginTop: "4%" }}></div>
         <div className={styles.content}>
-          <h1>
+          <p className={styles.rev}>RETROTECH REVIVAL</p>
+          <h1 className={styles.tech}>
             <span>T</span>
             <span>E</span>
             <span>C</span>
@@ -29,9 +30,10 @@ const Home = () => {
             <span>S</span>
           </h1>
           <br />
-          <p>RETROTECH REVIVAL | MAR 15,16 2024</p>
+          <p className={styles.time}>MAR 15,16 2024</p>
           <br />
-          <p>
+          <div style={{ paddingTop: "8%" }}></div>
+          <p className={styles.timer}>
             <Timer />
           </p>
           <p>
@@ -63,7 +65,7 @@ const Home = () => {
           </div>
           <div className={styles.title}>
             <NavLink
-              to={"/"}
+              to={"/autoexpo"}
               style={{ textDecoration: "none", color: "white" }}
             >
               Auto Expo

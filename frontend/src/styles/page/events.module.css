@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 @keyframes slideFromLeft {
@@ -31,6 +32,7 @@
 
 .container > h1 {
   text-align: center;
+  font-family: "Space Grotesk", sans-serif;
   /* color: #fff */
 }
 

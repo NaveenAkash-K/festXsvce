@@ -1,6 +1,6 @@
 import Header from "../components/Header";
 import styles from "../styles/page/getpass.module.css";
-import eve from "../assets/images/eventCard.png";
+// import eve from "../assets/images/eventCard.png";
 import { passesData } from "../data/passesData";
 import Footer from "../components/Footer";
 
