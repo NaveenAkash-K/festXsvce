@@ -1,7 +1,7 @@
 import Header from "../components/Header";
 import styles from "../styles/page/about.module.css";
-import svce from "../assets/images/svce.png";
-import Footer from "../components/Footer";
+// import svce from "../assets/images/svce.png";
+// import Footer from "../components/Footer";
 import { useEffect } from "react";
 
 const About: React.FC = () => {
@@ -35,7 +35,6 @@ const About: React.FC = () => {
           <div className={styles.wrapper}>
             <h1
               className={styles.title}
-              style={{ textAlign: "end", marginBottom: "3%" }}
             >
               About SVCE
             </h1>
@@ -52,7 +51,7 @@ const About: React.FC = () => {
               dispensary, bank etc.,
             </h3>
           </div>
-          <img src={svce} alt="SVCE COLLEGE" className={styles.img} />
+          {/* <img src={svce} alt="SVCE COLLEGE" className={styles.img} /> */}
         </div>
       </div>
     </>

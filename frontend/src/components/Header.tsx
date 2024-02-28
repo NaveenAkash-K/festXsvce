@@ -134,27 +134,6 @@ function Header() {
           </NavLink>
           
         </nav>
-<<<<<<< HEAD
-=======
-        {/* <section>
-          <br />
-          {localData !== null ? <p>{user.username}</p> : null}
-          <br />
-          {localData !== null ? <p onClick={logout}>Logout</p> : null}
-          <br />
-          {localData === null ? (
-            <p
-              onClick={() => {
-                setIsNavOpen(false);
-                navigate("/login");
-              }}
-            >
-              Signup
-            </p>
-          ) : null}
-          <br />
-        </section> */}
->>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
       </div>
 
       <div className={styles.container}>
@@ -205,7 +184,6 @@ function Header() {
             to={"/location"}
           >
             Location
-<<<<<<< HEAD
           </NavLink>
           {/* <a href="/#home" className={styles.mobileLink}>
             Home
@@ -215,28 +193,6 @@ function Header() {
           <p onClick={navItemHandle}  className="">Get Passes</p>
           <p onClick={navItemHandle}  className={styles.mobileLink}>Sponsers</p>
           <p onClick={navItemHandle}  className={styles.mobileLink}>Location</p> */}
-=======
-          </Link>
-          {/* <hr style={{ transform: "rotate(180deg)" }} /> */}
-          {/* {localData !== null ? (
-            <p style={{ color: "white" }}>{user.username}</p>
-          ) : null}
-          {localData !== null ? (
-            <p style={{ color: "white" }} onClick={logout}>
-              Logout
-            </p>
-          ) : null}
-          {localData === null ? (
-            <p
-              style={{ color: "white" }}
-              onClick={() => {
-                navigate("/login");
-              }}
-            >
-              Signup
-            </p>
-          ) : null} */}
->>>>>>> b04dcf945fe5dc135d75276ffb357a237382d793
         </nav>
       </div>
     </>

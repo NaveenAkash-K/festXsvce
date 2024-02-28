@@ -16,6 +16,7 @@ const Home = () => {
       <div className={styles.home} id="home">
       <div style={{marginTop:'4%'}}></div>
         <div className={styles.content}>
+        <p className={styles.rev}>RETROTECH REVIVAL</p>
           <h1>
             <span>T</span>
             <span>E</span>
@@ -29,9 +30,9 @@ const Home = () => {
             <span>S</span>
           </h1>
           <br />
-          <p>RETROTECH REVIVAL | MAR 15,16 2024</p>
+          <p className={styles.time}>MAR 15,16 2024</p>
           <br />
-          <p>
+          <p className={styles.timer}>
             <Timer />
           </p>
           <p>

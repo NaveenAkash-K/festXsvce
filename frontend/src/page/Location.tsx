@@ -16,13 +16,16 @@ const Location = () => {
             ></iframe>
             <div className={styles.locationDetails}>
               <h1>Sri Venkateswara College of Engineering</h1>
-              <br />
               <p>
-                Post Bag No.1,Pennalur Village Chennai - Bangaluru High Road
+                Post Bag No.1,Pennalur Village Chennai - Bangaluru High Road 
                 Sriperumbudur Tk, Tamil Nadu 602117
               </p>
               <br />
-              <button className={styles.routeButton}>Enroute</button>
+              <div className={styles.buttonContainer}>
+                <button className={styles.routeButton} onClick={()=>window.open("https://www.svce.ac.in/facilities/transport/bus-route-informations/","_blank")}>
+              Enroute
+              </button>
+              </div>
             </div>
           </div>
         </center>

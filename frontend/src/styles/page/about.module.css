@@ -1,57 +1,47 @@
 .container {
-  min-height: 85vh;
+  min-height: 5vh;
   padding: 2rem;
   width: 80%;
   margin: auto;
   border: 1px solid #503938;
   border-radius: 44px;
-  /* background-color: red; */
   background-color: rgba(50, 44, 44, 0.258);
   backdrop-filter: blur(10px);
+  font-family: "Space Grotesk", sans-serif;
 }
 .space{
   height: 7rem ;
 }
 .title {
-  font-size: 50px;
+  font-size: 40px;
+  font-family: "Space Grotesk", sans-serif;
 }
 
 .about {
   & h3 {
     text-align: justify;
-    font-weight: 1;
-    /* letter-spacing: 0.2rem; */
+    font-weight: 520;
     word-spacing: 0.4rem;
-    /* margin: 2%; */
-    /* color: #4d291a; */
   }
 }
 .aboutSvce {
   text-align: justify;
-
-  /* margin-top: 3rem; */
-  /* text-align: end; */
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  /* flex-direction: row; */
-  /* background-color: red; */
 }
 
 .wrapper {
   flex-direction: column;
   flex: 1;
   & h3 {
-    font-weight: 1;
+    font-weight: 520;
     word-spacing: 0.4rem;
-    /* margin-bottom: 2%; */
-    /* color: #4d291a; */
   }
 }
 
 .img {
   width: 30%;
-  /* height: 200px; */
   margin: 0 0% 0 2%;
   margin-top: 5%;
 }
@@ -63,13 +53,11 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* background-color: red; */
     position: relative;
     & img {
       height: 170px;
       position: relative;
       right: -5%;
-      /* justify-self: end; */
       width: 75%;
       margin: 1rem 2rem 15% 2%;
     }
@@ -83,12 +71,10 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    /* background-color: red; */
     position: relative;
     & img {
       position: relative;
       right: -3%;
-      /* justify-self: end; */
       width: 40vw;
       margin-bottom: 15%;
     }

@@ -20,7 +20,6 @@ const DepartmentItem: React.FC<{
           </div>
           <p className={styles.title}>{props.name}</p>
           <p className={styles.know}>Know More</p>
-          {/* <img src={arrow} alt="arrow" /> */}
         </div>
       </div>
     </Link>
