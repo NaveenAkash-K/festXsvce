@@ -8,7 +8,7 @@ const DepartmentItem: React.FC<{
   id: string;
 }> = (props) => {
   return (
-    <Link to={`/departments/${props.id}`}>
+    <Link to={`/departments/${props.id}`} style={{ textDecoration: "none" }}>
       <div
         className={styles.department}
         style={{ backgroundImage: `url(${props.image})` }}

@@ -42,6 +42,7 @@
   margin: auto auto;
   column-gap: 100px;
   row-gap: 50px;
+  position: relative;
   margin: 0 0 3rem 0;
 }
 
@@ -60,13 +61,21 @@
 }
 
 .cardContainer:hover {
-  border: 2px solid #5d90db;
+  border: 2px solid #eb0029;
   transform: scale(1.1);
 }
+
 .title {
   position: absolute;
-  top: 10%;
+  top: 20%;
   left: 12%;
+}
+
+.shortDes {
+  position: absolute;
+  width: 75%;
+  top: 40%;
+  left: 13%;
 }
 
 .know {
@@ -80,7 +89,7 @@
 @media screen and (width < 1200px) {
   .title {
     position: absolute;
-    top: 10%;
+    /* top: 10%; */
     left: 32%;
     font-size: 1.5vw;
   }

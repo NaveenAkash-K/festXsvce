@@ -78,12 +78,12 @@ const Footer = () => {
           <br />
           <p>
             <IoMail className={styles.contactLogo} />
-            Mail: xyz.svce.ac.in
+            Mail: technoways@svce.ac.in
           </p>
           <br />
           <p>
             <IoCall className={styles.contactLogo} />
-            Number: 99999 99999
+            Number: 95514 49859
           </p>
           <br />
           <p className={styles.addressPara}>

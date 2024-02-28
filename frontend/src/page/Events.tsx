@@ -30,6 +30,7 @@ const Events: React.FC = () => {
                     }}
                   >
                     <h4 className={styles.title}>{event.name}</h4>
+                    <h4 className={styles.shortDes}>{event.shortDescription}</h4>
                     <h4 className={styles.know}>Know More</h4>
                   </div>
                 ));
