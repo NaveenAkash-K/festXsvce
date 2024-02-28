@@ -3,6 +3,7 @@
 }
 
 .container {
+  font-family: "Space Grotesk", sans-serif;
     width: 100%;
     margin: auto;
     height: 80vh;
@@ -14,6 +15,7 @@
 }
 
 .workContainer {
+  border: 1px solid #503938;
     width: 80%;
     margin: 1% auto;
     min-height: 80%;
@@ -24,17 +26,19 @@
     place-content: center;
 }
 .button {
-    display: inline-block;
-    padding: 12px 24px;
-    border: 1px solid #4f4f4f;
-    border-radius: 4px;
-    transition: all 0.2s ease-in;
-    position: relative;
-    overflow: hidden;
-    font-size: 19px;
-    cursor: pointer;
-    color: black;
-    z-index: 1;
+  text-decoration: none;
+  display: inline-block;
+  padding: 12px 24px;
+  border: none;
+  background-color: transparent;
+  border-radius: 4px;
+  transition: all 0.2s ease-in;
+  position: relative;
+  overflow: hidden;
+  font-size: 19px;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
   }
   
   .button:before {

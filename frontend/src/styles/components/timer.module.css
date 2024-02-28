@@ -1,3 +1,12 @@
 .timer{
-  font-size: 5vw;
+  padding-top: 5%;
+  font-size: 4vw;
+  font-family: RebelCaps;
+}
+
+@media screen and (width < 600px) {
+  .timer{
+    width: 100%;
+    /* word-spacing: -8vw; */
+  }
 }

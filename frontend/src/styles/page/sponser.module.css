@@ -1,6 +1,6 @@
 .body {
     padding: 7rem 2rem 0 2rem;
-
+    font-family: "Space Grotesk", sans-serif;
     & h1 {
         text-align: center;
     }
