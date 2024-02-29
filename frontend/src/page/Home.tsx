@@ -29,7 +29,6 @@ const Home = () => {
             <span>Y</span>
             <span>S</span>
           </h1>
-          <br />
           <p className={styles.time}>MAR 15,16 2024</p>
           <br />
           <div style={{ paddingTop: "8%" }}></div>
