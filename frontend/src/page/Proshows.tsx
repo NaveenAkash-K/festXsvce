@@ -12,12 +12,8 @@ const Proshows: React.FC = () => {
       <div className={styles.space}></div>
       <div className={styles.container}>
         <h1 className={styles.title}>Proshows</h1>
-        <div className={styles.workContainer}>
-          <NavLink to={"/"} className={styles.button}>
-            Coming Soon!!
-            <span></span>
-          </NavLink>
-        </div>
+        <br />
+        <div className={styles.workContainer}>Coming Soon!!</div>
       </div>
     </>
   );

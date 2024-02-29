@@ -9,12 +9,10 @@ const Sponsers: React.FC = () => {
   return (
     <div id="sponsors">
       <Header />
-      <div className={styles.body}>
+      <div className={styles.container}>
         <h1>Sponsors</h1>
         <br />
-        <div className={styles.comingSoon}>
-            <h1>Coming Soon!!!</h1>
-        </div>
+        <div className={styles.workContainer}>Coming Soon!!</div>
       </div>
     </div>
   );

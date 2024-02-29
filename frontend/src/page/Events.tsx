@@ -18,6 +18,7 @@ const Events: React.FC = () => {
         <div className={styles.container}>
           <h1>Explore</h1>
           <br />
+          <br />
           <div className={styles.list}>
             {eventsData.flatMap((data) => {
               if (data.id === department) {

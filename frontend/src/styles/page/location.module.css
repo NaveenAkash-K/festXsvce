@@ -40,7 +40,6 @@
   /* color: #4d291a; */
 }
 
-
 .locationDetails > h1 {
   font-size: 40px;
 }
@@ -50,9 +49,8 @@
   font-size: 20px;
 }
 
-
 .routeButton {
-  padding: 1.4% 4%;
+  padding: 2% 4%;
   font-size: 1rem;
   text-transform: uppercase;
   letter-spacing: 2.5px;
@@ -69,20 +67,26 @@
   border: 2px solid #503938;
 }
 
+.routeButton:hover {
+  border: 2px solid #eb0029;
+  box-shadow: 0px 0px 40px 0px #eb0029;
+  color: #fff;
+  transform: translateY(-7px);
+}
 
 @media screen and (width < 800px) {
-  .flexContainer{
+  .flexContainer {
     display: block;
     margin-bottom: 4rem;
     width: 90%;
   }
-  .buttonContainer{
+  .buttonContainer {
     margin-bottom: 4rem;
   }
-  .locationDetails{
+  .locationDetails {
     margin: 3rem 1rem 0 1rem;
   }
-  .map{
+  .map {
     margin-top: 30px;
     width: 80vw;
   }
@@ -90,4 +94,5 @@
     text-decoration: none;
     padding: 4% 8%;
   }
+
 }

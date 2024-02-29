@@ -1,27 +1,22 @@
-.body {
-    padding: 7rem 2rem 0 2rem;
-    font-family: "Space Grotesk", sans-serif;
-    & h1 {
-        text-align: center;
-    }
-
-    min-height: 100vh;
+.container {
+  padding-top: 7rem;
+  font-family: "Space Grotesk", sans-serif;
+  width: 100%;
+  margin: auto;
+  height: 80vh;
+  & h1 {
+    text-align: center;
+  }
 }
 
-.comingSoon {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    min-height: 70vh;
-    text-align: center;
-    background-color: rgba(50, 44, 44, 0.258);
-    backdrop-filter: blur(10px);
-    border: 1px solid #503938;
-    border-radius: 30px;
-    color: white;
-    margin-top: 1rem;
-    transition: all 0.2s ease-in-out;
-
+.workContainer {
+  border: 1px solid #503938;
+  width: 80%;
+  margin: 1% auto;
+  min-height: 80%;
+  background-color: rgba(50, 44, 44, 0.258);
+  backdrop-filter: blur(10px);
+  border-radius: 44px;
+  display: grid;
+  place-content: center;
 }

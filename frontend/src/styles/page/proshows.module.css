@@ -25,6 +25,7 @@
   display: grid;
   place-content: center;
 }
+
 .button {
   text-align: center;
   text-decoration: none;
