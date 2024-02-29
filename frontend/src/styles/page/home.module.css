@@ -8,6 +8,9 @@
   .tech {
     padding: 1vh 0;
     letter-spacing: 2vw;
+    background: linear-gradient(to bottom, #FFFFFF,#767676);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
   }
 
   .time {
@@ -113,6 +116,9 @@
     flex-wrap: wrap;
   }
   .tech {
+    background: linear-gradient(to bottom, #FFFFFF,#767676);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
     position: relative;
     top: 0rem;
     letter-spacing:15px;
