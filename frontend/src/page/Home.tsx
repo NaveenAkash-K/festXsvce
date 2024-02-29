@@ -50,14 +50,12 @@ const Home = () => {
           >
             <div className={styles.title}>Workshops</div>
           </NavLink>
-            <NavLink
-              to={"/proshows"}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-          <div className={styles.title}>
-              Proshows
-          </div>
-            </NavLink>
+          <NavLink
+            to={"/proshows"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div className={styles.title}>Proshows</div>
+          </NavLink>
           <NavLink
             to={"/autoexpo"}
             style={{ textDecoration: "none", color: "white" }}
