@@ -26,6 +26,12 @@
   height: 70px;
   margin: 0.5rem 0.5rem 0.5rem 2rem;
 }
+.svceLogo {
+  height: 20px;
+  align-items: center;
+  align-content: center;
+  margin: 0rem 0rem 2 rem 0.5rem;
+}
 
 .menu {
   display: none;
@@ -129,6 +135,10 @@
 
   .navMobile {
     display: block;
+  }
+
+  .svceLogo{
+    display: none;
   }
 
   .menu {
