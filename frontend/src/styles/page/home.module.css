@@ -36,7 +36,7 @@
   }
 
   .title {
-    padding: 1.4% 4%;
+    padding: 1rem 1rem;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -124,7 +124,7 @@
   }
 
   .title {
-    padding: 1.4% 4%;
+    padding: 1rem 1rem;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;
@@ -181,7 +181,7 @@
     display: inline-block;
   }
   .title {
-    padding: 1.4% 4%;
+    padding: 1rem 1rem;
     font-size: 1rem;
     text-transform: uppercase;
     letter-spacing: 2.5px;

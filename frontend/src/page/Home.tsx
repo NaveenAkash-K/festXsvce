@@ -41,35 +41,29 @@ const Home = () => {
         </div>
         <div style={{ height: "8%" }}></div>
         <div className={styles.eventInfo}>
-          <div className={styles.title}>
-            <Link to="departments" smooth={true} duration={700}>
-              Events
-            </Link>
-          </div>
-          <div className={styles.title}>
-            <NavLink
-              to={"/workshops"}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Workshops
-            </NavLink>
-          </div>
-          <div className={styles.title}>
+          <Link to="departments" smooth={true} duration={700}>
+            <div className={styles.title}>Events</div>
+          </Link>
+          <NavLink
+            to={"/workshops"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div className={styles.title}>Workshops</div>
+          </NavLink>
             <NavLink
               to={"/proshows"}
               style={{ textDecoration: "none", color: "white" }}
             >
-              Proshows
-            </NavLink>
-          </div>
           <div className={styles.title}>
-            <NavLink
-              to={"/autoexpo"}
-              style={{ textDecoration: "none", color: "white" }}
-            >
-              Auto Expo
-            </NavLink>
+              Proshows
           </div>
+            </NavLink>
+          <NavLink
+            to={"/autoexpo"}
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div className={styles.title}>Auto Expo</div>
+          </NavLink>
         </div>
       </div>
       <About />
