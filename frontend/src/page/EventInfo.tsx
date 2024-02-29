@@ -9,9 +9,9 @@ import { Link, useParams } from "react-router-dom";
 import { useEffect } from "react";
 
 const EventInfo: React.FC = () => {
-  useEffect(()=>{
-    window.scrollTo(0,0);
-  },[])
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const { department, eventId } = useParams();
   var event: {
     name: string;
@@ -41,43 +41,44 @@ const EventInfo: React.FC = () => {
     }
   });
 
-  const details: {
-    logo: string;
-  }[] = [
-    { logo: calIcon },
-    { logo: timeIcon },
-    { logo: classIcon },
-    { logo: userIcon },
-  ];
-
   return (
     <>
       <Header />
       <div className={styles.container}>
         <div className={styles.wrapper}>
-            <h1 style={{textAlign:'center',paddingBottom:'30px'}}>{event.name}</h1>
+          <h1 style={{ textAlign: "center", paddingBottom: "30px" }}>
+            {event.name}
+          </h1>
+          <div className={styles.scrollingText}>
+            <p>By {eventsData.filter((ele) => ele.id == department)[0].by}</p>
+            <br />
+          </div>
           <div className={styles.contextContainer}>
             <p></p>
             <div className={styles.details}>
-              <div className={styles.text}
+              <div
+                className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={calIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{event.date}</h3>
               </div>
-              <div className={styles.text}
+              <div
+                className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={timeIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{event.time}</h3>
               </div>
-              <div className={styles.text}
+              <div
+                className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={classIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{event.venue}</h3>
               </div>
-              <div className={styles.text}
+              <div
+                className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
               >
                 <img src={userIcon} alt="~" width={"18vw"} height={"19vh"} />

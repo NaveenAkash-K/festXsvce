@@ -67,6 +67,25 @@
   box-shadow: 0px 0px 40px 1px #eb002787;
 }
 
+.scrollingText {
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.scrollingText p {
+  animation: marquee 8s linear infinite;
+  /* animation-direction: normal; */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
 @media screen and (width < 1360px) {
   .container {
     width: 90%;
