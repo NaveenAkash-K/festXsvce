@@ -9,50 +9,54 @@
   border: 2px solid #503938;
   border-radius: 22px;
   padding: 0 1rem 0 1rem;
-  &:hover {
-    transform: scale(1.1);
-    border: 2px solid #eb0029;
-    box-shadow: 0px 0px 40px 1px #eb002787;
-
-
-    /* box-shadow: 0 0 10px 10px rgba(214, 174, 115, 0.8);  */
-  }
+}
+.department:hover {
+  transform: scale(1.1);
+  border: 2px solid #eb0029;
+  box-shadow: 0px 0px 40px 1px #eb002787;
 }
 .logo {
   height: 5vh;
   margin: 0.5rem 0.5rem 0.5rem 2rem;
 }
+.logoContainer{
+  width: 100%;
+}
 .know {
-  position: absolute;
+  position: relative;
   bottom: 3%;
-  left: 7%;
 }
 .nameDiv p {
   text-decoration: none;
   color: white;
 }
 .nameDiv {
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   color: white;
+  /* background-color: red; */
 }
 .topBar {
   position: relative;
-  left: 4%;
+  /* left: 4%; */
   display: flex;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
 }
 .title {
-  text-align: center;
-  font-size: xx-large;
+  position: relative;
+  top: -15%;
+  /* text-align: center; */
+  font-size: 1.9vw;
+  min-width: 80%;
+  /* background-color: red; */
   font-weight: bold;
 }
 
 .nameDiv > img {
-  /* padding-left: 0.3rem; */
   height: 12px;
 }
 
@@ -61,6 +65,15 @@
     padding: 12px;
     height: 200px;
     width: 150px;
+  }
+  .logo {
+    height: 4vh;
+    margin: 0.5rem 0.5rem 0.5rem 2rem;
+    position: relative;
+    right: 2.5vw;
+  }
+  .department:hover{
+    border: 2px solid #eb0029;
   }
   .title {
     font-size: 20px;

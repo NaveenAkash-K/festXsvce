@@ -16,7 +16,9 @@ const DepartmentItem: React.FC<{
         <div className={styles.nameDiv}>
           <div className={styles.topBar}>
             <p>Technoways</p>
-            <img src={logo} alt="Tech Fest" className={styles.logo} />
+            <div className={styles.logoContainer} style={{textAlign:'end'}}>
+                <img src={logo} alt="Tech Fest" className={styles.logo} />
+            </div>
           </div>
           <p className={styles.title}>{props.name}</p>
           <p className={styles.know}>Know More</p>
