@@ -1,21 +1,15 @@
 import styles from "../styles/components/header.module.css";
 import logo from "../assets/images/festXsvce_logo.png";
 import { useLocation, useNavigate, NavLink } from "react-router-dom";
-// import { Link } from "react-scroll";
 import { useState } from "react";
 import { IoMenu, IoClose } from "react-icons/io5";
 
 function Header() {
-  // const localData = localStorage.getItem("user");
   const [isNavOpen, setIsNavOpen] = useState<boolean>(false);
   // var user;
 
   const location = useLocation();
   const currentPath = location.pathname;
-
-  // if (localData !== null) {
-  //   user = JSON.parse(localData);
-  // }
   const navigate = useNavigate();
 
   const logout = () => {
@@ -38,60 +32,13 @@ function Header() {
           isNavOpen ? styles.open : styles.hide
         }`}
       >
-        {/* <section> */}
         <IoClose
           className={styles.close}
           onClick={() => {
             setIsNavOpen(false);
           }}
         />
-        {/* </section> */}
         <nav>
-          {/* <Link
-            className={styles.mobileLink}
-            to={"/home"}
-            onClick={navItemHandle}
-          >
-            Home
-          </Link>
-          <Link
-            className={styles.mobileLink}
-            to={"/about"}
-            onClick={navItemHandle}
-            offset={80}
-          >
-            About
-          </Link>
-          <Link
-            className={styles.mobileLink}
-            to={"/departments"}
-            onClick={navItemHandle}
-          >
-            Events
-          </Link>
-          <Link
-            className={styles.mobileLink}
-            to={"/passes"}
-            onClick={() => {
-              navigate("/getPass");
-            }}
-          >
-            Get Passes
-          </Link>
-          <Link
-            className={styles.mobileLink}
-            to={"/sponsors"}
-            onClick={navItemHandle}
-          >
-            Sponsers
-          </Link>
-          <Link
-            className={styles.mobileLink}
-            to={"/location"}
-            onClick={navItemHandle}
-          >
-            Location
-          </Link> */}
           <NavLink
             to={"/"}
             className={({isActive})=>isActive ? styles.active : styles.inactive}
@@ -132,7 +79,7 @@ function Header() {
             to={"/sponsors"}
             className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
-            Sponsers
+            Sponsors
           </NavLink>
           <NavLink
             to={"/location"}
@@ -192,7 +139,7 @@ function Header() {
             to={"/sponsors"}
             className={({isActive})=>isActive ? styles.active : styles.inactive}
           >
-            Sponsers
+            Sponsors
           </NavLink>
           <NavLink
             to={"/location"}
