@@ -33,6 +33,7 @@
 
 .heading {
   /* color: #4d291a; */
+  cursor: default;
   align-items: center;
   text-align: center;
   margin-bottom: 3rem;

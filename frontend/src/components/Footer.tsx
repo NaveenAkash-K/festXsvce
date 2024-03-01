@@ -1,6 +1,6 @@
 import styles from "../styles/components/footer.module.css";
 import svce from "../assets/images/svcelogo.png";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {
   IoLogoFacebook,
   IoLogoInstagram,
@@ -32,39 +32,39 @@ const Footer = () => {
             <h2>Menu</h2>
             <br />
             <p>
-              <Link style={{ color: "white" }} to={"/"}>
+              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/"}>
                 Home
-              </Link>
+              </NavLink>
             </p>
             <br />
             <p>
-              <Link style={{ color: "white" }} to={"/about"}>
+              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/about"}>
                 About
-              </Link>
+              </NavLink>
             </p>
             <br />
             <p>
-              <Link style={{ color: "white" }} to={"/departments"}>
+              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/departments"}>
                 Events
-              </Link>
+              </NavLink>
             </p>
             <br />
             <p>
-              <Link style={{ color: "white" }} to={"/getPass"}>
+              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/getPass"}>
                 Get Passes
-              </Link>
+              </NavLink>
             </p>
             <br />
             <p>
-              <Link style={{ color: "white" }} to={"/sponsors"}>
+              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/sponsors"}>
                 Sponsors
-              </Link>
+              </NavLink>
             </p>
             <br />
             <p>
-              <Link style={{ color: "white" }} to={"/location"}>
+              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/location"}>
                 Location
-              </Link>
+              </NavLink>
             </p>
           </section>
           <section className={styles.contacts}>
@@ -72,12 +72,12 @@ const Footer = () => {
             <br />
             <p>
               <IoMail className={styles.contactLogo} />
-              Mail: technoways.svce.ac.in
+              Mail: <a href="mailto:technoways.svce.ac.in" style={{textDecoration:'none',color:'white'}}>technoways.svce.ac.in</a>
             </p>
             <br />
             <p>
               <IoCall className={styles.contactLogo} />
-              Number: 95514 49859
+              Number: <a href="tel:+91 95514 49859" style={{textDecoration:'none',color:'white'}}>95514 49859</a>
             </p>
             <br />
             <p className={styles.addressPara}>
