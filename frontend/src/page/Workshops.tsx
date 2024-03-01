@@ -13,7 +13,11 @@ const Workshops: React.FC = () => {
       <div className={styles.container}>
         <h1 className={styles.title}>Workshops</h1>
         <br />
-        <div className={styles.workContainer}>Coming Soon!!</div>
+        <div className={styles.workContainer}>
+          <NavLink to={"/"} style={{ textDecoration: "none", color: "white" }}>
+            Coming Soon!!
+          </NavLink>
+        </div>
       </div>
     </>
   );

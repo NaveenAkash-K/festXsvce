@@ -6,6 +6,7 @@
 }
 
 .heading {
+  cursor: default;
   padding-bottom: 3rem;
   font-size: 50px;
 }

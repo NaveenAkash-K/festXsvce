@@ -10,11 +10,7 @@
   border-radius: 22px;
   padding: 0 1rem 0 1rem;
 }
-.department:hover {
-  transform: scale(1.1);
-  border: 2px solid #eb0029;
-  box-shadow: 0px 0px 40px 1px #eb002787;
-}
+
 .logo {
   height: 5vh;
   margin: 0.5rem 0.5rem 0.5rem 2rem;
@@ -58,6 +54,22 @@
 
 .nameDiv > img {
   height: 12px;
+}
+
+@media screen and (width > 1024px)  {
+  .department:hover {
+    transform: scale(1.1);
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 1px #eb002787;
+  }
+}
+
+@media screen and (width >=531px) and (width<=1023px){
+  .department:hover {
+    transform: scale(1.1);
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 1px #eb002787;
+  }
 }
 
 @media screen and (width < 530px) {
