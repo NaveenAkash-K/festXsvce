@@ -73,7 +73,8 @@
 }
 
 .scrollingText p {
-  animation: marquee 8s linear infinite;
+  letter-spacing: 5px;
+  animation: marquee 20s linear infinite;
   /* animation-direction: normal; */
 }
 
@@ -87,6 +88,12 @@
 }
 
 @media screen and (width < 1360px) {
+  .scrollingText p {
+    letter-spacing: 2px;
+    animation: marquee 10s linear infinite;
+    /* animation-direction: normal; */
+  }
+
   .container {
     width: 90%;
   }

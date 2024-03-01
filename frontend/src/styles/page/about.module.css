@@ -70,7 +70,6 @@
 
 
 @media screen and (max-width: 480px) {
-  
   .aboutData{
     display: flex;
     gap: 10vw;
@@ -96,7 +95,19 @@
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 1000px) {
+@media screen and (min-width: 400px) and (max-width: 1000px) {
+  .wrapper {
+    & h3 {
+      font-size:medium;
+    }
+  }
+
+  .about {
+    & h3 {
+      font-size:medium;
+    }
+  }
+
   .aboutData{
     flex-wrap: wrap;
   }

@@ -13,6 +13,7 @@ const DepartmentItem: React.FC<{
         className={styles.department}
         style={{ backgroundImage: `url(${props.image})` }}
       >
+      <div className={styles.blackBackground}/>
         <div className={styles.nameDiv}>
           <div className={styles.topBar}>
             <p>Technoways</p>
