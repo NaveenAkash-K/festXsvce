@@ -170,12 +170,12 @@ const eventsData: {
         ],
         shortDescription: "The ChemEConnundrum is technical quiz of 3 rounds",
         rules: [
-          "1) The team consists of two to three persons.",
-          "2) In round one, players must link the images provided to answer the given question. The shortlisted team will advance to the next round.",
-          "3) In round two, selected individuals are invited to play a game similar to snake and ladder, with half of the blocks filled with technical questions from chemical engineering concepts and the other half packed with enjoyable tasks.",
-          "4) Qualified teams from round 2 advance to phase 3, where the shortlisted players compete in a bidding auction to check the correctness of the suggested statement and change it correctly.",
-          "5) The team with the most earnings at the end is proclaimed the champion.",
-          "6) Use of the internet is prohibited.",
+          "The team consists of two to three persons.",
+          "In round one, players must link the images provided to answer the given question. The shortlisted team will advance to the next round.",
+          "In round two, selected individuals are invited to play a game similar to snake and ladder, with half of the blocks filled with technical questions from chemical engineering concepts and the other half packed with enjoyable tasks.",
+          "Qualified teams from round 2 advance to phase 3, where the shortlisted players compete in a bidding auction to check the correctness of the suggested statement and change it correctly.",
+          "The team with the most earnings at the end is proclaimed the champion.",
+          "Use of the internet is prohibited.",
         ],
         requirements: ["None"],
         coordinators: {
