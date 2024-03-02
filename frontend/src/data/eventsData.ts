@@ -657,13 +657,13 @@ const eventsData: {
     by: "Association of Information Technologists",
     events: [
       {
-        name: "The UI-tlimate Showdown",
+        name: "Pixel Palette",
         date: "TBA",
         time: "TBA",
         venue: "Marine Lab",
         team: "2-3",
         description: [
-          "Welcome to 'The UI-tlimate showdown,' a dynamic 3-hour front-end design competition. Participants unveil their creativity as the problem statement is revealed at the event's commencement. The challenge? Craft a captivating UI/UX design that merges aesthetics with functionality. Teams race against time to impress judges and claim victory. Adding a strategic edge, bidding sessions occur at intervals, allowing teams to invest in cue cards for insights and challenges. Design Dash promises a whirlwind of creativity, competition, and strategic decision-making. Are you ready to showcase your design prowess and emerge victorious in this fast-paced design sprint? The clock is ticking, and the canvas awaits your innovative touch!",
+          "Welcome to Pixel Palette a dynamic 3-hour front-end design competition. Participants unveil their creativity as the problem statement is revealed at the event's commencement. The challenge? Craft a captivating UI/UX design that merges aesthetics with functionality. Teams race against time to impress judges and claim victory. Adding a strategic edge, bidding sessions occur at intervals, allowing teams to invest in cue cards for insights and challenges. Design Dash promises a whirlwind of creativity, competition, and strategic decision-making. Are you ready to showcase your design prowess and emerge victorious in this fast-paced design sprint? The clock is ticking, and the canvas awaits your innovative touch!",
         ],
         shortDescription:
           "Fast-paced UI/UX design competition with bidding and strategic challenges",
