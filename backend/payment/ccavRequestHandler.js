@@ -5,11 +5,15 @@ var http = require("http"),
   qs = require("querystring");
 
 exports.postReq = function (request, response) {
-  fs.appendFile(path.join(__dirname, "../log.txt"), "Successfully called", (err) => {
-    if (err) {
-      throw err;
+  fs.appendFile(
+    path.join(__dirname, "./log.txt"),
+    "Successfully called",
+    (err) => {
+      if (err) {
+        throw err;
+      }
     }
-  });
+  );
   // 3342525
   try {
     var body = "",
