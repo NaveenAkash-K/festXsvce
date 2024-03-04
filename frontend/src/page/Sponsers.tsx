@@ -12,7 +12,11 @@ const Sponsers: React.FC = () => {
       <div className={styles.container}>
         <h1>Sponsors</h1>
         <br />
-        <div className={styles.workContainer}>Coming Soon!!</div>
+        <div className={styles.workContainer}>
+          <NavLink to={"/"} style={{ textDecoration: "none", color: "white" }}>
+            Coming Soon!!
+          </NavLink>
+        </div>
       </div>
     </div>
   );

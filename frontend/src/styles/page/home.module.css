@@ -86,15 +86,18 @@
 }
 
 .time {
+  cursor: default;
   width: 95%;
   text-align: start;
 }
 
 .timer {
+  cursor: default;
   font-family: RebelCaps;
 }
 
 .rev {
+  cursor: default;
   width: 96%;
   text-align: end;
   margin-bottom: 1.5%;
@@ -116,6 +119,7 @@
     flex-wrap: wrap;
   }
   .tech {
+    cursor: default;
     position: relative;
     top: 0rem;
     letter-spacing: 15px;

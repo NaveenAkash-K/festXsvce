@@ -170,12 +170,12 @@ const eventsData: {
         ],
         shortDescription: "The ChemEConnundrum is technical quiz of 3 rounds",
         rules: [
-          "1) The team consists of two to three persons.",
-          "2) In round one, players must link the images provided to answer the given question. The shortlisted team will advance to the next round.",
-          "3) In round two, selected individuals are invited to play a game similar to snake and ladder, with half of the blocks filled with technical questions from chemical engineering concepts and the other half packed with enjoyable tasks.",
-          "4) Qualified teams from round 2 advance to phase 3, where the shortlisted players compete in a bidding auction to check the correctness of the suggested statement and change it correctly.",
-          "5) The team with the most earnings at the end is proclaimed the champion.",
-          "6) Use of the internet is prohibited.",
+          "The team consists of two to three persons.",
+          "In round one, players must link the images provided to answer the given question. The shortlisted team will advance to the next round.",
+          "In round two, selected individuals are invited to play a game similar to snake and ladder, with half of the blocks filled with technical questions from chemical engineering concepts and the other half packed with enjoyable tasks.",
+          "Qualified teams from round 2 advance to phase 3, where the shortlisted players compete in a bidding auction to check the correctness of the suggested statement and change it correctly.",
+          "The team with the most earnings at the end is proclaimed the champion.",
+          "Use of the internet is prohibited.",
         ],
         requirements: ["None"],
         coordinators: {
@@ -657,13 +657,13 @@ const eventsData: {
     by: "Association of Information Technologists",
     events: [
       {
-        name: "The UI-tlimate Showdown",
+        name: "Pixel Palette",
         date: "TBA",
         time: "TBA",
         venue: "Marine Lab",
         team: "2-3",
         description: [
-          "Welcome to 'The UI-tlimate showdown,' a dynamic 3-hour front-end design competition. Participants unveil their creativity as the problem statement is revealed at the event's commencement. The challenge? Craft a captivating UI/UX design that merges aesthetics with functionality. Teams race against time to impress judges and claim victory. Adding a strategic edge, bidding sessions occur at intervals, allowing teams to invest in cue cards for insights and challenges. Design Dash promises a whirlwind of creativity, competition, and strategic decision-making. Are you ready to showcase your design prowess and emerge victorious in this fast-paced design sprint? The clock is ticking, and the canvas awaits your innovative touch!",
+          "Welcome to Pixel Palette a dynamic 3-hour front-end design competition. Participants unveil their creativity as the problem statement is revealed at the event's commencement. The challenge? Craft a captivating UI/UX design that merges aesthetics with functionality. Teams race against time to impress judges and claim victory. Adding a strategic edge, bidding sessions occur at intervals, allowing teams to invest in cue cards for insights and challenges. Design Dash promises a whirlwind of creativity, competition, and strategic decision-making. Are you ready to showcase your design prowess and emerge victorious in this fast-paced design sprint? The clock is ticking, and the canvas awaits your innovative touch!",
         ],
         shortDescription:
           "Fast-paced UI/UX design competition with bidding and strategic challenges",

@@ -5,7 +5,14 @@
   position: relative;
   font-family: "Space Grotesk", sans-serif;
 }
-
+.active{
+  text-decoration: none;
+  color: red;
+}
+.inactive{
+  color: white;
+  text-decoration: none;
+}
 .footer {
   color: white;
   padding: 5rem;
@@ -14,6 +21,9 @@
   margin-top: 3rem;
   position: relative;
   z-index: 9;
+}
+.menu > h2,.contacts >h2{
+  cursor: default;
 }
 .footerContainer{
   background-image: url("../../assets/images/TECHNOWAYS.png");
