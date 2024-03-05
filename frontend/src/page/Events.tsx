@@ -1,6 +1,7 @@
 import styles from "../styles/page/events.module.css";
 // import eve from "../assets/images/eventCard.png";
 import Header from "../components/Header";
+import ReactGA from "react-ga";
 import eventsData from "../data/eventsData";
 import { useParams } from "react-router";
 import { useNavigate } from "react-router";
@@ -27,6 +28,11 @@ const Events: React.FC = () => {
                     key={event.name}
                     className={styles.cardContainer}
                     onClick={() => {
+                      ReactGA.event({
+                        category:"Department "+department,
+                        action:"Event Info",
+                        label:"Event Label"
+                      })
                       navigate(`./${index}`);
                     }}
                   >

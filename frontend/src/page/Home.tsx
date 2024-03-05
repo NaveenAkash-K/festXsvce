@@ -9,10 +9,12 @@ import Footer from "../components/Footer";
 import Sponsers from "./Sponsers";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
+import ReactGA from "react-ga";
 import { useEffect } from "react";
 const Home = () => {
   useEffect(()=>{
-    document.title = "Home | Technoways"
+    document.title = "Home | Technoways";
+    ReactGA.pageview(window.location.pathname)
   },[])
   return (
     <>

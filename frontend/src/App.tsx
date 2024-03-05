@@ -21,12 +21,8 @@ import Proshows from "./page/Proshows";
 import AutoExpo from "./page/AutoExpo";
 import WorkshopItem from "./components/WorkshopItem";
 
-ReactGA.initialize("G-EGQRVRM8QK");
+ReactGA.initialize("UA-228658137-1");
 
-ReactGA.send({
-  hitType: "pageview",
-  page: window.location.pathname,
-});
 
 const router = createBrowserRouter([
   {
@@ -128,6 +124,9 @@ function App() {
   //     setScreenWidth(window.innerWidth);
   //   });
   // }, []);
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  },[])
 
   return (
     <>

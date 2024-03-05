@@ -33,13 +33,13 @@ const WorkshopItem: React.FC = () => {
           <div className={styles.contextContainer}>
             <p></p>
             <div className={styles.details}>
-              {/* <div
+              <div
                 className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
                 >
                 <img src={calIcon} alt="~" width={"18vw"} height={"19vh"} />
-                <h3>{data.date}</h3>
-              </div> */}
+                <h3>{work!.day}</h3>
+              </div>
               <div
                 className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
@@ -64,7 +64,9 @@ const WorkshopItem: React.FC = () => {
             </div>
             <h2>Description</h2>
             {work!.desc.map((data, index) => (
-              <li key={index}>{data}</li>
+              <ul>
+                <li key={index}>{data}</li>
+              </ul>
             ))}
             <br />
             {work!.req[0] !== "Nill" && (
@@ -82,8 +84,8 @@ const WorkshopItem: React.FC = () => {
               <button className={styles.getPass}>Get Pass</button>
             </Link>
             <br />
-            {/* <h2>Event Coordinator</h2>
-            <p>{`${event.coordinators.name}  ${event.coordinators.contact}`}</p> */}
+            <h2>Event Coordinator</h2>
+            <p>{`${work?.coord} - ${work?.ph}`}</p>
           </div>
         </div>
       </div>
