@@ -1,14 +1,20 @@
 import React, { useEffect } from "react";
 import Header from "../components/Header";
 import styles from "../styles/page/workshops.module.css";
-import { NavLink, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import workshopData from "../data/workshopData";
+import ReactGA from "react-ga";
 const Workshops: React.FC = () => {
   const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
     document.title = "Workshops | Technoways";
   }, []);
+  ReactGA.event({
+    category:"Workshop ",
+    action:"Workshop Info",
+    label:"Workshop Label"
+  })
   return (
     <>
       <Header />

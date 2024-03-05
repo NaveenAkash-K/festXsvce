@@ -7,21 +7,14 @@ const workshopData: {
   desc: String[];
   venue: String;
   req: String[];
+  day:String;
   maxPeople: Number | null;
+  rules:String[] | null;
+  coord:String[];
+  ph:Number | null
 }[] = [
   {
     id: 0,
-    dept: "The Students’ Biotech Forum",
-    name: "Nill",
-    duration: "Nill",
-    shrtDesc: "Nill",
-    desc: ["Nill"],
-    venue: "Nill",
-    req: ["Nill"],
-    maxPeople: null,
-  },
-  {
-    id: 1,
     dept: "Electronics and Communication Engineers Association",
     name: "ChipConnect:Embedded Systems",
     duration: "9:30AM - 2:00PM",
@@ -38,34 +31,16 @@ const workshopData: {
       "Stay updated with the latest trends and advancements in Embedded Systems Technology.",
       "Network with fellow enthusiasts and industry professionals."
     ],
-    venue: "Nill",
+    venue: "Embedded Systems Laboratory",
     req: ["Nill"],
     maxPeople: null,
+    day:"16th March",
+    rules:[""],
+    coord:["V Kiran Yadav"],
+    ph:73339120852
   },
   {
-    id: 2,
-    dept: "Society of Mechanical Engineers ",
-    name: "Nill",
-    duration: "Nill",
-    shrtDesc: "Nill",
-    desc: ["Nill"],
-    venue: "Nill",
-    req: ["Nill"],
-    maxPeople: null,
-  },
-  {
-    id: 3,
-    dept: "AEEE",
-    name: "Nill",
-    duration: "Nill",
-    shrtDesc: "Nill",
-    desc: ["Nill"],
-    venue: "Nill",
-    req: ["Nill"],
-    maxPeople: null,
-  },
-  {
-    id: 4,
+    id: 1,
     dept: "SAE Collegiate club of SVCE, AAE",
     name: "Basics of Automotive tuning",
     duration: "9:30AM - 12:30PM",
@@ -81,23 +56,16 @@ const workshopData: {
       "Need to be an automotive enthusiast or a person pursuing automotive related career",
     ],
     maxPeople: 30,
+    day:"15th March",
+    rules:[""],
+    coord:[""],
+    ph:null
   },
   {
-    id: 5,
-    dept: "CSI - SVCE Student Chapter ",
-    name: "Nill",
-    duration: "Nill",
-    shrtDesc: "Nill",
-    desc: ["Nill"],
-    venue: "Nill",
-    req: ["Nill"],
-    maxPeople: null,
-  },
-  {
-    id: 6,
+    id: 2,
     dept: "Indian Institute of Chemical Engineers",
-    name: "Basics On CFT And Process Instrumentation using DWSIM ",
-    duration: "1.5 hrs - 2 hrs",
+    name: "Basics On CFT And Process Instrumentation using DWSIM Software",
+    duration: "1:00PM - 2:30PM",
     shrtDesc:
       "Introduction to building process flow diagrams of various manufacturing processes.",
     desc: [
@@ -106,44 +74,15 @@ const workshopData: {
     venue: "Block 5 / Library seminar hall",
     req: ["laptops with dwsim installed"],
     maxPeople: 100,
+    day:"16th March",
+    rules:[""],
+    coord:[""],
+    ph:null
   },
   {
-    id: 7,
-    dept: "Association of Information Technologists",
-    name: "Nill",
-    duration: "Nill",
-    shrtDesc: "Nill",
-    desc: ["Nill"],
-    venue: "Nill",
-    req: ["Nill"],
-    maxPeople: null,
-  },
-  {
-    id: 8,
-    dept: "Civil Engineering Association (CEA)",
-    name: "Nill",
-    duration: "Nill",
-    shrtDesc: "Nill",
-    desc: ["Nill"],
-    venue: "Nill",
-    req: ["Nill"],
-    maxPeople: null,
-  },
-  {
-    id: 9,
-    dept: "IEEE SVCE Student BranchIEEE SVCE Student Branch",
-    name: "Nill",
-    duration: "Nill",
-    shrtDesc: "Nill",
-    desc: ["Nill"],
-    venue: "Nill",
-    req: ["Nill"],
-    maxPeople: null,
-  },
-  {
-    id: 10,
+    id: 3,
     dept: "Association of Computer Engineers (ACE)",
-    name: "Workshop on AR&VR",
+    name: "A Mixed Reality AR & VR Experience",
     duration: "9am - 2pm",
     shrtDesc:
       "🎮 *AR & VR Workshop with Unreal Engine* Experience hands-on learning, build practical skills, and network with industry professionals in this immersive exploration of AR and VR technology. Perfect for students, professionals, and enthusiasts eager to dive into the future of digital experiences.",
@@ -157,13 +96,17 @@ const workshopData: {
       "Stay ahead with cutting-edge Unreal Engine technology.",
       "Network with industry professionals and enthusiasts.",
     ],
-    venue: "CS Labs",
+    venue: "CS Laboratory",
     req: [
       "1.Participants are advised to bring notebooks or writing utensils(pen, pencil..)for note-taking.",
       "2.Valid identification and proof of registration are required.",
       "3.Kindly bring laptop.",
     ],
     maxPeople: null,
+    day:"15th March",
+    rules:["Respect copyright and intellectual property rights when using workshop materials or resources.","Any illegal or unethical behaviour "],
+    coord:[""],
+    ph:null
   },
 ];
 
