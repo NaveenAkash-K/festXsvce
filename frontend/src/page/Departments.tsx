@@ -2,8 +2,13 @@ import styles from "../styles/page/departments.module.css";
 import Header from "../components/Header";
 import DepartmentItem from "../components/DepartmentItem";
 import departmentsData from "../data/departmentsData";
+import { useEffect } from "react";
 
 const DepartmentsPage: React.FC = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    document.title = "Events | Technoways"
+  },[])
   return (
     <>
       <Header />

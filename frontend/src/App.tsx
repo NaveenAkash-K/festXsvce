@@ -19,6 +19,7 @@ import Footer from "./components/Footer";
 import Workshops from "./page/Workshops";
 import Proshows from "./page/Proshows";
 import AutoExpo from "./page/AutoExpo";
+import WorkshopItem from "./components/WorkshopItem";
 
 ReactGA.initialize("G-EGQRVRM8QK");
 
@@ -75,6 +76,10 @@ const router = createBrowserRouter([
         <Footer />
       </>
     ),
+  },
+  {
+    path:"/workshops/:workId",
+    element: <WorkshopItem/>
   },
   {
     path: "/proshows",

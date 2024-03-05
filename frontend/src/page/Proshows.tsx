@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 const Proshows: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Proshows | Technoways"
   }, []);
   return (
     <>

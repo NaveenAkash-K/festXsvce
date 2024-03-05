@@ -1,5 +1,5 @@
 import styles from "../styles/components/header.module.css";
-import logo from "../assets/images/festXsvce_logo.png";
+import logo from "../assets/images/techLogo.png";
 import svceLogo from "../assets/images/svcelogo.png";
 import { NavLink } from "react-router-dom";
 import { useState } from "react";

@@ -9,7 +9,11 @@ import Footer from "../components/Footer";
 import Sponsers from "./Sponsers";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
+import { useEffect } from "react";
 const Home = () => {
+  useEffect(()=>{
+    document.title = "Home | Technoways"
+  },[])
   return (
     <>
       <Header />
