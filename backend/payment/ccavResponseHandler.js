@@ -33,10 +33,8 @@ exports.postRes = function (request, response) {
       response.end();
     });
   } catch (e) {
-    fs.appendFile(path.join(__dirname, "../log.txt"), e, (err) => {
-      if (err) {
-        throw err;
-      }
-    });
+    response.writeHeader(200, { "Content-Type": "text/html" });
+    response.write(`<html><body><p>Successful Error</p></body></html>`);
+    response.end();
   }
 };
