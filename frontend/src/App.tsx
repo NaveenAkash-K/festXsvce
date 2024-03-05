@@ -124,6 +124,9 @@ function App() {
   //     setScreenWidth(window.innerWidth);
   //   });
   // }, []);
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  },[])
 
   return (
     <>
