@@ -7,6 +7,7 @@ import { useEffect } from "react";
 const About: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "About | Technoways"
   }, []);
   return (
     <>

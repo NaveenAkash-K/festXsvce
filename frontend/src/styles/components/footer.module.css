@@ -3,6 +3,7 @@
   background-color: #030303;
   height: 100%;
   position: relative;
+  overflow: hidden;
   font-family: "Space Grotesk", sans-serif;
 }
 .active{
@@ -73,6 +74,8 @@
   width: 2rem;
   height: 2rem;
   margin-right: 1.5rem;
+  text-decoration: none;
+  color: white;
 }
 
 .img {

@@ -20,11 +20,11 @@ const Footer = () => {
           <img src={svce} alt="SVCE" className={styles.clgLogo} />
           <h2>A National Level Technical Fest</h2>
           <div>
-            <IoCall className={styles.footerLogo} />
+            <a href="tel:+91 95514 49859"><IoCall className={styles.footerLogo} /></a>
             <IoLocation className={styles.footerLogo} />
-            <IoLogoFacebook className={styles.footerLogo} />
+            {/* <IoLogoFacebook className={styles.footerLogo} /> */}
             <IoLogoInstagram className={styles.footerLogo} />
-            <IoMail className={styles.footerLogo} />
+            <a href="mailto:technoways.svce.ac.in"><IoMail className={styles.footerLogo} /></a>
           </div>
         </div>
         <div className={styles.menuContactsDiv}>

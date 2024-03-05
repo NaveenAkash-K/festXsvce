@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 const Sponsers: React.FC = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
+    document.title = "Sponsors | Technoways"
   }, []);
   return (
     <div id="sponsors">

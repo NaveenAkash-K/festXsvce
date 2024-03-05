@@ -598,11 +598,11 @@ const eventsData: {
         venue: "NA",
         team: "3",
         description: [
-          "Phase 1: Trap Door :",
+          "Phase 1: Circuit schematics:",
           "Follow the Electrical Trail: Navigate a tangled web of circuits, tracing electrical pathways and deciphering complex schematics to locate the crucial voltage terminal—to locate the vault.",
           "Alternative Route: If precious time slips away, your team will face a hands-on challenge: assemble a circuit with a specific output to power up your com. Circuit. ",
 
-          "Phase 2: Circuit schematics (10 mins):",
+          "Phase 2: Takeover:",
           "Take Control: You will be given a circuit diagram representing the alarm system, and identify and manipulate the logic gates to disable the alarm within the time limit.",
 
           "Phase 3: Digital Decipher :",

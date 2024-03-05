@@ -1,7 +1,12 @@
+import { useEffect } from "react";
 import Header from "../components/Header";
 import styles from "../styles/page/location.module.css";
 
 const Location = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    document.title = "Location | Technoways"
+  })
   return (
     <>
       <Header />

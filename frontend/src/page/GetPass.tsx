@@ -3,8 +3,13 @@ import styles from "../styles/page/getpass.module.css";
 // import eve from "../assets/images/eventCard.png";
 import { passesData } from "../data/passesData";
 import Footer from "../components/Footer";
+import { useEffect } from "react";
 
 const GetPass: React.FC = () => {
+  useEffect(()=>{
+    window.scrollTo(0,0);
+    document.title = "Get Passes | Technoways"
+  },[])
   return (
     <>
       <Header />
