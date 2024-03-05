@@ -6,7 +6,7 @@ var http = require("http"),
 
 exports.postReq = function (request, response) {
   fs.appendFile(
-    path.join(__dirname, "./log.txt"),
+    path.join(__dirname, "../log.txt"),
     "Successfully called",
     (err) => {
       if (err) {

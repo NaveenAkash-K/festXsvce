@@ -20,9 +20,9 @@ const eventsData: {
     events: [
       {
         name: "PITSTOP",
-        date: "TBA",
-        time: "TBA",
-        venue: "Automobile Components Laboratory",
+        date: "16th March",
+        time: "10:00AM-1:00PM",
+        venue: "AUTOMOTIVE COMPONENTS LABORTORY",
         team: "1-2",
         description: [
           "Pitting, a term from F1 racing, involves cars arriving at designated pitstops to change tires or make repairs",
@@ -38,10 +38,10 @@ const eventsData: {
           "Innovative techniques are open, but the final deciding authority will be assessing the fairness of the technique.",
           "The decision of the event organisers will be considered FINAL in any circumstances.",
         ],
-        requirements: ["TBA"],
+        requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "SAE Coordinators",
+          contact: "2020ae0156@svce.ac.in",
         },
       },
       {
@@ -66,15 +66,15 @@ const eventsData: {
           "Each team should bring the required number of extension cords.",
         ],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "SAE Coordinators",
+          contact: "2020ae0156@svce.ac.in",
         },
       },
       {
         name: "Rev It Up!",
-        date: "TBA",
-        time: "TBA",
-        venue: "Automobile Components Laboratory",
+        date: "15th March",
+        time: "1:00PM - 3:00PM",
+        venue: "DEPT LAB 2",
         team: "1 (Individual event)",
         description: [
           "Participants will use the RC car provided by the organizers to race through a course.",
@@ -88,10 +88,10 @@ const eventsData: {
           "Penalties in timing can be given for cutting corners.",
           "The final deciding authority will be the event organizers.",
         ],
-        requirements: ["TBA"],
+        requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "SAE Coordinators",
+          contact: "2020ae0156@svce.ac.in",
         },
       },
     ],
@@ -102,8 +102,8 @@ const eventsData: {
     events: [
       {
         name: "Biomonopoly",
-        date: "TBA",
-        time: "TBA",
+        date: "15th March",
+        time: "10:00AM - 1:00PM",
         venue: "Biotech Seminar Hall",
         team: "1",
         description: [
@@ -123,15 +123,15 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "Biotech Coordinators",
+          contact: "2022bt0204@svce.ac.in",
         },
       },
       {
         name: "Escape Room",
-        date: "TBA",
-        time: "TBA",
-        venue: "Video Hall",
+        date: "16th March",
+        time: "9:30AM - 12:00PM",
+        venue: "Classroom 501 - 504",
         team: "Minimum of 2 and maximum of 3 members",
         description: [
           "This event contains three rooms which contain various subevents.",
@@ -149,8 +149,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "Biotech Coordinators",
+          contact: "2022bt0204@svce.ac.in",
         },
       },
     ],
@@ -161,9 +161,9 @@ const eventsData: {
     events: [
       {
         name: "The ChemEConnundrum",
-        date: "TBA",
-        time: "TBA",
-        venue: "Any 3 classrooms either in Block 2 or Block 3",
+        date: "15th March",
+        time: "12:00PM - 3:00PM",
+        venue: "Classroom 511 - 514",
         team: "2-3",
         description: [
           "Embark on an exhilarating journey of intellect and wit with 'The ChemEConnundrum,' a riveting three-stage quiz event designed to challenge and entertain enthusiasts of participants. This dynamic competition promises to test your knowledge, strategy, and quick thinking in an electrifying atmosphere of camaraderie and excitement.",
@@ -179,15 +179,15 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "IICE Coordinators",
+          contact: "2021ch0065@svce.ac.in",
         },
       },
       {
-        name: "Presentation",
-        date: "TBA",
-        time: "TBA",
-        venue: "Any classroom at Block 2",
+        name: "Chem E Pansophy",
+        date: "15th March",
+        time: "9:30AM - 12:30PM",
+        venue: "Classroom 514, 515",
         team: "3",
         description: [
           "Students can showcase their research ideas/ works either in the form of a paper or as a poster",
@@ -204,14 +204,14 @@ const eventsData: {
           "Permissible sizes of the poster are : 18''* 24'' or 36''*48''",
         ],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "IICE Coordinators",
+          contact: "2021ch0065@svce.ac.in",
         },
       },
       {
         name: "InnoSolve",
-        date: "TBA",
-        time: "TBA",
+        date: "16th March",
+        time: "9:30AM - 12:30PM",
         venue: "Library Seminar Hall",
         team: "1",
         description: [
@@ -230,8 +230,8 @@ const eventsData: {
           "simulations/ feasibility reports fro proof of concept (preferred)",
         ],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "IICE Coordinators",
+          contact: "2021ch0065@svce.ac.in",
         },
       },
     ],
@@ -242,9 +242,9 @@ const eventsData: {
     events: [
       {
         name: "Bridge Expertise",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "15th March",
+        time: "10:30AM - 12:00PM",
+        venue: "Survey Lab",
         team: "2",
         description: [
           "Participants are provided with thermocol for bridge construction. They are provided with a problem statement and the participants are required to solve it. The design which solves the problem statement and is aesthetically pleasing is declared the winner.",
@@ -258,15 +258,15 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "CEA Coordinator",
+          contact: "2020ce0359@svce.ac.in",
         },
       },
       {
         name: "Mudwell mastery",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "15th March",
+        time: "1:00PM - 2:30PM",
+        venue: "Soil Mechanics Lab",
         team: "2",
         description: [
           "Participants are required to construct a seepage structure (well) with the given items. The structure is constructed with clay. The structure is subjected to load tests.The seepage structure which doesn't allow water to seep through and is design wise perfect is declared the winner.",
@@ -280,15 +280,15 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "CEA Coordinator",
+          contact: "2020ce0359@svce.ac.in",
         },
       },
       {
         name: "Paper Presentation",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "16th March",
+        time: "9:30AM - 12:30PM",
+        venue: "Cadd Lab",
         team: "2",
         description: [
           "This is a paper presentation event focused on future civil engineering development such as sustainability, etc.The participants are required to present their views on sustainability and environmental safety and other future civil engineering advancements even smart buildings etc.",
@@ -299,15 +299,14 @@ const eventsData: {
           " This is an individual event",
           " Decisions of the judges is final.",
           " Participants should strictly adhere to the theme of the event.",
-          " The theme of your paper should be from any one of the civil engineering niches (structural engineering, geotechnical engineering, sustainable construction, safety and risk management etc.,)"
+          " The theme of your paper should be from any one of the civil engineering niches (structural engineering, geotechnical engineering, sustainable construction, safety and risk management etc.,)",
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "CEA Coordinator",
+          contact: "2020ce0359@svce.ac.in",
         },
       },
-      
     ],
   },
   {
@@ -316,9 +315,9 @@ const eventsData: {
     events: [
       {
         name: "VISUAL PAPYRUS",
-        date: "TBA",
-        time: "TBA",
-        venue: "Classrooms",
+        date: "16th March",
+        time: "9:30AM - 2:30PM",
+        venue: "Library Seminar Hall",
         team: "2-3",
         description: [
           "Round1: Prelims Quiz(Online/Offline) – Shortlisting of 15 teams max. from this round. The teams are posed with a set of quiz based on UI/UX domain.",
@@ -326,7 +325,8 @@ const eventsData: {
           "In this unique event, teams will embark on a journey through the annals of technological history, with the ultimate goal of acquiring two tech companies via a thrilling auction. But here's the twist – as participants navigate the auction floor, they'll be bombarded with real-time historical tech change incidents, ranging from the invention of the light bulb to groundbreaking innovations of today.",
           "Each team will be transported back to pivotal moments in history, where they must adapt their company to thrive in that era. Teams will now craft UI/UX webpages by showcasing how their company would navigate challenges and seize opportunities in that period. In the UI/UX interface, teams must demonstrate strategic foresight, adaptability, and innovation to emerge victorious in this exhilarating competition",
         ],
-        shortDescription:"Teams must acquire two tech companies through an auction, navigating historical tech changes. They'll create UI/UX webpages to showcase their company's adaptability and innovation in different eras.",
+        shortDescription:
+          "Teams must acquire two tech companies through an auction, navigating historical tech changes. They'll create UI/UX webpages to showcase their company's adaptability and innovation in different eras.",
 
         rules: [
           "Teams are limited to a maximum of 2-3 members.",
@@ -347,16 +347,18 @@ const eventsData: {
       },
       {
         name: "THRILL QUEST – CHASING THE THRILL OF MYSTERY",
-        date: "TBA",
-        time: "TBA",
+        date: "15th March",
+        time: "10:00AM - 3:00PM",
         coordinators: { name: "Sharan Balaji S", contact: "+91 94444 31042" },
         venue: "Classrooms",
         team: "Maximum of 2",
         description: [
           "Upon arrival, the participants are assigned unique roles, each with their own backstory, motivations, and secrets. As they interact with one another along the course of the game, they must gather clues, analyze evidence, and engage in strategic conversations to uncover the truth behind the murder.",
           "Additionally, participants may encounter unexpected plot twists and red herrings that challenge their investigative skills and keep them on their toes throughout the game.",
-          "Furthermore, time pressure and limited resources may add to the intensity of the investigation, requiring participants to prioritize leads and make critical decisions under duress."],
-          shortDescription:"Participants are assigned unique roles with backstories, motivations, and secrets. As they interact, they gather clues, analyze evidence, and engage in strategic conversations to uncover the truth behind the murder.",
+          "Furthermore, time pressure and limited resources may add to the intensity of the investigation, requiring participants to prioritize leads and make critical decisions under duress.",
+        ],
+        shortDescription:
+          "Participants are assigned unique roles with backstories, motivations, and secrets. As they interact, they gather clues, analyze evidence, and engage in strategic conversations to uncover the truth behind the murder.",
         rules: [
           "Teams are limited to a maximum of 2 members.",
           "Cheating or unethical behaviour are severely condemned.",
@@ -369,9 +371,9 @@ const eventsData: {
       {
         name: "JOKER CODER",
         coordinators: { name: "Srilekha P", contact: "+91 78128 63379" },
-        date: "TBA",
-        time: "TBA",
-        venue: "Classrooms",
+        date: "16th March",
+        time: "9:30AM - 2:30PM",
+        venue: "Function Hall",
         team: "2",
         description: [
           "Round 1: Cryptic Decryption Battle",
@@ -379,7 +381,7 @@ const eventsData: {
           "Round 2: Code Sprint with a Twist",
           "This is a dynamic coding session, where teams will be provided with three unique coding questions. But here's the twist – participants will swap partners every 5 minutes! While one teammate codes, the other will engage in entertaining tasks. Amidst the lively atmosphere of loud music and camaraderie, teams must overcome hindrances and ensure seamless execution of their code within the time limit.",
         ],
-        shortDescription:"None",
+        shortDescription: "None",
         rules: [
           "Use of any AI tools is not allowed.",
           "Participants are kindly asked to complete tasks without objection, approaching them positively.",
@@ -465,18 +467,18 @@ const eventsData: {
   },
   {
     id: "ece",
-    by:"Electronics and Communication Engineers Association",
+    by: "Electronics and Communication Engineers Association",
     events: [
       {
         name: "SparkQuest",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "15th March",
+        time: "12:30AM - 3:00PM",
+        venue: "ECE DEPT LAB",
         team: "3",
         description: [
           "Participants will engage in a comprehensive treasure hunt featuring diverse clues encompassing areas such as logic gates, digital electronics, communication, signal processing, Arduino, and Programming. The team achieving the best timing within the 3-hour time limit will be declared the winner.",
         ],
-        shortDescription:"Unraveling Treasures in the Electronic Maze!",
+        shortDescription: "Unraveling Treasures in the Electronic Maze!",
 
         rules: [
           "Teams must consist of 2 to 3 participants.",
@@ -485,24 +487,22 @@ const eventsData: {
           "Participants are allowed to use standard tools and equipment approved by event organizers.",
           "Usage of Smartphones or any smart devices is strictly prohibited.",
         ],
-        requirements: [
-          "None",
-        ],
+        requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "ECEA Coordinators",
+          contact: "ecea@svce.ac.in",
         },
       },
       {
         name: "Electro-Craft Challenge",
-        date: "TBA",
-        time: "TBA",
+        date: "15th March",
+        time: "10:00AM - 12:00PM",
         venue: "Embedded Systems Laboratory of ECE Department",
         team: "2 to 3",
         description: [
           "Participants will receive cards featuring electric components. Based on the chosen cards, teams of 2 to 3 must create a circuit or product within a 60-minute time frame. The focus is on practical design and efficient problem-solving. Teams will pitch their finalized projects, demonstrating their ability to work collaboratively and think on their feet.",
         ],
-        shortDescription:"From Cards to Circuits: The Techfest Challenge",
+        shortDescription: "From Cards to Circuits: The Techfest Challenge",
 
         rules: [
           "Teams must consist of 2 to 3 participants.",
@@ -517,28 +517,26 @@ const eventsData: {
           "Participants are allowed to bring standard tools and equipment if required.",
         ],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "ECEA Coordinators",
+          contact: "ecea@svce.ac.in",
         },
       },
       {
         name: "Paper Presentation",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "16th March",
+        time: "10:00AM - 2:00PM",
+        venue: "ECE Dept Classrooms",
         team: "2 to 3",
         description: [
           "Papers will be shortlisted based on the abstract submitted.",
-          " Selected papers will be reviewed by the panel members and best paper will be rewarded."
+          " Selected papers will be reviewed by the panel members and best paper will be rewarded.",
         ],
-        shortDescription:"Paper Presentation based on ECE domain",
-        rules: [
-          "Basic Paper presentation rules"
-        ],
-        requirements: ["TBA"],
+        shortDescription: "Paper Presentation based on ECE domain",
+        rules: ["Basic Paper presentation rules"],
+        requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "ECEA Coordinators",
+          contact: "ecea@svce.ac.in",
         },
       },
     ],
@@ -549,9 +547,9 @@ const eventsData: {
     events: [
       {
         name: "Uknowhunt",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "15th March",
+        time: "12:00PM - 2:00PM",
+        venue: "Classrooms 521, 522",
         team: "1",
         description: [
           '"UKnowHunt" is a dynamic and thrilling intercollege event hosted by the Electrical and Electronics Engineering (EEE) department in SVCE "Techfest". Teams will navigate through two rounds, showcasing their strategic thinking and electrical engineering knowledge to emerge victorious.',
@@ -587,15 +585,15 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "AEEE Coordinator",
+          contact: "2021ee0525@svce.ac.in",
         },
       },
       {
         name: "The Twisted Heist",
-        date: "NA",
-        time: "NA",
-        venue: "NA",
+        date: "16th March",
+        time: "10:00AM - 12:00PM",
+        venue: "Classrooms 501 - 503",
         team: "3",
         description: [
           "Phase 1: Circuit schematics:",
@@ -620,15 +618,15 @@ const eventsData: {
           "Participants are requested to carry their laptops if possible, Atleast one for each team.",
         ],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "AEEE Coordinator",
+          contact: "2021ee0525@svce.ac.in",
         },
       },
       {
         name: "SDG Innovation Challenge",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "15th March",
+        time: "10:30AM - 11:30AM",
+        venue: "Drawing Hall",
         team: "3",
         description: [
           "In this dynamic event, participants will collaborate to design and develop innovative models aligned with the United Nations Sustainable Development Goals (SDGs). Rather than just pitching ideas, we're challenging you to bring your models to the table and showcase practical solutions to real-world problems.",
@@ -646,8 +644,8 @@ const eventsData: {
         ],
         requirements: ["Tables and chairs with plug points"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "AEEE Coordinator",
+          contact: "2021ee0525@svce.ac.in",
         },
       },
     ],
@@ -658,8 +656,8 @@ const eventsData: {
     events: [
       {
         name: "Pixel Palette",
-        date: "TBA",
-        time: "TBA",
+        date: "16th March",
+        time: "10:00AM - 1:00PM",
         venue: "Marine Lab",
         team: "2-3",
         description: [
@@ -678,15 +676,15 @@ const eventsData: {
           "USB to LAN converter if the laptop doesn't have a LAN port",
         ],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "AIT Coordinators",
+          contact: "2020it0600@svce.ac.in",
         },
       },
       {
         name: "Haijo",
-        date: "TBA",
-        time: "TBA",
-        venue: "Biotech Seminar Hall (or) Function Hall",
+        date: "15th March",
+        time: "12:00PM - 3:00PM",
+        venue: "Biotech Seminar Hall",
         team: "3 members",
         description: [
           "Welcome to Haijo, a riveting event where participants are tested on both technical and non-technical skills across three undisclosed rounds. As the competition unfolds, the team head must make strategic decisions, including the challenging task of removing one member before each new round. This dynamic element adds an unpredictable twist, shaping the team's destiny. Haijo is a high-stakes game requiring adaptability, collaboration, and quick thinking. Success hinges on navigating through diverse challenges and making crucial decisions to advance in this thrilling contest. Are you ready for the suspense and excitement?",
@@ -704,14 +702,14 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "AIT Coordinators",
+          contact: "2020it0600@svce.ac.in",
         },
       },
       {
         name: "Ctrl+Alt+Debate",
-        date: "TBA",
-        time: "TBA",
+        date: "15th March",
+        time: "10:00AM - 1:30PM",
         venue:
           "Video hall/ Library Seminar Hall/ Biotechnology Department Seminar Hall",
         team: "2 members per team",
@@ -727,15 +725,15 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "AIT Coordinators",
+          contact: "2020it0600@svce.ac.in",
         },
       },
     ],
   },
   {
     id: "mech",
-    by:"Society of Mechanical Engineers",
+    by: "Society of Mechanical Engineers",
     events: [
       {
         name: "DesignSprint",
@@ -745,49 +743,32 @@ const eventsData: {
         team: "2",
         description: [
           "DesignSprint is an exhilarating Design challenge that demands participants to bring 2-D designs to life using various Design softwares.This competition isn't just about technical proficiency; it's a platform for participants to unleash their creativity, surmount design obstacles, and showcase creative solutions.",
-          "DesignSprint is the ultimate playground for aspiring design maestros, where the fusion of technology and imagination yields victory."
-          
+          "DesignSprint is the ultimate playground for aspiring design maestros, where the fusion of technology and imagination yields victory.",
         ],
-        shortDescription:"Design challenge that demands participants to bring 2-D designs to life using various Design softwares.",
+        shortDescription:
+          "Design challenge that demands participants to bring 2-D designs to life using various Design softwares.",
         rules: [
           "1. Participants are required to utilize Design software [Creo,Autocad,Fusion 360]exclusively for the design challenge.",
-          "2. Judging criteria encompass the time utilized, precision, in making the design."
+          "2. Judging criteria encompass the time utilized, precision, in making the design.",
         ],
-        requirements: ["He/she can bring her own laptop,if they did not have , then we can provide computers."],
+        requirements: [
+          "He/she can bring her own laptop,if they did not have , then we can provide computers.",
+        ],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "Mech Coordinator",
+          contact: "2021me0499@svce.ac.in",
         },
       },
-      // {
-      //   name: "DesignSprint",
-      //   date: "TBA",
-      //   time: "TBA",
-      //   venue: "TBA",
-      //   team: "Individual Participation",
-      //   description: [
-      //     "DesignSprint is an exhilarating Creo design challenge that demands participants to bring 2-D designs to life using the Creo parametric software. This competition isn't just about technical proficiency; it's a platform for participants to unleash their creativity, surmount design obstacles, and showcase creative solutions. DesignSprint is the ultimate playground for aspiring design maestros, where the fusion of technology and imagination yields victory.",
-      //   ],
-      //   rules: [
-      //     "1. Participants are required to utilize Creo software exclusively for the design challenge.",
-      //     "2. Judging criteria encompass the time utilized, precision, in making the design.",
-      //   ],
-      //   requirements: ["Laptop equipped with Creo software"],
-      //   coordinators: {
-      //     name: "TBA",
-      //     contact: "TBA",
-      //   },
-      // },
       {
         name: "InnoVision Expo",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "16th March",
+        time: "10:00AM - 1:00PM",
+        venue: "Cadd lab",
         team: "Individual Participation",
         description: [
           "In the InnoVision Expo, the stage is set for students to illuminate the audience with innovative papers spanning diverse mechanical engineering concepts. The event serves as a nexus for intellectual discourse, encouraging insightful discussions, and fostering connections among visionaries in the field.",
         ],
-        shortDescription:"Paper presentation",
+        shortDescription: "Paper presentation",
         rules: [
           "1. Presentations are expected to adhere strictly to the allocated time limit.",
           "2. Each presentation will be followed by a dynamic Q&A session, promoting an exchange of ideas and perspectives.",
@@ -795,20 +776,20 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "Mech Coordinator",
+          contact: "2021me0499@svce.ac.in",
         },
       },
       {
         name: "AutoTech Quest",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "16th March",
+        time: "10:00AM - 1:00PM",
+        venue: "QMC Lab",
         team: "3",
         description: [
           "In the heart-pounding AutoTech Quest, participants are put against an engaging quiz challenge that evaluates their expertise on the latest automotive technologies, supercars, bikes, and more. Beyond a mere test of knowledge, this quest is a dynamic engagement where participants showcase their automotive acumen.",
         ],
-        shortDescription:"Autoquiz",
+        shortDescription: "Autoquiz",
         rules: [
           "1. The quiz is structured with timed multiple-choice questions, testing both speed and accuracy.",
           "2. Top-scoring teams advance to an exhilarating final round, potentially involving interactive challenges or problem-solving scenarios.",
@@ -816,21 +797,21 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "Mech Coordinator",
+          contact: "2021me0499@svce.ac.in",
         },
       },
     ],
   },
   {
     id: "ieee_club",
-    by:"IEEE SVCE Student Branch",
+    by: "IEEE SVCE Student Branch",
     events: [
       {
         name: "ProjectForge",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "16th March",
+        time: "1:00PM - 3:00PM",
+        venue: "Software Lab",
         team: "1",
         description: [
           "Welcome to the 'ProjectForge' – an immersive mini-project simulation event hosted on an online platform!",
@@ -838,7 +819,8 @@ const eventsData: {
           "An exciting problem statement will be unveiled. Your task? Design an Arduino circuit and write code to tackle the on-the-spot challenge.",
           "It could be anything from creating a smart home automation system to designing a sensor-based project. Get ready to apply your technical and problem-solving skills.",
         ],
-        shortDescription:"Where Creativity meets Circuitry- Online simulation Challenge based on Arduino.",
+        shortDescription:
+          "Where Creativity meets Circuitry- Online simulation Challenge based on Arduino.",
         rules: [
           "Participants must take part individually.",
           "Plagiarism is not allowed.",
@@ -847,48 +829,22 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
-        },
-      },
-      {
-        name: "PitchForge",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
-        team: "1-3",
-        description: [
-          "Welcome to 'PitchForge', a dynamic pitching event where teams are challenged to provide innovative solutions to bring highly technical products to market.",
-          "In this high-stakes competition, participants will demonstrate their prowess in pitching and delivering compelling solutions within a stipulated time frame.",
-          "With an emphasis on interdisciplinary collaboration and real-world applicability, teams must craft solutions showcasing not only technical excellence but also practical, impactful, and scalable outcomes.",
-          "The stage is set for a pitch-perfect showdown where teams will compete to impress judges with their problem-solving abilities under tight deadlines. May the most inventive and adept solutions rise to the challenge!",
-        ],
-        shortDescription:"Narrow time-framed pitch perfect kind of event for critical technical products.",
-        rules: [
-          "Participants will be provided with the description of a highly technical product, and must come up with a pitch to bring that product to market.",
-          "The pitch must be holistic and should cover all aspects right from procurement to marketing.",
-          "Teams can refer to the internet for a limited period time as determined by the judging panel.",
-          "Teams will be judged based on their unique approach, holistic and innovative nature of their pitch.",
-          "Determining the winner and dispute resolution is completely undertaken by the judging panel.",
-        ],
-        requirements: ["TBA"],
-        coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "IEEE Coordinator",
+          contact: "2021ee0097@svce.ac.in",
         },
       },
     ],
   },
   {
     id: "csi_club",
-    by:"CSI - SVCE Student Chapter",
+    by: "CSI - SVCE Student Chapter",
 
     events: [
       {
         name: "Relay Rush",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "16th March",
+        time: "10:00AM - 1:00PM",
+        venue: "IT Dept Lab",
         team: "3 Members",
         description: [
           '"Code Relay Rush" is a dynamic coding competition where teams solve a chain of related issues.',
@@ -897,22 +853,20 @@ const eventsData: {
           "It's a race against time and bugs. Precision and teamwork matter most. As each hurdle falls, the next coder takes the lead.",
           'The team with the shortest overall time emerges victorious. Simplified coding adrenaline – that\'s "Code Relay Rush" in a nutshell!',
         ],
-        shortDescription:"coding relay competition with strategic challenges",
+        shortDescription: "coding relay competition with strategic challenges",
         rules: [
           "There should be no communication between the team members.",
           "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
         ],
         requirements: ["laptop , rough sheets, pen"],
-        coordinators: {
-          name: "None",
-          contact: "None",
-        },
+        coordinators: { name: "CSI Coordinator", contact: "csi@svce.ac.in" },
+
       },
       {
         name: "Prompt Tactics",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        date: "15th March",
+        time: "1:00PM - 3:00PM",
+        venue: "It Dept Lab",
         team: "2 Members",
         description: [
           "Welcome to the Tech Odyssey - where coding meets creativity in a thrilling three-act saga!",
@@ -920,30 +874,28 @@ const eventsData: {
           "Round 2: Prompt Craft - Unleash your inner artist as you craft prompts for an AI to replicate an image. It's a duel of creativity and code. The most visually stunning replication earns you a ticket to the grand finale.",
           "Round 3: SQL Showdown - In the final act, dive into the depths of databases and solve SQL riddles with bite-sized queries. It's not just about code; it's about unraveling the mysteries with finesse. Only the SQL maestros will emerge victorious!",
         ],
-        shortDescription:"prompt based competition with specific challenges",
+        shortDescription: "prompt based competition with specific challenges",
         rules: [
           "Plagiarism is not allowed.",
           "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
         ],
         requirements: ["laptop, rough sheets, pen"],
-        coordinators: {
-          name: "None",
-          contact: "None",
-        },
+        coordinators: { name: "CSI Coordinator", contact: "csi@svce.ac.in" },
+
       },
       {
         name: "Tech Pair",
-        date: "TBA",
-        venue: "TBA",
-        time: "TBA",
+        date: "15th March",
+        venue: "It Dept Lab",
+        time: "10:30AM - 12:30PM",
         team: "2",
         description: [
           "Round 1:In this round, two members will be participating, one member as a catcher and the other member as a responser. The timing of the event is 5 minutes where the catcher will be given a technical word and they should help the responser to find out the word with a maximum of three clues.",
-          "Round 2: In this round, a poster will be displayed for the participants for nearly 20 seconds. Later on, the participants should recreate the poster that was displayed. The time for recreating the poster would be approximately some 30 to 45 minutes.", 
+          "Round 2: In this round, a poster will be displayed for the participants for nearly 20 seconds. Later on, the participants should recreate the poster that was displayed. The time for recreating the poster would be approximately some 30 to 45 minutes.",
           "Round 3:Just a minute (JAM)",
-          "Round 4:In this round, a topic will be given to a person ( any one of the two participants). The person should write a content on that given topic.The other participant now should analyze and understand the content written by their team member and should speak on that topic for 3 minutes."
+          "Round 4:In this round, a topic will be given to a person ( any one of the two participants). The person should write a content on that given topic.The other participant now should analyze and understand the content written by their team member and should speak on that topic for 3 minutes.",
         ],
-        shortDescription:"A pair event to solve challenges",
+        shortDescription: "A pair event to solve challenges",
         rules: [
           "Round 1 rules:There should not be any direct communication between the participants.",
           "They should find the word only by giving clues.Participants will be rewarded points based on how many words they find within the given time constraint.",
@@ -952,15 +904,13 @@ const eventsData: {
           "The Participants will be judged based on their accuracy for the poster they recreate within the given time constraint.",
 
           "Round 3 rules:The Participants will not be given any extra time.",
-          "The Participants will be judged based on their understanding and how they explain the content."
- ],
+          "The Participants will be judged based on their understanding and how they explain the content.",
+        ],
         requirements: ["TBA"],
-        coordinators: { name: "TBA", contact: "TBA" },
+        coordinators: { name: "CSI Coordinator", contact: "csi@svce.ac.in" },
       },
     ],
   },
-  // { id: "workshops" },
-  // { id: "proshows" },
 ];
 
 export default eventsData;
