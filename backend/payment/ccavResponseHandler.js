@@ -15,9 +15,6 @@ exports.postRes = function (request, response) {
       ccavPOST = qs.parse(ccavEncResponse);
       var encryption = ccavPOST.encResp;
       ccavResponse = ccav.decrypt(encryption, workingKey);
-      response.writeHeader(200, { "Content-Type": "text/html" });
-      response.write(ccavResponse);
-      response.send();
     });
 
     request.on("end", function () {
@@ -31,10 +28,9 @@ exports.postRes = function (request, response) {
         '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Response Handler</title></head><body><center><font size="4" color="blue"><b>Response Page</b></font><br>' +
         pData +
         "</center><br></body></html>";
-        
       response.writeHeader(200, { "Content-Type": "text/html" });
-      response.write(pData);
-      response.send();
+      response.write(`<p>${pData}</p>`);
+      response.end();
     });
   } catch (e) {
     fs.appendFile(path.join(__dirname, "../log.txt"), e, (err) => {
