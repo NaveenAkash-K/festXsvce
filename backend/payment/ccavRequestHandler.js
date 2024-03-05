@@ -14,6 +14,7 @@ exports.postReq = function (request, response) {
       formbody = "";
 
     request.on("data", function (data) {
+
       body += data;
       encRequest = ccav.encrypt(body, workingKey);
       formbody =
