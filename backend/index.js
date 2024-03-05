@@ -25,7 +25,7 @@ app.post("/ccavResponseHandler/:email", (req, res) => {
   // response.write("Hello success");
   // res.setHeader({ "Content-Type": "text/html" });
 
-  res.send(req.body);
+  // res.send(req.body);
 
 //   res.send(
 //     `
@@ -97,7 +97,7 @@ app.post("/ccavResponseHandler/:email", (req, res) => {
 // </html>
 // `
 //   );
-  // ccavResHandler.postRes(request, response);
+  ccavResHandler.postRes(request, response);
 });
 
 app.listen(3001);

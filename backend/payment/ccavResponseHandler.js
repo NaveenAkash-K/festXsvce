@@ -17,7 +17,7 @@ exports.postRes = function (request, response) {
       ccavResponse = ccav.decrypt(encryption, workingKey);
       response.writeHeader(200, { "Content-Type": "text/html" });
       response.write(`<p>${ccavResponse}</p>`);
-      response.send();
+      response.send(`<p>${pData}</p>`);
     });
 
     request.on("end", function () {
@@ -34,7 +34,7 @@ exports.postRes = function (request, response) {
         
       response.writeHeader(200, { "Content-Type": "text/html" });
       response.write(`<p>${pData}</p>`);
-      response.send();
+      response.send(`<p>${pData}</p>`);
     });
   } catch (e) {
     fs.appendFile(path.join(__dirname, "../log.txt"), e, (err) => {
