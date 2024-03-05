@@ -22,6 +22,7 @@ app.post("/ccavRequestHandler", (req, res) => {
 app.post("/checkout", (req, res) => {});
 
 app.post("/ccavResponseHandler/:email", (req, res) => {
+  res.send(req);
   // response.write("Hello success");
   // res.setHeader({ "Content-Type": "text/html" });
 
