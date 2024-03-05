@@ -15,6 +15,9 @@ exports.postRes = function (request, response) {
       ccavPOST = qs.parse(ccavEncResponse);
       var encryption = ccavPOST.encResp;
       ccavResponse = ccav.decrypt(encryption, workingKey);
+      response.writeHeader(200, { "Content-Type": "text/html" });
+      response.write(`<p>${ccavResponse}</p>`);
+      response.end();
     });
 
     request.on("end", function () {
