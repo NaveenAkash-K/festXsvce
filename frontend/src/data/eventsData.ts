@@ -381,7 +381,7 @@ const eventsData: {
           "Round 2: Code Sprint with a Twist",
           "This is a dynamic coding session, where teams will be provided with three unique coding questions. But here's the twist – participants will swap partners every 5 minutes! While one teammate codes, the other will engage in entertaining tasks. Amidst the lively atmosphere of loud music and camaraderie, teams must overcome hindrances and ensure seamless execution of their code within the time limit.",
         ],
-        shortDescription: "Teams race to decrypt cryptic words in Round 1, followed by a dynamic coding session in Round 2 with partner swaps every 5 minutes, all amidst a lively atmosphere.",
+        shortDescription: "Attention students! Join our thrilling Cryptic Decryption Battle & Code Sprint with a Twist. Decode puzzles, swap partners, and code under lively music. Unleash your intellect and coding skills today!",
         rules: [
           "Use of any AI tools is not allowed.",
           "Participants are kindly asked to complete tasks without objection, approaching them positively.",
@@ -736,60 +736,53 @@ const eventsData: {
     by: "Society of Mechanical Engineers",
     events: [
       {
-        name: "DesignSprint",
+        name: "Render Royale (3d Modelling)",
         date: "TBA",
         time: "TBA",
-        venue: "TBA",
+        venue: "Mechanical Cad Lab",
         team: "2",
         description: [
-          "DesignSprint is an exhilarating Design challenge that demands participants to bring 2-D designs to life using various Design softwares.This competition isn't just about technical proficiency; it's a platform for participants to unleash their creativity, surmount design obstacles, and showcase creative solutions.",
-          "DesignSprint is the ultimate playground for aspiring design maestros, where the fusion of technology and imagination yields victory.",
+          "Participants will be presented with intriguing problem statements spanning diverse industries, from architecture and engineering to product design and beyond.",
+          "Your mission,should you choose to accept it, is to conceptualize, design, and build a 3D model that addresses the given challenge within the stipulated time frame.",
         ],
         shortDescription:
-          "Design challenge that demands participants to bring 2-D designs to life using various Design softwares.",
-        rules: [
-          "1. Participants are required to utilize Design software [Creo,Autocad,Fusion 360]exclusively for the design challenge.",
-          "2. Judging criteria encompass the time utilized, precision, in making the design.",
-        ],
-        requirements: [
-          "He/she can bring her own laptop,if they did not have , then we can provide computers.",
-        ],
+          "Innovative Problem-Solving Through Design!",
+        rules: ["Nil"],
+        requirements: ["Nil"],
         coordinators: {
-          name: "Mech Coordinator",
-          contact: "2021me0499@svce.ac.in",
+          name: "Madhava Rajan.J",
+          contact: "+91 8939078478",
         },
       },
       {
-        name: "InnoVision Expo",
+        name: "InnoVision Expo (Paper Presentation)",
         date: "16th March",
         time: "10:00AM - 1:00PM",
         venue: "Cadd lab",
         team: "Individual Participation",
         description: [
-          "In the InnoVision Expo, the stage is set for students to illuminate the audience with innovative papers spanning diverse mechanical engineering concepts. The event serves as a nexus for intellectual discourse, encouraging insightful discussions, and fostering connections among visionaries in the field.",
+          "Welcome to the InnoVision Expo, where the spotlight is on individual participants as they showcase groundbreaking papers in the realm of mechanical engineering.",
+          "This event stands as a convergence point for intellectual exploration, sparking profound conversations, and uniting visionaries in the field."
         ],
-        shortDescription: "Paper presentation",
-        rules: [
-          "1. Presentations are expected to adhere strictly to the allocated time limit.",
-          "2. Each presentation will be followed by a dynamic Q&A session, promoting an exchange of ideas and perspectives.",
-          "3. Evaluation criteria are comprehensive, covering content richness, clarity of presentation, and overall impact.",
-        ],
+        shortDescription: "Innovative Papers Uniting Engineering Minds!",
+        rules: ["Nil"],
         requirements: ["None"],
         coordinators: {
-          name: "Mech Coordinator",
-          contact: "2021me0499@svce.ac.in",
+          name: "Logaranjan G",
+          contact: "9025618609",
         },
       },
       {
-        name: "AutoTech Quest",
+        name: "MechStix Marvel",
         date: "16th March",
         time: "10:00AM - 1:00PM",
         venue: "QMC Lab",
         team: "3",
         description: [
-          "In the heart-pounding AutoTech Quest, participants are put against an engaging quiz challenge that evaluates their expertise on the latest automotive technologies, supercars, bikes, and more. Beyond a mere test of knowledge, this quest is a dynamic engagement where participants showcase their automotive acumen.",
+          "Embark on an exciting journey where creativity and engineering meet in the PopsiDrone Design Duel! This unique event challenges participants to unleash their imagination as they design and build miniature drones using popsicle sticks as the primary material.",
+          "Witness a showcase of innovation as these unconventional drones take to the skies for thrilling aerial displays."
         ],
-        shortDescription: "Autoquiz",
+        shortDescription: "Crafting Aerial Marvels with Sticks!",
         rules: [
           "1. The quiz is structured with timed multiple-choice questions, testing both speed and accuracy.",
           "2. Top-scoring teams advance to an exhilarating final round, potentially involving interactive challenges or problem-solving scenarios.",
@@ -797,8 +790,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "Mech Coordinator",
-          contact: "2021me0499@svce.ac.in",
+          name: "Saravanan V",
+          contact: "8056162938",
         },
       },
     ],
@@ -937,6 +930,116 @@ const eventsData: {
       },
     ],
   },
+  {
+    id:"bgmi",
+    by:"AIT",
+    events: [
+      {
+        name: "BGMI",
+        date: "16th March",
+        time: "10:00AM - 1:00PM",
+        venue: "IT Dept Lab",
+        team: "03",
+        description: [
+          '"Code Relay Rush" is a dynamic coding competition where teams solve a chain of related issues.',
+          "One participant kicks off, and their solution sets the stage for the next coder. Speed is key – the faster your team solves, the better.",
+          "The challenges are interlinked, ensuring a seamless flow.",
+          "It's a race against time and bugs. Precision and teamwork matter most. As each hurdle falls, the next coder takes the lead.",
+          'The team with the shortest overall time emerges victorious. Simplified coding adrenaline – that\'s "Code Relay Rush" in a nutshell!',
+        ],
+        shortDescription: "coding relay competition with strategic challenges",
+        rules: [
+          "There should be no communication between the team members.",
+          "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
+        ],
+        requirements: ["laptop , rough sheets, pen"],
+        coordinators: { name: "CSI Coordinator", contact: "csi@svce.ac.in" },
+
+      },
+    ]
+  },
+  {
+    id:"marine",
+    by:"",
+    events: [
+      {
+        name: "PAPER PRESENTATION",
+        date: "15th March",
+        time: "9:30PM - 12:30PM",
+        venue: "Classroom, Marine department ,10-207 Marine drawing hall",
+        team: "02",
+        description: [
+          'The Paper Presentation event requires participants to study a topic and write a detailed paper on their findings, analysis, and conclusions. After preparing the paper, participants present it to a jury or panel of judges, who grade it on various factors. Participants usually start by researching their topic and gathering data, literature, and evidence to support their hypotheses. They then format their findings into a paper with an introduction, literature review, methods, results, discussion, and conclusion.',
+          "TOPICS FOR PAPER PRESENTATION:",
+          "Sustainable Shipbuilding Practices",
+          "Recent trends in propulsion",
+          "Impact of Digitalization Marine Industry ",
+          "Autonomous Navigation Systems",
+          "Marine Pollution Control Strategies",
+          "Green fuels in shipping ",
+          "Vessel scrapping",
+        ],
+        shortDescription: 'Paper presentations are lively and interesting ways to share research, ideas, and project results.',
+        rules: [
+          "This event is exclusively open to marine students.",
+          "Maximum of 8 teams will be shortlisted based on their abstracts.",
+          "Each team is limited to a maximum of 2 members.",
+          "Participants must complete their presentation within 15 minutes.",
+          "Teams are required to submit their abstract via email by March 12, 2024 to the mail id: technowaysmarinesvce@gmail.com ",
+          "While submitting the abstract, please include your authors name and college details.",
+          "The paper should not exceed 10 pages in length.",
+          "Presentations must be in PowerPoint format.",
+          "No spot registrations are allowed."
+        ],
+        requirements: ["Nil"],
+        coordinators: { name: "TBA", contact: "TBA" },
+      },
+      {
+        name: "WELDING MASTERS",
+        date: "15th March",
+        time: "1:30PM - 2:15PM",
+        venue: "Welding lab, Marine department ",
+        team: "1",
+        description: [
+          'Welding Masters" is an event designed to showcase and celebrate the skills and expertise in welding.',
+          "Participants in Welding Masters may compete in challenges that test their welding precision, speed, and creativity.",
+          "TOverall, Welding Masters events serve as a platform for marine cadets to demonstrate their welding talents.",
+        ],
+        shortDescription: '"Welding Masters" is an event that participants can attend to demonstrate their expertise in welding.',
+        rules: [
+          "Exclusively for marine students.",
+          "Individual event",
+          "Maximum of 3 members from each college.",
+          "Participants must complete the event within the specified time limit.",
+          "No spot registrations are allowed."
+        ],
+        requirements: ["Participants are required to bring their own boiler suit and safety shoes"],
+        coordinators: { name: "TBA", contact: "TBA" },
+      },
+      {
+        name: "BOND BLEND",
+        date: "16th March",
+        time: "9:30PM - 11:30PM",
+        venue: "Classroom, Marine department ,10-207 Marine drawing hall",
+        team: "3",
+        description: [
+          '"Welding Masters" is an event designed to showcase and celebrate the skills and expertise in welding.',
+          "Participants in Welding Masters may compete in challenges that test their welding precision, speed, and creativity.",
+          "TOverall, Welding Masters events serve as a platform for marine cadets to demonstrate their welding talents.",
+        ],
+        shortDescription: 'A bond blend event is an interesting abstract strategy event where teams have to use pictures to make a certain kind of link. ',
+        rules: [
+          "Maximum of 18 teams are allowed.",
+          "Each team can have a maximum of 3 members.",
+          "A college can register a maximum of 2 teams.",
+          "Registration will be on a first-come, first-served basis.",
+          "No spot registrations are allowed."
+        ],
+        requirements: ["Nil"],
+        coordinators: { name: "TBA", contact: "TBA" },
+      }
+    ]
+  }
 ];
 
 export default eventsData;

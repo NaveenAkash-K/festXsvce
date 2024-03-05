@@ -9,6 +9,8 @@ import it from "../assets/images/departments/IT.png";
 import me from "../assets/images/departments/mech.png";
 import club from "../assets/images/departments/csi.png";
 import ieee from "../assets/images/departments/ieee.png";
+import bgmi from "../assets/images/departments/BGMI.png";
+import marine from "../assets/images/departments/Marine.png";
 // import workshops from "../assets/images/departments/IT.webp";
 // import pros from "../assets/images/proshow.webp";
 
@@ -22,12 +24,14 @@ const departmentsData: {
   { id: "chem", name: "Chemical Engineering", img: ce },
   { id: "civil", name: "Civil Engineering", img: civil },
   { id: "cse", name: "Computer Science", img: cs },
+  { id: "csi_club", name: "CSI Student Chapter", img: club },
   { id: "ece", name: "Electric & Communication Engineering", img: ece },
   { id: "eee", name: "Electric & Electronics Engineering", img: eee },
-  { id: "int", name: "Information Technology", img: it },
-  { id: "mech", name: "Mechanical Engineering", img: me },
   { id: "ieee_club", name: "IEEE SVCE Student Branch", img: ieee },
-  { id: "csi_club", name: "CSI Student Chapter", img: club },
+  { id: "int", name: "Information Technology", img: it },
+  { id: "marine", name: "Marine Engineering", img: marine },
+  { id: "mech", name: "Mechanical Engineering", img: me },
+  { id: "bgmi", name: "BGMI", img: bgmi },
   // { id: "workshops", name: "Workshops", img: workshops },
   // { id: "proshows", name: "Proshows", img: pros },
 ];

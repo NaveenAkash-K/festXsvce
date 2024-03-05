@@ -83,9 +83,9 @@ const workshopData: {
     id: 3,
     dept: "Association of Computer Engineers (ACE)",
     name: "A Mixed Reality AR & VR Experience",
-    duration: "9am - 2pm",
+    duration: "9AM - 2PM",
     shrtDesc:
-      "🎮 *AR & VR Workshop with Unreal Engine* Experience hands-on learning, build practical skills, and network with industry professionals in this immersive exploration of AR and VR technology. Perfect for students, professionals, and enthusiasts eager to dive into the future of digital experiences.",
+      "🎮 AR & VR Workshop with Unreal Engine Experience hands-on learning, build practical skills, and network with industry professionals in this immersive exploration of AR and VR technology. Perfect for students, professionals, and enthusiasts eager to dive into the future of digital experiences.",
     desc: [
       "🎮 *Unleash Your Creativity: AR & VR Workshop with Unreal Engine*",
       " Dive into the world of Augmented Reality (AR) and Virtual Reality (VR) in our dynamic workshop led by a certified Unreal Engine instructor.",
@@ -107,6 +107,27 @@ const workshopData: {
     rules:["Respect copyright and intellectual property rights when using workshop materials or resources.","Any illegal or unethical behaviour "],
     coord:["Manoj"],
     ph:"+91 82209 69058"
+  },
+  {
+    id: 4,
+    dept: "Marine Engineering",
+    name: "Robotic wire arc additive manufacturing",
+    duration: "1:30PM - 2:30PM",
+    shrtDesc:
+      "",
+    desc: [
+      "The judges' decision will be considered final and binding.",
+      "All marine students are requested to attend the event in marine uniform only.",
+      "The prizes will be distributed on the second day of the event.",
+      "All participants will receive e-certificates.",
+    ],
+    venue: "TBA",
+    req: ["Nil"],
+    maxPeople: null,
+    day:"16th March",
+    rules:["Nil"],
+    coord:["TBA"],
+    ph:"TBA"
   },
 ];
 

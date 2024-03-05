@@ -34,10 +34,11 @@ const EventInfo: React.FC = () => {
     requirements: [],
     coordinators: { name: "", contact: "" },
   };
-
+  var by;
   eventsData.map((dep) => {
     if (dep.id === department && eventId !== undefined) {
       event = dep.events[parseInt(eventId)];
+      by = dep.by;
     }
   });
 
@@ -49,10 +50,13 @@ const EventInfo: React.FC = () => {
           <h1 style={{ textAlign: "center", paddingBottom: "30px" }}>
             {event.name}
           </h1>
+          {by
+            &&
           <div className={styles.scrollingText}>
-            <p>By {eventsData.filter((ele) => ele.id == department)[0].by}</p>
+            <p>By {eventsData.filter((ele) => ele.id === department)[0].by}</p>
             <br />
           </div>
+          }
           <div className={styles.contextContainer}>
             <p></p>
             <div className={styles.details}>
