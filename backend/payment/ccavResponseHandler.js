@@ -18,6 +18,7 @@ exports.postRes = function (request, response) {
     });
 
     request.on("end", function () {
+      
       var pData = "";
       pData = "<table border=1 cellspacing=2 cellpadding=2><tr><td>";
       pData = pData + ccavResponse.replace(/=/gi, "</td><td>");
