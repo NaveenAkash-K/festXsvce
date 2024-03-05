@@ -26,7 +26,7 @@ const departmentsData: {
   { id: "eee", name: "Electrical & Electronics Engineering", img: eee },
   { id: "int", name: "Information Technology", img: it },
   { id: "mech", name: "Mechanical Engineering", img: me },
-  { id: "ieee_club", name: "IEEE Student Chapter", img: ieee },
+  { id: "ieee_club", name: "IEEE SVCE Student Branch", img: ieee },
   { id: "csi_club", name: "CSI Student Chapter", img: club },
   // { id: "workshops", name: "Workshops", img: workshops },
   // { id: "proshows", name: "Proshows", img: pros },

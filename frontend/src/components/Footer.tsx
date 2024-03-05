@@ -21,10 +21,10 @@ const Footer = () => {
           <h2>A National Level Technical Fest</h2>
           <div>
             <a href="tel:+91 95514 49859"><IoCall className={styles.footerLogo} /></a>
-            <IoLocation className={styles.footerLogo} />
+            <NavLink to={"/location"}><IoLocation className={styles.footerLogo} /></NavLink>
             {/* <IoLogoFacebook className={styles.footerLogo} /> */}
-            <IoLogoInstagram className={styles.footerLogo} />
-            <a href="mailto:technoways.svce.ac.in"><IoMail className={styles.footerLogo} /></a>
+            <IoLogoInstagram className={styles.footerLogo} style={{cursor:"pointer"}} onClick={()=>{window.open("https://www.instagram.com/technoways_24?igsh=MWtrNzhpaDhvdTc3OA==","_blank")}} />
+            <a href="mailto:technoways@svce.ac.in"><IoMail className={styles.footerLogo} /></a>
           </div>
         </div>
         <div className={styles.menuContactsDiv}>
@@ -72,7 +72,7 @@ const Footer = () => {
             <br />
             <p>
               <IoMail className={styles.contactLogo} />
-              Mail: <a href="mailto:technoways.svce.ac.in" style={{textDecoration:'none',color:'white'}}>technoways.svce.ac.in</a>
+              Mail: <a href="mailto:technoways@svce.ac.in" style={{textDecoration:'none',color:'white'}}>technoways@svce.ac.in</a>
             </p>
             <br />
             <p>

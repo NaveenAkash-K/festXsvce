@@ -1,6 +1,6 @@
 import styles from "../styles/components/departmentItem.module.css";
 // import arrow from "../assets/images/icons/arrow.png";
-import logo from "../assets/images/festXsvce_logo.png";
+import logo from "../assets/images/techLogo.png";
 import { Link } from "react-router-dom";
 const DepartmentItem: React.FC<{
   image: string;

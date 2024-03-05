@@ -18,6 +18,9 @@
   background-color: rgba(50, 44, 44, 0.258);
   backdrop-filter: blur(10px);
   border-radius: 44px;
-  display: grid;
-  place-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5vw;
 }
