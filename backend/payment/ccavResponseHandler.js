@@ -7,7 +7,7 @@ exports.postRes = function (request, response) {
   try {
     var ccavEncResponse = "",
       ccavResponse = "",
-      workingKey = "0CD8DBF11960B2AA316C3A0F833390BB", //Put in the 32-Bit key shared by CCAvenues.
+      workingKey = "BC9E44F0087D201330A6DE18039F21E0", //Put in the 32-Bit key shared by CCAvenues.
       ccavPOST = "";
 
     request.on("data", function (data) {
@@ -18,6 +18,7 @@ exports.postRes = function (request, response) {
     });
 
     request.on("end", function () {
+      
       var pData = "";
       pData = "<table border=1 cellspacing=2 cellpadding=2><tr><td>";
       pData = pData + ccavResponse.replace(/=/gi, "</td><td>");
@@ -27,8 +28,9 @@ exports.postRes = function (request, response) {
         '<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Response Handler</title></head><body><center><font size="4" color="blue"><b>Response Page</b></font><br>' +
         pData +
         "</center><br></body></html>";
-      response.writeHeader(200, { "Content-Type": "text/html" });
-      response.write(htmlcode);
+        
+      // response.writeHeader(200, { "Content-Type": "text/html" });
+      response.write(pData);
       response.end();
     });
   } catch (e) {
