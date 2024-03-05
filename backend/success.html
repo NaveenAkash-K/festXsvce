@@ -1,32 +1,4 @@
-var express = require("express");
-var app = express();
-var http = require("http"),
-  fs = require("fs"),
-  ccav = require("./payment/ccavutil.js"),
-  qs = require("querystring"),
-  ccavReqHandler = require("./payment/ccavRequestHandler.js"),
-  ccavResHandler = require("./payment/ccavResponseHandler.js");
-
-app.use(express.static("public"));
-app.set("views", __dirname + "./payment/public");
-app.engine("html", require("ejs").renderFile);
-
-app.get("/about", function (req, res) {
-  res.render("dataFrom.html");
-});
-
-app.post("/ccavRequestHandler", (req, res) => {
-  ccavReqHandler.postReq(req, res);
-});
-
-app.post("/checkout", (req, res) => {});
-
-app.get("/ccavResponseHandler/:email", (req, res) => {
-  // response.write("Hello success");
-  // res.setHeader({ "Content-Type": "text/html" });
-  res.send(
-    `
-  <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -87,14 +59,8 @@ app.get("/ccavResponseHandler/:email", (req, res) => {
     <div class="container">
         <div class="success-icon">&#10004;</div>
         <h1>Payment Successful</h1>
-        <p>Your payment was successfully processed. The QR code for your ticket has been sent to your ${req.params.email}.</p>
+        <p>Your payment was successfully processed. The QR code for your ticket has been sent to your email.</p>
         <a href="#" class="btn">Continue</a>
     </div>
 </body>
 </html>
-`
-  );
-  // ccavResHandler.postRes(request, response);
-});
-
-app.listen(3001);
