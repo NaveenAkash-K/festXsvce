@@ -20,9 +20,9 @@ app.post("/ccavRequestHandler", function (request, response) {
 });
 
 
-app.post("/ccavResponseHandler", function (request, response) {
+app.post("/ccavResponseHandler/:name", function (request, response) {
   // response.write("Hello success");
-  response.send({message: "Success"});
+  response.send({message: request.params.name});
   // ccavResHandler.postRes(request, response);
 });
 
