@@ -11,7 +11,7 @@ const workshopData: {
   maxPeople: Number | null;
   rules:String[] | null;
   coord:String[];
-  ph:Number | null
+  ph:String | null
 }[] = [
   {
     id: 0,
@@ -37,7 +37,7 @@ const workshopData: {
     day:"16th March",
     rules:[""],
     coord:["V Kiran Yadav"],
-    ph:73339120852
+    ph:"+91 73391 20852"
   },
   {
     id: 1,
@@ -64,7 +64,7 @@ const workshopData: {
   {
     id: 2,
     dept: "Indian Institute of Chemical Engineers",
-    name: "Basics On CFT And Process Instrumentation using DWSIM Software",
+    name: "Basics Of Process Flow Sheeting using DWSIM",
     duration: "1:00PM - 2:30PM",
     shrtDesc:
       "Introduction to building process flow diagrams of various manufacturing processes.",
@@ -105,8 +105,8 @@ const workshopData: {
     maxPeople: null,
     day:"15th March",
     rules:["Respect copyright and intellectual property rights when using workshop materials or resources.","Any illegal or unethical behaviour "],
-    coord:[""],
-    ph:null
+    coord:["Manoj"],
+    ph:"+91 82209 69058"
   },
 ];
 

@@ -80,12 +80,11 @@ const WorkshopItem: React.FC = () => {
               </>
             )}
 
+            <h2>Event Coordinator</h2>
+            <p>{`${work?.coord}  ${work?.ph}`}</p>
             <Link to="/">
               <button className={styles.getPass}>Get Pass</button>
             </Link>
-            <br />
-            <h2>Event Coordinator</h2>
-            <p>{`${work?.coord} - ${work?.ph}`}</p>
           </div>
         </div>
       </div>

@@ -7,10 +7,10 @@ import EventInfo from "./page/EventInfo";
 import Location from "./page/Location";
 import About from "./page/About";
 // import FestXsvce from "./components/BottomText";
+// import AnimatedCursor from "react-animated-cursor";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import bg from "./assets/images/newBackground.png";
-// import AnimatedCursor from "react-animated-cursor";
 import { useEffect, useState } from "react";
 import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
@@ -58,17 +58,17 @@ const router = createBrowserRouter([
   },
   {
     path: "/departments/:department/:eventId",
-    element: <EventInfo />,
+    element: <EventInfo />
   },
   {
     path: "/getPass",
-    element: <GetPass />,
+    element: <GetPass />
   },
   {
     path: "/workshops",
     element: (
       <>
-        <Workshops />,
+        <Workshops />
         <Footer />
       </>
     ),
@@ -81,7 +81,7 @@ const router = createBrowserRouter([
     path: "/proshows",
     element: (
       <>
-        <Proshows />,
+        <Proshows />
         <Footer />
       </>
     ),
@@ -99,7 +99,7 @@ const router = createBrowserRouter([
     path: "/sponsors",
     element: (
       <>
-        <Sponsers />,
+        <Sponsers />
         <Footer />
       </>
     ),
@@ -108,7 +108,7 @@ const router = createBrowserRouter([
     path: "/autoexpo",
     element: (
       <>
-        <AutoExpo />,
+        <AutoExpo />
         <Footer />
       </>
     ),

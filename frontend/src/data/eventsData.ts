@@ -179,7 +179,7 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "IICE Coordinators",
+          name: "IICHE Coordinators",
           contact: "2021ch0065@svce.ac.in",
         },
       },
@@ -204,7 +204,7 @@ const eventsData: {
           "Permissible sizes of the poster are : 18''* 24'' or 36''*48''",
         ],
         coordinators: {
-          name: "IICE Coordinators",
+          name: "IICHE Coordinators",
           contact: "2021ch0065@svce.ac.in",
         },
       },
@@ -230,7 +230,7 @@ const eventsData: {
           "simulations/ feasibility reports fro proof of concept (preferred)",
         ],
         coordinators: {
-          name: "IICE Coordinators",
+          name: "IICHE Coordinators",
           contact: "2021ch0065@svce.ac.in",
         },
       },
@@ -381,7 +381,7 @@ const eventsData: {
           "Round 2: Code Sprint with a Twist",
           "This is a dynamic coding session, where teams will be provided with three unique coding questions. But here's the twist – participants will swap partners every 5 minutes! While one teammate codes, the other will engage in entertaining tasks. Amidst the lively atmosphere of loud music and camaraderie, teams must overcome hindrances and ensure seamless execution of their code within the time limit.",
         ],
-        shortDescription: "None",
+        shortDescription: "Teams race to decrypt cryptic words in Round 1, followed by a dynamic coding session in Round 2 with partner swaps every 5 minutes, all amidst a lively atmosphere.",
         rules: [
           "Use of any AI tools is not allowed.",
           "Participants are kindly asked to complete tasks without objection, approaching them positively.",
@@ -833,6 +833,32 @@ const eventsData: {
           contact: "2021ee0097@svce.ac.in",
         },
       },
+      {
+        name: "PitchForge",
+        date: "TBA",
+        time: "TBA",
+        venue: "Function Hall",
+        team: "1-3",
+        description: [
+          "Welcome to 'PitchForge', a dynamic pitching event where teams are challenged to provide innovative solutions to bring highly technical products to market.",
+          "In this high-stakes competition, participants will demonstrate their prowess in pitching and delivering compelling solutions within a stipulated time frame.",
+          "With an emphasis on interdisciplinary collaboration and real-world applicability, teams must craft solutions showcasing not only technical excellence but also practical, impactful, and scalable outcomes.",
+          "The stage is set for a pitch-perfect showdown where teams will compete to impress judges with their problem-solving abilities under tight deadlines. May the most inventive and adept solutions rise to the challenge!",
+        ],
+        shortDescription:"Narrow time-framed pitch perfect kind of event for critical technical products.",
+        rules: [
+          "Participants will be provided with the description of a highly technical product, and must come up with a pitch to bring that product to market.",
+          "The pitch must be holistic and should cover all aspects right from procurement to marketing.",
+          "Teams can refer to the internet for a limited period time as determined by the judging panel.",
+          "Teams will be judged based on their unique approach, holistic and innovative nature of their pitch.",
+          "Determining the winner and dispute resolution is completely undertaken by the judging panel.",
+        ],
+        requirements: ["TBA"],
+        coordinators: {
+          name: "TBA",
+          contact: "TBA",
+        },
+      }
     ],
   },
   {
