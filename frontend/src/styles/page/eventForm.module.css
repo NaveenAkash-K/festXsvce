@@ -1,13 +1,54 @@
 .container {
-  height: 80vh;
-  width: 80%;
+  padding-top: 7rem;
+  font-family: "Space Grotesk", sans-serif;
+  width: 100%;
   margin: auto;
-  margin-top: 7rem;
-  border-radius: 44px;
+  height: 80vh;
+  cursor: default;
+  & h1 {
+    text-align: center;
+  }
+}
+
+.eventFormContainer {
+  border: 1px solid #503938;
+  width: 80%;
+  padding: 1rem;
+  margin: 1% auto;
+  min-height: 80%;
   background-color: rgba(50, 44, 44, 0.258);
   backdrop-filter: blur(10px);
-  background-size: 100% 100%;
-  padding: 2rem 2rem 2rem 2rem;
-  line-height: 1.7rem;
+  border-radius: 44px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  flex-direction: column;
+  gap: 2vw;
+}
+
+.eventFormContainer > input[type="text"],
+input[type="email"] {
+  background-color: transparent;
   border: 1px solid #503938;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 70%;
+
+  &:focus {
+    outline: 1px solid #eb0029;
+  }
+}
+
+.eventFormContainer > input[type="submit"],
+input[type="email"] {
+  color: white;
+  background-color: transparent;
+  border: 1px solid #503938;
+  padding: 0.5rem;
+  border-radius: 10px;
+  width: 70%;
+
+  &:focus {
+    outline: 1px solid #eb0029;
+  }
 }

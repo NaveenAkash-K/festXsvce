@@ -20,9 +20,10 @@ import Workshops from "./page/Workshops";
 import Proshows from "./page/Proshows";
 import AutoExpo from "./page/AutoExpo";
 import WorkshopItem from "./components/WorkshopItem";
+import TermsAndConditions from "./page/terms";
+import EventForm from "./page/EventForm";
 
 ReactGA.initialize("UA-228658137-1");
-
 
 const router = createBrowserRouter([
   {
@@ -58,11 +59,24 @@ const router = createBrowserRouter([
   },
   {
     path: "/departments/:department/:eventId",
-    element: <EventInfo />
+    element: <EventInfo />,
+  },
+  {
+    path: "/termsandconditions",
+    element: <TermsAndConditions />,
+  },
+  {
+    path: "/eventForm",
+    element: (
+      <>
+        <EventForm />
+        <Footer />
+      </>
+    ),
   },
   {
     path: "/getPass",
-    element: <GetPass />
+    element: <GetPass />,
   },
   {
     path: "/workshops",
@@ -74,8 +88,8 @@ const router = createBrowserRouter([
     ),
   },
   {
-    path:"/workshops/:workId",
-    element: <WorkshopItem/>
+    path: "/workshops/:workId",
+    element: <WorkshopItem />,
   },
   {
     path: "/proshows",
@@ -124,9 +138,9 @@ function App() {
   //     setScreenWidth(window.innerWidth);
   //   });
   // }, []);
-  useEffect(()=>{
+  useEffect(() => {
     ReactGA.pageview(window.location.pathname + window.location.search);
-  },[])
+  }, []);
 
   return (
     <>
