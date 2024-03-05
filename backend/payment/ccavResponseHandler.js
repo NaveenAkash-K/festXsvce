@@ -29,7 +29,7 @@ exports.postRes = function (request, response) {
         pData +
         "</center><br></body></html>";
       response.writeHeader(200, { "Content-Type": "text/html" });
-      response.write(`<p>${pData}</p>`);
+      response.write(`<html><body><p>${pData}</p></body></html>`);
       response.end();
     });
   } catch (e) {
