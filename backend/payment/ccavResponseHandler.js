@@ -17,7 +17,7 @@ exports.postRes = function (request, response) {
       ccavResponse = ccav.decrypt(encryption, workingKey);
       response.writeHeader(200, { "Content-Type": "text/html" });
       response.write(`<p>${ccavResponse}</p>`);
-      response.send(`<p>${pData}</p>`);
+      response.send(`<p>${ccavResponse}</p>`);
     });
 
     request.on("end", function () {
