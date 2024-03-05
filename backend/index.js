@@ -22,7 +22,9 @@ app.post("/ccavRequestHandler", (req, res) => {
 app.post("/checkout", (req, res) => {});
 
 app.post("/ccavResponseHandler/:email", (req, res) => {
-  res.send(req);
+  if(req.statusCode > 399){
+    res.send("Heloooooo");
+  }
   // response.write("Hello success");
   // res.setHeader({ "Content-Type": "text/html" });
 
