@@ -4,7 +4,6 @@ var http = require("http"),
   qs = require("querystring");
 
 exports.postRes = function (request, response) {
-  try {
     var ccavEncResponse = "",
       ccavResponse = "",
       workingKey = "BC9E44F0087D201330A6DE18039F21E0", //Put in the 32-Bit key shared by CCAvenues.
@@ -29,12 +28,9 @@ exports.postRes = function (request, response) {
         pData +
         "</center><br></body></html>";
       response.writeHeader(200, { "Content-Type": "text/html" });
-      response.write("1. " + htmlcode + "\n" + "2. " + pData);
+      // response.write("1. " + htmlcode + "\n" + "2. " + pData);
+      response.write(htmlcode);
       response.end();
     });
-  } catch (e) {
-    response.writeHeader(200, { "Content-Type": "text/html" });
-    response.write(`<html><body><p>Successful Error</p></body></html>`);
-    response.end();
-  }
+
 };
