@@ -106,11 +106,11 @@ exports.postRes = function (request, response) {
         { $set: { paid: true } }
       )
         .then((result) => {
-          console.log("result");
+          console.log("Update result");
           console.log(result);
         })
         .catch((error) => {
-          console.log("error");
+          console.log("Update error");
           console.log(error);
         });
 

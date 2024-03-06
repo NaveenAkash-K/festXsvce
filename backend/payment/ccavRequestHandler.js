@@ -83,12 +83,12 @@ exports.postReq = function (request, response) {
     })
       .save()
       .then((result) => {
-        // console.log("result");
-        // console.log(result);
+        console.log("Insert result");
+        console.log(result);
       })
       .catch((error) => {
-        // console.log("error");
-        // console.log(error);
+        console.log("Insert error");
+        console.log(error);
       });
     response.writeHeader(200, { "Content-Type": "text/html" });
     response.write(formbody);
