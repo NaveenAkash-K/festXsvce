@@ -30,11 +30,6 @@ const About: React.FC = () => {
             <br />
             <h3>Proshow</h3>
           </div>
-          <div className={styles.aboutContainer}>
-            <h4>1</h4>
-            <br />
-            <h3>Auto Expo</h3>
-          </div>
         </div>
         <div className={styles.container}>
           <div className={styles.about}>
