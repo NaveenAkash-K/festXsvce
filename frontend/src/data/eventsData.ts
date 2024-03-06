@@ -157,7 +157,7 @@ const eventsData: {
   },
   {
     id: "chem",
-    by: "Indian Institute of Chemical Engineers",
+    by: "Organised by IIChE, AIChE,ACT student chapter",
     events: [
       {
         name: "The ChemEConnundrum",
@@ -179,8 +179,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "IICHE Coordinators",
-          contact: "2021ch0065@svce.ac.in",
+          name: "Ramapriyan A",
+          contact: "+91 7604962798",
         },
       },
       {
@@ -204,8 +204,8 @@ const eventsData: {
           "Permissible sizes of the poster are : 18''* 24'' or 36''*48''",
         ],
         coordinators: {
-          name: "IICHE Coordinators",
-          contact: "2021ch0065@svce.ac.in",
+          name: "Mukundan M",
+          contact: "+91 9962437234",
         },
       },
       {
@@ -230,8 +230,8 @@ const eventsData: {
           "simulations/ feasibility reports fro proof of concept (preferred)",
         ],
         coordinators: {
-          name: "IICHE Coordinators",
-          contact: "2021ch0065@svce.ac.in",
+          name: "Ramapriyan A",
+          contact: "+91 7604962797",
         },
       },
     ],
@@ -490,8 +490,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "ECEA Coordinators",
-          contact: "ecea@svce.ac.in",
+          name: "Sharad L",
+          contact: "+91 8637447247",
         },
       },
       {
@@ -518,8 +518,8 @@ const eventsData: {
           "Participants are allowed to bring standard tools and equipment if required.",
         ],
         coordinators: {
-          name: "ECEA Coordinators",
-          contact: "ecea@svce.ac.in",
+          name: "Umesh Anandh S",
+          contact: "+91 9384843066",
         },
       },
       {
@@ -536,8 +536,8 @@ const eventsData: {
         rules: ["Basic Paper presentation rules"],
         requirements: ["None"],
         coordinators: {
-          name: "ECEA Coordinators",
-          contact: "ecea@svce.ac.in",
+          name: "Lok Ranjan B",
+          contact: "+91 6374358867",
         },
       },
     ],
@@ -562,32 +562,32 @@ const eventsData: {
         shortDescription:
           "UKnowHunt: Where Uno meets technical treasure hunts, igniting strategic prowess and electrical engineering expertise in an exhilarating",
         rules: [
-          "1. Fair Play:",
+          "Fair Play:",
           "- Teams must adhere to the principles of fair play and sportsmanship.",
           "- Any form of cheating or misconduct will result in immediate disqualification.",
-          "2. Uno Game Rules:",
+          "Uno Game Rules:",
           "- Standard Uno rules apply.",
           "- A designated referee will oversee the Uno game and announce the results.",
-          "3. Treasure Hunt Quiz Rules:",
+          "Treasure Hunt Quiz Rules:",
           "- Teams must progress through the quiz in order, completing each room's questions before advancing.",
           "- After completing each question, the coordinator will lead you to the next room.",
           "- Teams may not proceed to the next room until their answers are verified by event coordinators or volunteers.",
-          "4. Lifeline Usage:",
+          "Lifeline Usage:",
           "- Lifelines earned in the Uno game can only be used in the second round.",
           "- Teams must declare their intention to use a lifeline after they see the question.",
-          "5. Time Limits:",
+          "Time Limits:",
           "- Each question will be assigned a time limit based on the difficulty level. If a team cannot solve a question, they will be allocated zero points for the question.",
-          "6. Dispute Resolution:",
+          "Dispute Resolution:",
           "- Event coordinators reserve the right to resolve any disputes or discrepancies in a fair and final manner.",
-          "7. Phone Usage:",
+          "Phone Usage:",
           "- Participants are strictly prohibited from using phones or any electronic devices during the treasure hunt quiz.",
           "- Phones must be switched off before entering quiz rooms.",
           "- Any violation of this rule may result in disqualification at the discretion of the event coordinators.",
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "AEEE Coordinator",
-          contact: "2021ee0525@svce.ac.in",
+          name: "Barath S N",
+          contact: "+91 7010310429",
         },
       },
       {
@@ -610,17 +610,17 @@ const eventsData: {
         shortDescription:
           "Outsmart the system, bend the circuits, and crack the code in a 90-minute with your skills to save a heist",
         rules: [
-          "1. Use of mobile phones are strictly prohibited",
-          "2. Teams must progress through phases sequentially.",
-          "3. Only in the last 5 mins the lifelines for next level will be revealed",
-          "4. Basic knowledge of Electrical and electronics are enough ",
+          "Use of mobile phones are strictly prohibited",
+          "Teams must progress through phases sequentially.",
+          "Only in the last 5 mins the lifelines for next level will be revealed",
+          "Basic knowledge of Electrical and electronics are enough ",
         ],
         requirements: [
           "Participants are requested to carry their laptops if possible, Atleast one for each team.",
         ],
         coordinators: {
-          name: "AEEE Coordinator",
-          contact: "2021ee0525@svce.ac.in",
+          name: "Tharun Balaji G",
+          contact: " +91 9150827575",
         },
       },
       {
@@ -635,18 +635,18 @@ const eventsData: {
         shortDescription:
           "A project presentation event where participants collaborate to showcase tangible solutions aligned with the United Nations Sustainable Development Goals through innovative model development",
         rules: [
-          "1. Participants must present working models or prototypes that align with the Sustainable Development Goals (SDGs).",
-          "2. Teams will be evaluated based on the quality of their short presentation.",
-          "3. Models or prototypes should effectively demonstrate solutions or innovations related to the SDGs.",
-          "4. Presentations should clearly articulate the problem being addressed and the proposed solution.",
-          "5. Teams are encouraged to be creative and innovative in their approach.",
-          "6. Each team must adhere to the specified time limit for their presentation.",
-          "7. Judges' decisions will be final and binding.",
+          "Participants must present working models or prototypes that align with the Sustainable Development Goals (SDGs).",
+          "Teams will be evaluated based on the quality of their short presentation.",
+          "Models or prototypes should effectively demonstrate solutions or innovations related to the SDGs.",
+          "Presentations should clearly articulate the problem being addressed and the proposed solution.",
+          "Teams are encouraged to be creative and innovative in their approach.",
+          "Each team must adhere to the specified time limit for their presentation.",
+          "Judges' decisions will be final and binding.",
         ],
         requirements: ["Tables and chairs with plug points"],
         coordinators: {
-          name: "AEEE Coordinator",
-          contact: "2021ee0525@svce.ac.in",
+          name: "Ragul K K",
+          contact: "+91 8122289779",
         },
       },
     ],
@@ -667,10 +667,10 @@ const eventsData: {
         shortDescription:
           "Fast-paced UI/UX design competition with bidding and strategic challenges",
         rules: [
-          "1. Participants can use any tool to develop a web design preferably figma.",
-          "2. Plagiarism is not allowed.",
-          "3. Team size should not exceed 3.",
-          "4. All the participants are requested to bring Laptops.",
+          "Participants can use any tool to develop a web design preferably figma.",
+          "Plagiarism is not allowed.",
+          "Team size should not exceed 3.",
+          "All the participants are requested to bring Laptops.",
         ],
         requirements: [
           "Laptop",
@@ -713,16 +713,16 @@ const eventsData: {
         time: "10:00AM - 1:30PM",
         venue:
           "Video hall/ Library Seminar Hall/ Biotechnology Department Seminar Hall",
-        team: "2 members per team",
+        team: "1",
         description: [
           "Welcome to 'Ctrl+Alt+Debate,' a cutting-edge parliamentary style debate competition that seamlessly blends oratory excellence with the ever-evolving landscape of technology. Designed to elevate students' public speaking skills, this event goes beyond traditional debate by delving into the forefront of tech headlines and innovations. Participants engage in thought-provoking discussions, navigating the dynamic intersection of technology and society. 'Ctrl+Alt+Debate' not only refines oratory prowess but also offers a unique platform to unravel the complexities of emerging technologies, industry shifts, and future opportunities. Prepare to articulate your perspectives and delve into the tech-driven discourse that shapes our rapidly advancing world. Are you ready to debate the future?",
         ],
         shortDescription:
           "'Ctrl+Alt+Debate' is a forward-thinking competition intertwining eloquent speechcraft with the forefront of technological discourse, providing a platform for participants to engage in thought-provoking discussions on the evolving intersection of technology and society.",
         rules: [
-          "1. Decorum must be maintained at all times on the floor.",
-          "2. The judge’s say is final and any opposition will lead to disqualification.",
-          "3. Use of generative AI for preparation is permitted but only during preparation time and not once the debate starts.",
+          "Decorum must be maintained at all times on the floor.",
+          "The judge’s say is final and any opposition will lead to disqualification.",
+          "Use of generative AI for preparation is permitted but only during preparation time and not once the debate starts.",
         ],
         requirements: ["None"],
         coordinators: {
@@ -769,7 +769,7 @@ const eventsData: {
         requirements: ["None"],
         coordinators: {
           name: "Logaranjan G",
-          contact: "9025618609",
+          contact: "+91 9025618609",
         },
       },
       {
@@ -784,14 +784,14 @@ const eventsData: {
         ],
         shortDescription: "Crafting Aerial Marvels with Sticks!",
         rules: [
-          "1. The quiz is structured with timed multiple-choice questions, testing both speed and accuracy.",
-          "2. Top-scoring teams advance to an exhilarating final round, potentially involving interactive challenges or problem-solving scenarios.",
-          "3. The final round serves as the ultimate decider for the winning team.",
+          "The quiz is structured with timed multiple-choice questions, testing both speed and accuracy.",
+          "Top-scoring teams advance to an exhilarating final round, potentially involving interactive challenges or problem-solving scenarios.",
+          "The final round serves as the ultimate decider for the winning team.",
         ],
         requirements: ["None"],
         coordinators: {
           name: "Saravanan V",
-          contact: "8056162938",
+          contact: "+91 8056162938",
         },
       },
     ],
@@ -879,7 +879,7 @@ const eventsData: {
           "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
         ],
         requirements: ["laptop , rough sheets, pen"],
-        coordinators: { name: "CSI Coordinator", contact: "csi@svce.ac.in" },
+        coordinators: { name: "Kavitha", contact: "+91 93456 03091" },
       },
       {
         name: "Prompt Tactics",
@@ -899,7 +899,7 @@ const eventsData: {
           "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
         ],
         requirements: ["laptop, rough sheets, pen"],
-        coordinators: { name: "CSI Coordinator", contact: "csi@svce.ac.in" },
+        coordinators: { name: "Vishal athreya", contact: "+91 93451 82466" },
       },
       {
         name: "Tech Pair",
@@ -925,7 +925,7 @@ const eventsData: {
           "The Participants will be judged based on their understanding and how they explain the content.",
         ],
         requirements: ["TBA"],
-        coordinators: { name: "CSI Coordinator", contact: "csi@svce.ac.in" },
+        coordinators: { name: "Gowtham S ", contact: "+91 90030 66776" },
       },
     ],
   },
@@ -1030,9 +1030,9 @@ const eventsData: {
         venue: "Classroom, Marine department ,10-207 Marine drawing hall",
         team: "3",
         description: [
-          '"Welding Masters" is an event designed to showcase and celebrate the skills and expertise in welding.',
-          "Participants in Welding Masters may compete in challenges that test their welding precision, speed, and creativity.",
-          "TOverall, Welding Masters events serve as a platform for marine cadets to demonstrate their welding talents.",
+          'A "Bond Blend" event is a captivating abstract strategy event that challenges participants to achieve a particular type of connection using provided images.',
+          "In this event, participants are presented with a set of images, symbols, or shapes arranged in a grid or other configuration.",
+          "The objective typically revolves around connecting specific elements in a particular manner, such as forming lines, paths, or networks between related images.",
         ],
         shortDescription:
           "A bond blend event is an interesting abstract strategy event where teams have to use pictures to make a certain kind of link. ",

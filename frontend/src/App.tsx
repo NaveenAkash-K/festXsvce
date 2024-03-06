@@ -28,7 +28,7 @@ ReactGA.initialize("UA-228658137-1");
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,
+    element: <Home />
   },
   {
     path: "/location",
@@ -59,11 +59,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/departments/:department/:eventId",
-    element: <EventInfo />,
+    element: <EventInfo />
   },
   {
     path: "/termsandconditions",
-    element: <TermsAndConditions />,
+    element: <TermsAndConditions />
   },
   {
     path: "/eventForm",
@@ -76,7 +76,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/getPass",
-    element: <GetPass />,
+    element: <GetPass />
   },
   {
     path: "/workshops",
@@ -89,7 +89,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/workshops/:workId",
-    element: <WorkshopItem />,
+    element: <WorkshopItem />
   },
   {
     path: "/proshows",
@@ -118,15 +118,15 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  {
-    path: "/autoexpo",
-    element: (
-      <>
-        <AutoExpo />
-        <Footer />
-      </>
-    ),
-  },
+  // {
+  //   path: "/autoexpo",
+  //   element: (
+  //     <>
+  //       <AutoExpo />
+  //       <Footer />
+  //     </>
+  //   ),
+  // },
 ]);
 
 function App() {
