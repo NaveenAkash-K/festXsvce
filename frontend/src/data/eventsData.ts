@@ -40,8 +40,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "SAE Coordinators",
-          contact: "2020ae0156@svce.ac.in",
+          name: "Aravind",
+          contact: "+91 9342356952",
         },
       },
       {
@@ -66,8 +66,8 @@ const eventsData: {
           "Each team should bring the required number of extension cords.",
         ],
         coordinators: {
-          name: "SAE Coordinators",
-          contact: "2020ae0156@svce.ac.in",
+          name: "TBA",
+          contact: "TBA",
         },
       },
       {
@@ -90,8 +90,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "SAE Coordinators",
-          contact: "2020ae0156@svce.ac.in",
+          name: "Yeshwanth",
+          contact: "+91 7358624281",
         },
       },
     ],
@@ -123,8 +123,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "Biotech Coordinators",
-          contact: "2022bt0204@svce.ac.in",
+          name: "Varsha G",
+          contact: "+91 7603956525",
         },
       },
       {
@@ -149,8 +149,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "Biotech Coordinators",
-          contact: "2022bt0204@svce.ac.in",
+          name: "Abineha A",
+          contact: "+91 9360676104",
         },
       },
     ],
@@ -677,8 +677,8 @@ const eventsData: {
           "USB to LAN converter if the laptop doesn't have a LAN port",
         ],
         coordinators: {
-          name: "AIT Coordinators",
-          contact: "2020it0600@svce.ac.in",
+          name: "Keerthana M",
+          contact: "+91 6383941381",
         },
       },
       {
@@ -703,8 +703,8 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "AIT Coordinators",
-          contact: "2020it0600@svce.ac.in",
+          name: " Ramanathan SP",
+          contact: "+91 7418732846",
         },
       },
       {
@@ -726,8 +726,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "AIT Coordinators",
-          contact: "2020it0600@svce.ac.in",
+          name: "Madhumitha R",
+          contact: "+91 9498330139 ",
         },
       },
     ],
@@ -740,7 +740,7 @@ const eventsData: {
         name: "Render Royale (3d Modelling)",
         date: "TBA",
         time: "TBA",
-        venue: "Mechanical Cad Lab",
+        venue: "UG Cad Lab Mechanical Department",
         team: "2",
         description: [
           "Participants will be presented with intriguing problem statements spanning diverse industries, from architecture and engineering to product design and beyond.",
@@ -822,8 +822,8 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "IEEE Coordinator",
-          contact: "2021ee0097@svce.ac.in",
+          name: "Suruthiga",
+          contact: "+91 98401 02853",
         },
       },
       {
@@ -849,8 +849,8 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "Sri Raja Rajeshwari",
+          contact: "+91 95661 45443",
         },
       },
     ],
@@ -996,7 +996,7 @@ const eventsData: {
           "No spot registrations are allowed.",
         ],
         requirements: ["Nil"],
-        coordinators: { name: "TBA", contact: "TBA" },
+        coordinators: { name: "HARIHARAN S", contact: "9943498144" },
       },
       {
         name: "WELDING MASTERS",
@@ -1021,7 +1021,7 @@ const eventsData: {
         requirements: [
           "Participants are required to bring their own boiler suit and safety shoes",
         ],
-        coordinators: { name: "TBA", contact: "TBA" },
+        coordinators: { name: "Jeevarathinam", contact: "+91 7339449264" },
       },
       {
         name: "BOND BLEND",
@@ -1044,7 +1044,7 @@ const eventsData: {
           "No spot registrations are allowed.",
         ],
         requirements: ["Nil"],
-        coordinators: { name: "TBA", contact: "TBA" },
+        coordinators: { name: "KANAGAVEL", contact: "+91 6383282466" },
       },
     ],
   },
