@@ -109,7 +109,7 @@ exports.postRes = async function (request, response) {
         { $set: { paid: true } }
       );
 
-      const qrCodeDataUrl = await QRCode.toDataURL(
+      const qrCodeBuffer = await QRCode.toBuffer(
         parsedData.billing_email.trim()
       );
       const transporter = nodemailer.createTransport({
@@ -126,11 +126,23 @@ exports.postRes = async function (request, response) {
         from: process.env.EMAIL,
         to: parsedData.billing_email.trim(),
         subject: "QR Code Email",
-        html: `<p>Dear recipient,</p><p>Here is your QR code:</p><img src="${qrCodeDataUrl}" alt="QR Code"/>`,
+        html: `
+        <p>Dear recipient,</p>
+        <p>Here is your QR code:</p>
+        <img src="cid:qrcode@unique" alt="QR Code"/>
+      `,
+        attachments: [
+          {
+            filename: "qrcode.png",
+            content: qrCodeBuffer,
+            encoding: "base64",
+            cid: "qrcode@unique", // Content-ID for referencing the image in the HTML
+          },
+        ],
       };
 
       const info = await transporter.sendMail(mailOptions);
-      console.log('Email sent:', info);
+      console.log("Email sent:", info);
       response.write(`
         <!DOCTYPE html>
       <html lang="en">
