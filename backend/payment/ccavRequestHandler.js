@@ -19,14 +19,14 @@ exports.postReq = function (request, response) {
     encRequest = "",
     formbody = "";
 
-  request.on("data", function (data) {
+  request.on("data", async function (data) {
     body += data;
     var ordId = "ORD_" + uuidv4();
     var parsedData = qs.parse(body);
     console.log(parsedData);
     var customerId = Date.now() + "_" + parsedData.regNo;
 
-    const user = new User({
+    const user = await new User({
       username: parsedData.billing_name,
       customerId: customerId,
       regNo: parsedData.regNo,
