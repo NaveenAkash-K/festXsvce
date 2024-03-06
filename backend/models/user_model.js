@@ -70,7 +70,7 @@ const schema = new mongoose.Schema({
     required: true,
   },
   paid: {
-    type: String,
+    type: Boolean,
     required: true,
   },
 });
