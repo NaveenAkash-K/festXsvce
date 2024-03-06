@@ -101,12 +101,10 @@ exports.postRes = function (request, response) {
       console.log("Response");
       console.log(parsedData);
 
-      console.log(
-        await User.updateOne(
+        User.updateOne(
           { email: parsedData.billing_email },
           { $set: { paid: true } }
         )
-      );
 
       // console.log(user);
 
