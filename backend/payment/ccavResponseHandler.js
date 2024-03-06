@@ -97,8 +97,8 @@ exports.postRes = function (request, response) {
     `);
       response.end();
     } catch (e) {
-      response.writeHeader(400, { "Content-Type": "text/html" });
-      res.send(`
+      response.writeHeader(200, { "Content-Type": "text/html" });
+      response.send(`
       <!DOCTYPE html>
   <html lang="en">
   <head>
