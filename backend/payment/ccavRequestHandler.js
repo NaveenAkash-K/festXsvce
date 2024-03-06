@@ -40,9 +40,9 @@ exports.postReq = function (request, response) {
     formbody =
       '<form id="nonseamless" method="post" name="redirect" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"/> <input type="hidden" id="encRequest" name="encRequest" value="' +
       encRequest +
-      '"><input name="regNo" value=' +
+      '"><input name="regNo" value="' +
       parsedData.regNo +
-      '/><input type="hidden" name="access_code" id="access_code" value="' +
+      '"/><input type="hidden" name="access_code" id="access_code" value="' +
       accessCode +
       '"><script language="javascript">document.redirect.submit();</script></form>';
   });
