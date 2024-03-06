@@ -7,7 +7,7 @@ var ccavResHandler = require("./payment/ccavResponseHandler.js");
 var User = require("./models/user_model.js");
 
 mongoose.connect(process.env.MONGO_URI, {
-  serverSelectionTimeoutMS: 5000,
+  serverSelectionTimeoutMS: 15000,
 });
 
 mongoose.connection.on("error", (err) => {
