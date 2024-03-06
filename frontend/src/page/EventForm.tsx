@@ -33,7 +33,7 @@ const Sponsers: React.FC = () => {
           method="POST"
           name="customerData"
           // action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
-          action="http://localhost:3001/ccavRequestHandler"
+          action="https://technoways-backend.vercel.app/ccavRequestHandler"
           className={styles.eventFormContainer}
         >
           <input type="text" name="billing_name" placeholder="Name" required />
