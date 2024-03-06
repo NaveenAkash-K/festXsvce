@@ -26,7 +26,7 @@ exports.postReq = function (request, response) {
     console.log(parsedData);
     var customerId = Date.now() + "_" + parsedData.regNo;
 
-    const user = new User({
+    new User({
       username: parsedData.billing_name,
       customerId: customerId,
       regNo: parsedData.regNo,
@@ -41,9 +41,14 @@ exports.postReq = function (request, response) {
       amount: 1,
       year: parsedData.year,
       paid: false,
-    }).save();
-
-    console.log(user);
+    })
+      .save()
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
 
     body += `&merchant_id=3342525
       &order_id=${ordId}
@@ -64,8 +69,6 @@ exports.postReq = function (request, response) {
   });
 
   request.on("end", async function () {
-
-
     response.writeHeader(200, { "Content-Type": "text/html" });
     response.write(formbody);
     response.end();
