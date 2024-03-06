@@ -25,10 +25,6 @@ const schema = new mongoose.Schema({
     type: mongoose.Schema.Types.Number,
     required: true,
   },
-  password: {
-    type: String,
-    required: true,
-  },
   regNo: {
     type: String,
     required: true,

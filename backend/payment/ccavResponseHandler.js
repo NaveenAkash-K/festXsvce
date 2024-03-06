@@ -100,6 +100,7 @@ exports.postRes = function (request, response) {
     const user = await new User({
       username: parsedData.billing_name,
       customerId: parsedData.customer_identifier,
+      regNo: parsedData.regNo,
       address: parsedData.billing_address,
       phoneNo: parsedData.billing_tel,
       city: parsedData.billing_city,
@@ -110,6 +111,7 @@ exports.postRes = function (request, response) {
       eventDetails: "dummy",
       amount: parsedData.amount,
       year: parsedData.year,
+      
     }).save();
 
     console.log(user);
