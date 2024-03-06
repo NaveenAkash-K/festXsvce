@@ -23,7 +23,7 @@ exports.postRes = function (request, response) {
     console.log(parsedData);
     console.log(parsedData.order_status);
     if (parsedData.order_status === "Failure") {
-      response.send(`
+      response.write(`
         <!DOCTYPE html>
     <html lang="en">
     <head>

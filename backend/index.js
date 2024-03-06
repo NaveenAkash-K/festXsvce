@@ -22,9 +22,7 @@ app.post("/ccavRequestHandler", (req, res) => {
 app.post("/checkout", (req, res) => {});
 
 app.post("/ccavResponseHandler", (req, res) => {
-  try {
     ccavResHandler.postRes(req, res);
-  } catch (e) {}
 });
 
 app.listen(3001);
