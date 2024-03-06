@@ -3,13 +3,25 @@ import Header from "../components/Header";
 import styles from "../styles/page/eventForm.module.css";
 import IIM from "../assets/images/2IIM.png";
 const Sponsers: React.FC = () => {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-    document.title = "Sponsors | Technoways";
-  }, []);
-
+  
   const [isTechPass, setIsTechPass] = useState<boolean>(false);
   const [isProShows, setIsProShows] = useState<boolean>(false);
+  const [isElite, setIsElite] = useState<boolean>(false);
+  
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Form | Technoways";
+    if(!isTechPass || !isProShows){
+      setIsElite(false);
+    }
+    if(isElite){
+      setIsProShows(true);
+      setIsTechPass(true);
+    }
+    if(isTechPass&&isProShows){
+      setIsElite(true);
+    }
+  }, [isTechPass, isProShows, isElite]);
 
   return (
     <>
@@ -24,13 +36,23 @@ const Sponsers: React.FC = () => {
           action="http://localhost:3001/ccavRequestHandler"
           className={styles.eventFormContainer}
         >
-          <input type="text" name="name" placeholder="Name" required />
-          <input type="text" name="phNo" placeholder="Phone No" required />
-          <input type="email" name="email" placeholder="Email" required />
+          <input type="text" name="billing_name" placeholder="Name" required />
+          <input type="text" name="billing_address" placeholder="Address" required />
+          <input type="text" name="billing_city" placeholder="City" required />
+          <input type="text" name="billing_state" placeholder="State" required />
+          <input type="text" name="billing_zip" placeholder="zip" required />
+          <input type="text" name="billing_tel" placeholder="Phone No" required />
+          <input type="email" name="billing_email" placeholder="Email" required />
           <input
             type="text"
             name="college"
             placeholder="College Name"
+            required
+          />
+          <input
+            type="text"
+            name="year"
+            placeholder="Year"
             required
           />
           <input
@@ -49,24 +71,35 @@ const Sponsers: React.FC = () => {
             type="checkbox"
             name="techpass"
             id="techpass"
-            value={"Tech Pass"}
+            value={isTechPass.toString()}
             checked={isTechPass}
             onChange={(value) => {
               setIsTechPass(value.target.checked);
             }}
           />
-          Tech Pass
+          Tech Pass 199 299
           <input
             type="checkbox"
             name="proshows"
             id="proshows"
-            value={"Pro Shows"}
+            value={isProShows.toString()}
             checked={isProShows}
             onChange={(value) => {
               setIsProShows(value.target.checked);
             }}
           />
-          Pro Shows
+          Pro Shows 250 
+          <input
+            type="checkbox"
+            name="elite"
+            id="elite"
+            value={isElite.toString()}
+            checked={isElite}
+            onChange={(value) => {
+              setIsElite(value.target.checked);
+            }}
+          />
+          Elite 399 499
           <input type="submit" />
         </form>
       </div>
