@@ -33,5 +33,5 @@ mongoose.connection.once("open", () => {
   app.listen(3001, () => {
     console.log("Server started at: https:localhost:8080");
   });
-  // console.log("Mongo Success");
+  console.log("Mongo Success");
 });
