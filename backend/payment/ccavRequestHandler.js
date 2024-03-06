@@ -47,6 +47,24 @@ exports.postReq = function (request, response) {
   });
 
   request.on("end", async function () {
+    console.log("Object");
+    console.log({
+      username: parsedData.billing_name,
+      customerId: customerId,
+      regNo: parsedData.regNo,
+      address: parsedData.billing_address,
+      phoneNo: parsedData.billing_tel,
+      city: parsedData.billing_city,
+      college: parsedData.college,
+      department: parsedData.department,
+      email: parsedData.billing_email,
+      ordId: ordId,
+      eventDetails: "dummy",
+      amount: 1,
+      year: parsedData.year,
+      paid: false,
+    });
+    
     new User({
       username: parsedData.billing_name,
       customerId: customerId,
@@ -65,9 +83,11 @@ exports.postReq = function (request, response) {
     })
       .save()
       .then((result) => {
+        console.log("result");
         console.log(result);
       })
       .catch((error) => {
+        console.log("error");
         console.log(error);
       });
     response.writeHeader(200, { "Content-Type": "text/html" });

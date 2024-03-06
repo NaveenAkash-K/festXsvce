@@ -23,8 +23,8 @@ exports.postRes = function (request, response) {
     var pData = "";
     response.writeHeader(200, { "Content-Type": "text/html" });
     var parsedData = qs.parse(ccavResponse);
-    console.log(parsedData.regNo);
-    console.log(parsedData);
+    // console.log(parsedData.regNo);
+    // console.log(parsedData);
 
     if (parsedData.order_status === "Failure") {
       response.write(`
@@ -98,18 +98,18 @@ exports.postRes = function (request, response) {
       response.end();
       return;
     } else {
-      console.log("Response");
-      console.log(parsedData);
+      // console.log("Response");
+      // console.log(parsedData);
 
       User.updateOne(
         { email: parsedData.billing_email },
         { $set: { paid: true } }
       )
         .then((result) => {
-          console.log(result);
+          // console.log(result);
         })
         .catch((error) => {
-          console.log(error);
+          // console.log(error);
         });
 
       response.write(`
