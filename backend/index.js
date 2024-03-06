@@ -2,10 +2,13 @@ var express = require("express");
 var app = express();
 var http = require("http"),
   fs = require("fs"),
+  mongoose = require("mongoose"),
   ccav = require("./payment/ccavutil.js"),
   qs = require("querystring"),
   ccavReqHandler = require("./payment/ccavRequestHandler.js"),
   ccavResHandler = require("./payment/ccavResponseHandler.js");
+
+mongoose.connect(process.env.MONGO_URI);
 
 app.use(express.static("public"));
 app.set("views", __dirname + "./payment/public");
@@ -25,4 +28,9 @@ app.post("/ccavResponseHandler", (req, res) => {
     ccavResHandler.postRes(req, res);
 });
 
-app.listen(3001);
+mongoose.connection.once("open", () => {
+  app.listen(3001, () => {
+    console.log("Server started at: https:localhost:8080");
+  });
+  // console.log("Mongo Success");
+});
