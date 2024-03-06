@@ -19,7 +19,7 @@ exports.postRes = function (request, response) {
     ccavResponse = ccav.decrypt(encryption, workingKey);
   });
 
-  request.on("end", async function () {
+  request.on("end", function () {
     var pData = "";
     response.writeHeader(200, { "Content-Type": "text/html" });
     var parsedData = qs.parse(ccavResponse);
@@ -104,7 +104,17 @@ exports.postRes = function (request, response) {
       User.updateOne(
         { email: parsedData.billing_email },
         { $set: { paid: true } }
-      );
+      )
+        .then((result) => {
+          response.write(result);
+          response.end();
+          return;
+        })
+        .catch((error) => {
+          response.write(error);
+          response.end();
+          return;
+        });
 
       // console.log(user);
 
