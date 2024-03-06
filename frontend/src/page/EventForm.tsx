@@ -57,154 +57,154 @@ const Sponsers: React.FC = () => {
   const [pitstop, setPitstop] = useState(false);
   const [innovisionExpo, setInnovisionExpo] = useState(false);
   const [thinkTank, setThinkTank] = useState(false);
-  const[isTechPassDisable,setIsTechPassDisable] = useState(false);
+  const [isTechPassDisable, setIsTechPassDisable] = useState(false);
   const [isEventsDisabled, setIsEventsDisabled] = useState(false);
   // Example of using the techPrice variable
-  useEffect(() => {
-    // Array containing all the state variables
-    const events = [
-      isTechPass,
-      isProShows,
-      basicsAutomotive,
-      revit,
-      biomonopoly,
-      ctrlalt,
-      haijo,
-      bridge,
-      mudwell,
-      techPair,
-      prompt,
-      sdg,
-      uKnow,
-      electro,
-      spark,
-      thrill,
-      arvr,
-      chemintri,
-      cheme,
-      pitch,
-      render,
-      mechstix,
-      innosolve,
-      basicsOnCFTWorkshop,
-      uiUx,
-      relayRush,
-      projectForge,
-      theMistedHeist,
-      escapeRooms,
-      paperPresentationCivil,
-      paperPresentationECE,
-      embeddedSystemWorkshop,
-      visualPapyrus,
-      jokerCoder,
-      pitstop,
-      innovisionExpo,
-      thinkTank,
-    ];
+  // useEffect(() => {
+  //   // Array containing all the state variables
+  //   const events = [
+  //     isTechPass,
+  //     isProShows,
+  //     basicsAutomotive,
+  //     revit,
+  //     biomonopoly,
+  //     ctrlalt,
+  //     haijo,
+  //     bridge,
+  //     mudwell,
+  //     techPair,
+  //     prompt,
+  //     sdg,
+  //     uKnow,
+  //     electro,
+  //     spark,
+  //     thrill,
+  //     arvr,
+  //     chemintri,
+  //     cheme,
+  //     pitch,
+  //     render,
+  //     mechstix,
+  //     innosolve,
+  //     basicsOnCFTWorkshop,
+  //     uiUx,
+  //     relayRush,
+  //     projectForge,
+  //     theMistedHeist,
+  //     escapeRooms,
+  //     paperPresentationCivil,
+  //     paperPresentationECE,
+  //     embeddedSystemWorkshop,
+  //     visualPapyrus,
+  //     jokerCoder,
+  //     pitstop,
+  //     innovisionExpo,
+  //     thinkTank,
+  //   ];
 
-    // Check if any of the state variables is true
-    const isAnyTrue = events.some((event) => event);
+  //   // Check if any of the state variables is true
+  //   const isAnyTrue = events.some((event) => event);
 
-    // Check if all of the state variables are false
-    const areAllFalse = events.every((event) => !event);
+  //   // Check if all of the state variables are false
+  //   const areAllFalse = events.every((event) => !event);
 
-    // Set isTechPass state based on the condition
-    setIsTechPass(!areAllFalse && isAnyTrue);
-  }, [
-    basicsAutomotive,
-    revit,
-    biomonopoly,
-    ctrlalt,
-    haijo,
-    bridge,
-    mudwell,
-    techPair,
-    prompt,
-    sdg,
-    uKnow,
-    electro,
-    spark,
-    thrill,
-    arvr,
-    chemintri,
-    cheme,
-    pitch,
-    render,
-    mechstix,
-    innosolve,
-    basicsOnCFTWorkshop,
-    uiUx,
-    relayRush,
-    projectForge,
-    theMistedHeist,
-    escapeRooms,
-    paperPresentationCivil,
-    paperPresentationECE,
-    embeddedSystemWorkshop,
-    visualPapyrus,
-    jokerCoder,
-    pitstop,
-    innovisionExpo,
-    thinkTank,
-  ]);
-  useEffect(() => {
-    if (isProShows === true && !isElite) {
-      setBasicsAutomotive(false);
-      setRevit(false);
-      setBiomonopoly(false);
-      setCtrlAlt(false);
-      setHaijo(false);
-      setBridge(false);
-      setMudwell(false);
-      setTechPair(false);
-      setPrompt(false);
-      setSdg(false);
-      setUKnow(false);
-      setElectro(false);
-      setSpark(false);
-      setThrill(false);
-      setArvr(false);
-      setChemintri(false);
-      setCHEME(false);
-      setPitch(false);
-      setRender(false);
-      setMechstix(false);
-      setInnosolve(false);
-      setBasicsOnCFTWorkshop(false);
-      setUiUx(false);
-      setRelayRush(false);
-      setProjectForge(false);
-      setTheMistedHeist(false);
-      setEscapeRooms(false);
-      setPaperPresentationCivil(false);
-      setPaperPresentationECE(false);
-      setEmbeddedSystemWorkshop(false);
-      setVisualPapyrus(false);
-      setJokerCoder(false);
-      setPitstop(false);
-      setInnovisionExpo(false);
-      setThinkTank(false);
-      setIsTechPassDisable(true);
-      setIsTechPass(false);
-      setIsEventsDisabled(true);
-    } else {
-      setIsEventsDisabled(false);
-      setIsTechPassDisable(false)
-    }
-  }, [isProShows]);
-  useEffect(() => {
-    // if (isTechPass && isProShows) {
-    //   setIsElite(true);
-    // }
-    if(isElite){
-      setIsProShows(true)
-      setIsTechPass(true)
-    }
-    if(!isElite){
-      setIsProShows(false)
-      setIsTechPass(false)
-    }
-  }, [isTechPass, isProShows, isElite]);
+  //   // Set isTechPass state based on the condition
+  //   setIsTechPass(!areAllFalse && isAnyTrue);
+  // }, [
+  //   basicsAutomotive,
+  //   revit,
+  //   biomonopoly,
+  //   ctrlalt,
+  //   haijo,
+  //   bridge,
+  //   mudwell,
+  //   techPair,
+  //   prompt,
+  //   sdg,
+  //   uKnow,
+  //   electro,
+  //   spark,
+  //   thrill,
+  //   arvr,
+  //   chemintri,
+  //   cheme,
+  //   pitch,
+  //   render,
+  //   mechstix,
+  //   innosolve,
+  //   basicsOnCFTWorkshop,
+  //   uiUx,
+  //   relayRush,
+  //   projectForge,
+  //   theMistedHeist,
+  //   escapeRooms,
+  //   paperPresentationCivil,
+  //   paperPresentationECE,
+  //   embeddedSystemWorkshop,
+  //   visualPapyrus,
+  //   jokerCoder,
+  //   pitstop,
+  //   innovisionExpo,
+  //   thinkTank,
+  // ]);
+  // useEffect(() => {
+  //   if (isProShows === true && !isElite) {
+  //     setBasicsAutomotive(false);
+  //     setRevit(false);
+  //     setBiomonopoly(false);
+  //     setCtrlAlt(false);
+  //     setHaijo(false);
+  //     setBridge(false);
+  //     setMudwell(false);
+  //     setTechPair(false);
+  //     setPrompt(false);
+  //     setSdg(false);
+  //     setUKnow(false);
+  //     setElectro(false);
+  //     setSpark(false);
+  //     setThrill(false);
+  //     setArvr(false);
+  //     setChemintri(false);
+  //     setCHEME(false);
+  //     setPitch(false);
+  //     setRender(false);
+  //     setMechstix(false);
+  //     setInnosolve(false);
+  //     setBasicsOnCFTWorkshop(false);
+  //     setUiUx(false);
+  //     setRelayRush(false);
+  //     setProjectForge(false);
+  //     setTheMistedHeist(false);
+  //     setEscapeRooms(false);
+  //     setPaperPresentationCivil(false);
+  //     setPaperPresentationECE(false);
+  //     setEmbeddedSystemWorkshop(false);
+  //     setVisualPapyrus(false);
+  //     setJokerCoder(false);
+  //     setPitstop(false);
+  //     setInnovisionExpo(false);
+  //     setThinkTank(false);
+  //     setIsTechPassDisable(true);
+  //     setIsTechPass(false);
+  //     setIsEventsDisabled(true);
+  //   } else {
+  //     setIsEventsDisabled(false);
+  //     setIsTechPassDisable(false)
+  //   }
+  // }, [isProShows]);
+  // useEffect(() => {
+  //   // if (isTechPass && isProShows) {
+  //   //   setIsElite(true);
+  //   // }
+  //   if(isElite){
+  //     setIsProShows(true)
+  //     setIsTechPass(true)
+  //   }
+  //   if(!isElite){
+  //     setIsProShows(false)
+  //     setIsTechPass(false)
+  //   }
+  // }, [isTechPass, isProShows, isElite]);
   useEffect(() => {
     if (email.trim().endsWith("svce.ac.in")) {
       setElitePrice(399);
@@ -280,8 +280,8 @@ const Sponsers: React.FC = () => {
         <form
           method="POST"
           name="customerData"
-          // action="http://localhost:3001/ccavRequestHandler"
-          action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
+          action="http://localhost:3001/ccavRequestHandler"
+          // action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
           className={styles.eventFormContainer}
         >
           <input
@@ -289,7 +289,7 @@ const Sponsers: React.FC = () => {
             name="billing_name"
             placeholder="Name"
             required
-            value={billingName}
+            // value={billingName}
             onChange={(e) => setBillingName(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -298,7 +298,7 @@ const Sponsers: React.FC = () => {
             name="billing_address"
             placeholder="Address"
             required
-            value={billingAddress}
+            // value={billingAddress}
             onChange={(e) => setBillingAddress(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -307,7 +307,7 @@ const Sponsers: React.FC = () => {
             name="billing_city"
             placeholder="City"
             required
-            value={billingCity}
+            //value={billingCity}
             onChange={(e) => setBillingCity(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -316,7 +316,7 @@ const Sponsers: React.FC = () => {
             name="billing_state"
             placeholder="State"
             required
-            value={billingState}
+            //value={billingState}
             onChange={(e) => setBillingState(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -325,7 +325,7 @@ const Sponsers: React.FC = () => {
             name="billing_zip"
             placeholder="zip"
             required
-            value={billingZip}
+            //value={billingZip}
             onChange={(e) => setBillingZip(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -334,7 +334,7 @@ const Sponsers: React.FC = () => {
             name="billing_tel"
             placeholder="Phone No"
             required
-            value={billingTel}
+            //value={billingTel}
             onChange={(e) => setBillingTel(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -342,7 +342,7 @@ const Sponsers: React.FC = () => {
             type="email"
             name="billing_email"
             placeholder="Email"
-            value={email}
+            //value={email}
             required
             onChange={(e) => setEmail(e.target.value)}
             disabled={isEventsDisabled}
@@ -352,7 +352,7 @@ const Sponsers: React.FC = () => {
             name="college"
             placeholder="College Name"
             required
-            value={college}
+            //value={college}
             onChange={(e) => setCollege(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -361,7 +361,7 @@ const Sponsers: React.FC = () => {
             name="year"
             placeholder="Year"
             required
-            value={year}
+            //value={year}
             onChange={(e) => setYear(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -370,7 +370,7 @@ const Sponsers: React.FC = () => {
             name="regNo"
             placeholder="College Register No"
             required
-            value={regNo}
+            //value={regNo}
             onChange={(e) => setRegNo(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -379,7 +379,7 @@ const Sponsers: React.FC = () => {
             name="department"
             placeholder="Department"
             required
-            value={department}
+            //value={department}
             onChange={(e) => setDepartment(e.target.value)}
             disabled={isEventsDisabled}
           />
@@ -391,13 +391,63 @@ const Sponsers: React.FC = () => {
           >
             Next
           </button> */}
-
+          <div className={styles.passTag}>
+            <br />
+            <p>Select atleast any one pass.</p>
+            <p>You can either choose Technoways Pass or Proshows Pass or Elite for both pass</p>
+            <div>
+              <input
+                type="checkbox"
+                name="techpass"
+                id="techpass"
+                disabled={isTechPassDisable}
+                checked={isTechPass}
+                onChange={(value) => {
+                  setIsTechPass(value.target.checked);
+                }}
+              />
+              Tech Pass (Only for Tech Events) Rs:
+              {techPrice?.toString()}
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="proshows"
+                id="proshows"
+                checked={isProShows}
+                onChange={(value) => {
+                  setIsProShows(value.target.checked);
+                }}
+              />
+              <label htmlFor="proshows">
+                Pro Shows (Only for concerts) Rs:250
+              </label>
+            </div>
+            <div>
+              <input
+                type="checkbox"
+                name="elite"
+                id="elite"
+                checked={isElite}
+                onChange={(value) => {
+                  setIsElite(value.target.checked);
+                }}
+              />
+              Elite (For both events and concerts) Rs:{elitePrice?.toString()}
+            </div>
+            {/* <button onClick={() => setPage(false)}>Prev</button> */}
+          </div>
+          <br />
+          <br />
+          <h1>Technical Events</h1>
+          <p>Select events that do not overlap in time.</p>
+          <p>Below events doesnt apply for proshow passes.</p>
           <div className={styles.nextPageContainer}>
             <div className={styles.day1}>
               <h3 style={{ textAlign: "center" }}>Day1</h3>
               <div>
                 <input
-                  name="basicsAutomotive"
+                  name="BASICS AUTOMOTIVE"
                   type="checkbox"
                   id="techpass"
                   onChange={handleBasicsAutomotiveChange}
@@ -411,7 +461,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="revit"
+                  name="REV IT UP"
                   id="techpass"
                   onChange={handleRevitChange}
                   disabled={isEventsDisabled}
@@ -422,7 +472,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="biomonopoly"
+                  name="BIOMONOPOLY"
                   id="techpass"
                   onChange={handleBiomonopolyChange}
                   disabled={isEventsDisabled}
@@ -435,7 +485,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="ctrlalt"
+                  name="CTRL + ALT + DELETE"
                   id="techpass"
                   onChange={handleCtrlAltChange}
                   disabled={isEventsDisabled}
@@ -448,7 +498,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="haijo"
+                  name="HAIJO"
                   id="techpass"
                   onChange={handleHaijoChange}
                   disabled={isEventsDisabled}
@@ -459,7 +509,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="BRIDGE"
+                  name="BRIDGE EXPERTISE"
                   id="techpass"
                   onChange={handleBridgeChange}
                   disabled={isEventsDisabled}
@@ -472,7 +522,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="MUDWELL"
+                  name="MUDWELL MASTERY"
                   id="techpass"
                   onChange={handleMudwellChange}
                   disabled={isEventsDisabled}
@@ -494,7 +544,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="prompt"
+                  name="PROMPT TACTICS"
                   id="techpass"
                   onChange={handlePromptChange}
                   disabled={isEventsDisabled}
@@ -505,7 +555,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="SDG"
+                  name="SDG INNOVATION CHALLENGE"
                   id="techpass"
                   onChange={handleSdgChange}
                   disabled={isEventsDisabled}
@@ -518,18 +568,18 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="UKNOW"
+                  name="UKNOWHUNT"
                   id="techpass"
                   onChange={handleUKnowChange}
                   disabled={isEventsDisabled}
                   checked={uKnow}
                 />
-                <label htmlFor="UKNOW">UKNOWHUT (12:00PM-2:00PM)</label>
+                <label htmlFor="UKNOW">UKNOWHUNT (12:00PM-2:00PM)</label>
               </div>
               <div>
                 <input
                   type="checkbox"
-                  name="ELECTRO"
+                  name="ELECTRO-CRAFT"
                   id="techpass"
                   onChange={handleElectroChange}
                   disabled={isEventsDisabled}
@@ -542,7 +592,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="SPARK"
+                  name="SPARK QUEST"
                   id="techpass"
                   onChange={handleSparkChange}
                   disabled={isEventsDisabled}
@@ -553,7 +603,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="THRILL"
+                  name="THRILL QUEST"
                   id="techpass"
                   onChange={handleThrillChange}
                   disabled={isEventsDisabled}
@@ -564,7 +614,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="ARVR"
+                  name="AR VR WORKSHOP"
                   id="techpass"
                   onChange={handleArvrChange}
                   disabled={isEventsDisabled}
@@ -577,7 +627,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="CHEMINTRI"
+                  name="CHEM-E-INTRIGUE"
                   id="techpass"
                   onChange={handleChemintriChange}
                   disabled={isEventsDisabled}
@@ -590,7 +640,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="CHEME"
+                  name="CHEME CONNUNDRUM"
                   id="techpass"
                   onChange={handleCHEMEChange}
                   disabled={isEventsDisabled}
@@ -601,7 +651,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="PITCH"
+                  name="PITCH FORGE"
                   id="techpass"
                   onChange={handlePitchChange}
                   disabled={isEventsDisabled}
@@ -612,7 +662,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="RENDER"
+                  name="RENDER ROYALE"
                   id="techpass"
                   onChange={handleRenderChange}
                   disabled={isEventsDisabled}
@@ -623,7 +673,7 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="MECHSTIX"
+                  name="MECHSTIX MARVEL"
                   id="techpass"
                   onChange={handleMechstixChange}
                   disabled={isEventsDisabled}
@@ -663,14 +713,14 @@ const Sponsers: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="UI/UX(THE UI-TIMATE SHOWDOWN)"
+                  name="PIXEL PALETTE"
                   id="techpass"
                   onChange={handleUiUxChange}
                   disabled={isEventsDisabled}
                   checked={uiUx}
                 />
-                <label htmlFor="UI/UX(THE UI-TIMATE SHOWDOWN)">
-                  UI/UX(THE UI-TIMATE SHOWDOWN) (10.00AM-1.00PM)
+                <label htmlFor="PIXEL PALETTE">
+                  PIXEL PALETTE (10.00AM-1.00PM)
                 </label>
               </div>
               <div>
@@ -823,49 +873,7 @@ const Sponsers: React.FC = () => {
               </div>
             </div>
           </div>
-          <div className={styles.passTag}>
-            <div>
-              <input
-                type="checkbox"
-                name="techpass"
-                id="techpass"
-                // value={false}
-                disabled={isTechPassDisable}
-                checked={isTechPass}
-                onChange={(value) => {
-                  setIsTechPass(value.target.checked);
-                }}
-              />
-              Tech Pass {techPrice?.toString()}
-            </div>
-            <div>
-              <input
-                type="checkbox"
-                name="proshows"
-                id="proshows"
-                value={isProShows.toString()}
-                checked={isProShows}
-                onChange={(value) => {
-                  setIsProShows(value.target.checked);
-                }}
-              />
-              <label htmlFor="proshows">Pro Shows 250</label>
-            </div>
-            <div>
-              <input
-                type="checkbox"
-                name="elite"
-                id="elite"
-                value={isElite.toString()}
-                checked={isElite}
-                onChange={(value) => {
-                  setIsElite(value.target.checked);
-                }}
-              />
-              Elite {elitePrice?.toString()}
-            </div>
-            {/* <button onClick={() => setPage(false)}>Prev</button> */}
-          </div>
+
           <input type="submit" style={{ textAlign: "center" }} />
         </form>
       </div>

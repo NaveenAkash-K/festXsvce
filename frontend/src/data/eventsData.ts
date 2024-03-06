@@ -45,32 +45,6 @@ const eventsData: {
         },
       },
       {
-        name: "AUTOHACK – Technical Hackathon",
-        date: "TBA",
-        time: "TBA",
-        venue: "TBA",
-        team: "3",
-        description: [
-          "Participants will receive a set of automobile-related problem statements; coding is optional. Teams select a problem statement, develop solution(s), and create a presentation with analysis. Top three teams will be awarded based on their solutions",
-        ],
-        shortDescription:
-          "Fast-paced problem solving competition testing the technical brains",
-        rules: [
-          "Each team can consist of 2-3 members. Teams should bring their own laptops.",
-          "Only one problem statement can be selected from these events, and the teams won’t be allowed to change it during the course of the event.",
-          "The challenge is time-bound. Teams will be given 3 hours, after selecting their problem statement, to work on the solutioning and PPT.",
-          "The decision of the judging panel will be considered FINAL in any circumstances.",
-        ],
-        requirements: [
-          "Participants have to bring their own laptops for their presentation",
-          "Each team should bring the required number of extension cords.",
-        ],
-        coordinators: {
-          name: "TBA",
-          contact: "TBA",
-        },
-      },
-      {
         name: "Rev It Up!",
         date: "15th March",
         time: "1:00PM - 3:00PM",

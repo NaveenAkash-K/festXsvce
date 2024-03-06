@@ -79,7 +79,10 @@ input[type="checkbox"]{
 .passTag{
   width: 80%;
   display: flex;
-  justify-content: space-evenly;
+  
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
 }
 
 @media screen and (width < 480px) {

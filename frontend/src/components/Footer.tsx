@@ -20,11 +20,26 @@ const Footer = () => {
           <img src={svce} alt="SVCE" className={styles.clgLogo} />
           <h2>A National Level Technical Fest</h2>
           <div>
-            <a href="tel:+91 95514 49859"><IoCall className={styles.footerLogo} /></a>
-            <NavLink to={"/location"}><IoLocation className={styles.footerLogo} /></NavLink>
+            <a href="tel:+91 95514 49859">
+              <IoCall className={styles.footerLogo} />
+            </a>
+            <NavLink to={"/location"}>
+              <IoLocation className={styles.footerLogo} />
+            </NavLink>
             {/* <IoLogoFacebook className={styles.footerLogo} /> */}
-            <IoLogoInstagram className={styles.footerLogo} style={{cursor:"pointer"}} onClick={()=>{window.open("https://www.instagram.com/technoways_24?igsh=MWtrNzhpaDhvdTc3OA==","_blank")}} />
-            <a href="mailto:technoways@svce.ac.in"><IoMail className={styles.footerLogo} /></a>
+            <IoLogoInstagram
+              className={styles.footerLogo}
+              style={{ cursor: "pointer" }}
+              onClick={() => {
+                window.open(
+                  "https://www.instagram.com/technoways_24?igsh=MWtrNzhpaDhvdTc3OA==",
+                  "_blank"
+                );
+              }}
+            />
+            <a href="mailto:technoways@svce.ac.in">
+              <IoMail className={styles.footerLogo} />
+            </a>
           </div>
         </div>
         <div className={styles.menuContactsDiv}>
@@ -32,37 +47,67 @@ const Footer = () => {
             <h2>Menu</h2>
             <br />
             <p>
-              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/"}>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/"}
+              >
                 Home
               </NavLink>
             </p>
             <br />
             <p>
-              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/about"}>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/about"}
+              >
                 About
               </NavLink>
             </p>
             <br />
             <p>
-              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/departments"}>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/departments"}
+              >
                 Events
               </NavLink>
             </p>
             <br />
             <p>
-              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/getPass"}>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/getPass"}
+              >
                 Get Passes
               </NavLink>
             </p>
             <br />
             <p>
-              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/sponsors"}>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/sponsors"}
+              >
                 Sponsors
               </NavLink>
             </p>
             <br />
             <p>
-              <NavLink className={({isActive})=>isActive ? styles.active : styles.inactive} to={"/location"}>
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? styles.active : styles.inactive
+                }
+                to={"/location"}
+              >
                 Location
               </NavLink>
             </p>
@@ -72,12 +117,24 @@ const Footer = () => {
             <br />
             <p>
               <IoMail className={styles.contactLogo} />
-              Mail: <a href="mailto:technoways@svce.ac.in" style={{textDecoration:'none',color:'white'}}>technoways@svce.ac.in</a>
+              Mail:{" "}
+              <a
+                href="mailto:technoways@svce.ac.in"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                technoways@svce.ac.in
+              </a>
             </p>
             <br />
             <p>
               <IoCall className={styles.contactLogo} />
-              Number: <a href="tel:+91 95514 49859" style={{textDecoration:'none',color:'white'}}>95514 49859</a>
+              Number:{" "}
+              <a
+                href="tel:+91 95514 49859"
+                style={{ textDecoration: "none", color: "white" }}
+              >
+                95514 49859
+              </a>
             </p>
             <br />
             <p className={styles.addressPara}>
@@ -87,6 +144,14 @@ const Footer = () => {
               Tamil Nadu 602117
             </p>
             <br />
+            <div>
+              <NavLink
+                style={{ color: "white" }}
+                to={"/termsandconditions"}
+              >
+                Terms and Conditions
+              </NavLink>
+            </div>
           </section>
         </div>
       </div>

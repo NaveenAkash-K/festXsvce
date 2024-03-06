@@ -16,6 +16,11 @@ exports.postReq = function (request, response) {
   var parsedData;
   var ordId;
   var customerId;
+  var amount;
+  var eventArray = [];
+  var isTechpass = false;
+  var isProshows = false;
+  var isElite = false;
   var body = "",
     workingKey = "BC9E44F0087D201330A6DE18039F21E0", //Put in the 32-Bit key shared by CCAvenues.
     accessCode = "AVGY68LC16AH21YGHA", //Put in the Access Code shared by CCAvenues.
@@ -26,12 +31,64 @@ exports.postReq = function (request, response) {
     body += data;
     ordId = "ORD_" + uuidv4();
     parsedData = qs.parse(body);
+    console.log(parsedData);
     customerId = Date.now() + "_" + parsedData.regNo;
+
+    for (let key in parsedData) {
+      if (
+        key.startsWith("billing") ||
+        key === "college" ||
+        key === "year" ||
+        key === "regNo" ||
+        key === "department"
+      ) {
+        continue;
+      }
+
+      if (key === "proshows") {
+        isProshows = true;
+        continue;
+      } else if (key === "techpass") {
+        isTechpass = true;
+        continue;
+      } else if (key === "elite") {
+        isElite = true;
+        continue;
+      }
+
+      eventArray.push(key);
+    }
+
+    if (isProshows) {
+      amount = 250;
+    }
+
+    if (parsedData.billing_email.trim().endsWith("svce.ac.in")) {
+      if (isTechpass) {
+        amount = 199;
+      }
+      if (isProshows && isTechpass) {
+        isElite = true;
+      }
+      if (isElite) {
+        amount = 399;
+      }
+    } else {
+      if (isTechpass) {
+        amount = 299;
+      }
+      if (isProshows && isTechpass) {
+        isElite = true;
+      }
+      if (isElite) {
+        amount = 499;
+      }
+    }
 
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
-      &amount=1
+      &amount=${amount}
       &redirect_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &language=EN
@@ -47,23 +104,25 @@ exports.postReq = function (request, response) {
   });
 
   request.on("end", async function () {
-    // console.log("Object");
-    // console.log({
-    //   username: parsedData.billing_name,
-    //   customerId: customerId,
-    //   regNo: parsedData.regNo,
-    //   address: parsedData.billing_address,
-    //   phoneNo: parsedData.billing_tel,
-    //   city: parsedData.billing_city,
-    //   college: parsedData.college,
-    //   department: parsedData.department,
-    //   email: parsedData.billing_email,
-    //   ordId: ordId,
-    //   eventDetails: "dummy",
-    //   amount: 1,
-    //   year: parsedData.year,
-    //   paid: false,
-    // });
+    console.log({
+      username: parsedData.billing_name,
+      customerId: customerId,
+      regNo: parsedData.regNo,
+      address: parsedData.billing_address,
+      phoneNo: parsedData.billing_tel,
+      city: parsedData.billing_city,
+      college: parsedData.college,
+      department: parsedData.department,
+      email: parsedData.billing_email.trim(),
+      isElite: isElite,
+      isProshows: isProshows,
+      isTechPass: isTechpass,
+      ordId: ordId,
+      eventsArray: eventArray,
+      amount: amount,
+      year: parsedData.year,
+      paid: false,
+    });
 
     new User({
       username: parsedData.billing_name,
@@ -74,10 +133,13 @@ exports.postReq = function (request, response) {
       city: parsedData.billing_city,
       college: parsedData.college,
       department: parsedData.department,
-      email: parsedData.billing_email,
+      email: parsedData.billing_email.trim(),
+      isElite: isElite,
+      isProshows: isProshows,
+      isTechPass: isTechpass,
       ordId: ordId,
-      eventDetails: "dummy",
-      amount: 1,
+      eventsArray: eventArray,
+      amount: amount,
       year: parsedData.year,
       paid: false,
     })

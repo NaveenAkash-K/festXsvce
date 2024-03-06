@@ -50,20 +50,20 @@ const schema = new mongoose.Schema({
     required: false,
   },
   isTechPass: {
-    type: String,
-    required: false,
+    type: Boolean,
+    required: true,
   },
   isProshows: {
-    type: String,
-    required: false,
+    type: Boolean,
+    required: true,
   },
   isElite: {
-    type: String,
-    required: false,
-  },
-  eventDetails: {
-    type: String,
+    type: Boolean,
     required: true,
+  },
+  eventsArray: {
+    type: Array,
+    required: false,
   },
   ordId: {
     type: String,
