@@ -12,7 +12,7 @@ var http = require("http"),
 mongoose.connect(process.env.MONGO_URI);
 
 app.use(express.static("public"));
-app.use(express.urlencoded({ extended: false }));
+// app.use(express.urlencoded({ extended: false }));
 app.set("views", __dirname + "./payment/public");
 app.engine("html", require("ejs").renderFile);
 
