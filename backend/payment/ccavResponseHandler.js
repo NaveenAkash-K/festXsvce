@@ -6,8 +6,10 @@ var http = require("http"),
   express = require("express"),
   User = require("../models/user_model.js");
 qs = require("querystring");
+const QRCode = require("qrcode");
+const nodemailer = require("nodemailer");
 
-exports.postRes = function (request, response) {
+exports.postRes = async function (request, response) {
   var ccavEncResponse = "",
     ccavResponse = "",
     workingKey = "BC9E44F0087D201330A6DE18039F21E0", //Put in the 32-Bit key shared by CCAvenues.
@@ -20,7 +22,7 @@ exports.postRes = function (request, response) {
     ccavResponse = ccav.decrypt(encryption, workingKey);
   });
 
-  request.on("end", function () {
+  request.on("end", async function () {
     var pData = "";
     response.writeHeader(200, { "Content-Type": "text/html" });
     var parsedData = qs.parse(ccavResponse);
@@ -102,25 +104,33 @@ exports.postRes = function (request, response) {
       // console.log("Response");
       // console.log(parsedData);
 
-      User.findOneAndUpdate(
+      await User.findOneAndUpdate(
         { email: parsedData.billing_email },
         { $set: { paid: true } }
-      )
-        .then((result) => {
-          console.log("Update result");
-          console.log(result);
-          axios.post(
-            "https://technoways-svce-backend.vercel.app/sendQR",
-            {
-              data: parsedData.billing_email.trim(),
-            }
-          );
-        })
-        .catch((error) => {
-          console.log("Update error");
-          console.log(error);
-        });
+      );
 
+      const qrCodeDataUrl = await QRCode.toDataURL(
+        parsedData.billing_email.trim()
+      );
+      const transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          // user: process.env.EMAIL, // Your Gmail email address
+          // pass: process.env.PASSWD, // Your Gmail password or an app-specific password
+          user: "2021it0668@svce.ac.in", // Your Gmail email address
+          pass: "09naveen", // Your Gmail password or an app-specific password
+        },
+      });
+
+      const mailOptions = {
+        from: process.env.EMAIL,
+        to: parsedData.billing_email.trim(),
+        subject: "QR Code Email",
+        html: `<p>Dear recipient,</p><p>Here is your QR code:</p><img src="${qrCodeDataUrl}" alt="QR Code"/>`,
+      };
+
+      const info = await transporter.sendMail(mailOptions);
+      console.log('Email sent:', info);
       response.write(`
         <!DOCTYPE html>
       <html lang="en">
