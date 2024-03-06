@@ -40,8 +40,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "SAE Coordinators",
-          contact: "2020ae0156@svce.ac.in",
+          name: "Aravind",
+          contact: "+91 9342356952",
         },
       },
       {
@@ -66,8 +66,8 @@ const eventsData: {
           "Each team should bring the required number of extension cords.",
         ],
         coordinators: {
-          name: "SAE Coordinators",
-          contact: "2020ae0156@svce.ac.in",
+          name: "TBA",
+          contact: "TBA",
         },
       },
       {
@@ -90,8 +90,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "SAE Coordinators",
-          contact: "2020ae0156@svce.ac.in",
+          name: "Yeshwanth",
+          contact: "+91 7358624281",
         },
       },
     ],
@@ -123,8 +123,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "Biotech Coordinators",
-          contact: "2022bt0204@svce.ac.in",
+          name: "Varsha G",
+          contact: "+91 7603956525",
         },
       },
       {
@@ -149,8 +149,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "Biotech Coordinators",
-          contact: "2022bt0204@svce.ac.in",
+          name: "Abineha A",
+          contact: "+91 9360676104",
         },
       },
     ],
@@ -474,15 +474,15 @@ const eventsData: {
         name: "SparkQuest",
         date: "15th March",
         time: "12:30AM - 3:00PM",
-        venue: "ECE DEPT LAB",
-        team: "3",
+        venue: "Electron Devices Laboratory",
+        team: "1",
         description: [
           "Participants will engage in a comprehensive treasure hunt featuring diverse clues encompassing areas such as logic gates, digital electronics, communication, signal processing, Arduino, and Programming. The team achieving the best timing within the 3-hour time limit will be declared the winner.",
         ],
         shortDescription: "Unraveling Treasures in the Electronic Maze!",
 
         rules: [
-          "Teams must consist of 2 to 3 participants.",
+          "Individual Event.",
           "Each clue in the treasure hunt will be uniquely crafted, drawing from a diverse range of topics including logic gates, digital electronics, communication, signal processing, Arduino, and Programming.",
           "Each clue will help participants to advance to the next level.",
           "Participants are allowed to use standard tools and equipment approved by event organizers.",
@@ -507,8 +507,8 @@ const eventsData: {
 
         rules: [
           "Teams must consist of 2 to 3 participants.",
-          "Participants will randomly choose cards featuring electric components from each deck; the chosen components must be used in the circuit or product design.",
-          "Basic electronic components and materials necessary for circuit building will be provided. Teams may not bring their own components; they must use the provided materials.",
+          "Participants will randomly choose cards featuring electric components from each deck, the chosen components must be used in the circuit or product design.",
+          "Basic electronic components and materials necessary for circuit building will be provided. Teams may not bring their own components, they must use the provided materials.",
           "The design phase has a strict time limit of 60 minutes. Teams must complete their circuits or products within this timeframe.",
           "Participants are allowed to use standard tools and equipment but must be approved by event organizers.",
           "Teams will have a brief time slot for pitching their final product or circuit design.",
@@ -526,18 +526,27 @@ const eventsData: {
         name: "Paper Presentation",
         date: "16th March",
         time: "10:00AM - 2:00PM",
-        venue: "ECE Dept Classrooms",
+        venue: "Classroom Block V 3rd Floor",
         team: "2 to 3",
         description: [
-          "Papers will be shortlisted based on the abstract submitted.",
-          " Selected papers will be reviewed by the panel members and best paper will be rewarded.",
+          "Participants will showcase their expertise in ECE domains such as IoT, embedded systems, RF, and more through an engaging paper presentation event",
+          "Teams of 2 to 3 participants will present their innovative ideas and research findings in PowerPoint format, delving into the latest advancements and challenges in the field. ",
+          "Get ready for a single round of insightful presentations that highlight the cutting-edge developments shaping the future of Electronics and Communication Engineering.",
         ],
         shortDescription: "Paper Presentation based on ECE domain",
-        rules: ["Basic Paper presentation rules"],
-        requirements: ["None"],
+        rules: [
+          "A team should consists of 2 to 3 participants.",
+          "Participants are required to present their papers in the MS-PowerPoint (PPT) format.",
+          "The Teams will get 8-10 minutes to present their paper.",
+          "It will be followed by a question and answer session.",
+          "Violation of any rule can result in rejection of paper.",
+          "The decision of judges will be final.",
+          "The Paper should have the details (Name, College name, Phone no. of each participants) of the team members.",
+        ],
+        requirements: ["Participants should bring at least one laptop per team to present their PowerPoint presentations during the event."],
         coordinators: {
-          name: "Lok Ranjan B",
-          contact: "+91 6374358867",
+          name: "Lok Ranjan B,Aadhithya Narayanan B",
+          contact: "+91 6374358867,+91 93455 26682",
         },
       },
     ],
@@ -677,8 +686,8 @@ const eventsData: {
           "USB to LAN converter if the laptop doesn't have a LAN port",
         ],
         coordinators: {
-          name: "AIT Coordinators",
-          contact: "2020it0600@svce.ac.in",
+          name: "Keerthana M",
+          contact: "+91 6383941381",
         },
       },
       {
@@ -703,8 +712,8 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "AIT Coordinators",
-          contact: "2020it0600@svce.ac.in",
+          name: " Ramanathan SP",
+          contact: "+91 7418732846",
         },
       },
       {
@@ -726,8 +735,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "AIT Coordinators",
-          contact: "2020it0600@svce.ac.in",
+          name: "Madhumitha R",
+          contact: "+91 9498330139 ",
         },
       },
     ],
@@ -740,7 +749,7 @@ const eventsData: {
         name: "Render Royale (3d Modelling)",
         date: "TBA",
         time: "TBA",
-        venue: "Mechanical Cad Lab",
+        venue: "UG Cad Lab Mechanical Department",
         team: "2",
         description: [
           "Participants will be presented with intriguing problem statements spanning diverse industries, from architecture and engineering to product design and beyond.",
@@ -822,8 +831,8 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "IEEE Coordinator",
-          contact: "2021ee0097@svce.ac.in",
+          name: "Suruthiga",
+          contact: "+91 98401 02853",
         },
       },
       {
@@ -849,8 +858,8 @@ const eventsData: {
         ],
         requirements: ["TBA"],
         coordinators: {
-          name: "TBA",
-          contact: "TBA",
+          name: "Sri Raja Rajeshwari",
+          contact: "+91 95661 45443",
         },
       },
     ],
@@ -996,7 +1005,7 @@ const eventsData: {
           "No spot registrations are allowed.",
         ],
         requirements: ["Nil"],
-        coordinators: { name: "TBA", contact: "TBA" },
+        coordinators: { name: "HARIHARAN S", contact: "9943498144" },
       },
       {
         name: "WELDING MASTERS",
@@ -1007,7 +1016,7 @@ const eventsData: {
         description: [
           'Welding Masters" is an event designed to showcase and celebrate the skills and expertise in welding.',
           "Participants in Welding Masters may compete in challenges that test their welding precision, speed, and creativity.",
-          "TOverall, Welding Masters events serve as a platform for marine cadets to demonstrate their welding talents.",
+          "Overall, Welding Masters events serve as a platform for marine cadets to demonstrate their welding talents.",
         ],
         shortDescription:
           '"Welding Masters" is an event that participants can attend to demonstrate their expertise in welding.',
@@ -1021,7 +1030,7 @@ const eventsData: {
         requirements: [
           "Participants are required to bring their own boiler suit and safety shoes",
         ],
-        coordinators: { name: "TBA", contact: "TBA" },
+        coordinators: { name: "Jeevarathinam", contact: "+91 7339449264" },
       },
       {
         name: "BOND BLEND",
@@ -1044,7 +1053,7 @@ const eventsData: {
           "No spot registrations are allowed.",
         ],
         requirements: ["Nil"],
-        coordinators: { name: "TBA", contact: "TBA" },
+        coordinators: { name: "KANAGAVEL", contact: "+91 6383282466" },
       },
     ],
   },
