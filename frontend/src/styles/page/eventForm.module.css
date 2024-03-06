@@ -33,7 +33,7 @@ input[type="email"] {
   padding: 0.5rem;
   border-radius: 10px;
   width: 70%;
-
+  color: white;
   &:focus {
     outline: 1px solid #eb0029;
   }
@@ -52,20 +52,68 @@ input[type="email"] {
     outline: 1px solid #eb0029;
   }
 }
-
+input[type="checkbox"]{
+  margin-right: 0.5vw;
+  transform: scale(1.5);
+  border: none;
+}
 .nextPageContainer{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   position: relative;
 }
+
 .day1{
   display: flex;
   flex-direction: column;
+  gap: 2vw;
+}
+
+.day2{
+  display: flex;
+  flex-direction: column;
+  gap: 2vw;
 }
 
 .passTag{
   width: 80%;
   display: flex;
   justify-content: space-evenly;
+}
+
+@media screen and (width < 480px) {
+  .nextPageContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+  }
+  .day1{
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+  }
+  .day1>h3{
+    margin-top: 10vw;
+  }
+  .day2{
+    display: flex;
+    flex-direction: column;
+    gap: 6vw;
+  }
+  .day2>h3{
+    margin-top: 10vw;
+  }
+  .passTag{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 5vw;
+    flex-direction: column;
+  }
+  input[type="checkbox"]{
+    margin-right: 4vw;
+  }
 }

@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import styles from "../styles/page/eventForm.module.css";
-import IIM from "../assets/images/2IIM.png";
+// import IIM from "../assets/images/2IIM.png";
 const Sponsers: React.FC = () => {
   const [isTechPass, setIsTechPass] = useState<boolean>(false);
   const [isProShows, setIsProShows] = useState<boolean>(false);
@@ -670,7 +670,7 @@ const Sponsers: React.FC = () => {
               />
               Elite {elitePrice?.toString()}
             </div>
-            <button onClick={() => setPage(false)}>Prev</button>
+            {/* <button onClick={() => setPage(false)}>Prev</button> */}
           </div>
           <input type="submit" style={{ textAlign: "center" }} />
         </form>
