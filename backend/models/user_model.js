@@ -33,6 +33,27 @@ const schema = new mongoose.Schema({
     type: String,
     required: false,
   },
+  isTechPass: {
+    type: String,
+    required: false,
+  },
+  isProshows: {
+    type: String,
+    required: false,
+  },
+  isElite: {
+    type: String,
+    required: false,
+  },
+  paid: {
+    type: String,
+    required: false,
+  },
+  ordId: {
+    type: String,
+    required: false,
+  },
+  
 });
 
 const User = mongoose.model("User", schema);

@@ -4,9 +4,10 @@ var http = require("http"),
   path = require("path"),
   qs = require("querystring");
 
+var uuidv4 = require("uuid").v4;
+
 exports.postReq = function (request, response) {
   // 3342525
-  try {
     var body = "",
       workingKey = "BC9E44F0087D201330A6DE18039F21E0", //Put in the 32-Bit key shared by CCAvenues.
       accessCode = "AVGY68LC16AH21YGHA", //Put in the Access Code shared by CCAvenues.
@@ -14,8 +15,19 @@ exports.postReq = function (request, response) {
       formbody = "";
 
     request.on("data", function (data) {
-
       body += data;
+      var ordId = "ORD_" + uuidv4();
+      body += `&merchant_id=3342525
+      &order_id=${ordId}
+      &currency=INR
+      &amount=400
+      &redirect_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
+      &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
+      &language=EN
+      &billing_country=India
+      &customer_identifier=97tftvgh`;
+      console.log(qs.parse(body).proshows);
+      console.log(body);
       encRequest = ccav.encrypt(body, workingKey);
       formbody =
         '<form id="nonseamless" method="post" name="redirect" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"/> <input type="hidden" id="encRequest" name="encRequest" value="' +
@@ -31,8 +43,4 @@ exports.postReq = function (request, response) {
       response.end();
     });
     return;
-  } catch (e) {
-    response.write(e);
-    response.end();
-  }
 };
