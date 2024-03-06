@@ -1,5 +1,6 @@
 var express = require("express");
 var app = express();
+require("dotenv").config();
 var http = require("http"),
   fs = require("fs"),
   mongoose = require("mongoose"),
