@@ -7,9 +7,9 @@ const Sponsers: React.FC = () => {
   const [isProShows, setIsProShows] = useState<boolean>(false);
   const [isElite, setIsElite] = useState<boolean>(false);
   const [nextPage, setPage] = useState<boolean>(false);
-  const [email, setEmail] = useState<String>("");
-  const [techPrice, setTechPrice] = useState<Number>();
-  const [elitePrice, setElitePrice] = useState<Number>();
+  const [email, setEmail] = useState<string>("");
+  const [techPrice, setTechPrice] = useState<Number>(299);
+  const [elitePrice, setElitePrice] = useState<Number>(499);
   const [billingName, setBillingName] = useState<string>("");
   const [billingAddress, setBillingAddress] = useState<string>("");
   const [billingCity, setBillingCity] = useState<string>("");
@@ -57,6 +57,16 @@ const Sponsers: React.FC = () => {
   const [pitstop, setPitstop] = useState(false);
   const [innovisionExpo, setInnovisionExpo] = useState(false);
   const [thinkTank, setThinkTank] = useState(false);
+
+  useEffect(()=>{
+    if(email.trim().endsWith("svce.ac.in")){
+      setElitePrice(399)
+      setTechPrice(199)
+    } else {
+      setElitePrice(499)
+      setTechPrice(299)
+    }
+  },[email])
 
   // Add these onChange handlers to your checkboxes
   const handleBasicsAutomotiveChange = () =>
@@ -123,8 +133,8 @@ const Sponsers: React.FC = () => {
         <form
           method="POST"
           name="customerData"
+          action="http://localhost:3001/ccavRequestHandler"
           // action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
-          action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
           className={styles.eventFormContainer}
         >
           {!nextPage && (
@@ -176,11 +186,12 @@ const Sponsers: React.FC = () => {
                 required
                 value={billingTel}
                 onChange={(e) => setBillingTel(e.target.value)}
-              />
+                />
               <input
                 type="email"
                 name="billing_email"
                 placeholder="Email"
+                value={email}
                 required
                 onChange={(e) => setEmail(e.target.value)}
               />
@@ -217,7 +228,8 @@ const Sponsers: React.FC = () => {
                 onChange={(e) => setDepartment(e.target.value)}
               />
               <button
-                onClick={() => {
+                onClick={(e) => {
+                  e.preventDefault();
                   setPage(true);
                 }}
               >
@@ -225,8 +237,6 @@ const Sponsers: React.FC = () => {
               </button>
             </>
           )}
-
-          {nextPage && (
             <>
               <div className={styles.nextPageContainer}>
                 <div className={styles.day1}>
@@ -688,7 +698,6 @@ const Sponsers: React.FC = () => {
               </div>
               <input type="submit" style={{ textAlign: "center" }} />
             </>
-          )}
         </form>
       </div>
     </>

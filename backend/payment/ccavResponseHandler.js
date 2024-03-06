@@ -23,6 +23,8 @@ exports.postRes = function (request, response) {
     var pData = "";
     response.writeHeader(200, { "Content-Type": "text/html" });
     var parsedData = qs.parse(ccavResponse);
+    console.log(parsedData.regNo);
+    console.log(parsedData);
 
     if (parsedData.order_status === "Failure") {
       response.write(`
@@ -98,7 +100,6 @@ exports.postRes = function (request, response) {
     }
 
     console.log("Response");
-    console.log(parsedData.regNo);
     // console.log(parsedData.billing_name);
 
     const user = new User({

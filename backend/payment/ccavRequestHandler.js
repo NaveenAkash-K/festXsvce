@@ -21,10 +21,7 @@ exports.postReq = function (request, response) {
     body += data;
     var ordId = "ORD_" + uuidv4();
     var parsedData = qs.parse(body);
-
-    console.log("Request");
-    console.log(parsedData);
-
+    
     var customerId = Date.now() + "_" + parsedData.regNo;
     body += `&merchant_id=3342525
       &order_id=${ordId}
@@ -36,13 +33,10 @@ exports.postReq = function (request, response) {
       &billing_country=India
       &customer_identifier=${customerId}`;
     encRequest = ccav.encrypt(body, workingKey);
-    console.log(parsedData);
     formbody =
       '<form id="nonseamless" method="post" name="redirect" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"/> <input type="hidden" id="encRequest" name="encRequest" value="' +
       encRequest +
-      '"><input name="regNo" value="' +
-      parsedData.regNo +
-      '"/><input type="hidden" name="access_code" id="access_code" value="' +
+      '"><input type="hidden" name="access_code" id="access_code" value="' +
       accessCode +
       '"><script language="javascript">document.redirect.submit();</script></form>';
   });

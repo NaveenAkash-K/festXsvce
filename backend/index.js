@@ -12,6 +12,7 @@ var http = require("http"),
 mongoose.connect(process.env.MONGO_URI);
 
 app.use(express.static("public"));
+app.use(express.urlencoded({ extended: false }));
 app.set("views", __dirname + "./payment/public");
 app.engine("html", require("ejs").renderFile);
 
@@ -20,13 +21,18 @@ app.get("/about", function (req, res) {
 });
 
 app.post("/ccavRequestHandler", (req, res) => {
+  // var parsedData = qs.parse(req);
+
+  // res.send(req.body);
+  // return;
+
   ccavReqHandler.postReq(req, res);
 });
 
 app.post("/checkout", (req, res) => {});
 
 app.post("/ccavResponseHandler", (req, res) => {
-    ccavResHandler.postRes(req, res);
+  ccavResHandler.postRes(req, res);
 });
 
 mongoose.connection.once("open", () => {
