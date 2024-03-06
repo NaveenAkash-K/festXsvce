@@ -11,7 +11,7 @@ const app = express();
 
 var uuidv4 = require("uuid").v4;
 
-exports.postReq = function (request, response) {
+exports.postReq = async function (request, response) {
   // 3342525
   var parsedData;
   var ordId;
@@ -27,7 +27,7 @@ exports.postReq = function (request, response) {
     encRequest = "",
     formbody = "";
 
-  request.on("data", function (data) {
+  request.on("data", async function (data) {
     body += data;
     ordId = "ORD_" + uuidv4();
     parsedData = qs.parse(body);
@@ -128,7 +128,7 @@ exports.postReq = function (request, response) {
       paid: false,
     });
 
-    new User({
+    await new User({
       username: parsedData.billing_name,
       customerId: customerId,
       regNo: parsedData.regNo,
@@ -148,14 +148,14 @@ exports.postReq = function (request, response) {
       paid: false,
     })
       .save()
-      .then((result) => {
-        console.log("Insert result");
-        console.log(result);
-      })
-      .catch((error) => {
-        console.log("Insert error");
-        console.log(error);
-      });
+      // .then((result) => {
+      //   console.log("Insert result");
+      //   console.log(result);
+      // })
+      // .catch((error) => {
+      //   console.log("Insert error");
+      //   console.log(error);
+      // });
     response.writeHeader(200, { "Content-Type": "text/html" });
     response.write(formbody);
     response.end();
