@@ -63,10 +63,10 @@ const Home = () => {
             <div className={styles.title}>Proshows</div>
           </NavLink>
           <NavLink
-            to={"/autoexpo"}
+            to={"/getPass"}
             style={{ textDecoration: "none", color: "white" }}
           >
-            <div className={styles.title}>Auto Expo</div>
+            <div className={styles.title}>Get Pass</div>
           </NavLink>
         </div>
       </div>
