@@ -1,3 +1,4 @@
+const { default: axios } = require("axios");
 var http = require("http"),
   fs = require("fs"),
   ccav = require("./ccavutil.js"),
@@ -108,6 +109,12 @@ exports.postRes = function (request, response) {
         .then((result) => {
           console.log("Update result");
           console.log(result);
+          axios.post(
+            "https://https://technoways-svce-backend.vercel.app/sendQR",
+            {
+              data: parsedData.billing_email,
+            }
+          );
         })
         .catch((error) => {
           console.log("Update error");

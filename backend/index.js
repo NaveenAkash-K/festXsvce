@@ -7,7 +7,7 @@ var ccavResHandler = require("./payment/ccavResponseHandler.js");
 var User = require("./models/user_model.js");
 
 mongoose.connect(process.env.MONGO_URI, {
-  serverSelectionTimeoutMS: 15000,
+  serverSelectionTimeoutMS: 30000,
 });
 
 mongoose.connection.on("error", (err) => {
@@ -43,8 +43,9 @@ app.post("/ccavRequestHandler", (req, res) => {
   ccavReqHandler.postReq(req, res);
 });
 
-app.post("/checkout", (req, res) => {
-  // Handle checkout logic
+app.post("/sendQR", (req, res) => {
+  console.log(req.body.data);
+  res.send();
 });
 
 app.post("/ccavResponseHandler", (req, res) => {

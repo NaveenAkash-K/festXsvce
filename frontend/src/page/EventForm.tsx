@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import Header from "../components/Header";
 import styles from "../styles/page/eventForm.module.css";
 // import IIM from "../assets/images/2IIM.png";
-const Sponsers: React.FC = () => {
+const EventForm: React.FC = () => {
   const [isTechPass, setIsTechPass] = useState<boolean>(false);
   const [isProShows, setIsProShows] = useState<boolean>(false);
   const [isElite, setIsElite] = useState<boolean>(false);
@@ -881,4 +881,4 @@ const Sponsers: React.FC = () => {
   );
 };
 
-export default Sponsers;
+export default EventForm;

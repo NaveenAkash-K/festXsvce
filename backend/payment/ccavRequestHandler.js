@@ -85,6 +85,10 @@ exports.postReq = function (request, response) {
       }
     }
 
+    if (!isTechpass && !isElite && !isProshows) {
+      return;
+    }
+
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
