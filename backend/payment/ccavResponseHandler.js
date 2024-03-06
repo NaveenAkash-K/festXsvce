@@ -91,6 +91,8 @@ exports.postRes = function (request, response) {
     </body>
     </html>
     `);
+    response.end();
+
       return;
     }
 
