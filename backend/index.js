@@ -2,10 +2,10 @@ var express = require("express");
 var app = express();
 var http = require("http"),
   fs = require("fs"),
-  ccav = require("./ccavutil.js"),
+  ccav = require("./payment/ccavutil.js"),
   qs = require("querystring"),
-  ccavReqHandler = require("./ccavRequestHandler.js"),
-  ccavResHandler = require("./ccavResponseHandler.js");
+  ccavReqHandler = require("./payment/ccavRequestHandler.js"),
+  ccavResHandler = require("./payment/ccavResponseHandler.js");
 
 app.use(express.static("public"));
 app.set("views", __dirname + "./payment/public");
@@ -21,7 +21,7 @@ app.post("/ccavRequestHandler", (req, res) => {
 
 app.post("/checkout", (req, res) => {});
 
-app.post("/ccavResponseHandler/:email", (req, res) => {
+app.post("/ccavResponseHandler", (req, res) => {
   try {
     ccavResHandler.postRes(req, res);
     response.writeHeader(200, { "Content-Type": "text/html" });
