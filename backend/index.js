@@ -1,18 +1,36 @@
 var express = require("express");
 var app = express();
 require("dotenv").config();
-var http = require("http"),
-  fs = require("fs"),
-  mongoose = require("mongoose"),
-  ccav = require("./payment/ccavutil.js"),
-  qs = require("querystring"),
-  ccavReqHandler = require("./payment/ccavRequestHandler.js"),
-  ccavResHandler = require("./payment/ccavResponseHandler.js");
+var mongoose = require("mongoose");
+var ccavReqHandler = require("./payment/ccavRequestHandler.js");
+var ccavResHandler = require("./payment/ccavResponseHandler.js");
+var User = require("./models/user_model.js");
 
-mongoose.connect(process.env.MONGO_URI);
+mongoose.connect(process.env.MONGO_URI, {});
+
+mongoose.connection.on("error", (err) => {
+  console.error("MongoDB connection error:", err);
+});
+
+// new User({
+//   username: "admin",
+//   address: "kudhfb",
+//   amount: 43,
+//   city: "djbv",
+//   college: "dlvjn",
+//   customerId: "ldivhn",
+//   department: "INT",
+//   email: "skufvb",
+//   eventDetails: "kubdv",
+//   ordId: "ldvuhb",
+//   paid: false,
+//   phoneNo: "9876532432",
+//   regNo: "ksudgvskjfvb",
+//   year: 3,
+// }).save();
+
 
 app.use(express.static("public"));
-// app.use(express.urlencoded({ extended: false }));
 app.set("views", __dirname + "./payment/public");
 app.engine("html", require("ejs").renderFile);
 
@@ -22,14 +40,11 @@ app.get("/about", function (req, res) {
 
 app.post("/ccavRequestHandler", (req, res) => {
   ccavReqHandler.postReq(req, res);
-  // var parsedData = qs.parse(req);
-
-  // res.send(req.body);
-  // return;
-
 });
 
-app.post("/checkout", (req, res) => {});
+app.post("/checkout", (req, res) => {
+  // Handle checkout logic
+});
 
 app.post("/ccavResponseHandler", (req, res) => {
   ccavResHandler.postRes(req, res);
@@ -37,7 +52,7 @@ app.post("/ccavResponseHandler", (req, res) => {
 
 mongoose.connection.once("open", () => {
   app.listen(3001, () => {
-    console.log("Server started at: https:localhost:8080");
+    console.log("Server started at: http://localhost:3001");
   });
   console.log("Mongo Success");
 });

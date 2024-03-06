@@ -101,15 +101,15 @@ exports.postRes = function (request, response) {
       // console.log("Response");
       // console.log(parsedData);
 
-      User.updateOne(
+      User.findOneAndUpdate(
         { email: parsedData.billing_email },
         { $set: { paid: true } }
       )
         .then((result) => {
-          // console.log(result);
+          console.log(result);
         })
         .catch((error) => {
-          // console.log(error);
+          console.log(error);
         });
 
       response.write(`
