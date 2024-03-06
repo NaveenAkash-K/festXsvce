@@ -19,6 +19,8 @@ exports.postRes = function (request, response) {
   request.on("end", function () {
     var pData = "";
     var parsedData = qs.parse(ccavResponse);
+    console.log(parsedData);
+    console.log(parsedData.order_status);
     if (parsedData.order_status === "Failure") {
       throw "Failure";
     }
