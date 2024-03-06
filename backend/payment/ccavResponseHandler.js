@@ -1,7 +1,10 @@
 var http = require("http"),
   fs = require("fs"),
   ccav = require("./ccavutil.js"),
-  qs = require("querystring");
+  mongoose = require("mongoose"),
+  express = require("express"),
+  User = require("../models/user_model.js");
+qs = require("querystring");
 
 exports.postRes = function (request, response) {
   var ccavEncResponse = "",
@@ -16,12 +19,11 @@ exports.postRes = function (request, response) {
     ccavResponse = ccav.decrypt(encryption, workingKey);
   });
 
-  request.on("end", function () {
+  request.on("end", async function () {
     var pData = "";
     response.writeHeader(200, { "Content-Type": "text/html" });
     var parsedData = qs.parse(ccavResponse);
-    console.log(parsedData);
-    console.log(parsedData.order_status);
+
     if (parsedData.order_status === "Failure") {
       response.write(`
         <!DOCTYPE html>
@@ -91,10 +93,24 @@ exports.postRes = function (request, response) {
     </body>
     </html>
     `);
-    response.end();
-
+      response.end();
       return;
     }
+
+    const user = await new User({
+      username: parsedData.billing_name,
+      customerId: parsedData.customer_identifier,
+      address: parsedData.billing_address,
+      phoneNo: parsedData.billing_tel,
+      city: parsedData.billing_city,
+      college: parsedData.college,
+      department: parsedData.department,
+      email: parsedData.billing_email,
+      ordId: parsedData.order_id,
+      eventDetails: "dummy",
+      amount: parsedData.amount,
+      year: parsedData.year,
+    }).save();
 
     response.write(`
       <!DOCTYPE html>
@@ -158,7 +174,7 @@ exports.postRes = function (request, response) {
         <div class="container">
             <div class="success-icon">&#10004;</div>
             <h1>Payment Successful</h1>
-            <p>Your payment was successfully processed. The QR code for your ticket has been sent to your Email.</p>
+            <p>Your payment was successfully processed. The QR code for your ticket has been sent to ${parsedData.billing_email}.</p>
             <a href="#" class="btn">Continue</a>
         </div>
     </body>

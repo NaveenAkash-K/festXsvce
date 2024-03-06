@@ -9,10 +9,6 @@ const app = express();
 
 var uuidv4 = require("uuid").v4;
 
-const dbStore = () => {
-  
-}
-
 exports.postReq = function (request, response) {
   // 3342525
   var body = "",
@@ -24,6 +20,8 @@ exports.postReq = function (request, response) {
   request.on("data", function (data) {
     body += data;
     var ordId = "ORD_" + uuidv4();
+    var parsedData = qs.parse(body);
+    var customerId = Date.now() + "_" + parsedData.regNo;
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
@@ -32,9 +30,7 @@ exports.postReq = function (request, response) {
       &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &language=EN
       &billing_country=India
-      &customer_identifier=97tftvgh`;
-    console.log(qs.parse(body).proshows);
-    console.log(body);
+      &customer_identifier=${customerId}`;
     encRequest = ccav.encrypt(body, workingKey);
     formbody =
       '<form id="nonseamless" method="post" name="redirect" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"/> <input type="hidden" id="encRequest" name="encRequest" value="' +

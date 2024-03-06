@@ -1,7 +1,19 @@
 const mongoose = require("mongoose");
 
 const schema = new mongoose.Schema({
+  customerId:{
+    type: String,
+    required: true,
+  },
   username: {
+    type: String,
+    required: true,
+  },
+  address: {
+    type: String,
+    required: true,
+  },
+  city: {
     type: String,
     required: true,
   },
@@ -29,6 +41,14 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  amount: {
+    type: Number,
+    required: true,
+  },
+  year: {
+    type: String,
+    required: true,
+  },
   otpSecret: {
     type: String,
     required: false,
@@ -45,15 +65,14 @@ const schema = new mongoose.Schema({
     type: String,
     required: false,
   },
-  paid: {
+  eventDetails: {
     type: String,
-    required: false,
+    required: true,
   },
   ordId: {
     type: String,
-    required: false,
+    required: true,
   },
-  
 });
 
 const User = mongoose.model("User", schema);
