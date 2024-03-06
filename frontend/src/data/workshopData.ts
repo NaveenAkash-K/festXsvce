@@ -8,7 +8,7 @@ const workshopData: {
   venue: String;
   req: String[];
   day: String;
-  maxPeople: Number | null;
+  maxPeople: Number | String | null;
   rules: String[] | null;
   coord: String[];
   ph: String | null;
@@ -36,7 +36,7 @@ const workshopData: {
       "2.Valid identification and proof of registration are required.",
       "3.Kindly bring laptop.",
     ],
-    maxPeople: null,
+    maxPeople: "50-60",
     day: "15th March",
     rules: [
       "Respect copyright and intellectual property rights when using workshop materials or resources.",
@@ -82,8 +82,8 @@ const workshopData: {
     maxPeople: 100,
     day: "16th March",
     rules: [""],
-    coord: ["Siddharth RR"],
-    ph: "+91 8508666551",
+    coord: ["Abinandan"],
+    ph: "+91 9443304280",
   },
   {
     id: 3,
@@ -112,10 +112,30 @@ const workshopData: {
     ph: "+91 73391 20852",
   },
   
-  
-  
   {
     id: 4,
+    dept: "Mechanical Engineering",
+    name: "Industrial Robotics Programming and Operation",
+    duration: "3 hrs",
+    shrtDesc:
+      "The aim of introducing concepts and techniques of Robotic Wire Arc Additive Manufacturing is to provide a comprehensive understanding of this innovative technology. This includes explaining how the process works, the materials used, and the applications where this technology can be beneficial.",
+    desc: [
+      "Join our workshop on Industrial Robotics Programming and Operation for hands-on experience with cutting-edge automation technologies.",
+      "Learn to program and operate industrial robots, enhancing manufacturing precision and productivity.",
+      "Our comprehensive session covers programming, operational procedures, and smart manufacturing applications.",
+      " Acquire the skills required for today's sophisticated robotics landscape. Advance your career with expert-led insights in just one intensive session.",
+    ],
+    venue: "UG Cad Lab Mechanical Department",
+    req: ["Nil"],
+    maxPeople: null,
+    day: "16th March",
+    rules: ["Nil"],
+    coord: ["Dr. M. Mohandass","Mr. A. Ranjith Raj","Dr. A. Saravanan"],
+    ph: "TBA",
+  },
+  
+  {
+    id: 5,
     dept: "Marine Engineering",
     name: "Robotic wire arc additive manufacturing",
     duration: "1:30PM - 2:30PM",
@@ -127,13 +147,13 @@ const workshopData: {
       "The workshop would also cover the benefits of WAAM, such as cost-effectiveness and efficiency in producing moderate-sized components.",
       "Participants would learn to maximize WAAM's potential, including its integration with other systems for in-process problem detection and repair.",
     ],
-    venue: "TBA",
-    req: ["Nil"],
+    venue: "Welding Lab",
+    req: ["Participants should bring their notepad and pen"],
     maxPeople: null,
     day: "16th March",
     rules: ["Nil"],
-    coord: ["TBA"],
-    ph: "TBA",
+    coord: ["Naveenkumar"],
+    ph: "+91 6381886850",
   },
 ];
 
