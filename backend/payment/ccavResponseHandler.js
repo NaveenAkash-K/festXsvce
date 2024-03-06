@@ -97,6 +97,9 @@ exports.postRes = function (request, response) {
       return;
     }
 
+    console.log(parsedData);
+    console.log(parsedData.billing_name);
+
     const user = await new User({
       username: parsedData.billing_name,
       customerId: parsedData.customer_identifier,
@@ -111,7 +114,6 @@ exports.postRes = function (request, response) {
       eventDetails: "dummy",
       amount: parsedData.amount,
       year: parsedData.year,
-      
     }).save();
 
     console.log(user);
