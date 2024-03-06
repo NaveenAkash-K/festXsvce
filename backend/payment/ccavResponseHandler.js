@@ -18,6 +18,7 @@ exports.postRes = function (request, response) {
 
   request.on("end", function () {
     var pData = "";
+    response.writeHeader(200, { "Content-Type": "text" });
     response.write(ccavResponse);
     pData = "<table border=1 cellspacing=2 cellpadding=2><tr><td>";
     pData = pData + ccavResponse.replace(/=/gi, "</td><td>");
@@ -28,7 +29,6 @@ exports.postRes = function (request, response) {
       pData +
       "</center><br></body></html>";
     // response.writeHeader(200, { "Content-Type": "text/html" });
-    response.writeHeader(200, { "Content-Type": "text" });
     // response.write("1. " + htmlcode + "\n" + "2. " + pData);
     // response.write(htmlcode);
     
