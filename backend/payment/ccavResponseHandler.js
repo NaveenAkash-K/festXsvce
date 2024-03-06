@@ -98,7 +98,7 @@ exports.postRes = function (request, response) {
     }
 
     console.log("Response");
-    console.log(parsedData);
+    console.log(parsedData.regNo);
     // console.log(parsedData.billing_name);
 
     const user = new User({
