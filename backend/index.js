@@ -21,12 +21,12 @@ app.get("/about", function (req, res) {
 });
 
 app.post("/ccavRequestHandler", (req, res) => {
+  ccavReqHandler.postReq(req, res);
   // var parsedData = qs.parse(req);
 
   // res.send(req.body);
   // return;
 
-  ccavReqHandler.postReq(req, res);
 });
 
 app.post("/checkout", (req, res) => {});
