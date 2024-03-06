@@ -97,24 +97,25 @@ exports.postRes = function (request, response) {
       return;
     }
 
+    console.log("Response");
     console.log(parsedData);
-    console.log(parsedData.billing_name);
+    // console.log(parsedData.billing_name);
 
-    // const user = new User({
-    //   username: parsedData.billing_name,
-    //   customerId: parsedData.customer_identifier,
-    //   regNo: parsedData.regNo,
-    //   address: parsedData.billing_address,
-    //   phoneNo: parsedData.billing_tel,
-    //   city: parsedData.billing_city,
-    //   college: parsedData.college,
-    //   department: parsedData.department,
-    //   email: parsedData.billing_email,
-    //   ordId: parsedData.order_id,
-    //   eventDetails: "dummy",
-    //   amount: parsedData.amount,
-    //   year: parsedData.year,
-    // }).save();
+    const user = new User({
+      username: parsedData.billing_name,
+      customerId: parsedData.customer_identifier,
+      regNo: parsedData.regNo,
+      address: parsedData.billing_address,
+      phoneNo: parsedData.billing_tel,
+      city: parsedData.billing_city,
+      college: parsedData.college,
+      department: parsedData.department,
+      email: parsedData.billing_email,
+      ordId: parsedData.order_id,
+      eventDetails: "dummy",
+      amount: parsedData.amount,
+      year: parsedData.year,
+    }).save();
 
     // console.log(user);
 

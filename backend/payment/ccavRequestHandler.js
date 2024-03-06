@@ -21,7 +21,10 @@ exports.postReq = function (request, response) {
     body += data;
     var ordId = "ORD_" + uuidv4();
     var parsedData = qs.parse(body);
-    
+
+    console.log("Request");
+    console.log(parsedData);
+
     var customerId = Date.now() + "_" + parsedData.regNo;
     body += `&merchant_id=3342525
       &order_id=${ordId}
