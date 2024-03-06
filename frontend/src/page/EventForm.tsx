@@ -57,7 +57,154 @@ const Sponsers: React.FC = () => {
   const [pitstop, setPitstop] = useState(false);
   const [innovisionExpo, setInnovisionExpo] = useState(false);
   const [thinkTank, setThinkTank] = useState(false);
+  const[isTechPassDisable,setIsTechPassDisable] = useState(false);
+  const [isEventsDisabled, setIsEventsDisabled] = useState(false);
+  // Example of using the techPrice variable
+  useEffect(() => {
+    // Array containing all the state variables
+    const events = [
+      isTechPass,
+      isProShows,
+      basicsAutomotive,
+      revit,
+      biomonopoly,
+      ctrlalt,
+      haijo,
+      bridge,
+      mudwell,
+      techPair,
+      prompt,
+      sdg,
+      uKnow,
+      electro,
+      spark,
+      thrill,
+      arvr,
+      chemintri,
+      cheme,
+      pitch,
+      render,
+      mechstix,
+      innosolve,
+      basicsOnCFTWorkshop,
+      uiUx,
+      relayRush,
+      projectForge,
+      theMistedHeist,
+      escapeRooms,
+      paperPresentationCivil,
+      paperPresentationECE,
+      embeddedSystemWorkshop,
+      visualPapyrus,
+      jokerCoder,
+      pitstop,
+      innovisionExpo,
+      thinkTank,
+    ];
 
+    // Check if any of the state variables is true
+    const isAnyTrue = events.some((event) => event);
+
+    // Check if all of the state variables are false
+    const areAllFalse = events.every((event) => !event);
+
+    // Set isTechPass state based on the condition
+    setIsTechPass(!areAllFalse && isAnyTrue);
+  }, [
+    basicsAutomotive,
+    revit,
+    biomonopoly,
+    ctrlalt,
+    haijo,
+    bridge,
+    mudwell,
+    techPair,
+    prompt,
+    sdg,
+    uKnow,
+    electro,
+    spark,
+    thrill,
+    arvr,
+    chemintri,
+    cheme,
+    pitch,
+    render,
+    mechstix,
+    innosolve,
+    basicsOnCFTWorkshop,
+    uiUx,
+    relayRush,
+    projectForge,
+    theMistedHeist,
+    escapeRooms,
+    paperPresentationCivil,
+    paperPresentationECE,
+    embeddedSystemWorkshop,
+    visualPapyrus,
+    jokerCoder,
+    pitstop,
+    innovisionExpo,
+    thinkTank,
+  ]);
+  useEffect(() => {
+    if (isProShows === true && !isElite) {
+      setBasicsAutomotive(false);
+      setRevit(false);
+      setBiomonopoly(false);
+      setCtrlAlt(false);
+      setHaijo(false);
+      setBridge(false);
+      setMudwell(false);
+      setTechPair(false);
+      setPrompt(false);
+      setSdg(false);
+      setUKnow(false);
+      setElectro(false);
+      setSpark(false);
+      setThrill(false);
+      setArvr(false);
+      setChemintri(false);
+      setCHEME(false);
+      setPitch(false);
+      setRender(false);
+      setMechstix(false);
+      setInnosolve(false);
+      setBasicsOnCFTWorkshop(false);
+      setUiUx(false);
+      setRelayRush(false);
+      setProjectForge(false);
+      setTheMistedHeist(false);
+      setEscapeRooms(false);
+      setPaperPresentationCivil(false);
+      setPaperPresentationECE(false);
+      setEmbeddedSystemWorkshop(false);
+      setVisualPapyrus(false);
+      setJokerCoder(false);
+      setPitstop(false);
+      setInnovisionExpo(false);
+      setThinkTank(false);
+      setIsTechPassDisable(true);
+      setIsTechPass(false);
+      setIsEventsDisabled(true);
+    } else {
+      setIsEventsDisabled(false);
+      setIsTechPassDisable(false)
+    }
+  }, [isProShows]);
+  useEffect(() => {
+    // if (isTechPass && isProShows) {
+    //   setIsElite(true);
+    // }
+    if(isElite){
+      setIsProShows(true)
+      setIsTechPass(true)
+    }
+    if(!isElite){
+      setIsProShows(false)
+      setIsTechPass(false)
+    }
+  }, [isTechPass, isProShows, isElite]);
   useEffect(() => {
     if (email.trim().endsWith("svce.ac.in")) {
       setElitePrice(399);
@@ -144,6 +291,7 @@ const Sponsers: React.FC = () => {
             required
             value={billingName}
             onChange={(e) => setBillingName(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -152,6 +300,7 @@ const Sponsers: React.FC = () => {
             required
             value={billingAddress}
             onChange={(e) => setBillingAddress(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -160,6 +309,7 @@ const Sponsers: React.FC = () => {
             required
             value={billingCity}
             onChange={(e) => setBillingCity(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -168,6 +318,7 @@ const Sponsers: React.FC = () => {
             required
             value={billingState}
             onChange={(e) => setBillingState(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -176,6 +327,7 @@ const Sponsers: React.FC = () => {
             required
             value={billingZip}
             onChange={(e) => setBillingZip(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -184,6 +336,7 @@ const Sponsers: React.FC = () => {
             required
             value={billingTel}
             onChange={(e) => setBillingTel(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="email"
@@ -192,6 +345,7 @@ const Sponsers: React.FC = () => {
             value={email}
             required
             onChange={(e) => setEmail(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -200,6 +354,7 @@ const Sponsers: React.FC = () => {
             required
             value={college}
             onChange={(e) => setCollege(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -208,6 +363,7 @@ const Sponsers: React.FC = () => {
             required
             value={year}
             onChange={(e) => setYear(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -216,6 +372,7 @@ const Sponsers: React.FC = () => {
             required
             value={regNo}
             onChange={(e) => setRegNo(e.target.value)}
+            disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -224,6 +381,7 @@ const Sponsers: React.FC = () => {
             required
             value={department}
             onChange={(e) => setDepartment(e.target.value)}
+            disabled={isEventsDisabled}
           />
           {/* <button
             onClick={(e) => {
@@ -243,6 +401,7 @@ const Sponsers: React.FC = () => {
                   type="checkbox"
                   id="techpass"
                   onChange={handleBasicsAutomotiveChange}
+                  disabled={isEventsDisabled}
                   checked={basicsAutomotive}
                 />
                 <label htmlFor="basicsAutomotive">
@@ -255,6 +414,7 @@ const Sponsers: React.FC = () => {
                   name="revit"
                   id="techpass"
                   onChange={handleRevitChange}
+                  disabled={isEventsDisabled}
                   checked={revit}
                 />
                 <label htmlFor="revit">Rev It Up (1:00PM-3:00PM)</label>
@@ -265,6 +425,7 @@ const Sponsers: React.FC = () => {
                   name="biomonopoly"
                   id="techpass"
                   onChange={handleBiomonopolyChange}
+                  disabled={isEventsDisabled}
                   checked={biomonopoly}
                 />
                 <label htmlFor="biomonopoly">
@@ -277,6 +438,7 @@ const Sponsers: React.FC = () => {
                   name="ctrlalt"
                   id="techpass"
                   onChange={handleCtrlAltChange}
+                  disabled={isEventsDisabled}
                   checked={ctrlalt}
                 />
                 <label htmlFor="ctrlalt">
@@ -289,6 +451,7 @@ const Sponsers: React.FC = () => {
                   name="haijo"
                   id="techpass"
                   onChange={handleHaijoChange}
+                  disabled={isEventsDisabled}
                   checked={haijo}
                 />
                 <label htmlFor="haijo">HAIJO (12:00AM-3:00PM)</label>
@@ -299,6 +462,7 @@ const Sponsers: React.FC = () => {
                   name="BRIDGE"
                   id="techpass"
                   onChange={handleBridgeChange}
+                  disabled={isEventsDisabled}
                   checked={bridge}
                 />
                 <label htmlFor="BRIDGE">
@@ -311,6 +475,7 @@ const Sponsers: React.FC = () => {
                   name="MUDWELL"
                   id="techpass"
                   onChange={handleMudwellChange}
+                  disabled={isEventsDisabled}
                   checked={mudwell}
                 />
                 <label htmlFor="MUDWELL">MUDWELL MASTERY (1:00PM-2:30PM)</label>
@@ -321,6 +486,7 @@ const Sponsers: React.FC = () => {
                   name="TECHPAIR"
                   id="techpass"
                   onChange={handleTechPairChange}
+                  disabled={isEventsDisabled}
                   checked={techPair}
                 />
                 <label htmlFor="TECHPAIR">TECH PAIR (10:30AM-12:30PM)</label>
@@ -331,6 +497,7 @@ const Sponsers: React.FC = () => {
                   name="prompt"
                   id="techpass"
                   onChange={handlePromptChange}
+                  disabled={isEventsDisabled}
                   checked={prompt}
                 />
                 <label htmlFor="prompt">PROMPT TACTICS (1:00PM-3:00PM)</label>
@@ -341,6 +508,7 @@ const Sponsers: React.FC = () => {
                   name="SDG"
                   id="techpass"
                   onChange={handleSdgChange}
+                  disabled={isEventsDisabled}
                   checked={sdg}
                 />
                 <label htmlFor="SDG">
@@ -353,6 +521,7 @@ const Sponsers: React.FC = () => {
                   name="UKNOW"
                   id="techpass"
                   onChange={handleUKnowChange}
+                  disabled={isEventsDisabled}
                   checked={uKnow}
                 />
                 <label htmlFor="UKNOW">UKNOWHUT (12:00PM-2:00PM)</label>
@@ -363,6 +532,7 @@ const Sponsers: React.FC = () => {
                   name="ELECTRO"
                   id="techpass"
                   onChange={handleElectroChange}
+                  disabled={isEventsDisabled}
                   checked={electro}
                 />
                 <label htmlFor="ELECTRO">
@@ -375,6 +545,7 @@ const Sponsers: React.FC = () => {
                   name="SPARK"
                   id="techpass"
                   onChange={handleSparkChange}
+                  disabled={isEventsDisabled}
                   checked={spark}
                 />
                 <label htmlFor="SPARK">SPARK QUEST (12:30PM-3:00PM)</label>
@@ -385,6 +556,7 @@ const Sponsers: React.FC = () => {
                   name="THRILL"
                   id="techpass"
                   onChange={handleThrillChange}
+                  disabled={isEventsDisabled}
                   checked={thrill}
                 />
                 <label htmlFor="THRILL">THRILL QUEST (10:00AM-3:00PM)</label>
@@ -395,6 +567,7 @@ const Sponsers: React.FC = () => {
                   name="ARVR"
                   id="techpass"
                   onChange={handleArvrChange}
+                  disabled={isEventsDisabled}
                   checked={arvr}
                 />
                 <label htmlFor="ARVR">
@@ -407,6 +580,7 @@ const Sponsers: React.FC = () => {
                   name="CHEMINTRI"
                   id="techpass"
                   onChange={handleChemintriChange}
+                  disabled={isEventsDisabled}
                   checked={chemintri}
                 />
                 <label htmlFor="CHEMINTRI">
@@ -419,6 +593,7 @@ const Sponsers: React.FC = () => {
                   name="CHEME"
                   id="techpass"
                   onChange={handleCHEMEChange}
+                  disabled={isEventsDisabled}
                   checked={cheme}
                 />
                 <label htmlFor="CHEME">CHEME CONNUNDRUM(12:00PM-3:00PM)</label>
@@ -429,6 +604,7 @@ const Sponsers: React.FC = () => {
                   name="PITCH"
                   id="techpass"
                   onChange={handlePitchChange}
+                  disabled={isEventsDisabled}
                   checked={pitch}
                 />
                 <label htmlFor="PITCH">PITCH FORGE (10:00AM-1:00PM)</label>
@@ -439,6 +615,7 @@ const Sponsers: React.FC = () => {
                   name="RENDER"
                   id="techpass"
                   onChange={handleRenderChange}
+                  disabled={isEventsDisabled}
                   checked={render}
                 />
                 <label htmlFor="RENDER">RENDER ROYALE (9:30AM-12:00PM)</label>
@@ -449,6 +626,7 @@ const Sponsers: React.FC = () => {
                   name="MECHSTIX"
                   id="techpass"
                   onChange={handleMechstixChange}
+                  disabled={isEventsDisabled}
                   checked={mechstix}
                 />
                 <label htmlFor="MECHSTIX">
@@ -464,6 +642,7 @@ const Sponsers: React.FC = () => {
                   name="INNOSOLVE"
                   id="techpass"
                   onChange={handleInnosolveChange}
+                  disabled={isEventsDisabled}
                   checked={innosolve}
                 />
                 <label htmlFor="INNOSOLVE">INNOSOLVE (9.30AM-12.30PM)</label>
@@ -474,6 +653,7 @@ const Sponsers: React.FC = () => {
                   name="BASICS ON CFT WORKSHOP"
                   id="techpass"
                   onChange={handleBasicsOnCFTWorkshopChange}
+                  disabled={isEventsDisabled}
                   checked={basicsOnCFTWorkshop}
                 />
                 <label htmlFor="BASICS ON CFT WORKSHOP">
@@ -486,6 +666,7 @@ const Sponsers: React.FC = () => {
                   name="UI/UX(THE UI-TIMATE SHOWDOWN)"
                   id="techpass"
                   onChange={handleUiUxChange}
+                  disabled={isEventsDisabled}
                   checked={uiUx}
                 />
                 <label htmlFor="UI/UX(THE UI-TIMATE SHOWDOWN)">
@@ -498,6 +679,7 @@ const Sponsers: React.FC = () => {
                   name="RELAY RUSH"
                   id="techpass"
                   onChange={handleRelayRushChange}
+                  disabled={isEventsDisabled}
                   checked={relayRush}
                 />
                 <label htmlFor="RELAY RUSH">RELAY RUSH (10.00AM-1.00PM)</label>
@@ -508,6 +690,7 @@ const Sponsers: React.FC = () => {
                   name="PROJECT FORGE"
                   id="techpass"
                   onChange={handleProjectForgeChange}
+                  disabled={isEventsDisabled}
                   checked={projectForge}
                 />
                 <label htmlFor="PROJECT FORGE">
@@ -520,6 +703,7 @@ const Sponsers: React.FC = () => {
                   name="THE MISTED HEIST"
                   id="techpass"
                   onChange={handleTheMistedHeistChange}
+                  disabled={isEventsDisabled}
                   checked={theMistedHeist}
                 />
                 <label htmlFor="THE MISTED HEIST">
@@ -532,6 +716,7 @@ const Sponsers: React.FC = () => {
                   name="ESCAPE ROOMS"
                   id="techpass"
                   onChange={handleEscapeRoomsChange}
+                  disabled={isEventsDisabled}
                   checked={escapeRooms}
                 />
                 <label htmlFor="ESCAPE ROOMS">
@@ -544,6 +729,7 @@ const Sponsers: React.FC = () => {
                   name="PAPER PRESENTATION(CIVIL)"
                   id="techpass"
                   onChange={handlePaperPresentationCivilChange}
+                  disabled={isEventsDisabled}
                   checked={paperPresentationCivil}
                 />
                 <label htmlFor="PAPER PRESENTATION(CIVIL)">
@@ -556,6 +742,7 @@ const Sponsers: React.FC = () => {
                   name="PAPER PRESENTATION(ECE)"
                   id="techpass"
                   onChange={handlePaperPresentationECEChange}
+                  disabled={isEventsDisabled}
                   checked={paperPresentationECE}
                 />
                 <label htmlFor="PAPER PRESENTATION(ECE)">
@@ -568,6 +755,7 @@ const Sponsers: React.FC = () => {
                   name="EMBEDDED SYSTEM WORKSHOP"
                   id="techpass"
                   onChange={handleEmbeddedSystemWorkshopChange}
+                  disabled={isEventsDisabled}
                   checked={embeddedSystemWorkshop}
                 />
                 <label htmlFor="EMBEDDED SYSTEM WORKSHOP">
@@ -580,6 +768,7 @@ const Sponsers: React.FC = () => {
                   name="VISUAL PAPYRUS"
                   id="techpass"
                   onChange={handleVisualPapyrusChange}
+                  disabled={isEventsDisabled}
                   checked={visualPapyrus}
                 />
                 <label htmlFor="VISUAL PAPYRUS">
@@ -592,6 +781,7 @@ const Sponsers: React.FC = () => {
                   name="JOKER CODER"
                   id="techpass"
                   onChange={handleJokerCoderChange}
+                  disabled={isEventsDisabled}
                   checked={jokerCoder}
                 />
                 <label htmlFor="JOKER CODER">JOKER CODER (9.30AM-2.30PM)</label>
@@ -602,6 +792,7 @@ const Sponsers: React.FC = () => {
                   name="PITSTOP"
                   id="techpass"
                   onChange={handlePitstopChange}
+                  disabled={isEventsDisabled}
                   checked={pitstop}
                 />
                 <label htmlFor="PITSTOP">PITSTOP (10.00AM-12.00PM)</label>
@@ -612,6 +803,7 @@ const Sponsers: React.FC = () => {
                   name="INNOVISION EXPO"
                   id="techpass"
                   onChange={handleInnovisionExpoChange}
+                  disabled={isEventsDisabled}
                   checked={innovisionExpo}
                 />
                 <label htmlFor="INNOVISION EXPO">
@@ -624,6 +816,7 @@ const Sponsers: React.FC = () => {
                   name="THINK TANK"
                   id="techpass"
                   onChange={handleThinkTankChange}
+                  disabled={isEventsDisabled}
                   checked={thinkTank}
                 />
                 <label htmlFor="THINK TANK">THINK TANK (10.00AM-1.00PM)</label>
@@ -636,7 +829,8 @@ const Sponsers: React.FC = () => {
                 type="checkbox"
                 name="techpass"
                 id="techpass"
-                value={isTechPass.toString()}
+                // value={false}
+                disabled={isTechPassDisable}
                 checked={isTechPass}
                 onChange={(value) => {
                   setIsTechPass(value.target.checked);
