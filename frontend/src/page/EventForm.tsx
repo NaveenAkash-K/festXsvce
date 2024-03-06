@@ -280,8 +280,8 @@ const Sponsers: React.FC = () => {
         <form
           method="POST"
           name="customerData"
-          action="http://localhost:3001/ccavRequestHandler"
-          // action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
+          // action="http://localhost:3001/ccavRequestHandler"
+          action="https://technoways-svce-backend.vercel.app/ccavRequestHandler"
           className={styles.eventFormContainer}
         >
           <input

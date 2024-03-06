@@ -88,7 +88,7 @@ exports.postReq = function (request, response) {
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
-      &amount=${amount}
+      &amount=1
       &redirect_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &language=EN
