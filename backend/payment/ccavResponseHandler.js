@@ -110,9 +110,9 @@ exports.postRes = function (request, response) {
           console.log("Update result");
           console.log(result);
           axios.post(
-            "https://https://technoways-svce-backend.vercel.app/sendQR",
+            "https://technoways-svce-backend.vercel.app/sendQR",
             {
-              data: parsedData.billing_email,
+              data: parsedData.billing_email.trim(),
             }
           );
         })
