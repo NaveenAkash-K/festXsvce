@@ -6,7 +6,9 @@ var ccavReqHandler = require("./payment/ccavRequestHandler.js");
 var ccavResHandler = require("./payment/ccavResponseHandler.js");
 var User = require("./models/user_model.js");
 
-mongoose.connect(process.env.MONGO_URI, {});
+mongoose.connect(process.env.MONGO_URI, {
+  serverSelectionTimeoutMS: 5000,
+});
 
 mongoose.connection.on("error", (err) => {
   console.error("MongoDB connection error:", err);
@@ -28,7 +30,6 @@ mongoose.connection.on("error", (err) => {
 //   regNo: "ksudgvskjfvb",
 //   year: 3,
 // }).save();
-
 
 app.use(express.static("public"));
 app.set("views", __dirname + "./payment/public");
