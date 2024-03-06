@@ -26,7 +26,7 @@ exports.postRes = function (request, response) {
     console.log(parsedData.regNo);
     console.log(parsedData);
 
-    if (parsedData.order_status === "Failure") {
+    if (parsedData.order_status === "Failure" || "Aborted" || "Invalid") {
       response.write(`
         <!DOCTYPE html>
     <html lang="en">
@@ -102,21 +102,10 @@ exports.postRes = function (request, response) {
     console.log("Response");
     // console.log(parsedData.billing_name);
 
-    const user = new User({
-      username: parsedData.billing_name,
-      customerId: parsedData.customer_identifier,
-      regNo: parsedData.regNo,
-      address: parsedData.billing_address,
-      phoneNo: parsedData.billing_tel,
-      city: parsedData.billing_city,
-      college: parsedData.college,
-      department: parsedData.department,
-      email: parsedData.billing_email,
-      ordId: parsedData.order_id,
-      eventDetails: "dummy",
-      amount: parsedData.amount,
-      year: parsedData.year,
-    }).save();
+    User.updateOne(
+      { email: parsedData.billing_email },
+      { $set: { paid: true } }
+    );
 
     // console.log(user);
 

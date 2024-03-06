@@ -5,6 +5,8 @@ var http = require("http"),
   express = require("express"),
   qs = require("querystring");
 
+var User = require("../models/user_model.js");
+
 const app = express();
 
 var uuidv4 = require("uuid").v4;
@@ -22,12 +24,11 @@ exports.postReq = function (request, response) {
     var ordId = "ORD_" + uuidv4();
     var parsedData = qs.parse(body);
     console.log(parsedData.regNo);
-    
+
     var customerId = Date.now() + "_" + parsedData.regNo;
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
-      &regNo=${parsedData.regNo}
       &amount=1
       &redirect_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
@@ -43,7 +44,26 @@ exports.postReq = function (request, response) {
       '"><script language="javascript">document.redirect.submit();</script></form>';
   });
 
-  request.on("end", function () {
+  request.on("end", async function () {
+    const user = await new User({
+      username: parsedData.billing_name,
+      customerId: customerId,
+      regNo: parsedData.regNo,
+      address: parsedData.billing_address,
+      phoneNo: parsedData.billing_tel,
+      city: parsedData.billing_city,
+      college: parsedData.college,
+      department: parsedData.department,
+      email: parsedData.billing_email,
+      ordId: ordId,
+      eventDetails: "dummy",
+      amount: parsedData.amount,
+      year: parsedData.year,
+      paid: false,
+    }).save();
+
+    console.log(user);
+
     response.writeHeader(200, { "Content-Type": "text/html" });
     response.write(formbody);
     response.end();

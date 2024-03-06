@@ -69,6 +69,10 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  paid: {
+    type: String,
+    required: true,
+  },
 });
 
 const User = mongoose.model("User", schema);
