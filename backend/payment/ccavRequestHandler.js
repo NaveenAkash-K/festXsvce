@@ -23,7 +23,8 @@ exports.postReq = function (request, response) {
     body += data;
     var ordId = "ORD_" + uuidv4();
     var parsedData = qs.parse(body);
-    console.log(parsedData.regNo);
+    console.log(parsedData);
+    var customerId = Date.now() + "_" + parsedData.regNo;
 
     const user = await new User({
       username: parsedData.billing_name,
@@ -37,14 +38,13 @@ exports.postReq = function (request, response) {
       email: parsedData.billing_email,
       ordId: ordId,
       eventDetails: "dummy",
-      amount: parsedData.amount,
+      amount: 1,
       year: parsedData.year,
       paid: false,
     }).save();
 
     console.log(user);
 
-    var customerId = Date.now() + "_" + parsedData.regNo;
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
