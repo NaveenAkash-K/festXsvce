@@ -91,7 +91,7 @@ exports.postRes = function (request, response) {
       <div class="container">
           <div class="success-icon">&#10004;</div>
           <h1>Payment Successful</h1>
-          <p>Your payment was successfully processed. The QR code for your ticket has been sent to your ${req.params.email}.</p>
+          <p>Your payment was successfully processed. The QR code for your ticket has been sent to your Email.</p>
           <a href="#" class="btn">Continue</a>
       </div>
   </body>
