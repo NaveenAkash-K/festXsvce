@@ -112,6 +112,8 @@ exports.postRes = function (request, response) {
       year: parsedData.year,
     }).save();
 
+    console.log(user);
+
     response.write(`
       <!DOCTYPE html>
     <html lang="en">
