@@ -36,6 +36,7 @@ exports.postReq = function (request, response) {
       &billing_country=India
       &customer_identifier=${customerId}`;
     encRequest = ccav.encrypt(body, workingKey);
+    console.log(parsedData);
     formbody =
       '<form id="nonseamless" method="post" name="redirect" action="https://secure.ccavenue.com/transaction/transaction.do?command=initiateTransaction"/> <input type="hidden" id="encRequest" name="encRequest" value="' +
       encRequest +
