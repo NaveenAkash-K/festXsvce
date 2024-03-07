@@ -29,7 +29,7 @@ exports.postRes = async function (request, response) {
     // console.log(parsedData.regNo);
     // console.log(parsedData);
 
-    if (parsedData.order_status === "Failure") {
+    if (parsedData.order_status === "Failure" || parsedData.order_status === "Aborted" || parsedData.order_status === "Invalid") {
       response.write(`
         <!DOCTYPE html>
     <html lang="en">
