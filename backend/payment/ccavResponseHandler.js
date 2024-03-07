@@ -182,23 +182,24 @@ exports.postRes = async function (request, response) {
         
         <body>
             <div class="ticket-container">
-                <div class="ticket-header">
-                    <h2>Technoways E-Ticket</h2>
-                    // 
-                    // 
-                    <h2>Proshows</h2>
-                    // 
-                    // 
+            <div class="ticket-header">
+            <center>
+            <h2>Technoways E-Ticket</h2>
+            </center>
+            <center>
+            <h1>${user.pass} Ticket</h1>
+            </center>
                 </div>
                 <div class="ticket-content">
-                    <p>Hello [User's Name],</p>
+                    <p>Hello ${user.username}</p>
                     <p>Thank you for registering for Technoways Symposium. Below is your e-ticket details:</p>
                     <div class="qr-code">
-                        <p>Dear recipient,</p>
-                        <p>Here is your QR code:</p>
-                        <!-- Add QR Code here using the provided code snippet -->
-                        <img src="cid:qrcode@unique" width=100% alt="QR Code"/>
+                    <p>Dear recipient,</p>
+                    <p>Here is your QR code:</p>
+                    <!-- Add QR Code here using the provided code snippet -->
+                    <img src="cid:qrcode@unique" width=100% alt="QR Code"/>
                     </div>
+                    <p>Please wait few seconds for QR to get generated</p>
                     <p class="footer-text">Please present this QR code at the entrance during the event.</p>
                 </div>
             </div>

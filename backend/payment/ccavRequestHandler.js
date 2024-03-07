@@ -50,7 +50,8 @@ exports.postReq = async function (request, response) {
         key === "college" ||
         key === "year" ||
         key === "regNo" ||
-        key === "department"
+        key === "department" ||
+        key === "pass"
       ) {
         continue;
       }
@@ -117,25 +118,6 @@ exports.postReq = async function (request, response) {
   });
 
   request.on("end", async function () {
-    console.log({
-      username: parsedData.billing_name,
-      customerId: customerId,
-      regNo: parsedData.regNo,
-      address: parsedData.billing_address,
-      phoneNo: parsedData.billing_tel,
-      city: parsedData.billing_city,
-      college: parsedData.college,
-      department: parsedData.department,
-      email: parsedData.billing_email.trim(),
-      isElite: isElite,
-      isProshows: isProshows,
-      isTechPass: isTechpass,
-      ordId: ordId,
-      eventsArray: eventArray,
-      amount: amount,
-      year: parsedData.year,
-      paid: false,
-    });
 
     await new User({
       username: parsedData.billing_name,
@@ -147,9 +129,7 @@ exports.postReq = async function (request, response) {
       college: parsedData.college,
       department: parsedData.department,
       email: parsedData.billing_email.trim(),
-      isElite: isElite,
-      isProshows: isProshows,
-      isTechPass: isTechpass,
+      pass: parsedData.pass,
       ordId: ordId,
       eventsArray: eventArray,
       amount: amount,

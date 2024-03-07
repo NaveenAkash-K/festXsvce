@@ -423,7 +423,7 @@ const EventForm: React.FC = () => {
                 }}
               />
               <label htmlFor="proshows">
-                Pro Shows (Only for concerts) Rs:250
+                Pro Shows (Only for concert) Rs:250
               </label>
             </div>
             <div>
@@ -437,7 +437,7 @@ const EventForm: React.FC = () => {
                   setIsElite(value.target.checked);
                 }}
               />
-              Elite (For both events and concerts) Rs:{elitePrice?.toString()}
+              Elite (For both events and concert) Rs:{elitePrice?.toString()}
             </div>
             {/* <button onClick={() => setPage(false)}>Prev</button> */}
           </div>
