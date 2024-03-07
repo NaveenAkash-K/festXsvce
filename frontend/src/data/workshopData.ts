@@ -42,7 +42,7 @@ const workshopData: {
       "Respect copyright and intellectual property rights when using workshop materials or resources.",
       "Any illegal or unethical behaviour ",
     ],
-    coord: ["Manoj Kumar S","Logesh Kumar A"],
+    coord: ["Manoj Kumar S", "Logesh Kumar A"],
     ph: "+91 82209 69058,+91 63805 84312",
   },
   {
@@ -75,9 +75,9 @@ const workshopData: {
     shrtDesc:
       "Introduction to building process flow diagrams of various manufacturing processes.",
     desc: [
-      "General awareness about process modelling and construction of process flow diagrams are given using softwares like Dwsim  matlab from experts.",
+      "General awareness about process modelling and construction of process flow diagrams are given using softwares like Dwsim from experts.",
     ],
-    venue: "Block 5 / Library seminar hall",
+    venue: "Block V 515,516",
     req: ["laptops with dwsim installed"],
     maxPeople: 100,
     day: "16th March",
@@ -111,7 +111,7 @@ const workshopData: {
     coord: ["V Kiran Yadav"],
     ph: "+91 73391 20852",
   },
-  
+
   {
     id: 4,
     dept: "Mechanical Engineering",
@@ -133,10 +133,10 @@ const workshopData: {
     rules: ["Nil"],
     // coord: ["Dr. M. Mohandass","Mr. A. Ranjith Raj","Dr. A. Saravanan"],
     // ph: "TBA",
-    coord:["Sabarish Kumar A.S"],
+    coord: ["Sabarish Kumar A.S"],
     ph: "+91 6369 212 503",
   },
-  
+
   {
     id: 5,
     dept: "Marine Engineering",
@@ -150,13 +150,31 @@ const workshopData: {
       "The workshop would also cover the benefits of WAAM, such as cost-effectiveness and efficiency in producing moderate-sized components.",
       "Participants would learn to maximize WAAM's potential, including its integration with other systems for in-process problem detection and repair.",
     ],
-    venue: "Welding Lab",
+    venue: "Welding Research Cell, Marine Dept",
     req: ["Participants should bring their notepad and pen"],
     maxPeople: null,
     day: "16th March",
     rules: ["Nil"],
     coord: ["Naveenkumar"],
     ph: "+91 6381886850",
+  },
+  {
+    id: 6,
+    dept: "Information Technology",
+    name: "Digital Detective: Cyber Forensics and IoT Workshop",
+    duration: "10:00AM - 12:00PM",
+    shrtDesc:
+      "Explore cyber forensics and IoT, tracing digital footprints and uncovering vulnerabilities in this hands-on workshop.",
+    desc: [
+      "Join us for an immersive workshop where participants will delve into the intricate world of cyber forensics intersecting with the Internet of Things (IoT). Throughout this dynamic event, attendees will gain a comprehensive understanding of cutting-edge techniques and tools essential for investigating cyber incidents within IoT networks. From tracing digital footprints to uncovering hidden vulnerabilities, participants will learn how to navigate complex digital landscapes effectively. Through hands-on activities and expert-led sessions, attendees will leave equipped with the skills and knowledge needed to tackle real-world cyber challenges confidently. Don't miss this opportunity to expand your expertise and become a proficient investigator in the realm of cyber forensics and IoT.",
+    ],
+    venue: "IT Dept, PG LAB",
+    req: ["Participants should bring their notepad and pen"],
+    maxPeople: null,
+    day: "15th March",
+    rules: ["Nil"],
+    coord: ["Rashmika R S"],
+    ph: "+91 88256 01866",
   },
 ];
 

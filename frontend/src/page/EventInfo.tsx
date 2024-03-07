@@ -34,7 +34,7 @@ const EventInfo: React.FC = () => {
     requirements: [],
     coordinators: { name: "", contact: "" },
   };
-  
+
   var by;
   eventsData.map((dep) => {
     if (dep.id === department && eventId !== undefined) {
@@ -51,13 +51,14 @@ const EventInfo: React.FC = () => {
           <h1 style={{ textAlign: "center", paddingBottom: "30px" }}>
             {event.name}
           </h1>
-          {by
-            &&
-          <div className={styles.scrollingText}>
-            <p>By {eventsData.filter((ele) => ele.id === department)[0].by}</p>
-            <br />
-          </div>
-          }
+          {by && (
+            <div className={styles.scrollingText}>
+              <p>
+                By {eventsData.filter((ele) => ele.id === department)[0].by}
+              </p>
+              <br />
+            </div>
+          )}
           <div className={styles.contextContainer}>
             <p></p>
             <div className={styles.details}>
@@ -101,7 +102,8 @@ const EventInfo: React.FC = () => {
                 <li>{rule}</li>
               ))}
             </ul>
-<h2>Requirements</h2>
+            <br />
+            <h2>Requirements</h2>
             <ul>
               {event.requirements.map((rule) => (
                 <li>{rule}</li>
@@ -111,7 +113,7 @@ const EventInfo: React.FC = () => {
             <br />
             <h2>Event Coordinator</h2>
             <p>{`${event.coordinators.name}  ${event.coordinators.contact}`}</p>
-            <Link to="/">
+            <Link to="/getPass">
               <button className={styles.getPass}>Get Pass</button>
             </Link>
           </div>

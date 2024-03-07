@@ -22,6 +22,9 @@ const EventForm: React.FC = () => {
   const [department, setDepartment] = useState<string>("");
 
   const [basicsAutomotive, setBasicsAutomotive] = useState(false);
+  const [MARINEPP, SETMARINEPP] = useState(false);
+  const [BONDBLEND, SETBONDBLEND] = useState(false);
+  const [WELDINGMASTERS, SETWELDINGMASTERS] = useState(false);
   const [revit, setRevit] = useState(false);
   const [biomonopoly, setBiomonopoly] = useState(false);
   const [ctrlalt, setCtrlAlt] = useState(false);
@@ -53,6 +56,7 @@ const EventForm: React.FC = () => {
   const [paperPresentationECE, setPaperPresentationECE] = useState(false);
   const [embeddedSystemWorkshop, setEmbeddedSystemWorkshop] = useState(false);
   const [visualPapyrus, setVisualPapyrus] = useState(false);
+  const [BGMI, SETBGMI] = useState(false);
   const [jokerCoder, setJokerCoder] = useState(false);
   const [pitstop, setPitstop] = useState(false);
   const [innovisionExpo, setInnovisionExpo] = useState(false);
@@ -219,6 +223,10 @@ const EventForm: React.FC = () => {
   const handleBasicsAutomotiveChange = () =>
     setBasicsAutomotive(!basicsAutomotive);
   const handleRevitChange = () => setRevit(!revit);
+  const handleBGMIChange = () => SETBGMI(!BGMI);
+  const handleMARINEPPChange = () => SETMARINEPP(!MARINEPP);
+  const handleBONDBLENDChange = () => SETBONDBLEND(!BONDBLEND);
+  const handleWELDINGMASTERSChange = () => SETWELDINGMASTERS(!WELDINGMASTERS);
   const handleBiomonopolyChange = () => setBiomonopoly(!biomonopoly);
   const handleCtrlAltChange = () => setCtrlAlt(!ctrlalt);
   const handleHaijoChange = () => setHaijo(!haijo);
@@ -395,7 +403,11 @@ const EventForm: React.FC = () => {
             <br />
             <p>Select atleast any one pass.</p>
             <p>Only one response is recorded for a email</p>
-            <p>You can either choose Technoways Pass or Proshows Pass or Elite for both pass</p>
+            <p>Please ensure provided email is valid for ticket generation</p>
+            <p>
+              You can either choose Technoways Pass or Proshows Pass or Elite
+              for both pass
+            </p>
             <div>
               <input
                 type="radio"
@@ -408,7 +420,7 @@ const EventForm: React.FC = () => {
                   setIsTechPass(value.target.checked);
                 }}
               />
-              Tech Pass (Only for Tech Events) Rs:
+              Technoways Pass (Only for Tech Events) Rs:
               {techPrice?.toString()}
             </div>
             <div>
@@ -460,6 +472,32 @@ const EventForm: React.FC = () => {
                 />
                 <label htmlFor="basicsAutomotive">
                   Basics Of Automotive Tuning (9:30AM-12:30PM)
+                </label>
+              </div>
+              <div>
+                <input
+                  name="PAPER PRESENTATION (MARINE)"
+                  type="checkbox"
+                  id="techpass"
+                  onChange={handleMARINEPPChange}
+                  disabled={isEventsDisabled}
+                  checked={MARINEPP}
+                />
+                <label htmlFor="PAPER PRESENTATION (MARINE)">
+                  PAPER PRESENTATION (MARINE)
+                </label>
+              </div>
+              <div>
+                <input
+                  name="WELDING MASTERS"
+                  type="checkbox"
+                  id="techpass"
+                  onChange={handleWELDINGMASTERSChange}
+                  disabled={isEventsDisabled}
+                  checked={WELDINGMASTERS}
+                />
+                <label htmlFor="WELDING MASTERS">
+                  WELDING MASTERS
                 </label>
               </div>
               <div>
@@ -631,26 +669,28 @@ const EventForm: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="CHEM-E-INTRIGUE"
+                  name="CHEM E PANSOPHY"
                   id="techpass"
                   onChange={handleChemintriChange}
                   disabled={isEventsDisabled}
                   checked={chemintri}
                 />
                 <label htmlFor="CHEMINTRI">
-                  PRESENTATION ON (CHEM-E-INTRIGUE) (9:30AM-12:30PM)
+                  PRESENTATION ON (CHEM E PANSOPHY) (9:30AM-12:30PM)
                 </label>
               </div>
               <div>
                 <input
                   type="checkbox"
-                  name="CHEME CONNUNDRUM"
+                  name="PANSOPHY'S CONNUNDRUM"
                   id="techpass"
                   onChange={handleCHEMEChange}
                   disabled={isEventsDisabled}
                   checked={cheme}
                 />
-                <label htmlFor="CHEME">CHEME CONNUNDRUM(12:00PM-3:00PM)</label>
+                <label htmlFor="CHEME">
+                  PANSOPHY'S CONNUNDRUM(12:00PM-3:00PM)
+                </label>
               </div>
               <div>
                 <input
@@ -693,6 +733,17 @@ const EventForm: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
+                  name="BGMI"
+                  id="techpass"
+                  onChange={handleBGMIChange}
+                  disabled={isEventsDisabled}
+                  checked={BGMI}
+                />
+                <label htmlFor="BGMI">BGMI (9.00AM-12.30PM)</label>
+              </div>
+              <div>
+                <input
+                  type="checkbox"
                   name="INNOSOLVE"
                   id="techpass"
                   onChange={handleInnosolveChange}
@@ -700,6 +751,19 @@ const EventForm: React.FC = () => {
                   checked={innosolve}
                 />
                 <label htmlFor="INNOSOLVE">INNOSOLVE (9.30AM-12.30PM)</label>
+              </div>
+              <div>
+                <input
+                  name="BOND BLEND"
+                  type="checkbox"
+                  id="techpass"
+                  onChange={handleBONDBLENDChange}
+                  disabled={isEventsDisabled}
+                  checked={BONDBLEND}
+                />
+                <label htmlFor="BOND BLEND">
+                  BOND BLEND
+                </label>
               </div>
               <div>
                 <input
@@ -754,14 +818,14 @@ const EventForm: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="THE MISTED HEIST"
+                  name="THE TWISTED HEIST"
                   id="techpass"
                   onChange={handleTheMistedHeistChange}
                   disabled={isEventsDisabled}
                   checked={theMistedHeist}
                 />
-                <label htmlFor="THE MISTED HEIST">
-                  THE MISTED HEIST (10.00AM-12.00PM)
+                <label htmlFor="THE TWISTED HEIST">
+                  THE TWISTED HEIST (10.00AM-12.00PM)
                 </label>
               </div>
               <div>
@@ -780,27 +844,27 @@ const EventForm: React.FC = () => {
               <div>
                 <input
                   type="checkbox"
-                  name="PAPER PRESENTATION(CIVIL)"
+                  name="PAPYRUS BLITZ"
                   id="techpass"
                   onChange={handlePaperPresentationCivilChange}
                   disabled={isEventsDisabled}
                   checked={paperPresentationCivil}
                 />
-                <label htmlFor="PAPER PRESENTATION(CIVIL)">
-                  PAPER PRESENTATION(CIVIL) (9.30AM-12.00PM)
+                <label htmlFor="PAPYRUS BLITZ">
+                  PAPYRUS BLITZ (9.30AM-12.00PM)
                 </label>
               </div>
               <div>
                 <input
                   type="checkbox"
-                  name="PAPER PRESENTATION(ECE)"
+                  name="PAPER PRISM"
                   id="techpass"
                   onChange={handlePaperPresentationECEChange}
                   disabled={isEventsDisabled}
                   checked={paperPresentationECE}
                 />
-                <label htmlFor="PAPER PRESENTATION(ECE)">
-                  PAPER PRESENTATION(ECE) (10.00AM-2.00PM)
+                <label htmlFor="PAPER PRISM">
+                  PAPER PRISM (10.00AM-2.00PM)
                 </label>
               </div>
               <div>

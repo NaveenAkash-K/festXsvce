@@ -66,7 +66,7 @@ const router = createBrowserRouter([
     element: <TermsAndConditions />
   },
   {
-    path: "/eventForm",
+    path: "/getPass",
     element: (
       <>
         <EventForm />
@@ -74,10 +74,10 @@ const router = createBrowserRouter([
       </>
     ),
   },
-  {
-    path: "/getPass",
-    element: <GetPass />
-  },
+  // {
+  //   path: "/getPass",
+  //   element: <GetPass />
+  // },
   {
     path: "/workshops",
     element: (

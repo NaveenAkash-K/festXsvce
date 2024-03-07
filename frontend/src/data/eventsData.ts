@@ -133,10 +133,10 @@ const eventsData: {
   },
   {
     id: "chem",
-    by: "Organised by IIChE, AIChE,ACT student chapter",
+    by: " IIChE, AIChE,ACT student chapter",
     events: [
       {
-        name: "The ChemEConnundrum",
+        name: "The Pansophy's Connundrum",
         date: "15th March",
         time: "12:00PM - 3:00PM",
         venue: "Classroom 511 - 514",
@@ -144,7 +144,7 @@ const eventsData: {
         description: [
           "Embark on an exhilarating journey of intellect and wit with 'The ChemEConnundrum,' a riveting three-stage quiz event designed to challenge and entertain enthusiasts of participants. This dynamic competition promises to test your knowledge, strategy, and quick thinking in an electrifying atmosphere of camaraderie and excitement.",
         ],
-        shortDescription: "The ChemEConnundrum is technical quiz of 3 rounds",
+        shortDescription: "The Pansophy's Connundrum is technical quiz of 3 rounds",
         rules: [
           "The team consists of two to three persons.",
           "In round one, players must link the images provided to answer the given question. The shortlisted team will advance to the next round.",
@@ -172,12 +172,33 @@ const eventsData: {
         shortDescription:
           "Event to showcase the research expertise of students",
         rules: [
-          "Plagiarism is strictly prohibited",
-          "For paper presentation; maximum permissible slides are 10 (excluding intro and closing slide",
+          "TOPICS FOR PAPER AND POSTER PRESENTATION",
+          "STOICHIOMETRY",
+          "HEAT AND MASS TRANSFER",
+          "THERMODYNAMICS AND PROCESS OPTIMIZATION",
+          "CHEMICAL REACTION ENGINEERING",
+          "PROCESS INSTRUMENTATION DYNAMICS AND CONTROL",
+          "CHEMICAL PROCESS DESIGN",
+          "ADVANCED SEPARATION TECHNIQUES",
+          "WASTE WATER TREATMENT",
+          "CARBON CAPTURE AND CARBON SEQUESTRATION",
+          "NANOPARTICLES AND NANO FLUIDS",
+          "ARTIFICAL INTELLIGENCE IN CHEMICAL ENGINEERING",
+          "GASIFICATION",
+          "ENERGY STORAGE DEVICES",
+          "CLEAN ENERGY CARRIER",
+          "E-WASTE",
+          "GLOBAL CARBON FOOTPRINT TRENDS",
+          "HYDROCARBON PROCESSING",
+          "MICROPLASTICS & POLLUTION",
+          "SUSTAINABILITY AND CIRCULAR ECONOMY",
+          "SAFETY AT PROCESS INDUSTRIES",
+          "Notes:Plagiarism is strictly prohibited",
+          "Notes:For paper presentation; maximum permissible slides are 10 (excluding intro and closing slide)",
         ],
         requirements: [
-          "1)Participants are required to submit a short abstract of their research work for both paper and poster presentations",
-          "Permissible sizes of the poster are : 18''* 24'' or 36''*48''",
+          "Participants are required to submit a short abstract of their research work for both paper and poster presentations",
+          "Permissible sizes of the poster are :36''*48''",
         ],
         coordinators: {
           name: "Mukundan M",
@@ -203,7 +224,7 @@ const eventsData: {
         requirements: [
           "Laptops preferrable",
           "10 slides of presentation for the given problem  (mandatory)",
-          "simulations/ feasibility reports fro proof of concept (preferred)",
+          "simulations/ feasibility reports for proof of concept (preferred)",
         ],
         coordinators: {
           name: "Ramapriyan A",
@@ -590,7 +611,6 @@ const eventsData: {
         description: [
           "Phase 1: Circuit schematics:",
           "Follow the Electrical Trail: Navigate a tangled web of circuits, tracing electrical pathways and deciphering complex schematics to locate the crucial voltage terminal—to locate the vault.",
-          "Alternative Route: If precious time slips away, your team will face a hands-on challenge: assemble a circuit with a specific output to power up your com. Circuit. ",
 
           "Phase 2: Takeover:",
           "Take Control: The Task is easy you should just build a circuit but there is a bit of a twist.Let Your Analog Circuit skills flow.",
@@ -634,10 +654,10 @@ const eventsData: {
           "Each team must adhere to the specified time limit for their presentation.",
           "Judges' decisions will be final and binding.",
         ],
-        requirements: ["Tables and chairs with plug points"],
+        requirements: ["Nil"],
         coordinators: {
-          name: "Ragul K K,Infant Vimal M",
-          contact: "+91 81222 89779,+91 81898 80213",
+          name: "Ragul K K",
+          contact: "+91 81222 89779",
         },
       },
     ],
@@ -676,7 +696,7 @@ const eventsData: {
         name: "Haijo",
         date: "15th March",
         time: "12:00PM - 3:00PM",
-        venue: "Biotech Seminar Hall",
+        venue: "Funtion hall",
         team: "3 members",
         description: [
           "Welcome to Haijo, a riveting event where participants are tested on both technical and non-technical skills across three undisclosed rounds. As the competition unfolds, the team head must make strategic decisions, including the challenging task of removing one member before each new round. This dynamic element adds an unpredictable twist, shaping the team's destiny. Haijo is a high-stakes game requiring adaptability, collaboration, and quick thinking. Success hinges on navigating through diverse challenges and making crucial decisions to advance in this thrilling contest. Are you ready for the suspense and excitement?",
@@ -692,7 +712,7 @@ const eventsData: {
           "6. Discussion among participants is not encouraged.",
           "7. The decision of judges will be final and no arguments or appeal will be entertained.",
         ],
-        requirements: ["TBA"],
+        requirements: ["None"],
         coordinators: {
           name: " Ramanathan SP",
           contact: "+91 7418732846",
@@ -703,7 +723,7 @@ const eventsData: {
         date: "15th March",
         time: "10:00AM - 1:30PM",
         venue:
-          "Video hall/ Library Seminar Hall/ Biotechnology Department Seminar Hall",
+          "Library Seminar Hall",
         team: "1",
         description: [
           "Welcome to 'Ctrl+Alt+Debate,' a cutting-edge parliamentary style debate competition that seamlessly blends oratory excellence with the ever-evolving landscape of technology. Designed to elevate students' public speaking skills, this event goes beyond traditional debate by delving into the forefront of tech headlines and innovations. Participants engage in thought-provoking discussions, navigating the dynamic intersection of technology and society. 'Ctrl+Alt+Debate' not only refines oratory prowess but also offers a unique platform to unravel the complexities of emerging technologies, industry shifts, and future opportunities. Prepare to articulate your perspectives and delve into the tech-driven discourse that shapes our rapidly advancing world. Are you ready to debate the future?",
@@ -967,7 +987,7 @@ const eventsData: {
   },
   {
     id: "marine",
-    by: "",
+    by: "Association Of Marine Engineering Department",
     events: [
       {
         name: "PAPER PRESENTATION",
@@ -999,14 +1019,14 @@ const eventsData: {
           "Presentations must be in PowerPoint format.",
           "No spot registrations are allowed.",
         ],
-        requirements: ["Nil"],
+        requirements: ["Participants are required to bring their Powerpoint presentatation on a USB drive"],
         coordinators: { name: "HARIHARAN S", contact: "9943498144" },
       },
       {
         name: "WELDING MASTERS",
         date: "15th March",
         time: "1:30PM - 2:15PM",
-        venue: "Welding lab, Marine department ",
+        venue: "Welding Research Cell, Marine department ",
         team: "1",
         description: [
           'Welding Masters" is an event designed to showcase and celebrate the skills and expertise in welding.',
@@ -1031,7 +1051,7 @@ const eventsData: {
         name: "BOND BLEND",
         date: "16th March",
         time: "9:30PM - 11:30PM",
-        venue: "Classroom, Marine department ,10-207 Marine drawing hall",
+        venue: "Classroom, 10-207 drawing hall Marine Department",
         team: "3",
         description: [
           'A "Bond Blend" event is a captivating abstract strategy event that challenges participants to achieve a particular type of connection using provided images.',
