@@ -34,6 +34,7 @@ exports.postRes = async function (request, response) {
       parsedData.order_status === "Aborted" ||
       parsedData.order_status === "Invalid"
     ) {
+      await User.deleteOne({ email: parsedData.billing_email });
       response.write(`
         <!DOCTYPE html>
     <html lang="en">
