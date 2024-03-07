@@ -37,7 +37,10 @@ exports.postReq = async function (request, response) {
     customerId = Date.now() + "_" + parsedData.regNo;
 
     for (let key in parsedData) {
-      console.log(key);
+      console.log("Dot opeator");
+      console.log(parsedData.key);
+      console.log("Map");
+      console.log(parsedData['key']);
       if (
         key.startsWith("billing") ||
         key === "college" ||
@@ -47,6 +50,7 @@ exports.postReq = async function (request, response) {
       ) {
         continue;
       }
+
 
       if (key === "proshows") {
         isProshows = true;
