@@ -435,7 +435,7 @@ const EventForm: React.FC = () => {
                 }}
               />
               <label htmlFor="proshows">
-                Pro Shows (Only for concert) Rs:250
+                Pro Shows (Only for concert) Rs:299
               </label>
             </div>
             <div>

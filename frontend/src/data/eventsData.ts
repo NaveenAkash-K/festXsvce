@@ -167,7 +167,7 @@ const eventsData: {
         team: "3",
         description: [
           "Students can showcase their research ideas/ works either in the form of a paper or as a poster",
-          "Separate eveluations are made for both paper as wel as for poster presentations",
+          "Separate evaluations are made for both paper as well as for poster presentations",
         ],
         shortDescription:
           "Event to showcase the research expertise of students",

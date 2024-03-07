@@ -70,7 +70,7 @@ exports.postReq = async function (request, response) {
     }
 
     if (isProshows) {
-      amount = 250;
+      amount = 299;
     }
 
     if (parsedData.billing_email.trim().endsWith("svce.ac.in")) {
