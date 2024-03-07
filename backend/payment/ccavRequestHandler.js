@@ -124,10 +124,14 @@ exports.postReq = async function (request, response) {
 
     response.writeHeader(200, { "Content-Type": "text/html" });
 
-    if(existingUser){
+    if(existingUser.paid === true){
       response.write("<h1> Already Registered </h1>");
       response.end();
       return;
+    }
+
+    if(existingUser){
+      await User.deleteOne({ email: parsedData.billing_email });
     }
 
     await new User({
