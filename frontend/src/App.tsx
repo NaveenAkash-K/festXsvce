@@ -22,7 +22,6 @@ import AutoExpo from "./page/AutoExpo";
 import WorkshopItem from "./components/WorkshopItem";
 import TermsAndConditions from "./page/terms";
 import EventForm from "./page/EventForm";
-import { Analytics } from "@vercel/analytics/react";
 
 ReactGA.initialize("UA-228658137-1");
 
@@ -145,7 +144,6 @@ function App() {
 
   return (
     <>
-      <Analytics />
       {/* {screenWidth > 770 ? (
         <AnimatedCursorMemo
           innerSize={5}
