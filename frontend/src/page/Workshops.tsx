@@ -11,16 +11,21 @@ const Workshops: React.FC = () => {
     document.title = "Workshops | Technoways";
   }, []);
   ReactGA.event({
-    category:"Workshop ",
-    action:"Workshop Info",
-    label:"Workshop Label"
-  })
+    category: "Workshop ",
+    action: "Workshop Info",
+    label: "Workshop Label",
+  });
   return (
     <>
       <Header />
       <div className={styles.space}></div>
       <div className={styles.container}>
         <h1 className={styles.title}>Workshops</h1>
+        <br />
+        <h3 className={styles.title}>On-spot registeration for workshops</h3>
+        <br />
+        <h3 className={styles.title}>Workshops are not included in passes</h3>
+        <br />
         <br />
         <div className={styles.list}>
           {workshopData.map((data, index) => (
@@ -33,7 +38,7 @@ const Workshops: React.FC = () => {
             >
               <h4 className={styles.titles}>{data.name}</h4>
               <h4 className={styles.shortDes}>{data.shrtDesc}</h4>
-              <h4 style={{margin:'1vw 0'}}>By {data.dept}</h4>
+              <h4 style={{ margin: "1vw 0" }}>By {data.dept}</h4>
               <h4 className={styles.know}>Know More</h4>
             </div>
           ))}

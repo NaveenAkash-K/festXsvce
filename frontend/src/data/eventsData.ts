@@ -75,6 +75,34 @@ const eventsData: {
     by: "The Students’ Biotech Forum",
     events: [
       {
+        name: "Find It First",
+        date: "TBA",
+        time: "TBA",
+        venue: "TBA",
+        team: "Maximum of 2 members per team",
+        description: [
+          "SEGMENT1:",
+          "There will be few pictures containing a collection of tems, each picture pertaining 1 different topics. Questions will be asked in the type of riddles or clues of cropped images to identity one particular item from a picture. A point will be awarded as they identify each item first and the team with maximum points will move on to the next segment.",
+          "SEGMENT2:",
+          "An audio will be played which depicts clues regarding a particular domain. Participants will have to find the correct answer and the number of relatable clues within 15 secs afer the audio was played.Teams with the lowest points will be eliminated.",
+          "SEGMENT3:",
+          "Participants will be shown ten random blocks with hidden puzzles(9 pieces ) each pertaining to a particular domain from which they ll have to select one and solve it.",
+        ],
+        shortDescription: "Where Time Runs Out Faster Than Patience",
+        rules: [
+          "Use of mobile phones is prohibited.",
+          "SEGMENT 1:Each picture will be displayed for 20 sec. 3 pictures per domain. A point will be awarded for identifying the item and another point will be awarded for identifying the correct picture.",
+          "SEGMENT 2: The audio track will be played only once.Regarding the number of relatable clues, teams aren' allowed to jot down the words.",
+          "SEGMENT 3: Teams get 30 secs to frame the puzzle and 10 secs to figure out the domain.",
+          "Throughout the segments teams aren't allowed to help other teams.",
+        ],
+        requirements: ["None"],
+        coordinators: {
+          name: "KEERTHANAA SG - ",
+          contact: "90876 00333",
+        },
+      },
+      {
         name: "Biomonopoly",
         date: "15th March",
         time: "10:00AM - 1:00PM",

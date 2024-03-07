@@ -83,9 +83,7 @@ const WorkshopItem: React.FC = () => {
             <br />
             <h2>Event Coordinator</h2>
             <p>{`${work?.coord}  ${work?.ph}`}</p>
-            <Link to="/getPass">
-              <button className={styles.getPass}>Get Pass</button>
-            </Link>
+            <button className={styles.getPass}>Register Now</button>
           </div>
         </div>
       </div>

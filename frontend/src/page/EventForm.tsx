@@ -3,9 +3,9 @@ import Header from "../components/Header";
 import styles from "../styles/page/eventForm.module.css";
 // import IIM from "../assets/images/2IIM.png";
 const EventForm: React.FC = () => {
-  const [isTechPass, setIsTechPass] = useState<boolean>(true);
+  const [isTechPass, setIsTechPass] = useState<boolean>(false);
   const [isProShows, setIsProShows] = useState<boolean>(false);
-  const [isElite, setIsElite] = useState<boolean>(false);
+  const [isElite, setIsElite] = useState<boolean>(true);
   const [nextPage, setPage] = useState<boolean>(false);
   const [email, setEmail] = useState<string>("");
   const [techPrice, setTechPrice] = useState<Number>(299);
@@ -335,7 +335,7 @@ const EventForm: React.FC = () => {
           <input
             type="text"
             name="billing_zip"
-            placeholder="zip"
+            placeholder="Pincode"
             required
             //value={billingZip}
             onChange={(e) => setBillingZip(e.target.value)}
@@ -371,7 +371,7 @@ const EventForm: React.FC = () => {
           <input
             type="text"
             name="year"
-            placeholder="Year"
+            placeholder="Year of Study"
             required
             //value={year}
             onChange={(e) => setYear(e.target.value)}
@@ -414,7 +414,7 @@ const EventForm: React.FC = () => {
               for both pass
             </p>
             <br />
-            <h1>Passes</h1>
+            <h1 style={{ fontSize: "2rem" }}>Get Your Passes Now</h1>
             <div>
               <input
                 type="radio"
@@ -427,8 +427,10 @@ const EventForm: React.FC = () => {
                   setIsTechPass(value.target.checked);
                 }}
               />
-              Technoways Pass (Only for Tech Events) Rs:
-              {techPrice?.toString()}
+              <span style={{ fontSize: "1.1rem" }}>
+                TECHNOWAYS PASS (Only for Tech Events) RS:
+                {techPrice?.toString()}
+              </span>
             </div>
             <div>
               <input
@@ -441,11 +443,14 @@ const EventForm: React.FC = () => {
                   setIsProShows(value.target.checked);
                 }}
               />
-              <label htmlFor="proshows">
-                Pro Shows (Only for concert) Rs:299
+              <label htmlFor="proshows" style={{ fontSize: "1.1rem" }}>
+                PRO SHOWS (Only for concert) RS:299
               </label>
             </div>
             <div>
+              <center>
+                <h2>⭐BEST SELLING⭐</h2>
+              </center>
               <input
                 type="radio"
                 name="pass"
@@ -456,7 +461,9 @@ const EventForm: React.FC = () => {
                   setIsElite(value.target.checked);
                 }}
               />
-              Elite (For both events and concert) Rs:{elitePrice?.toString()}
+              <span style={{ fontSize: "1.1rem" }}>
+                ELITE (For both events and concert) RS:{elitePrice?.toString()}
+              </span>
             </div>
             {/* <button onClick={() => setPage(false)}>Prev</button> */}
           </div>
@@ -468,7 +475,7 @@ const EventForm: React.FC = () => {
           <div className={styles.nextPageContainer}>
             <div className={styles.day1}>
               <h3 style={{ textAlign: "center" }}>Day1</h3>
-              <div>
+              {/* <div>
                 <input
                   name="BASICS AUTOMOTIVE"
                   type="checkbox"
@@ -480,7 +487,7 @@ const EventForm: React.FC = () => {
                 <label htmlFor="basicsAutomotive">
                   Basics Of Automotive Tuning (9:30AM-12:30PM)
                 </label>
-              </div>
+              </div> */}
               <div>
                 <input
                   name="PAPER PRESENTATION (MARINE)"
@@ -658,7 +665,7 @@ const EventForm: React.FC = () => {
                 />
                 <label htmlFor="THRILL">THRILL QUEST (10:00AM-3:00PM)</label>
               </div>
-              <div>
+              {/* <div>
                 <input
                   type="checkbox"
                   name="AR VR WORKSHOP"
@@ -670,7 +677,7 @@ const EventForm: React.FC = () => {
                 <label htmlFor="ARVR">
                   WORKSHOP ON AR & VR (10:00AM-3:00PM)
                 </label>
-              </div>
+              </div> */}
               <div>
                 <input
                   type="checkbox"
@@ -735,7 +742,7 @@ const EventForm: React.FC = () => {
             </div>
             <div className={styles.day2}>
               <h3 style={{ textAlign: "center" }}>Day2</h3>
-              <div>
+              {/* <div>
                 <input
                   type="checkbox"
                   name="BGMI"
@@ -745,7 +752,7 @@ const EventForm: React.FC = () => {
                   checked={BGMI}
                 />
                 <label htmlFor="BGMI">BGMI (9.00AM-12.30PM)</label>
-              </div>
+              </div> */}
               <div>
                 <input
                   type="checkbox"
@@ -768,7 +775,7 @@ const EventForm: React.FC = () => {
                 />
                 <label htmlFor="BOND BLEND">BOND BLEND</label>
               </div>
-              <div>
+              {/* <div>
                 <input
                   type="checkbox"
                   name="BASICS ON CFT WORKSHOP"
@@ -780,7 +787,7 @@ const EventForm: React.FC = () => {
                 <label htmlFor="BASICS ON CFT WORKSHOP">
                   BASICS ON CFT WORKSHOP (1.00PM-2.30PM)
                 </label>
-              </div>
+              </div> */}
               <div>
                 <input
                   type="checkbox"
@@ -870,7 +877,7 @@ const EventForm: React.FC = () => {
                   PAPER PRISM (10.00AM-2.00PM)
                 </label>
               </div>
-              <div>
+              {/* <div>
                 <input
                   type="checkbox"
                   name="EMBEDDED SYSTEM WORKSHOP"
@@ -882,7 +889,7 @@ const EventForm: React.FC = () => {
                 <label htmlFor="EMBEDDED SYSTEM WORKSHOP">
                   EMBEDDED SYSTEM WORKSHOP (9.30AM-2.00PM)
                 </label>
-              </div>
+              </div> */}
               <div>
                 <input
                   type="checkbox"
