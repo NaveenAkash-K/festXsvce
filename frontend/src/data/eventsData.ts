@@ -83,7 +83,7 @@ const eventsData: {
         description: [
           "This event will consist of several plots where each player rolls a die and lands on a plot with problems statement.",
           "If the player finds the problem statement solvable they buy it and present their solution or they can move to the next plot without buying the problem statement in the next turn .",
-          "The player who solves the maximum problem statement in the given time will be announced as the winner"
+          "The player who solves the maximum problem statement in the given time will be announced as the winner",
         ],
         shortDescription:
           "Fun filled monopoly event infused with problem statements.",
@@ -224,7 +224,7 @@ const eventsData: {
         team: "2",
         description: [
           "Bridge expertise is a technical event that explores the ideas behind bridge modelling and construction also it outlines how the bridge design could be done optimally with given materials",
-          "This event comprises designing,construction, and testing of the model."
+          "This event comprises designing,construction, and testing of the model.",
         ],
         shortDescription:
           "A model making competition (bridge) requiring problem solving and design skills.",
@@ -247,7 +247,7 @@ const eventsData: {
         team: "2",
         description: [
           "Mud well mastery is a technical event which demands your basics of geotechnical engineering and spontaneous thinking.",
-          "This event incorporates brainstorming, modelling, and testing of the model for the specified problem statement"
+          "This event incorporates brainstorming, modelling, and testing of the model for the specified problem statement",
         ],
         shortDescription:
           "A model making competition (well) requiring problem solving and design skills.",
@@ -279,7 +279,9 @@ const eventsData: {
           " Participants should strictly adhere to the theme of the event.",
           " The theme of your paper should be from any one of the civil engineering niches (structural engineering, geotechnical engineering, sustainable construction, safety and risk management etc.,)",
         ],
-        requirements: ["Participants should bring at least one laptop per team to present their PowerPoint presentations during the event."],
+        requirements: [
+          "Participants should bring at least one laptop per team to present their PowerPoint presentations during the event.",
+        ],
         coordinators: {
           name: "Raghavendra B,Aravintakshan N G",
           contact: "+91 94439 32131,+91 93848 41071",
@@ -521,7 +523,9 @@ const eventsData: {
           "The decision of judges will be final.",
           "The Paper should have the details (Name, College name, Phone no. of each participants) of the team members.",
         ],
-        requirements: ["Participants should bring at least one laptop per team to present their PowerPoint presentations during the event."],
+        requirements: [
+          "Participants should bring at least one laptop per team to present their PowerPoint presentations during the event.",
+        ],
         coordinators: {
           name: "Lok Ranjan P,Aadhithya Narayanan B",
           contact: "+91 6374358867,+91 93455 26682",
@@ -734,9 +738,10 @@ const eventsData: {
           "Your mission,should you choose to accept it, is to conceptualize, design, and build a 3D model that addresses the given challenge within the stipulated time frame.",
         ],
         shortDescription: "Innovative Problem-Solving Through Design!",
-        rules: ["Students are allowed to use Autocad, Creo, and Fusion.",
-        "If they opt for any other software, they need to bring their own systems",],
-        requirements: ["Nil"],
+        rules: ["Students are allowed to use Autocad, Creo, and Fusion."],
+        requirements: [
+          "If they opt for any other software, they need to bring their own systems",
+        ],
         coordinators: {
           name: "Madhava Rajan.J",
           contact: "+91 8939078478",
@@ -753,11 +758,13 @@ const eventsData: {
           "This event stands as a convergence point for intellectual exploration, sparking profound conversations, and uniting visionaries in the field.",
         ],
         shortDescription: "Innovative Papers Uniting Engineering Minds!",
-        rules: ["Time Limit Adherence:- Presentations must strictly adhere to the allocated time limit, ensuring a seamless flow of ideas and maximizing audience engagement.",
-        "Dynamic Q&A Session: - Each presentation is followed by a Q&A session, creating an interactive dialogue between presenters and the audience.",
-        "This format promotes a deeper understanding of the presented concepts.",
-        "Comprehensive Evaluation: - Evaluation criteria encompass content richness, ensuring the depth and quality of the presented material.",
-        "Clarity of presentation and the overall impact of the ideas shared contribute to thejudging process."],
+        rules: [
+          "Time Limit Adherence:- Presentations must strictly adhere to the allocated time limit, ensuring a seamless flow of ideas and maximizing audience engagement.",
+          "Dynamic Q&A Session: - Each presentation is followed by a Q&A session, creating an interactive dialogue between presenters and the audience.",
+          "This format promotes a deeper understanding of the presented concepts.",
+          "Comprehensive Evaluation: - Evaluation criteria encompass content richness, ensuring the depth and quality of the presented material.",
+          "Clarity of presentation and the overall impact of the ideas shared contribute to thejudging process.",
+        ],
         requirements: ["None"],
         coordinators: {
           name: "Logaranjan G",
@@ -823,15 +830,18 @@ const eventsData: {
         date: "15th March",
         time: "10:00AM - 1:00PM",
         venue: "Function Hall",
-        team: "1-3",
+        team: "3",
         description: [
-          "Welcome to 'PitchForge', a dynamic pitching event where teams are challenged to provide innovative solutions to bring highly technical products to market.",
-          "In this high-stakes competition, participants will demonstrate their prowess in pitching and delivering compelling solutions within a stipulated time frame.",
-          "With an emphasis on interdisciplinary collaboration and real-world applicability, teams must craft solutions showcasing not only technical excellence but also practical, impactful, and scalable outcomes.",
-          "The stage is set for a pitch-perfect showdown where teams will compete to impress judges with their problem-solving abilities under tight deadlines. May the most inventive and adept solutions rise to the challenge!",
+          'Welcome to the exhilarating arena of "PitchForge"! Here, teams embark on a thrilling journey to present groundbreaking solutions for bringing complex technical products to the market.',
+          "Amidst the charged atmosphere of this high-stakes competition, participants must showcase their prowess in pitching and delivering compelling solutions within a tight timeframe",
+          // "",
+          'What sets "PitchForge" apart is its unique twist: a super specialty auction where teams bid for their preferred problem statements.',
+          "This surprise element injects an additional layer of excitement and strategy into the event, challenging teams to not only excel in their pitches but also strategically select the challenges they're most equipped to conquer",
+          'With an emphasis on interdisciplinary collaboration and real-world applicability, "PitchForge" promises a riveting showdown where innovation, strategy, and problem-solving prowess collide',
+          "May the most inventive and adept solutions rise to the challenge and captivate our esteemed panel of judges!",
         ],
         shortDescription:
-          "Narrow time-framed pitch perfect kind of event for critical technical products.",
+          "Where innovation converges with strategy in a captivating competition of problem-solving finesse, enhanced by an unforeseen auction element !",
         rules: [
           "Participants will be provided with the description of a highly technical product, and must come up with a pitch to bring that product to market.",
           "The pitch must be holistic and should cover all aspects right from procurement to marketing.",
@@ -839,7 +849,7 @@ const eventsData: {
           "Teams will be judged based on their unique approach, holistic and innovative nature of their pitch.",
           "Determining the winner and dispute resolution is completely undertaken by the judging panel.",
         ],
-        requirements: ["TBA"],
+        requirements: ["Nil"],
         coordinators: {
           name: "Sri Raja Rajeshwari",
           contact: "+91 95661 45443",
@@ -865,7 +875,8 @@ const eventsData: {
           "It's a race against time and bugs. Precision and teamwork matter most. As each hurdle falls, the next coder takes the lead.",
           'The team with the shortest overall time emerges victorious. Simplified coding adrenaline – that\'s "Code Relay Rush" in a nutshell!',
         ],
-        shortDescription: "coding relay competition with strategic challenges",
+        shortDescription:
+          "The Coding Relay Challenge: Where strategy prowess meets coding excellence!",
         rules: [
           "There should be no communication between the team members.",
           "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
@@ -877,15 +888,16 @@ const eventsData: {
         name: "Prompt Tactics",
         date: "15th March",
         time: "1:00PM - 3:00PM",
-        venue: "It Dept Lab",
-        team: "2 Members",
+        venue: "IT Department Lab",
+        team: "1",
         description: [
           "Welcome to the Tech Odyssey - where coding meets creativity in a thrilling three-act saga!",
           "Round 1: Password Hunt - Embark on a digital treasure hunt through 7 levels of password wizardry. Crack the codes in 5 minutes or less to advance.",
           "Round 2: Prompt Craft - Unleash your inner artist as you craft prompts for an AI to replicate an image. It's a duel of creativity and code. The most visually stunning replication earns you a ticket to the grand finale.",
           "Round 3: SQL Showdown - In the final act, dive into the depths of databases and solve SQL riddles with bite-sized queries. It's not just about code; it's about unraveling the mysteries with finesse. Only the SQL maestros will emerge victorious!",
         ],
-        shortDescription: "prompt based competition with specific challenges",
+        shortDescription:
+          "A prompt based competition where participants engage in specific challenge to showcase their skills and creativity",
         rules: [
           "Plagiarism is not allowed.",
           "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
@@ -900,23 +912,23 @@ const eventsData: {
         time: "10:30AM - 12:30PM",
         team: "2",
         description: [
-          "Round 1:In this round, two members will be participating, one member as a catcher and the other member as a responser. The timing of the event is 5 minutes where the catcher will be given a technical word and they should help the responser to find out the word with a maximum of three clues.",
+          "Round 1: In this round, two members will be participating, one member as a catcher and the other member as a responser. The timing of the event is 5 minutes where the catcher will be given a technical word and they should help the responser to find out the word with a maximum of three clues.",
           "Round 2: In this round, a poster will be displayed for the participants for nearly 20 seconds. Later on, the participants should recreate the poster that was displayed. The time for recreating the poster would be approximately some 30 to 45 minutes.",
-          "Round 3:Just a minute (JAM)",
-          "Round 4:In this round, a topic will be given to a person ( any one of the two participants). The person should write a content on that given topic.The other participant now should analyze and understand the content written by their team member and should speak on that topic for 3 minutes.",
+          "Round 3: In this round, a topic will be given to a person ( any one of the two participants). The person should write a content on that given topic.The other participant now should analyze and understand the content written by their team member and should speak on that topic for 3 minutes.",
         ],
-        shortDescription: "A pair event to solve challenges",
+        shortDescription:
+          "Exclusive paired event designed to tackle a series of challenges together!",
         rules: [
-          "Round 1 rules:There should not be any direct communication between the participants.",
+          "Round 1 rules: There should not be any direct communication between the participants.",
           "They should find the word only by giving clues.Participants will be rewarded points based on how many words they find within the given time constraint.",
 
-          "Round 2 rules:The Participants will not be given any extra time while analyzing the poster.",
+          "Round 2 rules: The Participants will not be given any extra time while analyzing the poster.",
           "The Participants will be judged based on their accuracy for the poster they recreate within the given time constraint.",
 
-          "Round 3 rules:The Participants will not be given any extra time.",
+          "Round 3 rules: The Participants will not be given any extra time.",
           "The Participants will be judged based on their understanding and how they explain the content.",
         ],
-        requirements: ["TBA"],
+        requirements: ["laptop, rough sheets, pen"],
         coordinators: { name: "Gowtham S ", contact: "+91 90030 66776" },
       },
     ],

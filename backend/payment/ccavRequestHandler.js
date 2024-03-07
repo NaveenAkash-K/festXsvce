@@ -126,7 +126,7 @@ exports.postReq = async function (request, response) {
 
     if(existingUser){
       response.write("<h1> Already Registered </h1>");
-      res.send();
+      response.end();
       return;
     }
 
