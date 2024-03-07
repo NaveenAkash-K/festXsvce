@@ -102,7 +102,7 @@ exports.postReq = async function (request, response) {
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
-      &amount=1
+      &amount=${amount}
       &redirect_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &language=EN
@@ -118,6 +118,17 @@ exports.postReq = async function (request, response) {
   });
 
   request.on("end", async function () {
+    const existingUser = await User.findOne({
+      email: parsedData.billing_email.trim(),
+    });
+
+    response.writeHeader(200, { "Content-Type": "text/html" });
+
+    if(existingUser){
+      response.write("<h1> Already Registered </h1>");
+      res.send();
+      return;
+    }
 
     await new User({
       username: parsedData.billing_name,
@@ -144,7 +155,6 @@ exports.postReq = async function (request, response) {
     //   console.log("Insert error");
     //   console.log(error);
     // });
-    response.writeHeader(200, { "Content-Type": "text/html" });
     response.write(formbody);
     response.end();
   });

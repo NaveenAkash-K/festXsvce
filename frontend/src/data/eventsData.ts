@@ -22,7 +22,7 @@ const eventsData: {
         name: "PITSTOP",
         date: "16th March",
         time: "10:00AM-1:00PM",
-        venue: "AUTOMOTIVE COMPONENTS LABORTORY",
+        venue: "AUTOMOTIVE COMPONENTS LABORATORY",
         team: "1-2",
         description: [
           "Pitting, a term from F1 racing, involves cars arriving at designated pitstops to change tires or make repairs",
@@ -48,7 +48,7 @@ const eventsData: {
         name: "Rev It Up!",
         date: "15th March",
         time: "1:00PM - 3:00PM",
-        venue: "DEPT LAB 2",
+        venue: "Automobile Components Laboratory",
         team: "1 (Individual event)",
         description: [
           "Participants will use the RC car provided by the organizers to race through a course.",
@@ -64,8 +64,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "Yeshwanth",
-          contact: "+91 7358624281",
+          name: "Karthikeyan",
+          contact: "+91 93605 60105",
         },
       },
     ],
@@ -81,19 +81,21 @@ const eventsData: {
         venue: "Biotech Seminar Hall",
         team: "1",
         description: [
-          "This event will consist of several plots (problem statement open to all departments) where each team rolls a die and lands on a plot with a problem statement. If the team finds the problem statement solvable, they buy it and present their solution, or they can move to the next plot without buying the problem statement in the next turn. The team that solves the maximum problem statements in the given time will be announced as the winner.",
+          "This event will consist of several plots where each player rolls a die and lands on a plot with problems statement.",
+          "If the player finds the problem statement solvable they buy it and present their solution or they can move to the next plot without buying the problem statement in the next turn .",
+          "The player who solves the maximum problem statement in the given time will be announced as the winner"
         ],
         shortDescription:
           "Fun filled monopoly event infused with problem statements.",
         rules: [
-          "Initial amount will be provided to each team at the start and it’ll be used to buy the problem statements.",
-          "Teams should solve the problem statement they bought in order to buy the next problem and move on to the next plot.",
-          "The team that solves the maximum problems in 2hrs is deemed the winners.",
-          "The teams are required to solve at least 2 problems within the 1st 30 mins in order to stay in the round.",
-          "Bonus will be provided each time the team crosses the Start point.",
-          "Teams are not allowed to trade within themselves.",
-          "Use of any form of references (use of internet) will lead to elimination of the team.",
-          "Teams are not allowed to help each other.",
+          "Initial amount will be provided to each participant at the start and it’ll be used to buy the problem statements.",
+          "Participant should solve the problem statement they bought in order to buy the next problem and move on to the next plot.",
+          "The participant that solves the maximum problems in 3hrs is deemed the winners.",
+          "The participant are required to solve at least 2 problems within the 1st 30 mins in order to stay in the round.",
+          "Bonus will be provided each time the participant crosses the Start point.",
+          "Participant are not allowed to trade within themselves.",
+          "Use of any form of references (use of internet) will lead to elimination of the participant.",
+          "Participant are not allowed to help each other.",
         ],
         requirements: ["None"],
         coordinators: {
@@ -221,7 +223,8 @@ const eventsData: {
         venue: "Survey Lab",
         team: "2",
         description: [
-          "Participants are provided with thermocol for bridge construction. They are provided with a problem statement and the participants are required to solve it. The design which solves the problem statement and is aesthetically pleasing is declared the winner.",
+          "Bridge expertise is a technical event that explores the ideas behind bridge modelling and construction also it outlines how the bridge design could be done optimally with given materials",
+          "This event comprises designing,construction, and testing of the model."
         ],
         shortDescription:
           "A model making competition (bridge) requiring problem solving and design skills.",
@@ -243,7 +246,8 @@ const eventsData: {
         venue: "Soil Mechanics Lab",
         team: "2",
         description: [
-          "Participants are required to construct a seepage structure (well) with the given items. The structure is constructed with clay. The structure is subjected to load tests.The seepage structure which doesn't allow water to seep through and is design wise perfect is declared the winner.",
+          "Mud well mastery is a technical event which demands your basics of geotechnical engineering and spontaneous thinking.",
+          "This event incorporates brainstorming, modelling, and testing of the model for the specified problem statement"
         ],
         shortDescription:
           "A model making competition (well) requiring problem solving and design skills.",
@@ -265,7 +269,7 @@ const eventsData: {
         venue: "Cadd Lab",
         team: "2",
         description: [
-          "This is a paper presentation event focused on future civil engineering development such as sustainability, etc.The participants are required to present their views on sustainability and environmental safety and other future civil engineering advancements even smart buildings etc.",
+          "A Paper presentation event with a theme focused on ‘Sustainable Practices in Civil Engineering’. The participants are required to present their work on the selected topic .",
         ],
         shortDescription:
           "A paper presentation event with a theme focused on civil engineering.",
@@ -275,7 +279,7 @@ const eventsData: {
           " Participants should strictly adhere to the theme of the event.",
           " The theme of your paper should be from any one of the civil engineering niches (structural engineering, geotechnical engineering, sustainable construction, safety and risk management etc.,)",
         ],
-        requirements: ["None"],
+        requirements: ["Participants should bring at least one laptop per team to present their PowerPoint presentations during the event."],
         coordinators: {
           name: "Raghavendra B,Aravintakshan N G",
           contact: "+91 94439 32131,+91 93848 41071",
@@ -527,10 +531,10 @@ const eventsData: {
   },
   {
     id: "eee",
-    by: "AEEE",
+    by: "Association Of Electrical And Electronics Engineers",
     events: [
       {
-        name: "Uknowhunt",
+        name: "UKnowHunt",
         date: "15th March",
         time: "12:00PM - 2:00PM",
         venue: "Classrooms 521, 522",
@@ -546,26 +550,26 @@ const eventsData: {
           "UKnowHunt: Where Uno meets technical treasure hunts, igniting strategic prowess and electrical engineering expertise in an exhilarating",
         rules: [
           "Fair Play:",
-          "- Teams must adhere to the principles of fair play and sportsmanship.",
-          "- Any form of cheating or misconduct will result in immediate disqualification.",
+          "Teams must adhere to the principles of fair play and sportsmanship.",
+          "Any form of cheating or misconduct will result in immediate disqualification.",
           "Uno Game Rules:",
-          "- Standard Uno rules apply.",
-          "- A designated referee will oversee the Uno game and announce the results.",
+          "Standard Uno rules apply.",
+          "A designated referee will oversee the Uno game and announce the results.",
           "Treasure Hunt Quiz Rules:",
-          "- Teams must progress through the quiz in order, completing each room's questions before advancing.",
-          "- After completing each question, the coordinator will lead you to the next room.",
-          "- Teams may not proceed to the next room until their answers are verified by event coordinators or volunteers.",
+          "Teams must progress through the quiz in order, completing each room's questions before advancing.",
+          "After completing each question, the coordinator will lead you to the next room.",
+          "Teams may not proceed to the next room until their answers are verified by event coordinators or volunteers.",
           "Lifeline Usage:",
-          "- Lifelines earned in the Uno game can only be used in the second round.",
-          "- Teams must declare their intention to use a lifeline after they see the question.",
+          "Lifelines earned in the Uno game can only be used in the second round.",
+          "Teams must declare their intention to use a lifeline after they see the question.",
           "Time Limits:",
-          "- Each question will be assigned a time limit based on the difficulty level. If a team cannot solve a question, they will be allocated zero points for the question.",
+          "Each question will be assigned a time limit based on the difficulty level. If a team cannot solve a question, they will be allocated zero points for the question.",
           "Dispute Resolution:",
-          "- Event coordinators reserve the right to resolve any disputes or discrepancies in a fair and final manner.",
+          "Event coordinators reserve the right to resolve any disputes or discrepancies in a fair and final manner.",
           "Phone Usage:",
-          "- Participants are strictly prohibited from using phones or any electronic devices during the treasure hunt quiz.",
-          "- Phones must be switched off before entering quiz rooms.",
-          "- Any violation of this rule may result in disqualification at the discretion of the event coordinators.",
+          "Participants are strictly prohibited from using phones or any electronic devices during the treasure hunt quiz.",
+          "Phones must be switched off before entering quiz rooms.",
+          "Any violation of this rule may result in disqualification at the discretion of the event coordinators.",
         ],
         requirements: ["TBA"],
         coordinators: {
@@ -577,7 +581,7 @@ const eventsData: {
         name: "The Twisted Heist",
         date: "16th March",
         time: "10:00AM - 12:00PM",
-        venue: "Classrooms 501 - 503",
+        venue: "EEE Department EPL Lab",
         team: "3",
         description: [
           "Phase 1: Circuit schematics:",
@@ -585,13 +589,13 @@ const eventsData: {
           "Alternative Route: If precious time slips away, your team will face a hands-on challenge: assemble a circuit with a specific output to power up your com. Circuit. ",
 
           "Phase 2: Takeover:",
-          "Take Control: You will be given a circuit diagram representing the alarm system, and identify and manipulate the logic gates to disable the alarm within the time limit.",
+          "Take Control: The Task is easy you should just build a circuit but there is a bit of a twist.Let Your Analog Circuit skills flow.",
 
           "Phase 3: Digital Decipher :",
           "Confront the Final Guardian: As the final five teams reach the end, The vault's digital heart, a formidable circuit, stands between your crew and the treasure. Interface with the vault and input commands or codes to unlock the vault and claim the prize.",
         ],
         shortDescription:
-          "Outsmart the system, bend the circuits, and crack the code in a 90-minute with your skills to save a heist",
+          "Outsmart the system, bend the circuits, and crack the code with your skills to save a heist",
         rules: [
           "Use of mobile phones are strictly prohibited",
           "Teams must progress through phases sequentially.",
@@ -616,7 +620,7 @@ const eventsData: {
           "In this dynamic event, participants will collaborate to design and develop innovative models aligned with the United Nations Sustainable Development Goals (SDGs). Rather than just pitching ideas, we're challenging you to bring your models to the table and showcase practical solutions to real-world problems.",
         ],
         shortDescription:
-          "A project presentation event where participants collaborate to showcase tangible solutions aligned with the United Nations Sustainable Development Goals through innovative model development",
+          "A project display event where participants collaborate to showcase tangible solutions aligned with the United Nations Sustainable Development Goals through innovative model development",
         rules: [
           "Participants must present working models or prototypes that align with the Sustainable Development Goals (SDGs).",
           "Teams will be evaluated based on the quality of their short presentation.",
@@ -628,8 +632,8 @@ const eventsData: {
         ],
         requirements: ["Tables and chairs with plug points"],
         coordinators: {
-          name: "Ragul K K",
-          contact: "+91 8122289779",
+          name: "Ragul K K,Infant Vimal M",
+          contact: "+91 81222 89779,+91 81898 80213",
         },
       },
     ],
@@ -730,7 +734,8 @@ const eventsData: {
           "Your mission,should you choose to accept it, is to conceptualize, design, and build a 3D model that addresses the given challenge within the stipulated time frame.",
         ],
         shortDescription: "Innovative Problem-Solving Through Design!",
-        rules: ["Nil"],
+        rules: ["Students are allowed to use Autocad, Creo, and Fusion.",
+        "If they opt for any other software, they need to bring their own systems",],
         requirements: ["Nil"],
         coordinators: {
           name: "Madhava Rajan.J",
@@ -748,7 +753,11 @@ const eventsData: {
           "This event stands as a convergence point for intellectual exploration, sparking profound conversations, and uniting visionaries in the field.",
         ],
         shortDescription: "Innovative Papers Uniting Engineering Minds!",
-        rules: ["Nil"],
+        rules: ["Time Limit Adherence:- Presentations must strictly adhere to the allocated time limit, ensuring a seamless flow of ideas and maximizing audience engagement.",
+        "Dynamic Q&A Session: - Each presentation is followed by a Q&A session, creating an interactive dialogue between presenters and the audience.",
+        "This format promotes a deeper understanding of the presented concepts.",
+        "Comprehensive Evaluation: - Evaluation criteria encompass content richness, ensuring the depth and quality of the presented material.",
+        "Clarity of presentation and the overall impact of the ideas shared contribute to thejudging process."],
         requirements: ["None"],
         coordinators: {
           name: "Logaranjan G",
@@ -759,7 +768,7 @@ const eventsData: {
         name: "MechStix Marvel",
         date: "16th March",
         time: "10:00AM - 1:00PM",
-        venue: "QMC Lab",
+        venue: "Metrology Lab",
         team: "3",
         description: [
           "Embark on an exciting journey where creativity and engineering meet in the PopsiDrone Design Duel! This unique event challenges participants to unleash their imagination as they design and build miniature drones using popsicle sticks as the primary material.",

@@ -94,7 +94,6 @@ const EventInfo: React.FC = () => {
             {event.description.map((des) => (
               <p>{des}</p>
             ))}
-
             <br />
             <h2>Rules</h2>
             <ul>
@@ -102,13 +101,19 @@ const EventInfo: React.FC = () => {
                 <li>{rule}</li>
               ))}
             </ul>
+<h2>Requirements</h2>
+            <ul>
+              {event.requirements.map((rule) => (
+                <li>{rule}</li>
+              ))}
+            </ul>
 
-            <Link to="/">
-              <button className={styles.getPass}>Get Pass</button>
-            </Link>
             <br />
             <h2>Event Coordinator</h2>
             <p>{`${event.coordinators.name}  ${event.coordinators.contact}`}</p>
+            <Link to="/">
+              <button className={styles.getPass}>Get Pass</button>
+            </Link>
           </div>
         </div>
       </div>

@@ -64,8 +64,8 @@ const workshopData: {
     maxPeople: 30,
     day: "15th March",
     rules: [""],
-    coord: [""],
-    ph: null,
+    coord: ["Abinandan"],
+    ph: "+91 94433 04280",
   },
   {
     id: 2,
@@ -120,12 +120,13 @@ const workshopData: {
     shrtDesc:
       "The aim of introducing concepts and techniques of Robotic Wire Arc Additive Manufacturing is to provide a comprehensive understanding of this innovative technology. This includes explaining how the process works, the materials used, and the applications where this technology can be beneficial.",
     desc: [
+      "Participants limited to 20 ( First Come First Serve Basis )",
       "Join our workshop on Industrial Robotics Programming and Operation for hands-on experience with cutting-edge automation technologies.",
       "Learn to program and operate industrial robots, enhancing manufacturing precision and productivity.",
       "Our comprehensive session covers programming, operational procedures, and smart manufacturing applications.",
       "Acquire the skills required for today's sophisticated robotics landscape. Advance your career with expert-led insights in just one intensive session.",
     ],
-    venue: "UG Cad Lab Mechanical Department",
+    venue: "PG Cad Lab Mechanical Department",
     req: ["Nil"],
     maxPeople: null,
     day: "16th March",
