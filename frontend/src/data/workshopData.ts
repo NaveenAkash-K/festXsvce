@@ -19,9 +19,9 @@ const workshopData: {
     name: "A Mixed Reality AR & VR Experience",
     duration: "9AM - 2PM",
     shrtDesc:
-      "🎮 AR & VR Workshop with Unreal Engine Experience hands-on learning, build practical skills, and network with industry professionals in this immersive exploration of AR and VR technology. Perfect for students, professionals, and enthusiasts eager to dive into the future of digital experiences.",
+      "AR & VR Workshop with Unreal Engine Experience hands-on learning, build practical skills, and network with industry professionals in this immersive exploration of AR and VR technology. Perfect for students, professionals, and enthusiasts eager to dive into the future of digital experiences.",
     desc: [
-      "🎮 Unleash Your Creativity: AR & VR Workshop with Unreal Engine",
+      "Unleash Your Creativity: AR & VR Workshop with Unreal Engine",
       " Dive into the world of Augmented Reality (AR) and Virtual Reality (VR) in our dynamic workshop led by a certified Unreal Engine instructor.",
       "What You'll Experience:",
       "Hands-on learning with expert guidance.",
@@ -32,9 +32,9 @@ const workshopData: {
     ],
     venue: "CS Laboratory",
     req: [
-      "1.Participants are advised to bring notebooks or writing utensils(pen, pencil..)for note-taking.",
-      "2.Valid identification and proof of registration are required.",
-      "3.Kindly bring laptop.",
+      "Participants are advised to bring notebooks or writing utensils(pen, pencil..)for note-taking.",
+      "Valid identification and proof of registration are required.",
+      "Kindly bring laptop.",
     ],
     maxPeople: "50-60",
     day: "15th March",

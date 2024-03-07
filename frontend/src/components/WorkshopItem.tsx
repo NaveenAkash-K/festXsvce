@@ -36,7 +36,7 @@ const WorkshopItem: React.FC = () => {
               <div
                 className={styles.text}
                 style={{ display: "flex", alignItems: "center", gap: "10px" }}
-                >
+              >
                 <img src={calIcon} alt="~" width={"18vw"} height={"19vh"} />
                 <h3>{work!.day}</h3>
               </div>
@@ -80,6 +80,7 @@ const WorkshopItem: React.FC = () => {
               </>
             )}
 
+            <br />
             <h2>Event Coordinator</h2>
             <p>{`${work?.coord}  ${work?.ph}`}</p>
             <Link to="/getPass">

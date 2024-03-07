@@ -130,7 +130,7 @@ const Footer = () => {
               <IoCall className={styles.contactLogo} />
               Number:{" "}
               <a href="tel:+918870820165" style={{ color: "white" }}>
-                88708 20165
+                RAHUL MC - 88708 20165
               </a>
             </p>
             <br />

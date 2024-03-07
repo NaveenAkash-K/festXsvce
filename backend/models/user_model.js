@@ -22,7 +22,7 @@ const schema = new mongoose.Schema({
     required: true,
   },
   phoneNo: {
-    type: mongoose.Schema.Types.Number,
+    type: String,
     required: true,
   },
   regNo: {

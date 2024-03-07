@@ -21,7 +21,7 @@ const About: React.FC = () => {
             <h3>Events</h3>
           </div>
           <div className={styles.aboutContainer}>
-            <h4>4</h4>
+            <h4>5+</h4>
             <br />
             <h3>Workshops</h3>
           </div>

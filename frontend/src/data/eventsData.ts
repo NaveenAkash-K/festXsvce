@@ -144,7 +144,8 @@ const eventsData: {
         description: [
           "Embark on an exhilarating journey of intellect and wit with 'The ChemEConnundrum,' a riveting three-stage quiz event designed to challenge and entertain enthusiasts of participants. This dynamic competition promises to test your knowledge, strategy, and quick thinking in an electrifying atmosphere of camaraderie and excitement.",
         ],
-        shortDescription: "The Pansophy's Connundrum is technical quiz of 3 rounds",
+        shortDescription:
+          "The Pansophy's Connundrum is technical quiz of 3 rounds",
         rules: [
           "The team consists of two to three persons.",
           "In round one, players must link the images provided to answer the given question. The shortlisted team will advance to the next round.",
@@ -704,13 +705,13 @@ const eventsData: {
         shortDescription:
           "Haijo is a dynamic and suspenseful competition where teams must collaborate strategically, facing unpredictable challenges and high-stakes decisions to advance in the thrilling contest.",
         rules: [
-          "1. Team size should be 3.",
-          "2. The type of rounds will be revealed on-spot.",
-          "3. Switching of the removed member after the start of the round leads to disqualification of the entire team.",
-          "4. Persons from different institutions can be a part of the same team. However, one person may not be a part of multiple teams for the same event.",
-          "5. Mobiles are strictly not allowed.",
-          "6. Discussion among participants is not encouraged.",
-          "7. The decision of judges will be final and no arguments or appeal will be entertained.",
+          "Team size should be 3.",
+          "The type of rounds will be revealed on-spot.",
+          "Switching of the removed member after the start of the round leads to disqualification of the entire team.",
+          "Persons from different institutions can be a part of the same team. However, one person may not be a part of multiple teams for the same event.",
+          "Mobiles are strictly not allowed.",
+          "Discussion among participants is not encouraged.",
+          "The decision of judges will be final and no arguments or appeal will be entertained.",
         ],
         requirements: ["None"],
         coordinators: {
@@ -722,14 +723,13 @@ const eventsData: {
         name: "Ctrl+Alt+Debate",
         date: "15th March",
         time: "10:00AM - 1:30PM",
-        venue:
-          "Library Seminar Hall",
+        venue: "Library Seminar Hall",
         team: "1",
         description: [
           "Welcome to 'Ctrl+Alt+Debate,' a cutting-edge parliamentary style debate competition that seamlessly blends oratory excellence with the ever-evolving landscape of technology. Designed to elevate students' public speaking skills, this event goes beyond traditional debate by delving into the forefront of tech headlines and innovations. Participants engage in thought-provoking discussions, navigating the dynamic intersection of technology and society. 'Ctrl+Alt+Debate' not only refines oratory prowess but also offers a unique platform to unravel the complexities of emerging technologies, industry shifts, and future opportunities. Prepare to articulate your perspectives and delve into the tech-driven discourse that shapes our rapidly advancing world. Are you ready to debate the future?",
         ],
         shortDescription:
-          "'Ctrl+Alt+Debate' is a forward-thinking competition intertwining eloquent speechcraft with the forefront of technological discourse, providing a platform for participants to engage in thought-provoking discussions on the evolving intersection of technology and society.",
+          "Fusion of parliamentary debate and technology discourse, refining oratory skills amidst evolving tech landscapes.",
         rules: [
           "Decorum must be maintained at all times on the floor.",
           "The judge’s say is final and any opposition will lead to disqualification.",
@@ -1019,7 +1019,10 @@ const eventsData: {
           "Presentations must be in PowerPoint format.",
           "No spot registrations are allowed.",
         ],
-        requirements: ["Participants are required to bring their Powerpoint presentatation on a USB drive"],
+        requirements: [
+          "Marine students should come only in marine uniform",
+          "Participants are required to bring their Powerpoint presentatation on a USB drive",
+        ],
         coordinators: { name: "HARIHARAN S", contact: "9943498144" },
       },
       {
@@ -1043,6 +1046,8 @@ const eventsData: {
           "No spot registrations are allowed.",
         ],
         requirements: [
+          "Marine students should come only in marine uniform",
+
           "Participants are required to bring their own boiler suit and safety shoes",
         ],
         coordinators: { name: "Jeevarathinam", contact: "+91 7339449264" },
@@ -1067,7 +1072,7 @@ const eventsData: {
           "Registration will be on a first-come, first-served basis.",
           "No spot registrations are allowed.",
         ],
-        requirements: ["Nil"],
+        requirements: ["Marine students should come only in marine uniform"],
         coordinators: { name: "KANAGAVEL", contact: "+91 6383282466" },
       },
     ],

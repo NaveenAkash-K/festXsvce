@@ -286,7 +286,7 @@ const EventForm: React.FC = () => {
         <h1>Register</h1>
         <br />
         <center>
-          <h3>⭐ Avail special offer by for SVCE official mail id⭐ </h3>
+          <h3>⭐ Avail special offer by using svce official maid id ⭐ </h3>
         </center>
         <br />
         <form
