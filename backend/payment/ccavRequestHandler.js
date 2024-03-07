@@ -37,6 +37,7 @@ exports.postReq = async function (request, response) {
     customerId = Date.now() + "_" + parsedData.regNo;
 
     for (let key in parsedData) {
+      console.log(key);
       if (
         key.startsWith("billing") ||
         key === "college" ||
