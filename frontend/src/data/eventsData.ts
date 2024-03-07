@@ -232,8 +232,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "CEA Coordinator",
-          contact: "2020ce0359@svce.ac.in",
+          name: "Rashik Ahmed R,Jai Siddarth A",
+          contact: "+91 77080 21495,+91 90921 09220",
         },
       },
       {
@@ -254,12 +254,12 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "CEA Coordinator",
-          contact: "2020ce0359@svce.ac.in",
+          name: "Priyadarshini R,Rekha R",
+          contact: "+91 88381 18680,+91 79040 29457",
         },
       },
       {
-        name: "Paper Presentation",
+        name: "Papyrus Blitz",
         date: "16th March",
         time: "9:30AM - 12:30PM",
         venue: "Cadd Lab",
@@ -277,8 +277,8 @@ const eventsData: {
         ],
         requirements: ["None"],
         coordinators: {
-          name: "CEA Coordinator",
-          contact: "2020ce0359@svce.ac.in",
+          name: "Raghavendra B,Aravintakshan N G",
+          contact: "+91 94439 32131,+91 93848 41071",
         },
       },
     ],
@@ -356,7 +356,7 @@ const eventsData: {
           "This is a dynamic coding session, where teams will be provided with three unique coding questions. But here's the twist – participants will swap partners every 5 minutes! While one teammate codes, the other will engage in entertaining tasks. Amidst the lively atmosphere of loud music and camaraderie, teams must overcome hindrances and ensure seamless execution of their code within the time limit.",
         ],
         shortDescription:
-          "Attention students! Join our thrilling Cryptic Decryption Battle & Code Sprint with a Twist. Decode puzzles, swap partners, and code under lively music. Unleash your intellect and coding skills today!",
+          "Attention students! Join our thrilling Cryptic Decryption Battle & Code Sprint with a Twist. Decode puzzles, swap partners, and code under lively music. Unleash your intellect and coding skills today!",
         rules: [
           "Use of any AI tools is not allowed.",
           "Participants are kindly asked to complete tasks without objection, approaching them positively.",
@@ -497,7 +497,7 @@ const eventsData: {
         },
       },
       {
-        name: "Paper Presentation",
+        name: "Paper Prism",
         date: "16th March",
         time: "10:00AM - 2:00PM",
         venue: "Classroom Block V 3rd Floor",
@@ -507,7 +507,7 @@ const eventsData: {
           "Teams of 2 to 3 participants will present their innovative ideas and research findings in PowerPoint format, delving into the latest advancements and challenges in the field. ",
           "Get ready for a single round of insightful presentations that highlight the cutting-edge developments shaping the future of Electronics and Communication Engineering.",
         ],
-        shortDescription: "Paper Presentation based on ECE domain",
+        shortDescription: "From Concept To Reality : Ideas in Action",
         rules: [
           "A team should consists of 2 to 3 participants.",
           "Participants are required to present their papers in the MS-PowerPoint (PPT) format.",
@@ -519,7 +519,7 @@ const eventsData: {
         ],
         requirements: ["Participants should bring at least one laptop per team to present their PowerPoint presentations during the event."],
         coordinators: {
-          name: "Lok Ranjan B,Aadhithya Narayanan B",
+          name: "Lok Ranjan P,Aadhithya Narayanan B",
           contact: "+91 6374358867,+91 93455 26682",
         },
       },
@@ -786,7 +786,7 @@ const eventsData: {
       {
         name: "ProjectForge",
         date: "16th March",
-        time: "1:00PM - 3:00PM",
+        time: "09:30AM - 12:30PM",
         venue: "Software Lab",
         team: "1",
         description: [
@@ -811,8 +811,8 @@ const eventsData: {
       },
       {
         name: "PitchForge",
-        date: "TBA",
-        time: "TBA",
+        date: "15th March",
+        time: "10:00AM - 1:00PM",
         venue: "Function Hall",
         team: "1-3",
         description: [
@@ -882,7 +882,7 @@ const eventsData: {
           "Indulging in any kind of malpractice will lead to instant disqualification of the participant.",
         ],
         requirements: ["laptop, rough sheets, pen"],
-        coordinators: { name: "Vishal athreya", contact: "+91 93451 82466" },
+        coordinators: { name: "Vishal athreya", contact: "+91 93451 82466" },
       },
       {
         name: "Tech Pair",

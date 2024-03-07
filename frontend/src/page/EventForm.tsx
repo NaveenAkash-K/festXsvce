@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import styles from "../styles/page/eventForm.module.css";
 // import IIM from "../assets/images/2IIM.png";
 const EventForm: React.FC = () => {
-  const [isTechPass, setIsTechPass] = useState<boolean>(false);
+  const [isTechPass, setIsTechPass] = useState<boolean>(true);
   const [isProShows, setIsProShows] = useState<boolean>(false);
   const [isElite, setIsElite] = useState<boolean>(false);
   const [nextPage, setPage] = useState<boolean>(false);
@@ -394,14 +394,16 @@ const EventForm: React.FC = () => {
           <div className={styles.passTag}>
             <br />
             <p>Select atleast any one pass.</p>
+            <p>Only one response is recorded for a email</p>
             <p>You can either choose Technoways Pass or Proshows Pass or Elite for both pass</p>
             <div>
               <input
-                type="checkbox"
-                name="techpass"
-                id="techpass"
+                type="radio"
+                name="pass"
+                id="pass"
                 disabled={isTechPassDisable}
                 checked={isTechPass}
+                value={"TechPass"}
                 onChange={(value) => {
                   setIsTechPass(value.target.checked);
                 }}
@@ -411,9 +413,10 @@ const EventForm: React.FC = () => {
             </div>
             <div>
               <input
-                type="checkbox"
-                name="proshows"
-                id="proshows"
+                type="radio"
+                name="pass"
+                id="pass"
+                value={"Proshows"}
                 checked={isProShows}
                 onChange={(value) => {
                   setIsProShows(value.target.checked);
@@ -425,9 +428,10 @@ const EventForm: React.FC = () => {
             </div>
             <div>
               <input
-                type="checkbox"
-                name="elite"
-                id="elite"
+                type="radio"
+                name="pass"
+                value={"Elite"}
+                id="pass"
                 checked={isElite}
                 onChange={(value) => {
                   setIsElite(value.target.checked);

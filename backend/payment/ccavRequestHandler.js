@@ -36,11 +36,15 @@ exports.postReq = async function (request, response) {
     console.log(parsedData);
     customerId = Date.now() + "_" + parsedData.regNo;
 
+    if (parsedData.pass === "Proshows") {
+      isProshows = true;
+    } else if (parsedData.pass === "TechPass") {
+      isTechpass = true;
+    } else if (parsedData.pass === "Elite") {
+      isElite = true;
+    }
+
     for (let key in parsedData) {
-      console.log("Dot opeator");
-      console.log(parsedData.key);
-      console.log("Map");
-      console.log(parsedData['key']);
       if (
         key.startsWith("billing") ||
         key === "college" ||
@@ -51,17 +55,15 @@ exports.postReq = async function (request, response) {
         continue;
       }
 
-
-      if (key === "proshows") {
-        isProshows = true;
-        continue;
-      } else if (key === "techpass") {
-        isTechpass = true;
-        continue;
-      } else if (key === "elite") {
-        isElite = true;
-        continue;
-      }
+      // if (key === "proshows") {
+      //   continue;
+      // } else if (key === "techpass") {
+      //   isTechpass = true;
+      //   continue;
+      // } else if (key === "elite") {
+      //   isElite = true;
+      //   continue;
+      // }
 
       eventArray.push(key);
     }
@@ -153,16 +155,15 @@ exports.postReq = async function (request, response) {
       amount: amount,
       year: parsedData.year,
       paid: false,
-    })
-      .save()
-      // .then((result) => {
-      //   console.log("Insert result");
-      //   console.log(result);
-      // })
-      // .catch((error) => {
-      //   console.log("Insert error");
-      //   console.log(error);
-      // });
+    }).save();
+    // .then((result) => {
+    //   console.log("Insert result");
+    //   console.log(result);
+    // })
+    // .catch((error) => {
+    //   console.log("Insert error");
+    //   console.log(error);
+    // });
     response.writeHeader(200, { "Content-Type": "text/html" });
     response.write(formbody);
     response.end();
