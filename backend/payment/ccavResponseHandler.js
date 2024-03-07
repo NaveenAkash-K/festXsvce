@@ -29,7 +29,11 @@ exports.postRes = async function (request, response) {
     // console.log(parsedData.regNo);
     // console.log(parsedData);
 
-    if (parsedData.order_status === "Failure" || parsedData.order_status === "Aborted" || parsedData.order_status === "Invalid") {
+    if (
+      parsedData.order_status === "Failure" ||
+      parsedData.order_status === "Aborted" ||
+      parsedData.order_status === "Invalid"
+    ) {
       response.write(`
         <!DOCTYPE html>
     <html lang="en">
@@ -109,6 +113,8 @@ exports.postRes = async function (request, response) {
         { $set: { paid: true } }
       );
 
+      const user = await User.findOne({ email: parsedData.billing_email });
+
       const qrCodeBuffer = await QRCode.toBuffer(
         parsedData.billing_email.trim()
       );
@@ -127,9 +133,78 @@ exports.postRes = async function (request, response) {
         to: parsedData.billing_email.trim(),
         subject: "QR Code Email",
         html: `
-        <p>Dear recipient,</p>
-        <p>Here is your QR code:</p>
-        <img src="cid:qrcode@unique" alt="QR Code"/>
+        <!DOCTYPE html>
+        <html lang="en">
+        
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Technoways E-Ticket</title>
+            <style>
+                body {
+                    font-family: Arial, sans-serif;
+                    background-color: #f4f4f4;
+                    margin: 0;
+                    padding: 0;
+                    text-align: center;
+                }
+        
+                .ticket-container {
+                    max-width: 600px;
+                    margin: 50px auto;
+                    background-color: #fff;
+                    padding: 20px;
+                    border-radius: 8px;
+                    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                }
+        
+                .ticket-header {
+                    background-color: #3498db;
+                    color: #fff;
+                    padding: 10px;
+                    border-radius: 8px 8px 0 0;
+                }
+        
+                .ticket-content {
+                    padding: 20px;
+                }
+        
+                .qr-code {
+                    margin-top: 20px;
+                }
+        
+                .footer-text {
+                    margin-top: 20px;
+                    color: #888;
+                }
+            </style>
+        </head>
+        
+        <body>
+            <div class="ticket-container">
+                <div class="ticket-header">
+                    <h2>Technoways E-Ticket</h2>
+                    // 
+                    // 
+                    <h2>Proshows</h2>
+                    // 
+                    // 
+                </div>
+                <div class="ticket-content">
+                    <p>Hello [User's Name],</p>
+                    <p>Thank you for registering for Technoways Symposium. Below is your e-ticket details:</p>
+                    <div class="qr-code">
+                        <p>Dear recipient,</p>
+                        <p>Here is your QR code:</p>
+                        <!-- Add QR Code here using the provided code snippet -->
+                        <img src="cid:qrcode@unique" width=100% alt="QR Code"/>
+                    </div>
+                    <p class="footer-text">Please present this QR code at the entrance during the event.</p>
+                </div>
+            </div>
+        </body>
+        
+        </html>
       `,
         attachments: [
           {

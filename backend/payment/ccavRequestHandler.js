@@ -6,6 +6,8 @@ var http = require("http"),
   qs = require("querystring");
 
 var User = require("../models/user_model.js");
+const QRCode = require("qrcode");
+const nodemailer = require("nodemailer");
 
 const app = express();
 
