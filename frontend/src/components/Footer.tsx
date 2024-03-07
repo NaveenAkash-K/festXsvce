@@ -129,11 +129,8 @@ const Footer = () => {
             <p>
               <IoCall className={styles.contactLogo} />
               Number:{" "}
-              <a
-                href="tel:+91 95514 49859"
-                style={{ textDecoration: "none", color: "white" }}
-              >
-                95514 49859
+              <a href="tel:+918870820165" style={{ color: "white" }}>
+                88708 20165
               </a>
             </p>
             <br />
@@ -145,10 +142,7 @@ const Footer = () => {
             </p>
             <br />
             <div>
-              <NavLink
-                style={{ color: "white" }}
-                to={"/termsandconditions"}
-              >
+              <NavLink style={{ color: "white" }} to={"/termsandconditions"}>
                 Terms and Conditions
               </NavLink>
             </div>

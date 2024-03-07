@@ -162,7 +162,7 @@ const workshopData: {
     id: 6,
     dept: "Information Technology",
     name: "Digital Detective: Cyber Forensics and IoT Workshop",
-    duration: "10:00AM - 12:00PM",
+    duration: "10:00AM - 1:00PM",
     shrtDesc:
       "Explore cyber forensics and IoT, tracing digital footprints and uncovering vulnerabilities in this hands-on workshop.",
     desc: [

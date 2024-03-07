@@ -285,6 +285,10 @@ const EventForm: React.FC = () => {
       <div className={styles.container}>
         <h1>Register</h1>
         <br />
+        <center>
+          <h3>⭐ Avail special offer by for SVCE official mail id⭐ </h3>
+        </center>
+        <br />
         <form
           method="POST"
           name="customerData"
@@ -401,6 +405,7 @@ const EventForm: React.FC = () => {
           </button> */}
           <div className={styles.passTag}>
             <br />
+
             <p>Select atleast any one pass.</p>
             <p>Only one response is recorded for a email</p>
             <p>Please ensure provided email is valid for ticket generation</p>
@@ -408,6 +413,8 @@ const EventForm: React.FC = () => {
               You can either choose Technoways Pass or Proshows Pass or Elite
               for both pass
             </p>
+            <br />
+            <h1>Passes</h1>
             <div>
               <input
                 type="radio"
@@ -496,9 +503,7 @@ const EventForm: React.FC = () => {
                   disabled={isEventsDisabled}
                   checked={WELDINGMASTERS}
                 />
-                <label htmlFor="WELDING MASTERS">
-                  WELDING MASTERS
-                </label>
+                <label htmlFor="WELDING MASTERS">WELDING MASTERS</label>
               </div>
               <div>
                 <input
@@ -761,9 +766,7 @@ const EventForm: React.FC = () => {
                   disabled={isEventsDisabled}
                   checked={BONDBLEND}
                 />
-                <label htmlFor="BOND BLEND">
-                  BOND BLEND
-                </label>
+                <label htmlFor="BOND BLEND">BOND BLEND</label>
               </div>
               <div>
                 <input
