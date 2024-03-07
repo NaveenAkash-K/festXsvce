@@ -42,142 +42,109 @@ app.get("/about", function (req, res) {
 });
 
 app.post("/ccavRequestHandler", async (req, res) => {
-  const qrCodeBuffer = await QRCode.toBuffer(
-    "Hellooouhbiu"
-  );
-  const transporter = nodemailer.createTransport({
-    service: "gmail",
-    auth: {
-      user: process.env.EMAIL, // Your Gmail email address
-      pass: process.env.PASSWD, // Your Gmail password or an app-specific password
-      // user: "2021it0668@svce.ac.in", // Your Gmail email address
-      // pass: "09naveen", // Your Gmail password or an app-specific password
-    },
-  });
+  // const qrCodeBuffer = await QRCode.toBuffer(
+  //   "Hellooouhbiu"
+  // );
+  // const transporter = nodemailer.createTransport({
+  //   service: "gmail",
+  //   auth: {
+  //     user: process.env.EMAIL, // Your Gmail email address
+  //     pass: process.env.PASSWD, // Your Gmail password or an app-specific password
+  //     // user: "2021it0668@svce.ac.in", // Your Gmail email address
+  //     // pass: "09naveen", // Your Gmail password or an app-specific password
+  //   },
+  // });
 
-  const mailOptions = {
-    from: process.env.EMAIL,
-    // to: parsedData.billing_email.trim(),
-    to: "naveen.akash0904@gmail.com",
-    subject: "QR Code Email",
-    html: `
+  // const mailOptions = {
+  //   from: process.env.EMAIL,
+  //   // to: parsedData.billing_email.trim(),
+  //   to: "naveen.akash0904@gmail.com",
+  //   subject: "QR Code Email",
+  //   html: `
     
-    <!DOCTYPE html>
-    <html lang="en">
+  //   <!DOCTYPE html>
+  //   <html lang="en">
     
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Technoways Symposium Ticket</title>
-        <style>
-            body {
-                font-family: Arial, sans-serif;
-                background-color: #f4f4f4;
-                margin: 0;
-                padding: 0;
-                text-align: center;
-            }
+  //   <head>
+  //       <meta charset="UTF-8">
+  //       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  //       <title>Technoways Symposium Ticket</title>
+  //       <style>
+  //           body {
+  //               font-family: Arial, sans-serif;
+  //               background-color: #f4f4f4;
+  //               margin: 0;
+  //               padding: 0;
+  //               text-align: center;
+  //           }
     
-            .ticket-container {
-                max-width: 600px;
-                margin: 50px auto;
-                background-color: #fff;
-                padding: 20px;
-                border-radius: 8px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            }
+  //           .ticket-container {
+  //               max-width: 600px;
+  //               margin: 50px auto;
+  //               background-color: #fff;
+  //               padding: 20px;
+  //               border-radius: 8px;
+  //               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  //           }
     
-            .ticket-header {
-                background-color: #3498db;
-                color: #fff;
-                padding: 10px;
-                border-radius: 8px 8px 0 0;
-            }
+  //           .ticket-header {
+  //               background-color: #3498db;
+  //               color: #fff;
+  //               padding: 10px;
+  //               border-radius: 8px 8px 0 0;
+  //           }
     
-            .ticket-content {
-                padding: 20px;
-            }
+  //           .ticket-content {
+  //               padding: 20px;
+  //           }
     
-            .qr-code {
-                margin-top: 20px;
-            }
+  //           .qr-code {
+  //               margin-top: 20px;
+  //           }
     
-            .footer-text {
-                margin-top: 20px;
-                color: #888;
-            }
-        </style>
-    </head>
+  //           .footer-text {
+  //               margin-top: 20px;
+  //               color: #888;
+  //           }
+  //       </style>
+  //   </head>
     
-    <body>
-        <div class="ticket-container">
-            <div class="ticket-header">
-                <h2>Technoways Symposium Ticket</h2>
-            </div>
-            <div class="ticket-content">
-                <p>Hello [User's Name],</p>
-                <p>Thank you for registering for Technoways Symposium. Below is your e-ticket details:</p>
-                <div class="qr-code">
-                    <p>Dear recipient,</p>
-                    <p>Here is your QR code:</p>
-                    <!-- Add QR Code here using the provided code snippet -->
-                    <img src="cid:qrcode@unique" width=100% alt="QR Code"/>
-                </div>
-                <p class="footer-text">Please present this QR code at the entrance during the event.</p>
-            </div>
-        </div>
-    </body>
+  //   <body>
+  //       <div class="ticket-container">
+  //           <div class="ticket-header">
+  //               <h2>Technoways Symposium Ticket</h2>
+  //           </div>
+  //           <div class="ticket-content">
+  //               <p>Hello [User's Name],</p>
+  //               <p>Thank you for registering for Technoways Symposium. Below is your e-ticket details:</p>
+  //               <div class="qr-code">
+  //                   <p>Dear recipient,</p>
+  //                   <p>Here is your QR code:</p>
+  //                   <!-- Add QR Code here using the provided code snippet -->
+  //                   <img src="cid:qrcode@unique" width=100% alt="QR Code"/>
+  //               </div>
+  //               <p class="footer-text">Please present this QR code at the entrance during the event.</p>
+  //           </div>
+  //       </div>
+  //   </body>
     
-    </html>
-  `,
-  attachments: [
-    {
-      filename: "qrcode.png",
-      content: qrCodeBuffer,
-      encoding: "base64",
-      cid: "qrcode@unique", // Content-ID for referencing the image in the HTML
-    },
-  ],
-  };
+  //   </html>
+  // `,
+  // attachments: [
+  //   {
+  //     filename: "qrcode.png",
+  //     content: qrCodeBuffer,
+  //     encoding: "base64",
+  //     cid: "qrcode@unique", // Content-ID for referencing the image in the HTML
+  //   },
+  // ],
+  // };
 
-  const info = await transporter.sendMail(mailOptions);
-  console.log("Email sent:", info);
+  // const info = await transporter.sendMail(mailOptions);
+  // console.log("Email sent:", info);
 
-  // // let img = await QRCode.toDataURL("Heloooo");
-
-  // // const transporter = nodemailer.createTransport({
-  // //   service: "gmail",
-  // //   auth: {
-  // //     user: process.env.EMAIL, // Your Gmail email address
-  // //     pass: process.env.PASSWD, // Your Gmail password or an app-specific password
-  // //     // user: "2021it0668@svce.ac.in", // Your Gmail email address
-  // //     // pass: "09naveen", // Your Gmail password or an app-specific password
-  // //   },
-  // // });
-
-  // // const mailOptions = {
-  // //   from: process.env.EMAIL,
-  // //   to: "naveen.akash0904@gmail.com",
-  // //   subject: "QR Code Email",
-  // //   html: `
-  // //   <p>Dear recipient,</p>
-  // //   <p>Here is your QR code:</p>
-  // //   <img src="' + ${img} + '">
-  // // `,
-  // //   // attachments: [
-  // //   //   {
-  // //   //     filename: "qrcode.png",
-  // //   //     content: qrCodeBuffer,
-  // //   //     encoding: "base64",
-  // //   //     cid: "qrcode@unique", // Content-ID for referencing the image in the HTML
-  // //   //   },
-  // //   // ],
-  // // };
-
-  // // const info = await transporter.sendMail(mailOptions);
-  // // console.log("Email sent:", info);
-  res.send("Success");
-  // ccavReqHandler.postReq(req, res);
+ 
+  ccavReqHandler.postReq(req, res);
 });
 
 app.post("/sendQR", (req, res) => {
