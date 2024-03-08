@@ -584,6 +584,7 @@ const eventsData: {
         ],
         shortDescription: "From Concept To Reality : Ideas in Action",
         rules: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/UejCt6nBoEoUGdCY6",
           "A team should consists of 2 to 3 participants.",
           "Participants are required to present their papers in the MS-PowerPoint (PPT) format.",
           "The Teams will get 8-10 minutes to present their paper.",
@@ -593,6 +594,7 @@ const eventsData: {
           "The Paper should have the details (Name, College name, Phone no. of each participants) of the team members.",
         ],
         requirements: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/UejCt6nBoEoUGdCY6",
           "Participants should bring at least one laptop per team to present their PowerPoint presentations during the event.",
         ],
         coordinators: {
@@ -834,13 +836,14 @@ const eventsData: {
         ],
         shortDescription: "Innovative Papers Uniting Engineering Minds!",
         rules: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/CTLSKzCYNWSJfnMe7",
           "Time Limit Adherence:- Presentations must strictly adhere to the allocated time limit, ensuring a seamless flow of ideas and maximizing audience engagement.",
           "Dynamic Q&A Session: - Each presentation is followed by a Q&A session, creating an interactive dialogue between presenters and the audience.",
           "This format promotes a deeper understanding of the presented concepts.",
           "Comprehensive Evaluation: - Evaluation criteria encompass content richness, ensuring the depth and quality of the presented material.",
           "Clarity of presentation and the overall impact of the ideas shared contribute to thejudging process.",
         ],
-        requirements: ["None"],
+        requirements: ["The Participants must submit their abstract in the following link - https://forms.gle/CTLSKzCYNWSJfnMe7",],
         coordinators: {
           name: "Logaranjan G",
           contact: "+91 9025618609",
@@ -1075,6 +1078,7 @@ const eventsData: {
         shortDescription:
           "Paper presentations are lively and interesting ways to share research, ideas, and project results.",
         rules: [
+          "All The Marine Students Should Attend The Events In Proper Marine Uniform Only",
           "This event is exclusively open to marine students.",
           "Maximum of 8 teams will be shortlisted based on their abstracts.",
           "Each team is limited to a maximum of 2 members.",
@@ -1106,6 +1110,7 @@ const eventsData: {
         shortDescription:
           '"Welding Masters" is an event that participants can attend to demonstrate their expertise in welding.',
         rules: [
+          "All The Marine Students Should Attend The Events In Proper Marine Uniform Only",
           "Exclusively for marine students.",
           "Individual event",
           "Maximum of 3 members from each college.",
@@ -1127,6 +1132,7 @@ const eventsData: {
         venue: "Classroom, Marine Department,10-207 in Drawing hall",
         team: "3",
         description: [
+          
           'A "Bond Blend" event is a captivating abstract strategy event that challenges participants to achieve a particular type of connection using provided images.',
           "In this event, participants are presented with a set of images, symbols, or shapes arranged in a grid or other configuration.",
           "The objective typically revolves around connecting specific elements in a particular manner, such as forming lines, paths, or networks between related images.",
@@ -1134,6 +1140,7 @@ const eventsData: {
         shortDescription:
           "A bond blend event is an interesting abstract strategy event where teams have to use pictures to make a certain kind of link. ",
         rules: [
+          "All The Marine Students Should Attend The Events In Proper Marine Uniform Only",
           "Maximum of 18 teams are allowed.",
           "Each team can have a maximum of 3 members.",
           "A college can register a maximum of 2 teams.",
