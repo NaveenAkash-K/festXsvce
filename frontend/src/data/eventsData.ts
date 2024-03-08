@@ -371,17 +371,17 @@ const eventsData: {
           "Valid identification and proof of registration are required.",
         ],
         coordinators: {
-          name: "Sahana B",
-          contact: "+91 78248 82255",
+          name: "Sahana B,Naafiyah Yusra A",
+          contact: "+91 78248 82255,+91 93618 87936",
         },
       },
       {
         name: "THRILL QUEST – CHASING THE THRILL OF MYSTERY",
         date: "15th March",
         time: "10:00AM - 3:00PM",
-        coordinators: { name: "Sharan Balaji S", contact: "+91 94444 31042" },
+        coordinators: { name: "Sharan Balaji S,Siva Ishwarya B", contact: "+91 94444 31042,+91 70100 51339" },
         venue: "Classrooms of 504,505,506,507 in Block V",
-        team: "Maximum of 2",
+        team: "1",
         description: [
           "Upon arrival, the participants are assigned unique roles, each with their own backstory, motivations, and secrets. As they interact with one another along the course of the game, they must gather clues, analyze evidence, and engage in strategic conversations to uncover the truth behind the murder.",
           "Additionally, participants may encounter unexpected plot twists and red herrings that challenge their investigative skills and keep them on their toes throughout the game.",
@@ -390,7 +390,7 @@ const eventsData: {
         shortDescription:
           "Participants are assigned unique roles with backstories, motivations, and secrets. As they interact, they gather clues, analyze evidence, and engage in strategic conversations to uncover the truth behind the murder.",
         rules: [
-          "Teams are limited to a maximum of 2 members.",
+          "Individual Event.",
           "Cheating or unethical behaviour are severely condemned.",
           "Judges' decisions are final.",
         ],
@@ -400,7 +400,7 @@ const eventsData: {
       },
       {
         name: "JOKER CODER",
-        coordinators: { name: "Srilekha P", contact: "+91 78128 63379" },
+        coordinators: { name: "Srilekha P,Vishnuvaradhan A", contact: "+91 78128 63379,+91 72992 13502" },
         date: "16th March",
         time: "9:30AM - 2:00PM",
         venue: "Function Hall for Round 1 && CS Department For Round 2",
