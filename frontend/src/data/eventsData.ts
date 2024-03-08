@@ -11,6 +11,7 @@ const eventsData: {
     shortDescription: string;
     rules: string[];
     requirements: string[];
+    link: string | null | undefined;
     coordinators: { name: string; contact: string };
   }[];
 }[] = [
@@ -20,6 +21,7 @@ const eventsData: {
     events: [
       {
         name: "PITSTOP",
+        link: null,
         date: "16th March",
         time: "10:00AM-12:00PM",
         venue: "AUTOMOTIVE COMPONENTS LABORATORY",
@@ -46,6 +48,7 @@ const eventsData: {
       },
       {
         name: "Rev It Up!",
+        link: null,
         date: "15th March",
         time: "1:00PM - 3:00PM",
         venue: "Components Laboratory(Automobile)",
@@ -76,7 +79,8 @@ const eventsData: {
     events: [
       {
         name: "Find It First",
-        date: "TBA",
+        link: null,
+        date: "15th March",
         time: "1:00PM - 3:00PM",
         venue: "1st Floor Classroom in Marine Block",
         team: "Maximum of 2 members per team",
@@ -104,6 +108,7 @@ const eventsData: {
       },
       {
         name: "Biomonopoly",
+        link: null,
         date: "15th March",
         time: "10:00AM - 1:00PM",
         venue: "Biotech Seminar Hall",
@@ -133,6 +138,7 @@ const eventsData: {
       },
       {
         name: "Escape Room",
+        link: null,
         date: "16th March",
         time: "9:30AM - 12:00PM",
         venue: "Classroom 501,502,503,504 in BLOCK V",
@@ -165,6 +171,7 @@ const eventsData: {
     events: [
       {
         name: "The Pansophy's Connundrum",
+        link: null,
         date: "15th March",
         time: "12:00PM - 3:00PM",
         venue: "Classroom 511,512,513,514",
@@ -190,6 +197,7 @@ const eventsData: {
       },
       {
         name: "Chem E Pansophy",
+        link: null,
         date: "15th March",
         time: "9:30AM - 12:30PM",
         venue: "Classroom 514, 515",
@@ -236,6 +244,7 @@ const eventsData: {
       },
       {
         name: "InnoSolve",
+        link: null,
         date: "16th March",
         time: "9:30AM - 12:30PM",
         venue: "Library Seminar Hall",
@@ -268,6 +277,7 @@ const eventsData: {
     events: [
       {
         name: "Bridge Expertise",
+        link: null,
         date: "15th March",
         time: "10:30AM - 12:00PM",
         venue: "Survey Lab",
@@ -291,6 +301,7 @@ const eventsData: {
       },
       {
         name: "Mudwell mastery",
+        link: null,
         date: "15th March",
         time: "1:00PM - 2:30PM",
         venue: "Soil Mechanics Lab",
@@ -314,6 +325,7 @@ const eventsData: {
       },
       {
         name: "Papyrus Blitz",
+        link: null,
         date: "16th March",
         time: "9:30AM - 12:00PM",
         venue: "Cadd Lab",
@@ -345,6 +357,7 @@ const eventsData: {
     events: [
       {
         name: "VISUAL PAPYRUS",
+        link: null,
         date: "16th March",
         time: "9:30AM - 2:00PM",
         venue: "Library Seminar Hall for Round 1 && CS Department Lab for Round 2",
@@ -377,6 +390,7 @@ const eventsData: {
       },
       {
         name: "THRILL QUEST – CHASING THE THRILL OF MYSTERY",
+        link: null,
         date: "15th March",
         time: "10:00AM - 3:00PM",
         coordinators: { name: "Sharan Balaji S", contact: "+91 94444 31042" },
@@ -401,6 +415,7 @@ const eventsData: {
       {
         name: "JOKER CODER",
         coordinators: { name: "Srilekha P", contact: "+91 78128 63379" },
+        link: null,
         date: "16th March",
         time: "9:30AM - 2:00PM",
         venue: "Function Hall for Round 1 && CS Department For Round 2",
@@ -502,6 +517,7 @@ const eventsData: {
     events: [
       {
         name: "SparkQuest",
+        link: null,
         date: "15th March",
         time: "12:30PM - 3:00PM",
         venue: "ECE Deparment Lab And Classroom",
@@ -526,6 +542,7 @@ const eventsData: {
       },
       {
         name: "Electro-Craft Challenge",
+        link: null,
         date: "15th March",
         time: "10:00AM - 12:00PM",
         venue: "Embedded Systems Laboratory of ECE Department",
@@ -554,6 +571,7 @@ const eventsData: {
       },
       {
         name: "Paper Prism",
+        link: null,
         date: "16th March",
         time: "10:00AM - 2:00PM",
         venue: "Classroom Block V 3rd Floor",
@@ -589,6 +607,7 @@ const eventsData: {
     events: [
       {
         name: "UKnowHunt",
+        link: null,
         date: "15th March",
         time: "12:00PM - 2:00PM",
         venue: "Classrooms Of 521,522,523,524",
@@ -633,6 +652,7 @@ const eventsData: {
       },
       {
         name: "The Twisted Heist",
+        link: null,
         date: "16th March",
         time: "10:00AM - 12:00PM",
         venue: "EEE Department EPL Lab",
@@ -665,6 +685,7 @@ const eventsData: {
       },
       {
         name: "SDG Innovation Challenge",
+        link: null,
         date: "15th March",
         time: "10:30AM - 11:30AM",
         venue: "Drawing Hall",
@@ -697,6 +718,7 @@ const eventsData: {
     events: [
       {
         name: "Pixel Palette",
+        link: null,
         date: "16th March",
         time: "10:00AM - 1:00PM",
         venue: "Marine Lab",
@@ -723,6 +745,7 @@ const eventsData: {
       },
       {
         name: "Haijo",
+        link: null,
         date: "15th March",
         time: "12:00PM - 3:00PM",
         venue: "Funtion hall",
@@ -749,6 +772,7 @@ const eventsData: {
       },
       {
         name: "Ctrl+Alt+Debate",
+        link: null,
         date: "15th March",
         time: "10:00AM - 1:30PM",
         venue: "Library Seminar Hall",
@@ -777,6 +801,7 @@ const eventsData: {
     events: [
       {
         name: "Render Royale (3d Modelling)",
+        link: null,
         date: "09:30AM - 12:00PM",
         time: "TBA",
         venue: "Mechanical Department's Cad Lab",
@@ -797,6 +822,7 @@ const eventsData: {
       },
       {
         name: "InnoVision Expo (Paper Presentation)",
+        link: null,
         date: "16th March",
         time: "10:00AM - 1:00PM",
         venue: "Mechanical Cadd lab",
@@ -821,6 +847,7 @@ const eventsData: {
       },
       {
         name: "MechStix Marvel",
+        link: null,
         date: "16th March",
         time: "10:00AM - 1:00PM",
         venue: "Metrology Lab",
@@ -849,6 +876,7 @@ const eventsData: {
     events: [
       {
         name: "ProjectForge",
+        link: null,
         date: "16th March",
         time: "09:30AM - 12:30PM",
         venue: "Software Lab EEE Department",
@@ -875,6 +903,7 @@ const eventsData: {
       },
       {
         name: "PitchForge",
+        link: null,
         date: "15th March",
         time: "10:00AM - 1:00PM",
         venue: "Video Hall",
@@ -912,6 +941,7 @@ const eventsData: {
     events: [
       {
         name: "Relay Rush",
+        link: null,
         date: "16th March",
         time: "10:00AM - 1:00PM",
         venue: "2nd Floor IT Department Lab",
@@ -934,6 +964,7 @@ const eventsData: {
       },
       {
         name: "Prompt Tactics",
+        link: null,
         date: "15th March",
         time: "1:00PM - 3:00PM",
         venue: "2nd Floor IT Department Lab",
@@ -955,6 +986,7 @@ const eventsData: {
       },
       {
         name: "Tech Pair",
+        link: null,
         date: "15th March",
         venue: "1st Floor in IT Department Lab",
         time: "10:30AM - 12:30PM",
@@ -987,6 +1019,7 @@ const eventsData: {
     events: [
       {
         name: "BGMI",
+        link: "https://forms.gle/jCkLCzazxHgxHLZN9",
         date: "16th March",
         time: "09:00AM - 12:30PM",
         venue: "SVCE",
@@ -1002,7 +1035,8 @@ const eventsData: {
           "Players are requested to bring their own chargers.If possible a junction box.",
           "It is completely an offline event ",
           "Players should bring their college id cards for verification purposes ",
-          "Prizes will be distributed to top 3 ",
+          "Prizes will be distributed to top 3",
+          "BGMI is not included in any passes, and it requires a separate payment.",
         ],
         shortDescription: "Gaming Event",
         rules: [
@@ -1019,6 +1053,7 @@ const eventsData: {
     events: [
       {
         name: "PAPER PRESENTATION",
+        link: null,
         date: "15th March",
         time: "9:30AM - 12:30PM",
         venue: "Classroom, Marine department ,10-207 Marine drawing hall",
@@ -1055,6 +1090,7 @@ const eventsData: {
       },
       {
         name: "WELDING MASTERS",
+        link: null,
         date: "15th March",
         time: "1:30PM - 12:15PM",
         venue: "Welding Research Cell, Marine department ",
@@ -1082,6 +1118,7 @@ const eventsData: {
       },
       {
         name: "BOND BLEND",
+        link: null,
         date: "16th March",
         time: "9:30PM - 11:30PM",
         venue: "Classroom, Marine Department,10-207 in Drawing hall",

@@ -66,15 +66,15 @@ const router = createBrowserRouter([
     path: "/termsandconditions",
     element: <TermsAndConditions />,
   },
-  {
-    path: "/getPass",
-    element: (
-      <>
-        <EventForm />
-        {/* <Footer /> */}
-      </>
-    ),
-  },
+  // {
+  //   path: "/getPass",
+  //   element: (
+  //     <>
+  //       <EventForm />
+  //       {/* <Footer /> */}
+  //     </>
+  //   ),
+  // },
   // {
   //   path: "/getPass",
   //   element: <GetPass />

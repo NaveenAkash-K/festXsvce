@@ -22,6 +22,7 @@ const EventInfo: React.FC = () => {
     description: string[];
     rules: string[];
     requirements: string[];
+    link: string | null | undefined;
     coordinators: { name: string; contact: string };
   } = {
     name: "",
@@ -29,6 +30,7 @@ const EventInfo: React.FC = () => {
     time: "",
     venue: "",
     team: "",
+    link: null,
     description: [],
     rules: [],
     requirements: [],
@@ -113,7 +115,15 @@ const EventInfo: React.FC = () => {
             <br />
             <h2>Event Coordinator</h2>
             <p>{`${event.coordinators.name}  ${event.coordinators.contact}`}</p>
-              <button className={styles.getPass} onClick={()=>{window.open("https://forms.gle/jLVFdaH8UxdiQeqaA","_blank")}}>Get Pass</button>
+            {event.link === null ? (
+              <a href="https://forms.gle/jLVFdaH8UxdiQeqaA">
+                <button className={styles.getPass}>Get Pass</button>
+              </a>
+            ) : (
+              <a href="https://forms.gle/jCkLCzazxHgxHLZN9">
+                <button className={styles.getPass}>Register Now</button>
+              </a>
+            )}
           </div>
         </div>
       </div>
