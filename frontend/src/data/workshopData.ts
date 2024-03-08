@@ -17,7 +17,7 @@ const workshopData: {
     id: 0,
     dept: "Association of Computer Engineers (ACE)",
     name: "A Mixed Reality AR & VR Experience",
-    duration: "9AM - 2PM",
+    duration: "10:00AM - 03:00PM",
     shrtDesc:
       "AR & VR Workshop with Unreal Engine Experience hands-on learning, build practical skills, and network with industry professionals in this immersive exploration of AR and VR technology. Perfect for students, professionals, and enthusiasts eager to dive into the future of digital experiences.",
     desc: [
@@ -30,7 +30,7 @@ const workshopData: {
       "Stay ahead with cutting-edge Unreal Engine technology.",
       "Network with industry professionals and enthusiasts.",
     ],
-    venue: "CS Laboratory",
+    venue: "CS Department Laboratory",
     req: [
       "Participants are advised to bring notebooks or writing utensils(pen, pencil..)for note-taking.",
       "Valid identification and proof of registration are required.",
@@ -57,13 +57,13 @@ const workshopData: {
       "The reason for tuning and the merits and demerits will also be discussed.",
       " Participants can ask their doubts at the end of the session.",
     ],
-    venue: "Automotive Components Laboratory",
+    venue: "Component Laboratory(Automobile)",
     req: [
       "Need to be an automotive enthusiast or a person pursuing automotive related career",
     ],
     maxPeople: 30,
     day: "15th March",
-    rules: [""],
+    rules: ["Nil"],
     coord: ["Abinandan"],
     ph: "+91 94433 04280",
   },
@@ -71,7 +71,7 @@ const workshopData: {
     id: 2,
     dept: "Indian Institute of Chemical Engineers",
     name: "Basics Of Process Flow Sheeting using DWSIM",
-    duration: "1:00PM - 2:30PM",
+    duration: "12:30PM - 2:00PM",
     shrtDesc:
       "Introduction to building process flow diagrams of various manufacturing processes.",
     desc: [
@@ -103,7 +103,7 @@ const workshopData: {
       "Stay updated with the latest trends and advancements in Embedded Systems Technology.",
       "Network with fellow enthusiasts and industry professionals.",
     ],
-    venue: "Embedded Systems Laboratory",
+    venue: "Embedded Systems Laboratory in ECE Department",
     req: ["Nill"],
     maxPeople: null,
     day: "16th March",
@@ -116,9 +116,9 @@ const workshopData: {
     id: 4,
     dept: "Mechanical Engineering",
     name: "Industrial Robotics Programming and Operation",
-    duration: "3 hrs",
+    duration: "12:30PM - 03:00PM",
     shrtDesc:
-      "The aim of introducing concepts and techniques of Robotic Wire Arc Additive Manufacturing is to provide a comprehensive understanding of this innovative technology. This includes explaining how the process works, the materials used, and the applications where this technology can be beneficial.",
+      "Join our workshop on Industrial Robotics Programming and Operation for hands-on experience with cutting-edge automation technologies.",
     desc: [
       "Participants limited to 20 ( First Come First Serve Basis )",
       "Join our workshop on Industrial Robotics Programming and Operation for hands-on experience with cutting-edge automation technologies.",
@@ -141,7 +141,7 @@ const workshopData: {
     id: 5,
     dept: "Marine Engineering",
     name: "Robotic Wire Arc Additive Manufacturing",
-    duration: "1:30PM - 2:30PM",
+    duration: "12:30PM - 2:00PM",
     shrtDesc:
       "The aim of introducing concepts and techniques of Robotic Wire Arc Additive Manufacturing is to provide a comprehensive understanding of this innovative technology. This includes explaining how the process works, the materials used, and the applications where this technology can be beneficial.",
     desc: [
@@ -150,7 +150,7 @@ const workshopData: {
       "The workshop would also cover the benefits of WAAM, such as cost-effectiveness and efficiency in producing moderate-sized components.",
       "Participants would learn to maximize WAAM's potential, including its integration with other systems for in-process problem detection and repair.",
     ],
-    venue: "Welding Research Cell, Marine Dept",
+    venue: "Welding Research Cell, Marine Department",
     req: ["Participants should bring their notepad and pen"],
     maxPeople: null,
     day: "16th March",
@@ -160,6 +160,7 @@ const workshopData: {
   },
   {
     id: 6,
+
     dept: "Information Technology",
     name: "Digital Detective: Cyber Forensics and IoT Workshop",
     duration: "10:00AM - 1:00PM",
@@ -168,7 +169,7 @@ const workshopData: {
     desc: [
       "Join us for an immersive workshop where participants will delve into the intricate world of cyber forensics intersecting with the Internet of Things (IoT). Throughout this dynamic event, attendees will gain a comprehensive understanding of cutting-edge techniques and tools essential for investigating cyber incidents within IoT networks. From tracing digital footprints to uncovering hidden vulnerabilities, participants will learn how to navigate complex digital landscapes effectively. Through hands-on activities and expert-led sessions, attendees will leave equipped with the skills and knowledge needed to tackle real-world cyber challenges confidently. Don't miss this opportunity to expand your expertise and become a proficient investigator in the realm of cyber forensics and IoT.",
     ],
-    venue: "IT Dept, PG LAB",
+    venue: "IT Department, PG LAB",
     req: ["Participants should bring their notepad and pen"],
     maxPeople: null,
     day: "15th March",

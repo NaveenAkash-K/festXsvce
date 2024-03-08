@@ -46,14 +46,11 @@ function Header() {
           >
             Events
           </NavLink>
-          <NavLink
-            to={"/getPass"}
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.inactive
-            }
+          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank"
+            className={ styles.inactive}
           >
             Get Passes
-          </NavLink>
+          </a>
           <NavLink
             to={"/workshops"}
             className={({ isActive }) =>
@@ -126,14 +123,11 @@ function Header() {
           >
             Events
           </NavLink>
-          <NavLink
-            to={"/getPass"}
-            className={({ isActive }) =>
-              isActive ? styles.active : styles.inactive
-            }
+          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank"
+            className={ styles.inactive}
           >
             Get Passes
-          </NavLink>
+          </a>
           <NavLink
             to={"/workshops"}
             className={({ isActive }) =>

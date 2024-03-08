@@ -21,7 +21,7 @@ const eventsData: {
       {
         name: "PITSTOP",
         date: "16th March",
-        time: "10:00AM-1:00PM",
+        time: "10:00AM-12:00PM",
         venue: "AUTOMOTIVE COMPONENTS LABORATORY",
         team: "1-2",
         description: [
@@ -48,7 +48,7 @@ const eventsData: {
         name: "Rev It Up!",
         date: "15th March",
         time: "1:00PM - 3:00PM",
-        venue: "Automobile Components Laboratory",
+        venue: "Components Laboratory(Automobile)",
         team: "1 (Individual event)",
         description: [
           "Participants will use the RC car provided by the organizers to race through a course.",
@@ -77,8 +77,8 @@ const eventsData: {
       {
         name: "Find It First",
         date: "TBA",
-        time: "TBA",
-        venue: "TBA",
+        time: "1:00PM - 3:00PM",
+        venue: "1st Floor Classroom in Marine Block",
         team: "Maximum of 2 members per team",
         description: [
           "SEGMENT1:",
@@ -135,7 +135,7 @@ const eventsData: {
         name: "Escape Room",
         date: "16th March",
         time: "9:30AM - 12:00PM",
-        venue: "Classroom 501 - 504",
+        venue: "Classroom 501,502,503,504 in BLOCK V",
         team: "Minimum of 2 and maximum of 3 members",
         description: [
           "This event contains three rooms which contain various subevents.",
@@ -167,7 +167,7 @@ const eventsData: {
         name: "The Pansophy's Connundrum",
         date: "15th March",
         time: "12:00PM - 3:00PM",
-        venue: "Classroom 511 - 514",
+        venue: "Classroom 511,512,513,514",
         team: "2-3",
         description: [
           "Embark on an exhilarating journey of intellect and wit with 'The ChemEConnundrum,' a riveting three-stage quiz event designed to challenge and entertain enthusiasts of participants. This dynamic competition promises to test your knowledge, strategy, and quick thinking in an electrifying atmosphere of camaraderie and excitement.",
@@ -315,7 +315,7 @@ const eventsData: {
       {
         name: "Papyrus Blitz",
         date: "16th March",
-        time: "9:30AM - 12:30PM",
+        time: "9:30AM - 12:00PM",
         venue: "Cadd Lab",
         team: "2",
         description: [
@@ -346,8 +346,8 @@ const eventsData: {
       {
         name: "VISUAL PAPYRUS",
         date: "16th March",
-        time: "9:30AM - 2:30PM",
-        venue: "Library Seminar Hall",
+        time: "9:30AM - 2:00PM",
+        venue: "Library Seminar Hall for Round 1 && CS Department Lab for Round 2",
         team: "2-3",
         description: [
           "Round1: Prelims Quiz(Online/Offline) – Shortlisting of 15 teams max. from this round. The teams are posed with a set of quiz based on UI/UX domain.",
@@ -380,7 +380,7 @@ const eventsData: {
         date: "15th March",
         time: "10:00AM - 3:00PM",
         coordinators: { name: "Sharan Balaji S", contact: "+91 94444 31042" },
-        venue: "Classrooms",
+        venue: "Classrooms of 504,505,506,507 in Block V",
         team: "Maximum of 2",
         description: [
           "Upon arrival, the participants are assigned unique roles, each with their own backstory, motivations, and secrets. As they interact with one another along the course of the game, they must gather clues, analyze evidence, and engage in strategic conversations to uncover the truth behind the murder.",
@@ -402,8 +402,8 @@ const eventsData: {
         name: "JOKER CODER",
         coordinators: { name: "Srilekha P", contact: "+91 78128 63379" },
         date: "16th March",
-        time: "9:30AM - 2:30PM",
-        venue: "Function Hall",
+        time: "9:30AM - 2:00PM",
+        venue: "Function Hall for Round 1 && CS Department For Round 2",
         team: "2",
         description: [
           "Round 1: Cryptic Decryption Battle",
@@ -503,8 +503,8 @@ const eventsData: {
       {
         name: "SparkQuest",
         date: "15th March",
-        time: "12:30AM - 3:00PM",
-        venue: "Electron Devices Laboratory",
+        time: "12:30PM - 3:00PM",
+        venue: "ECE Deparment Lab And Classroom",
         team: "1",
         description: [
           "Participants will engage in a comprehensive treasure hunt featuring diverse clues encompassing areas such as logic gates, digital electronics, communication, signal processing, Arduino, and Programming. The team achieving the best timing within the 3-hour time limit will be declared the winner.",
@@ -591,7 +591,7 @@ const eventsData: {
         name: "UKnowHunt",
         date: "15th March",
         time: "12:00PM - 2:00PM",
-        venue: "Classrooms 521, 522",
+        venue: "Classrooms Of 521,522,523,524",
         team: "1",
         description: [
           '"UKnowHunt" is a dynamic and thrilling intercollege event hosted by the Electrical and Electronics Engineering (EEE) department in SVCE "Techfest". Teams will navigate through two rounds, showcasing their strategic thinking and electrical engineering knowledge to emerge victorious.',
@@ -777,9 +777,9 @@ const eventsData: {
     events: [
       {
         name: "Render Royale (3d Modelling)",
-        date: "TBA",
+        date: "09:30AM - 12:00PM",
         time: "TBA",
-        venue: "UG Cad Lab Mechanical Department",
+        venue: "Mechanical Department's Cad Lab",
         team: "2",
         description: [
           "Participants will be presented with intriguing problem statements spanning diverse industries, from architecture and engineering to product design and beyond.",
@@ -799,7 +799,7 @@ const eventsData: {
         name: "InnoVision Expo (Paper Presentation)",
         date: "16th March",
         time: "10:00AM - 1:00PM",
-        venue: "Cadd lab",
+        venue: "Mechanical Cadd lab",
         team: "Individual Participation",
         description: [
           "Welcome to the InnoVision Expo, where the spotlight is on individual participants as they showcase groundbreaking papers in the realm of mechanical engineering.",
@@ -851,7 +851,7 @@ const eventsData: {
         name: "ProjectForge",
         date: "16th March",
         time: "09:30AM - 12:30PM",
-        venue: "Software Lab",
+        venue: "Software Lab EEE Department",
         team: "1",
         description: [
           "Welcome to the 'ProjectForge' – an immersive mini-project simulation event hosted on an online platform!",
@@ -877,7 +877,7 @@ const eventsData: {
         name: "PitchForge",
         date: "15th March",
         time: "10:00AM - 1:00PM",
-        venue: "Function Hall",
+        venue: "Video Hall",
         team: "3",
         description: [
           'Welcome to the exhilarating arena of "PitchForge"! Here, teams embark on a thrilling journey to present groundbreaking solutions for bringing complex technical products to the market.',
@@ -914,7 +914,7 @@ const eventsData: {
         name: "Relay Rush",
         date: "16th March",
         time: "10:00AM - 1:00PM",
-        venue: "IT Dept Lab",
+        venue: "2nd Floor IT Department Lab",
         team: "3 Members",
         description: [
           '"Code Relay Rush" is a dynamic coding competition where teams solve a chain of related issues.',
@@ -936,7 +936,7 @@ const eventsData: {
         name: "Prompt Tactics",
         date: "15th March",
         time: "1:00PM - 3:00PM",
-        venue: "IT Department Lab",
+        venue: "2nd Floor IT Department Lab",
         team: "1",
         description: [
           "Welcome to the Tech Odyssey - where coding meets creativity in a thrilling three-act saga!",
@@ -956,7 +956,7 @@ const eventsData: {
       {
         name: "Tech Pair",
         date: "15th March",
-        venue: "It Dept Lab",
+        venue: "1st Floor in IT Department Lab",
         time: "10:30AM - 12:30PM",
         team: "2",
         description: [
@@ -1020,7 +1020,7 @@ const eventsData: {
       {
         name: "PAPER PRESENTATION",
         date: "15th March",
-        time: "9:30PM - 12:30PM",
+        time: "9:30AM - 12:30PM",
         venue: "Classroom, Marine department ,10-207 Marine drawing hall",
         team: "02",
         description: [
@@ -1056,7 +1056,7 @@ const eventsData: {
       {
         name: "WELDING MASTERS",
         date: "15th March",
-        time: "1:30PM - 2:15PM",
+        time: "1:30PM - 12:15PM",
         venue: "Welding Research Cell, Marine department ",
         team: "1",
         description: [
@@ -1084,7 +1084,7 @@ const eventsData: {
         name: "BOND BLEND",
         date: "16th March",
         time: "9:30PM - 11:30PM",
-        venue: "Classroom, 10-207 drawing hall Marine Department",
+        venue: "Classroom, Marine Department,10-207 in Drawing hall",
         team: "3",
         description: [
           'A "Bond Blend" event is a captivating abstract strategy event that challenges participants to achieve a particular type of connection using provided images.',

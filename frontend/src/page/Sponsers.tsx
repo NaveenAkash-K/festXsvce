@@ -20,11 +20,11 @@ const Sponsers: React.FC = () => {
           {/* <NavLink to={"/"} style={{ textDecoration: "none", color: "white" }}>
             Coming Soon!!
           </NavLink> */}
-          <img src={Impacteers} alt="2IIM" width={"350vw"} />
+          <img src={Impacteers} alt="2IIM" className={styles.img}/>
           <h1>PLATFORM SPONSOR</h1>
-          <img src={IIM} alt="2IIM" width={"130vw"} height={"130vh"} />
+          <img src={IIM} alt="2IIM" className={styles.img}/>
           <h1>EVENT SPONSOR</h1>
-          <div style={{ display: "flex" }}>
+          <div className={styles.bank}>
             <img src={Cub} alt="2IIM" width={"200vw"} height={"100vh"} />
             <img src={Cca} alt="2IIM" width={"250vw"} height={"100vh"} />
           </div>

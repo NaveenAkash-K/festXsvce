@@ -113,9 +113,7 @@ const EventInfo: React.FC = () => {
             <br />
             <h2>Event Coordinator</h2>
             <p>{`${event.coordinators.name}  ${event.coordinators.contact}`}</p>
-            <Link to="/getPass">
-              <button className={styles.getPass}>Get Pass</button>
-            </Link>
+              <button className={styles.getPass} onClick={()=>{window.open("https://forms.gle/jLVFdaH8UxdiQeqaA","_blank")}}>Get Pass</button>
           </div>
         </div>
       </div>

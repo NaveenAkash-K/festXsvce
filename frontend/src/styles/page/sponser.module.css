@@ -25,3 +25,45 @@
   flex-direction: column;
   gap: 5vw;
 }
+
+@media screen and (width < 480px) {
+  /* .container {
+    background-color: red;
+    flex-direction: column;
+    padding-top: 7rem;
+    font-family: "Space Grotesk", sans-serif;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    min-height: 80vh;
+    cursor: default;
+    & h1 {
+      text-align: center;
+    }
+  } */
+  .workContainer {
+    background-color: red;
+    border: 1px solid #503938;
+    width: 50%;
+    margin: 1% auto;
+    padding: 5rem;
+    min-height: 80%;
+    background-color: rgba(50, 44, 44, 0.258);
+    backdrop-filter: blur(10px);
+    border-radius: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vw;
+  }
+  .img{
+    width: 80%;
+  }
+  .bank{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    align-items: center;
+  }
+}
