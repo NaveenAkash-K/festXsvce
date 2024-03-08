@@ -62,12 +62,19 @@ const Home = () => {
           >
             <div className={styles.title}>Proshows</div>
           </NavLink>
-          <NavLink
+          {/* <NavLink
             to={"/getPass"}
             style={{ textDecoration: "none", color: "white" }}
           >
             <div className={styles.title}>Get Pass</div>
-          </NavLink>
+          </NavLink> */}
+          <a
+            href="https://forms.gle/jLVFdaH8UxdiQeqaA"
+            target="_blank"
+            style={{ textDecoration: "none", color: "white" }}
+          >
+            <div className={styles.title}>Get Pass</div>
+          </a>
         </div>
       </div>
       <About />

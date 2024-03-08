@@ -9,7 +9,9 @@
     text-align: center;
   }
 }
-
+.img{
+  width: 30%;
+}
 .workContainer {
   border: 1px solid #503938;
   width: 80%;
