@@ -11,17 +11,17 @@ import About from "./page/About";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import bg from "./assets/images/newBackground.webp";
-import { useEffect, useState } from "react";
-import GetPass from "./page/GetPass";
+import { useEffect } from "react";
+// import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
 import ReactGA from "react-ga";
 import Footer from "./components/Footer";
 import Workshops from "./page/Workshops";
 import Proshows from "./page/Proshows";
-import AutoExpo from "./page/AutoExpo";
+// import AutoExpo from "./page/AutoExpo";
 import WorkshopItem from "./components/WorkshopItem";
 import TermsAndConditions from "./page/terms";
-import EventForm from "./page/EventForm";
+// import EventForm from "./page/EventForm";
 import { Analytics } from "@vercel/analytics/react";
 
 ReactGA.initialize("UA-228658137-1");
@@ -164,7 +164,7 @@ function App() {
         />
       ) : null} */}
       <div className="background-container">
-        <img src={bg} alt="Background Image" className="background-image" />
+        <img src={bg} alt="~" className="background-image" />
       </div>
       <ToastContainer position="top-center" theme="dark" />
       <RouterProvider router={router} />

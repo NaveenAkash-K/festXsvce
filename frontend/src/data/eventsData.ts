@@ -83,7 +83,7 @@ const eventsData: {
         date: "15th March",
         time: "1:00PM - 3:00PM",
         venue: "1st Floor Classroom in Marine Block",
-        team: "Maximum of 2 members per team",
+        team: "Minimum of 2 members & Maximum of 3 members per team",
         description: [
           "SEGMENT1:",
           "There will be few pictures containing a collection of tems, each picture pertaining 1 different topics. Questions will be asked in the type of riddles or clues of cropped images to identity one particular item from a picture. A point will be awarded as they identify each item first and the team with maximum points will move on to the next segment.",
@@ -324,25 +324,26 @@ const eventsData: {
         },
       },
       {
-        name: "Papyrus Blitz",
+        name: "Eco Struct",
         link: null,
         date: "16th March",
         time: "9:30AM - 12:00PM",
         venue: "Cadd Lab",
         team: "2",
         description: [
-          "A Paper presentation event with a theme focused on ‘Sustainable Practices in Civil Engineering’. The participants are required to present their work on the selected topic .",
+          "Participants are given a set of specifications for a building project, such as size, location, and purpose.",
+          "Their task is to design the building using sustainable principles, such as energy efficiency, use of renewable materials, and water conservation.",
         ],
         shortDescription:
-          "A paper presentation event with a theme focused on civil engineering.",
+          "Crafting Tomorrow's Infrastructure.",
         rules: [
-          " This is an individual event",
-          " Decisions of the judges is final.",
-          " Participants should strictly adhere to the theme of the event.",
-          " The theme of your paper should be from any one of the civil engineering niches (structural engineering, geotechnical engineering, sustainable construction, safety and risk management etc.,)",
+          " It’s an Individual Event.",
+          " The design should be adhered to IS code specifications.",
+          " The design should fulfill the theme of the event (Sustainability).",
+          " Also design specifications are expected to fulfil the requirements of IS code specifications.",
         ],
         requirements: [
-          "Participants should bring at least one laptop per team to present their PowerPoint presentations during the event.",
+          "Laptop with autocadd software (if available).",
         ],
         coordinators: {
           name: "Raghavendra B,Aravintakshan N G",
@@ -360,7 +361,7 @@ const eventsData: {
         link: null,
         date: "16th March",
         time: "9:30AM - 2:00PM",
-        venue: "Library Seminar Hall for Round 1 && CS Department Lab for Round 2",
+        venue: "Video Hall for Round 1 && CS Department Lab for Round 2",
         team: "2-3",
         description: [
           "Round1: Prelims Quiz(Online/Offline) – Shortlisting of 15 teams max. from this round. The teams are posed with a set of quiz based on UI/UX domain.",
@@ -544,7 +545,7 @@ const eventsData: {
         name: "Electro-Craft Challenge",
         link: null,
         date: "15th March",
-        time: "10:00AM - 12:00PM",
+        time: "10:00AM - 1:00PM",
         venue: "Embedded Systems Laboratory of ECE Department",
         team: "2 to 3",
         description: [
@@ -655,14 +656,14 @@ const eventsData: {
         link: null,
         date: "16th March",
         time: "10:00AM - 12:00PM",
-        venue: "EEE Department EPL Lab",
+        venue: "Classroom Of 521,522,523 in Block V",
         team: "3",
         description: [
           "Phase 1: Circuit schematics:",
           "Follow the Electrical Trail: Navigate a tangled web of circuits, tracing electrical pathways and deciphering complex schematics to locate the crucial voltage terminal—to locate the vault.",
 
           "Phase 2: Takeover:",
-          "Take Control: The Task is easy you should just build a circuit but there is a bit of a twist.Let Your Analog Circuit skills flow.",
+          "Take Control: The Task is easy you should just build a circuit but there is a bit of a twist.Let Your Digital Circuit skills flow.",
 
           "Phase 3: Digital Decipher :",
           "Confront the Final Guardian: As the final five teams reach the end, The vault's digital heart, a formidable circuit, stands between your crew and the treasure. Interface with the vault and input commands or codes to unlock the vault and claim the prize.",
@@ -861,7 +862,7 @@ const eventsData: {
           "Material Constraints:",
           "The primary construction material is limited to popsicle sticks.Additional materials, such as glue, tape, and lightweight propellers, may be provided.",
           "Judging Criteria:",
-          "Innovation:",
+          "Innovation.",
           "Judges evaluate the creativity and uniqueness of the popsicle stick drone designs."
         ],
         requirements: ["None"],
@@ -1065,7 +1066,7 @@ const eventsData: {
           "TOPICS FOR PAPER PRESENTATION:",
           "Sustainable Shipbuilding Practices",
           "Recent trends in propulsion",
-          "Impact of Digitalization Marine Industry ",
+          "Impact of Digitalization in Marine Industry ",
           "Autonomous Navigation Systems",
           "Marine Pollution Control Strategies",
           "Green fuels in shipping ",

@@ -46,7 +46,7 @@ function Header() {
           >
             Events
           </NavLink>
-          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank"
+          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank" rel="noreferrer"
             className={ styles.inactive}
           >
             Get Passes
@@ -123,7 +123,7 @@ function Header() {
           >
             Events
           </NavLink>
-          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank"
+          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" target="_blank" rel="noreferrer"
             className={ styles.inactive}
           >
             Get Passes
