@@ -80,14 +80,11 @@ const Footer = () => {
             </p>
             <br />
             <p>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? styles.active : styles.inactive
-                }
-                to={"/getPass"}
+              <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" rel="noreferrer" target="_blank"
+                className={styles.inactive}
               >
                 Get Passes
-              </NavLink>
+              </a>
             </p>
             <br />
             <p>
