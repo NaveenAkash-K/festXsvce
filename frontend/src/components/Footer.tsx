@@ -2,7 +2,7 @@ import styles from "../styles/components/footer.module.css";
 import svce from "../assets/images/svcelogo.png";
 import { NavLink } from "react-router-dom";
 import {
-  IoLogoFacebook,
+  // IoLogoFacebook,
   IoLogoInstagram,
   IoMail,
   IoCall,

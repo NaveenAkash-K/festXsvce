@@ -5,9 +5,7 @@ import styles from "../styles/components/workshopitem.module.css";
 import Header from "./Header";
 import calIcon from "../assets/images/icons/calIcon.png";
 import timeIcon from "../assets/images/icons/timeIcon.png";
-import userIcon from "../assets/images/icons/userIcon.png";
 import classIcon from "../assets/images/icons/classroomIcon.png";
-import { Link } from "react-router-dom";
 
 const WorkshopItem: React.FC = () => {
   useEffect(() => {
