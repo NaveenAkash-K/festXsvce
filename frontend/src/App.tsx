@@ -10,7 +10,7 @@ import About from "./page/About";
 // import AnimatedCursor from "react-animated-cursor";
 import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
-import bg from "./assets/images/newBackground.png";
+import bg from "./assets/images/newBackground.webp";
 import { useEffect, useState } from "react";
 import GetPass from "./page/GetPass";
 import Sponsers from "./page/Sponsers";
