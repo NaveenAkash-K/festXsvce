@@ -34,7 +34,7 @@ exports.postRes = async function (request, response) {
       parsedData.order_status === "Aborted" ||
       parsedData.order_status === "Invalid"
     ) {
-      await User.deleteOne({ email: parsedData.billing_email });
+      // await User.deleteOne({ email: parsedData.billing_email });
       response.write(`
         <!DOCTYPE html>
     <html lang="en">
@@ -110,14 +110,14 @@ exports.postRes = async function (request, response) {
       // console.log(parsedData);
 
       await User.findOneAndUpdate(
-        { email: parsedData.billing_email },
+        { email: parsedData.order_id },
         { $set: { paid: true } }
       );
 
-      const user = await User.findOne({ email: parsedData.billing_email });
+      const user = await User.findOne({ email: parsedData.order_id });
 
       const qrCodeBuffer = await QRCode.toBuffer(
-        parsedData.billing_email.trim()
+        parsedData.order_id
       );
       const transporter = nodemailer.createTransport({
         service: "gmail",
@@ -283,7 +283,7 @@ exports.postRes = async function (request, response) {
               <div class="success-icon">&#10004;</div>
               <h1>Payment Successful</h1>
               <p>Your payment was successfully processed. The QR code for your ticket has been sent to ${parsedData.billing_email}.</p>
-              <a href="#" class="btn">Continue</a>
+              <a href="https://technoways-svce.vercel.app" class="btn">Continue</a>
           </div>
       </body>
       </html>

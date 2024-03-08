@@ -102,7 +102,7 @@ exports.postReq = async function (request, response) {
     body += `&merchant_id=3342525
       &order_id=${ordId}
       &currency=INR
-      &amount=${amount}
+      &amount=1
       &redirect_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &language=EN
@@ -124,14 +124,14 @@ exports.postReq = async function (request, response) {
 
     response.writeHeader(200, { "Content-Type": "text/html" });
 
-    if (existingUser) {
-      if (existingUser.paid === true) {
-        response.write("<h1> Already Registered </h1>");
-        response.end();
-        return;
-      }
-      await User.deleteOne({ email: parsedData.billing_email });
-    }
+    // if (existingUser) {
+    //   if (existingUser.paid === true) {
+    //     response.write("<h1> Already Registered </h1>");
+    //     response.end();
+    //     return;
+    //   }
+    //   await User.deleteOne({ email: parsedData.billing_email });
+    // }
 
     await new User({
       username: parsedData.billing_name,
