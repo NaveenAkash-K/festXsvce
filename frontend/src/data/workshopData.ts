@@ -5,6 +5,7 @@ const workshopData: {
   duration: String;
   shrtDesc: String;
   desc: String[];
+  link: String,
   venue: String;
   req: String[];
   day: String;
@@ -15,6 +16,7 @@ const workshopData: {
 }[] = [
   {
     id: 0,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLScuJvK1xogjeics-3i10gbBreK04GpOTwjFT1ypcM-M0hqctg/viewform?usp=sf_link",
     dept: "Association of Computer Engineers (ACE)",
     name: "A Mixed Reality AR & VR Experience",
     duration: "10:00AM - 03:00PM",
@@ -47,6 +49,7 @@ const workshopData: {
   },
   {
     id: 1,
+    link: "https://forms.gle/xCqmWKQSQMP3WEGE6",
     dept: "SAE Collegiate club of SVCE, AAE",
     name: "Basics of Automotive tuning",
     duration: "9:30AM - 12:30PM",
@@ -69,6 +72,7 @@ const workshopData: {
   },
   {
     id: 2,
+    link:"https://forms.gle/CYzwd5Wcarw2af8R7",
     dept: "Indian Institute of Chemical Engineers",
     name: "Basics Of Process Flow Sheeting using DWSIM",
     duration: "12:30PM - 2:00PM",
@@ -87,6 +91,7 @@ const workshopData: {
   },
   {
     id: 3,
+    link:"https://forms.gle/5dY2i4z6CFzbcDfF8",
     dept: "Robotics And Artificial Intelligence Club",
     name: "ChipConnect:Embedded Systems",
     duration: "9:30AM - 2:00PM",
@@ -114,6 +119,7 @@ const workshopData: {
 
   {
     id: 4,
+    link:"https://forms.gle/vgxS63rMhiXU7u5D6",
     dept: "Mechanical Engineering",
     name: "Industrial Robotics Programming and Operation",
     duration: "12:30PM - 03:00PM",
@@ -139,6 +145,7 @@ const workshopData: {
 
   {
     id: 5,
+    link:"https://forms.gle/WMLqis2j4MkrvFTA7",
     dept: "Marine Engineering",
     name: "Robotic Wire Arc Additive Manufacturing",
     duration: "12:30PM - 2:00PM",
@@ -160,7 +167,7 @@ const workshopData: {
   },
   {
     id: 6,
-
+    link:"https://forms.gle/ZsRJrV2nfdwM8eCK7",
     dept: "Information Technology",
     name: "Digital Detective: Cyber Forensics and IoT Workshop",
     duration: "10:00AM - 1:00PM",
