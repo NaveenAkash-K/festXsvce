@@ -61,7 +61,7 @@ const EventForm: React.FC = () => {
   const [pitstop, setPitstop] = useState(false);
   const [innovisionExpo, setInnovisionExpo] = useState(false);
   const [thinkTank, setThinkTank] = useState(false);
-  const [isTechPassDisable, setIsTechPassDisable] = useState(false);
+  // const [isTechPassDisable, setIsTechPassDisable] = useState(false);
   const [isEventsDisabled, setIsEventsDisabled] = useState(false);
   // Example of using the techPrice variable
   // useEffect(() => {
@@ -190,9 +190,9 @@ const EventForm: React.FC = () => {
   //     setThinkTank(false);
   //     setIsTechPassDisable(true);
   //     setIsTechPass(false);
-  //     setIsEventsDisabled(true);
+      // setIsEventsDisabled(true);
   //   } else {
-  //     setIsEventsDisabled(false);
+      // setIsEventsDisabled(false);
   //     setIsTechPassDisable(false)
   //   }
   // }, [isProShows]);
@@ -303,7 +303,7 @@ const EventForm: React.FC = () => {
             required
             // value={billingName}
             onChange={(e) => setBillingName(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -312,7 +312,7 @@ const EventForm: React.FC = () => {
             required
             // value={billingAddress}
             onChange={(e) => setBillingAddress(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -321,7 +321,7 @@ const EventForm: React.FC = () => {
             required
             //value={billingCity}
             onChange={(e) => setBillingCity(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -330,7 +330,7 @@ const EventForm: React.FC = () => {
             required
             //value={billingState}
             onChange={(e) => setBillingState(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -339,7 +339,7 @@ const EventForm: React.FC = () => {
             required
             //value={billingZip}
             onChange={(e) => setBillingZip(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -348,7 +348,7 @@ const EventForm: React.FC = () => {
             required
             //value={billingTel}
             onChange={(e) => setBillingTel(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="email"
@@ -357,7 +357,7 @@ const EventForm: React.FC = () => {
             //value={email}
             required
             onChange={(e) => setEmail(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -366,7 +366,7 @@ const EventForm: React.FC = () => {
             required
             //value={college}
             onChange={(e) => setCollege(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -375,7 +375,7 @@ const EventForm: React.FC = () => {
             required
             //value={year}
             onChange={(e) => setYear(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -384,7 +384,7 @@ const EventForm: React.FC = () => {
             required
             //value={regNo}
             onChange={(e) => setRegNo(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           <input
             type="text"
@@ -393,7 +393,7 @@ const EventForm: React.FC = () => {
             required
             //value={department}
             onChange={(e) => setDepartment(e.target.value)}
-            disabled={isEventsDisabled}
+            // disabled={isEventsDisabled}
           />
           {/* <button
             onClick={(e) => {
@@ -420,8 +420,8 @@ const EventForm: React.FC = () => {
                 type="radio"
                 name="pass"
                 id="pass"
-                disabled={isTechPassDisable}
-                checked={isTechPass}
+                // disabled={isTechPassDisable}
+                // checked={isTechPass}
                 value={"TechPass"}
                 onChange={(value) => {
                   setIsTechPass(value.target.checked);
@@ -438,7 +438,8 @@ const EventForm: React.FC = () => {
                 name="pass"
                 id="pass"
                 value={"Proshows"}
-                checked={isProShows}
+
+                // checked={isProShows}
                 onChange={(value) => {
                   setIsProShows(value.target.checked);
                 }}
@@ -456,7 +457,8 @@ const EventForm: React.FC = () => {
                 name="pass"
                 value={"Elite"}
                 id="pass"
-                checked={isElite}
+                defaultChecked={true}
+                // checked={isElite}
                 onChange={(value) => {
                   setIsElite(value.target.checked);
                 }}
@@ -481,7 +483,7 @@ const EventForm: React.FC = () => {
                   type="checkbox"
                   id="techpass"
                   onChange={handleBasicsAutomotiveChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={basicsAutomotive}
                 />
                 <label htmlFor="basicsAutomotive">
@@ -494,7 +496,7 @@ const EventForm: React.FC = () => {
                   type="checkbox"
                   id="techpass"
                   onChange={handleMARINEPPChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={MARINEPP}
                 />
                 <label htmlFor="PAPER PRESENTATION (MARINE)">
@@ -507,7 +509,7 @@ const EventForm: React.FC = () => {
                   type="checkbox"
                   id="techpass"
                   onChange={handleWELDINGMASTERSChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={WELDINGMASTERS}
                 />
                 <label htmlFor="WELDING MASTERS">WELDING MASTERS</label>
@@ -518,7 +520,7 @@ const EventForm: React.FC = () => {
                   name="REV IT UP"
                   id="techpass"
                   onChange={handleRevitChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={revit}
                 />
                 <label htmlFor="revit">Rev It Up (1:00PM-3:00PM)</label>
@@ -529,7 +531,7 @@ const EventForm: React.FC = () => {
                   name="BIOMONOPOLY"
                   id="techpass"
                   onChange={handleBiomonopolyChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={biomonopoly}
                 />
                 <label htmlFor="biomonopoly">
@@ -542,7 +544,7 @@ const EventForm: React.FC = () => {
                   name="CTRL + ALT + DELETE"
                   id="techpass"
                   onChange={handleCtrlAltChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={ctrlalt}
                 />
                 <label htmlFor="ctrlalt">
@@ -555,7 +557,7 @@ const EventForm: React.FC = () => {
                   name="HAIJO"
                   id="techpass"
                   onChange={handleHaijoChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={haijo}
                 />
                 <label htmlFor="haijo">HAIJO (12:00AM-3:00PM)</label>
@@ -566,7 +568,7 @@ const EventForm: React.FC = () => {
                   name="BRIDGE EXPERTISE"
                   id="techpass"
                   onChange={handleBridgeChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={bridge}
                 />
                 <label htmlFor="BRIDGE">
@@ -579,7 +581,7 @@ const EventForm: React.FC = () => {
                   name="MUDWELL MASTERY"
                   id="techpass"
                   onChange={handleMudwellChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={mudwell}
                 />
                 <label htmlFor="MUDWELL">MUDWELL MASTERY (1:00PM-2:30PM)</label>
@@ -590,7 +592,7 @@ const EventForm: React.FC = () => {
                   name="TECHPAIR"
                   id="techpass"
                   onChange={handleTechPairChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={techPair}
                 />
                 <label htmlFor="TECHPAIR">TECH PAIR (10:30AM-12:30PM)</label>
@@ -601,7 +603,7 @@ const EventForm: React.FC = () => {
                   name="PROMPT TACTICS"
                   id="techpass"
                   onChange={handlePromptChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={prompt}
                 />
                 <label htmlFor="prompt">PROMPT TACTICS (1:00PM-3:00PM)</label>
@@ -612,7 +614,7 @@ const EventForm: React.FC = () => {
                   name="SDG INNOVATION CHALLENGE"
                   id="techpass"
                   onChange={handleSdgChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={sdg}
                 />
                 <label htmlFor="SDG">
@@ -625,7 +627,7 @@ const EventForm: React.FC = () => {
                   name="UKNOWHUNT"
                   id="techpass"
                   onChange={handleUKnowChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={uKnow}
                 />
                 <label htmlFor="UKNOW">UKNOWHUNT (12:00PM-2:00PM)</label>
@@ -636,7 +638,7 @@ const EventForm: React.FC = () => {
                   name="ELECTRO-CRAFT"
                   id="techpass"
                   onChange={handleElectroChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={electro}
                 />
                 <label htmlFor="ELECTRO">
@@ -649,7 +651,7 @@ const EventForm: React.FC = () => {
                   name="SPARK QUEST"
                   id="techpass"
                   onChange={handleSparkChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={spark}
                 />
                 <label htmlFor="SPARK">SPARK QUEST (12:30PM-3:00PM)</label>
@@ -660,7 +662,7 @@ const EventForm: React.FC = () => {
                   name="THRILL QUEST"
                   id="techpass"
                   onChange={handleThrillChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={thrill}
                 />
                 <label htmlFor="THRILL">THRILL QUEST (10:00AM-3:00PM)</label>
@@ -671,7 +673,7 @@ const EventForm: React.FC = () => {
                   name="AR VR WORKSHOP"
                   id="techpass"
                   onChange={handleArvrChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={arvr}
                 />
                 <label htmlFor="ARVR">
@@ -684,7 +686,7 @@ const EventForm: React.FC = () => {
                   name="CHEM E PANSOPHY"
                   id="techpass"
                   onChange={handleChemintriChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={chemintri}
                 />
                 <label htmlFor="CHEMINTRI">
@@ -697,7 +699,7 @@ const EventForm: React.FC = () => {
                   name="PANSOPHY'S CONNUNDRUM"
                   id="techpass"
                   onChange={handleCHEMEChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={cheme}
                 />
                 <label htmlFor="CHEME">
@@ -710,7 +712,7 @@ const EventForm: React.FC = () => {
                   name="PITCH FORGE"
                   id="techpass"
                   onChange={handlePitchChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={pitch}
                 />
                 <label htmlFor="PITCH">PITCH FORGE (10:00AM-1:00PM)</label>
@@ -721,7 +723,7 @@ const EventForm: React.FC = () => {
                   name="RENDER ROYALE"
                   id="techpass"
                   onChange={handleRenderChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={render}
                 />
                 <label htmlFor="RENDER">RENDER ROYALE (9:30AM-12:00PM)</label>
@@ -732,7 +734,7 @@ const EventForm: React.FC = () => {
                   name="MECHSTIX MARVEL"
                   id="techpass"
                   onChange={handleMechstixChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={mechstix}
                 />
                 <label htmlFor="MECHSTIX">
@@ -748,7 +750,7 @@ const EventForm: React.FC = () => {
                   name="BGMI"
                   id="techpass"
                   onChange={handleBGMIChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={BGMI}
                 />
                 <label htmlFor="BGMI">BGMI (9.00AM-12.30PM)</label>
@@ -759,7 +761,7 @@ const EventForm: React.FC = () => {
                   name="INNOSOLVE"
                   id="techpass"
                   onChange={handleInnosolveChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={innosolve}
                 />
                 <label htmlFor="INNOSOLVE">INNOSOLVE (9.30AM-12.30PM)</label>
@@ -770,7 +772,7 @@ const EventForm: React.FC = () => {
                   type="checkbox"
                   id="techpass"
                   onChange={handleBONDBLENDChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={BONDBLEND}
                 />
                 <label htmlFor="BOND BLEND">BOND BLEND</label>
@@ -781,7 +783,7 @@ const EventForm: React.FC = () => {
                   name="BASICS ON CFT WORKSHOP"
                   id="techpass"
                   onChange={handleBasicsOnCFTWorkshopChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={basicsOnCFTWorkshop}
                 />
                 <label htmlFor="BASICS ON CFT WORKSHOP">
@@ -794,7 +796,7 @@ const EventForm: React.FC = () => {
                   name="PIXEL PALETTE"
                   id="techpass"
                   onChange={handleUiUxChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={uiUx}
                 />
                 <label htmlFor="PIXEL PALETTE">
@@ -807,7 +809,7 @@ const EventForm: React.FC = () => {
                   name="RELAY RUSH"
                   id="techpass"
                   onChange={handleRelayRushChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={relayRush}
                 />
                 <label htmlFor="RELAY RUSH">RELAY RUSH (10.00AM-1.00PM)</label>
@@ -818,7 +820,7 @@ const EventForm: React.FC = () => {
                   name="PROJECT FORGE"
                   id="techpass"
                   onChange={handleProjectForgeChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={projectForge}
                 />
                 <label htmlFor="PROJECT FORGE">
@@ -831,7 +833,7 @@ const EventForm: React.FC = () => {
                   name="THE TWISTED HEIST"
                   id="techpass"
                   onChange={handleTheMistedHeistChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={theMistedHeist}
                 />
                 <label htmlFor="THE TWISTED HEIST">
@@ -844,7 +846,7 @@ const EventForm: React.FC = () => {
                   name="ESCAPE ROOMS"
                   id="techpass"
                   onChange={handleEscapeRoomsChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={escapeRooms}
                 />
                 <label htmlFor="ESCAPE ROOMS">
@@ -857,7 +859,7 @@ const EventForm: React.FC = () => {
                   name="PAPYRUS BLITZ"
                   id="techpass"
                   onChange={handlePaperPresentationCivilChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={paperPresentationCivil}
                 />
                 <label htmlFor="PAPYRUS BLITZ">
@@ -870,7 +872,7 @@ const EventForm: React.FC = () => {
                   name="PAPER PRISM"
                   id="techpass"
                   onChange={handlePaperPresentationECEChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={paperPresentationECE}
                 />
                 <label htmlFor="PAPER PRISM">
@@ -883,7 +885,7 @@ const EventForm: React.FC = () => {
                   name="EMBEDDED SYSTEM WORKSHOP"
                   id="techpass"
                   onChange={handleEmbeddedSystemWorkshopChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={embeddedSystemWorkshop}
                 />
                 <label htmlFor="EMBEDDED SYSTEM WORKSHOP">
@@ -896,7 +898,7 @@ const EventForm: React.FC = () => {
                   name="VISUAL PAPYRUS"
                   id="techpass"
                   onChange={handleVisualPapyrusChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={visualPapyrus}
                 />
                 <label htmlFor="VISUAL PAPYRUS">
@@ -909,7 +911,7 @@ const EventForm: React.FC = () => {
                   name="JOKER CODER"
                   id="techpass"
                   onChange={handleJokerCoderChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={jokerCoder}
                 />
                 <label htmlFor="JOKER CODER">JOKER CODER (9.30AM-2.30PM)</label>
@@ -920,7 +922,7 @@ const EventForm: React.FC = () => {
                   name="PITSTOP"
                   id="techpass"
                   onChange={handlePitstopChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={pitstop}
                 />
                 <label htmlFor="PITSTOP">PITSTOP (10.00AM-12.00PM)</label>
@@ -931,7 +933,7 @@ const EventForm: React.FC = () => {
                   name="INNOVISION EXPO"
                   id="techpass"
                   onChange={handleInnovisionExpoChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={innovisionExpo}
                 />
                 <label htmlFor="INNOVISION EXPO">
@@ -944,7 +946,7 @@ const EventForm: React.FC = () => {
                   name="THINK TANK"
                   id="techpass"
                   onChange={handleThinkTankChange}
-                  disabled={isEventsDisabled}
+                  // disabled={isEventsDisabled}
                   checked={thinkTank}
                 />
                 <label htmlFor="THINK TANK">THINK TANK (10.00AM-1.00PM)</label>

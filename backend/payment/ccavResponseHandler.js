@@ -110,11 +110,11 @@ exports.postRes = async function (request, response) {
       // console.log(parsedData);
 
       await User.findOneAndUpdate(
-        { email: parsedData.order_id },
+        { ordId: parsedData.order_id },
         { $set: { paid: true } }
       );
 
-      const user = await User.findOne({ email: parsedData.order_id });
+      const user = await User.findOne({ ordId: parsedData.order_id });
 
       const qrCodeBuffer = await QRCode.toBuffer(
         parsedData.order_id
