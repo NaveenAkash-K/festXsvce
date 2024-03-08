@@ -858,9 +858,11 @@ const eventsData: {
         ],
         shortDescription: "Crafting Aerial Marvels with Sticks!",
         rules: [
-          "The quiz is structured with timed multiple-choice questions, testing both speed and accuracy.",
-          "Top-scoring teams advance to an exhilarating final round, potentially involving interactive challenges or problem-solving scenarios.",
-          "The final round serves as the ultimate decider for the winning team.",
+          "Material Constraints:",
+          "The primary construction material is limited to popsicle sticks.Additional materials, such as glue, tape, and lightweight propellers, may be provided.",
+          "Judging Criteria:",
+          "Innovation:",
+          "Judges evaluate the creativity and uniqueness of the popsicle stick drone designs."
         ],
         requirements: ["None"],
         coordinators: {
