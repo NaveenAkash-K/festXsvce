@@ -73,7 +73,7 @@ const Home = () => {
             target="_blank" rel="noreferrer"
             style={{ textDecoration: "none", color: "white" }}
           >
-            <div className={styles.title}>Get Pass</div>
+            <div className={styles.titleHighlight}>Get Pass</div>
           </a>
         </div>
       </div>
