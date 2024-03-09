@@ -200,15 +200,17 @@ const eventsData: {
         link: null,
         date: "15th March",
         time: "9:30AM - 12:30PM",
-        venue: "Classroom 514, 515",
+        venue: "Classroom 515, 516",
         team: "3",
         description: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/c42f3cvj6XWYHDz9A",
           "Students can showcase their research ideas/ works either in the form of a paper or as a poster",
           "Separate evaluations are made for both paper as well as for poster presentations",
         ],
         shortDescription:
           "Event to showcase the research expertise of students",
         rules: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/c42f3cvj6XWYHDz9A",
           "TOPICS FOR PAPER AND POSTER PRESENTATION",
           "STOICHIOMETRY",
           "HEAT AND MASS TRANSFER",
@@ -361,7 +363,7 @@ const eventsData: {
         link: null,
         date: "16th March",
         time: "9:30AM - 2:00PM",
-        venue: "Video Hall for Round 1 && CS Department Lab for Round 2",
+        venue: "Video Hall for Round 1 & CS Department Lab for Round 2",
         team: "2-3",
         description: [
           "Round1: Prelims Quiz(Online/Offline) – Shortlisting of 15 teams max. from this round. The teams are posed with a set of quiz based on UI/UX domain.",
@@ -419,7 +421,7 @@ const eventsData: {
         link: null,
         date: "16th March",
         time: "9:30AM - 2:00PM",
-        venue: "Function Hall for Round 1 && CS Department For Round 2",
+        venue: "Function Hall for Round 1 & CS Department For Round 2",
         team: "2",
         description: [
           "Round 1: Cryptic Decryption Battle",

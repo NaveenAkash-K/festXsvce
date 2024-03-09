@@ -16,12 +16,12 @@ const About: React.FC = () => {
         <div className={styles.space}></div>
         <div className={styles.aboutData}>
           <div className={styles.aboutContainer}>
-            <h4>30+</h4>
+            <h4>34+</h4>
             <br />
             <h3>Events</h3>
           </div>
           <div className={styles.aboutContainer}>
-            <h4>5+</h4>
+            <h4>8+</h4>
             <br />
             <h3>Workshops</h3>
           </div>

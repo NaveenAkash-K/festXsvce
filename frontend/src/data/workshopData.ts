@@ -96,7 +96,7 @@ const workshopData: {
     name: "ChipConnect:Embedded Systems",
     duration: "9:30AM - 2:00PM",
     shrtDesc:
-      "Explore The World Of Embedded Systems In This Engaging Workshop Hosted By ChipConnect",
+      "Explore The World Of Embedded Systems In This Engaging Workshop",
     desc: [
       "What You'll Experience:",
       "Dive deep into The fundamentals of Embedded Systems.",
