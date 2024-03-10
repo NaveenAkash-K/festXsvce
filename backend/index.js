@@ -152,13 +152,8 @@ app.post("/ccavRequestHandler", async (req, res) => {
 });
 
 app.get("/qrData/:ordId",async (req, res) => {
-  try{
     const user= await User.findOne({ordId:req.params.ordId});
     res.json(user);
-  } catch (e){
-    console.log(e);
-    res.send();
-  }
 });
 
 app.post("/ccavResponseHandler", (req, res) => {
