@@ -5,6 +5,7 @@ var mongoose = require("mongoose");
 var ccavReqHandler = require("./payment/ccavRequestHandler.js");
 var ccavResHandler = require("./payment/ccavResponseHandler.js");
 var User = require("./models/user_model.js");
+var cors = require("cors");
 const QRCode = require("qrcode");
 const nodemailer = require("nodemailer");
 
@@ -32,6 +33,13 @@ mongoose.connection.on("error", (err) => {
 //   regNo: "ksudgvskjfvb",
 //   year: 3,
 // }).save();
+
+app.use(cors());
+
+app.get("/qrData/:ordId",async (req, res) => {
+  const user= await User.findOne({ordId:req.params.ordId});
+  res.json(user);
+});
 
 app.use(express.static("public"));
 app.set("views", __dirname + "./payment/public");
@@ -146,10 +154,7 @@ app.post("/ccavRequestHandler", async (req, res) => {
   ccavReqHandler.postReq(req, res);
 });
 
-app.get("/qrData/:ordId",async (req, res) => {
-  const user= await User.findOne({ordId:req.params.ordId});
-  res.json(user);
-});
+
 
 app.post("/ccavResponseHandler", (req, res) => {
   ccavResHandler.postRes(req, res);
