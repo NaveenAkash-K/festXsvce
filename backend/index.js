@@ -61,10 +61,10 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //   to: "naveen.akash0904@gmail.com",
   //   subject: "QR Code Email",
   //   html: `
-    
+
   //   <!DOCTYPE html>
   //   <html lang="en">
-    
+
   //   <head>
   //       <meta charset="UTF-8">
   //       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +77,7 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //               padding: 0;
   //               text-align: center;
   //           }
-    
+
   //           .ticket-container {
   //               max-width: 600px;
   //               margin: 50px auto;
@@ -86,29 +86,29 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //               border-radius: 8px;
   //               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   //           }
-    
+
   //           .ticket-header {
   //               background-color: #3498db;
   //               color: #fff;
   //               padding: 10px;
   //               border-radius: 8px 8px 0 0;
   //           }
-    
+
   //           .ticket-content {
   //               padding: 20px;
   //           }
-    
+
   //           .qr-code {
   //               margin-top: 20px;
   //           }
-    
+
   //           .footer-text {
   //               margin-top: 20px;
   //               color: #888;
   //           }
   //       </style>
   //   </head>
-    
+
   //   <body>
   //       <div class="ticket-container">
   //           <div class="ticket-header">
@@ -127,7 +127,7 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //           </div>
   //       </div>
   //   </body>
-    
+
   //   </html>
   // `,
   // attachments: [
@@ -143,13 +143,12 @@ app.post("/ccavRequestHandler", async (req, res) => {
   // const info = await transporter.sendMail(mailOptions);
   // console.log("Email sent:", info);
 
- 
   ccavReqHandler.postReq(req, res);
 });
 
-app.post("/sendQR", (req, res) => {
-  console.log(req.body.data);
-  res.send();
+app.get("/qrData/:ordId",async (req, res) => {
+  const user= await User.findOne({ordId:req.params.ordId});
+  res.json(user);
 });
 
 app.post("/ccavResponseHandler", (req, res) => {
