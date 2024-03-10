@@ -7,15 +7,16 @@ import DepartmentsPage from "./Departments";
 import Timer from "../components/Timer";
 import Footer from "../components/Footer";
 import Sponsers from "./Sponsers";
+import discount from "../assets/images/discount.png";
 import { Link } from "react-scroll";
 import { NavLink } from "react-router-dom";
 import ReactGA from "react-ga";
 import { useEffect } from "react";
 const Home = () => {
-  useEffect(()=>{
+  useEffect(() => {
     document.title = "Home | Technoways";
-    ReactGA.pageview(window.location.pathname)
-  },[])
+    ReactGA.pageview(window.location.pathname);
+  }, []);
   return (
     <>
       <Header />
@@ -70,7 +71,8 @@ const Home = () => {
           </NavLink> */}
           <a
             href="https://forms.gle/jLVFdaH8UxdiQeqaA"
-            target="_blank" rel="noreferrer"
+            target="_blank"
+            rel="noreferrer"
             style={{ textDecoration: "none", color: "white" }}
           >
             <div className={styles.titleHighlight}>Get Pass</div>
@@ -78,6 +80,11 @@ const Home = () => {
         </div>
       </div>
       <About />
+
+      <center>
+        <br /><br /><br /><br /><br />
+        <img src={discount} width={"300vw"} alt="" />
+      </center>
       <DepartmentsPage />
       <Location />
       <Sponsers />
