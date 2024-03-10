@@ -83,7 +83,7 @@ const eventsData: {
         date: "15th March",
         time: "1:00PM - 3:00PM",
         venue: "1st Floor Classroom in Marine Block",
-        team: "Maximum of 2 members per team",
+        team: "Minimum of 2 members & Maximum of 3 members per team",
         description: [
           "SEGMENT1:",
           "There will be few pictures containing a collection of tems, each picture pertaining 1 different topics. Questions will be asked in the type of riddles or clues of cropped images to identity one particular item from a picture. A point will be awarded as they identify each item first and the team with maximum points will move on to the next segment.",
@@ -200,15 +200,17 @@ const eventsData: {
         link: null,
         date: "15th March",
         time: "9:30AM - 12:30PM",
-        venue: "Classroom 514, 515",
+        venue: "Classroom 515, 516",
         team: "3",
         description: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/c42f3cvj6XWYHDz9A",
           "Students can showcase their research ideas/ works either in the form of a paper or as a poster",
           "Separate evaluations are made for both paper as well as for poster presentations",
         ],
         shortDescription:
           "Event to showcase the research expertise of students",
         rules: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/c42f3cvj6XWYHDz9A",
           "TOPICS FOR PAPER AND POSTER PRESENTATION",
           "STOICHIOMETRY",
           "HEAT AND MASS TRANSFER",
@@ -324,25 +326,26 @@ const eventsData: {
         },
       },
       {
-        name: "Papyrus Blitz",
+        name: "Eco Struct",
         link: null,
         date: "16th March",
         time: "9:30AM - 12:00PM",
         venue: "Cadd Lab",
         team: "2",
         description: [
-          "A Paper presentation event with a theme focused on ‘Sustainable Practices in Civil Engineering’. The participants are required to present their work on the selected topic .",
+          "Participants are given a set of specifications for a building project, such as size, location, and purpose.",
+          "Their task is to design the building using sustainable principles, such as energy efficiency, use of renewable materials, and water conservation.",
         ],
         shortDescription:
-          "A paper presentation event with a theme focused on civil engineering.",
+          "Crafting Tomorrow's Infrastructure.",
         rules: [
-          " This is an individual event",
-          " Decisions of the judges is final.",
-          " Participants should strictly adhere to the theme of the event.",
-          " The theme of your paper should be from any one of the civil engineering niches (structural engineering, geotechnical engineering, sustainable construction, safety and risk management etc.,)",
+          " It’s an Individual Event.",
+          " The design should be adhered to IS code specifications.",
+          " The design should fulfill the theme of the event (Sustainability).",
+          " Also design specifications are expected to fulfil the requirements of IS code specifications.",
         ],
         requirements: [
-          "Participants should bring at least one laptop per team to present their PowerPoint presentations during the event.",
+          "Laptop with autocadd software (if available).",
         ],
         coordinators: {
           name: "Raghavendra B,Aravintakshan N G",
@@ -360,7 +363,7 @@ const eventsData: {
         link: null,
         date: "16th March",
         time: "9:30AM - 2:00PM",
-        venue: "Library Seminar Hall for Round 1 && CS Department Lab for Round 2",
+        venue: "Video Hall for Round 1 & CS Department Lab for Round 2",
         team: "2-3",
         description: [
           "Round1: Prelims Quiz(Online/Offline) – Shortlisting of 15 teams max. from this round. The teams are posed with a set of quiz based on UI/UX domain.",
@@ -418,7 +421,7 @@ const eventsData: {
         link: null,
         date: "16th March",
         time: "9:30AM - 2:00PM",
-        venue: "Function Hall for Round 1 && CS Department For Round 2",
+        venue: "Function Hall for Round 1 & CS Department For Round 2",
         team: "2",
         description: [
           "Round 1: Cryptic Decryption Battle",
@@ -544,7 +547,7 @@ const eventsData: {
         name: "Electro-Craft Challenge",
         link: null,
         date: "15th March",
-        time: "10:00AM - 12:00PM",
+        time: "10:00AM - 1:00PM",
         venue: "Embedded Systems Laboratory of ECE Department",
         team: "2 to 3",
         description: [
@@ -583,6 +586,7 @@ const eventsData: {
         ],
         shortDescription: "From Concept To Reality : Ideas in Action",
         rules: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/UejCt6nBoEoUGdCY6",
           "A team should consists of 2 to 3 participants.",
           "Participants are required to present their papers in the MS-PowerPoint (PPT) format.",
           "The Teams will get 8-10 minutes to present their paper.",
@@ -592,6 +596,7 @@ const eventsData: {
           "The Paper should have the details (Name, College name, Phone no. of each participants) of the team members.",
         ],
         requirements: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/UejCt6nBoEoUGdCY6",
           "Participants should bring at least one laptop per team to present their PowerPoint presentations during the event.",
         ],
         coordinators: {
@@ -655,14 +660,14 @@ const eventsData: {
         link: null,
         date: "16th March",
         time: "10:00AM - 12:00PM",
-        venue: "EEE Department EPL Lab",
+        venue: "Classroom Of 521,522,523 in Block V",
         team: "3",
         description: [
           "Phase 1: Circuit schematics:",
           "Follow the Electrical Trail: Navigate a tangled web of circuits, tracing electrical pathways and deciphering complex schematics to locate the crucial voltage terminal—to locate the vault.",
 
           "Phase 2: Takeover:",
-          "Take Control: The Task is easy you should just build a circuit but there is a bit of a twist.Let Your Analog Circuit skills flow.",
+          "Take Control: The Task is easy you should just build a circuit but there is a bit of a twist.Let Your Digital Circuit skills flow.",
 
           "Phase 3: Digital Decipher :",
           "Confront the Final Guardian: As the final five teams reach the end, The vault's digital heart, a formidable circuit, stands between your crew and the treasure. Interface with the vault and input commands or codes to unlock the vault and claim the prize.",
@@ -833,13 +838,14 @@ const eventsData: {
         ],
         shortDescription: "Innovative Papers Uniting Engineering Minds!",
         rules: [
+          "The Participants must submit their abstract in the following link - https://forms.gle/CTLSKzCYNWSJfnMe7",
           "Time Limit Adherence:- Presentations must strictly adhere to the allocated time limit, ensuring a seamless flow of ideas and maximizing audience engagement.",
           "Dynamic Q&A Session: - Each presentation is followed by a Q&A session, creating an interactive dialogue between presenters and the audience.",
           "This format promotes a deeper understanding of the presented concepts.",
           "Comprehensive Evaluation: - Evaluation criteria encompass content richness, ensuring the depth and quality of the presented material.",
           "Clarity of presentation and the overall impact of the ideas shared contribute to thejudging process.",
         ],
-        requirements: ["None"],
+        requirements: ["The Participants must submit their abstract in the following link - https://forms.gle/CTLSKzCYNWSJfnMe7",],
         coordinators: {
           name: "Logaranjan G",
           contact: "+91 9025618609",
@@ -858,9 +864,11 @@ const eventsData: {
         ],
         shortDescription: "Crafting Aerial Marvels with Sticks!",
         rules: [
-          "The quiz is structured with timed multiple-choice questions, testing both speed and accuracy.",
-          "Top-scoring teams advance to an exhilarating final round, potentially involving interactive challenges or problem-solving scenarios.",
-          "The final round serves as the ultimate decider for the winning team.",
+          "Material Constraints:",
+          "The primary construction material is limited to popsicle sticks.Additional materials, such as glue, tape, and lightweight propellers, may be provided.",
+          "Judging Criteria:",
+          "Innovation.",
+          "Judges evaluate the creativity and uniqueness of the popsicle stick drone designs."
         ],
         requirements: ["None"],
         coordinators: {
@@ -1063,7 +1071,7 @@ const eventsData: {
           "TOPICS FOR PAPER PRESENTATION:",
           "Sustainable Shipbuilding Practices",
           "Recent trends in propulsion",
-          "Impact of Digitalization Marine Industry ",
+          "Impact of Digitalization in Marine Industry ",
           "Autonomous Navigation Systems",
           "Marine Pollution Control Strategies",
           "Green fuels in shipping ",
@@ -1072,6 +1080,7 @@ const eventsData: {
         shortDescription:
           "Paper presentations are lively and interesting ways to share research, ideas, and project results.",
         rules: [
+          "All The Marine Students Should Attend The Events In Proper Marine Uniform Only",
           "This event is exclusively open to marine students.",
           "Maximum of 8 teams will be shortlisted based on their abstracts.",
           "Each team is limited to a maximum of 2 members.",
@@ -1103,6 +1112,7 @@ const eventsData: {
         shortDescription:
           '"Welding Masters" is an event that participants can attend to demonstrate their expertise in welding.',
         rules: [
+          "All The Marine Students Should Attend The Events In Proper Marine Uniform Only",
           "Exclusively for marine students.",
           "Individual event",
           "Maximum of 3 members from each college.",
@@ -1124,6 +1134,7 @@ const eventsData: {
         venue: "Classroom, Marine Department,10-207 in Drawing hall",
         team: "3",
         description: [
+          
           'A "Bond Blend" event is a captivating abstract strategy event that challenges participants to achieve a particular type of connection using provided images.',
           "In this event, participants are presented with a set of images, symbols, or shapes arranged in a grid or other configuration.",
           "The objective typically revolves around connecting specific elements in a particular manner, such as forming lines, paths, or networks between related images.",
@@ -1131,6 +1142,7 @@ const eventsData: {
         shortDescription:
           "A bond blend event is an interesting abstract strategy event where teams have to use pictures to make a certain kind of link. ",
         rules: [
+          "All The Marine Students Should Attend The Events In Proper Marine Uniform Only",
           "Maximum of 18 teams are allowed.",
           "Each team can have a maximum of 3 members.",
           "A college can register a maximum of 2 teams.",

@@ -64,6 +64,35 @@
   .title:active {
     transform: translateY(-1px);
   }
+  .titleHighlight {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #eb0029;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 0px #eb0029;
+  }
+
+  .titleHighlight:hover {
+    /* background-color: #c00020; */
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 0px #eb0029;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  .titleHighlight:active {
+    transform: translateY(-1px);
+  }
 }
 
 .time {
@@ -144,9 +173,36 @@
     outline: none;
     border: 2px solid #503938;
   }
+  .titleHighlight {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #eb0029;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 0px #eb0029;
+  }
   
 .content > h1 {
   font-size: 5vw;
+}
+
+
+.titleHighlight:hover {
+  /* background-color: #c00020; */
+  transform: translateY(-7px);
+}
+
+.titleHighlight:active {
+  transform: translateY(-1px);
 }
 
   .title:hover {
@@ -211,6 +267,34 @@
   }
 
   .title:active {
+    transform: translateY(-1px);
+  }
+  .titleHighlight {
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #fff;
+    background-color: #eb0029;
+    backdrop-filter: blur(10px);
+    border: none;
+    border-radius: 45px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 0px #eb0029;
+  }
+
+  .titleHighlight:hover {
+    border: 2px solid #eb0029;
+    box-shadow: 0px 0px 40px 0px #eb0029;
+    color: #fff;
+    transform: translateY(-7px);
+  }
+
+  .titleHighlight:active {
     transform: translateY(-1px);
   }
 }

@@ -2,7 +2,7 @@ import styles from "../styles/components/footer.module.css";
 import svce from "../assets/images/svcelogo.png";
 import { NavLink } from "react-router-dom";
 import {
-  IoLogoFacebook,
+  // IoLogoFacebook,
   IoLogoInstagram,
   IoMail,
   IoCall,
@@ -80,14 +80,11 @@ const Footer = () => {
             </p>
             <br />
             <p>
-              <NavLink
-                className={({ isActive }) =>
-                  isActive ? styles.active : styles.inactive
-                }
-                to={"/getPass"}
+              <a href="https://forms.gle/jLVFdaH8UxdiQeqaA" rel="noreferrer" target="_blank"
+                className={styles.inactive}
               >
                 Get Passes
-              </NavLink>
+              </a>
             </p>
             <br />
             <p>

@@ -96,7 +96,7 @@ const workshopData: {
     name: "ChipConnect:Embedded Systems",
     duration: "9:30AM - 2:00PM",
     shrtDesc:
-      "Explore The World Of Embedded Systems In This Engaging Workshop Hosted By ChipConnect",
+      "Explore The World Of Embedded Systems In This Engaging Workshop",
     desc: [
       "What You'll Experience:",
       "Dive deep into The fundamentals of Embedded Systems.",
@@ -158,10 +158,10 @@ const workshopData: {
       "Participants would learn to maximize WAAM's potential, including its integration with other systems for in-process problem detection and repair.",
     ],
     venue: "Welding Research Cell, Marine Department",
-    req: ["Participants should bring their notepad and pen"],
+    req: ["Participants should bring their notepad and pen","All The Marine Students Should Attend The Workshop In Proper Marine Uniform Only"],
     maxPeople: null,
     day: "16th March",
-    rules: ["Nil"],
+    rules: ["All The Marine Students Should Attend The Workshop In Proper Marine Uniform Only",],
     coord: ["Naveenkumar"],
     ph: "+91 6381886850",
   },

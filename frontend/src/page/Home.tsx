@@ -70,10 +70,10 @@ const Home = () => {
           </NavLink> */}
           <a
             href="https://forms.gle/jLVFdaH8UxdiQeqaA"
-            target="_blank"
+            target="_blank" rel="noreferrer"
             style={{ textDecoration: "none", color: "white" }}
           >
-            <div className={styles.title}>Get Pass</div>
+            <div className={styles.titleHighlight}>Get Pass</div>
           </a>
         </div>
       </div>
