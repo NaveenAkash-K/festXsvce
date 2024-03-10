@@ -34,17 +34,9 @@ mongoose.connection.on("error", (err) => {
 //   year: 3,
 // }).save();
 
-app.use(cors());
+// app.use(cors());
 
-app.get("/qrData/:ordId",async (req, res) => {
-  try{
-    const user= await User.findOne({ordId:req.params.ordId});
-    res.json(user);
-  } catch (e){
-    console.log(e);
-    res.send();
-  }
-});
+
 
 app.use(express.static("public"));
 app.set("views", __dirname + "./payment/public");
@@ -159,7 +151,15 @@ app.post("/ccavRequestHandler", async (req, res) => {
   ccavReqHandler.postReq(req, res);
 });
 
-
+app.get("/qrData/:ordId",async (req, res) => {
+  try{
+    const user= await User.findOne({ordId:req.params.ordId});
+    res.json(user);
+  } catch (e){
+    console.log(e);
+    res.send();
+  }
+});
 
 app.post("/ccavResponseHandler", (req, res) => {
   ccavResHandler.postRes(req, res);
