@@ -37,8 +37,13 @@ mongoose.connection.on("error", (err) => {
 app.use(cors());
 
 app.get("/qrData/:ordId",async (req, res) => {
-  const user= await User.findOne({ordId:req.params.ordId});
-  res.json(user);
+  try{
+    const user= await User.findOne({ordId:req.params.ordId});
+    res.json(user);
+  } catch (e){
+    console.log(e);
+    res.send();
+  }
 });
 
 app.use(express.static("public"));
