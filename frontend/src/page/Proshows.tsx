@@ -4,8 +4,10 @@ import styles from "../styles/page/proshows.module.css";
 import { NavLink } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import ark1 from "../assets/images/ark1.jpg";
-import ark2 from "../assets/images/ark2.webp";
+import ark1 from "../assets/images/ark3.webp";
+import ark2 from "../assets/images/ark1.jpg";
+import ark4 from "../assets/images/ark4.jpg";
+import ark5 from "../assets/images/ark5.jpg";
 
 const Proshows: React.FC = () => {
   useEffect(() => {
@@ -36,7 +38,7 @@ const Proshows: React.FC = () => {
             <div className={styles.details}>
               <h3>Venue: MPH, SVCE</h3>
               <br />
-              <h3>Time: 2PM onwards</h3>
+              <h3>Time: 2:30PM onwards</h3>
               <br />
               <h3>Date: 16th March</h3>
             </div>
@@ -50,10 +52,16 @@ const Proshows: React.FC = () => {
             dynamicHeight={true}
           >
             <div>
-              <img src={ark1} height={"100%"} alt="" />
+              <img src={ark1} alt="" />
             </div>
             <div>
-              <img src={ark2} height={"10%"} alt="" />
+              <img src={ark2} alt="" />
+            </div>
+            <div>
+              <img src={ark4} alt="" />
+            </div>
+            <div>
+              <img src={ark5} alt="" />
             </div>
           </Carousel>
         </div>
