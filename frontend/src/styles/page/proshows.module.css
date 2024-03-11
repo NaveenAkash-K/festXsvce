@@ -6,7 +6,7 @@
   font-family: "Space Grotesk", sans-serif;
   width: 100%;
   margin: auto;
-  height: 80vh;
+  min-height: 80vh;
 }
 
 .title {
@@ -16,14 +16,18 @@
 
 .workContainer {
   border: 1px solid #503938;
-  width: 80%;
+  width: 70%;
+  padding: 2rem;
   margin: 1% auto;
   min-height: 80%;
   background-color: rgba(50, 44, 44, 0.258);
   backdrop-filter: blur(10px);
   border-radius: 44px;
-  display: grid;
-  place-content: center;
+}
+
+.details {
+  display: flex;
+  justify-content: space-evenly;
 }
 
 .button {
@@ -39,4 +43,10 @@
   transition: all 0.3s ease 0s;
   cursor: pointer;
   outline: none;
+}
+
+@media screen and (width < 930px) {
+  .details {
+    display: block;
+  }
 }
