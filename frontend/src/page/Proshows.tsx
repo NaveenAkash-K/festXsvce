@@ -4,10 +4,10 @@ import styles from "../styles/page/proshows.module.css";
 import { NavLink } from "react-router-dom";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import ark1 from "../assets/images/ark3.webp";
-import ark2 from "../assets/images/ark1.jpg";
-import ark4 from "../assets/images/ark4.jpg";
-import ark5 from "../assets/images/ark5.jpg";
+import ark3 from "../assets/images/3.webp";
+import ark1 from "../assets/images/1.webp";
+import ark4 from "../assets/images/4.webp";
+import ark2 from "../assets/images/2.webp";
 
 const Proshows: React.FC = () => {
   useEffect(() => {
@@ -58,12 +58,15 @@ const Proshows: React.FC = () => {
               <img src={ark2} alt="" />
             </div>
             <div>
-              <img src={ark4} alt="" />
+              <img src={ark3} alt="" />
             </div>
             <div>
-              <img src={ark5} alt="" />
+              <img src={ark4} alt="" />
             </div>
           </Carousel>
+          <a href="https://forms.gle/jLVFdaH8UxdiQeqaA">
+            <button className={styles.getPass}>Get Pass</button>
+          </a>
         </div>
       </div>
     </>

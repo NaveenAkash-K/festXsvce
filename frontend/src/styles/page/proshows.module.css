@@ -45,6 +45,29 @@
   outline: none;
 }
 
+.getPass {
+  /* cursor: pointer; */
+  padding: 1.5rem 14px 1.5rem 14px;
+  background: transparent;
+  background-color: rgba(50, 44, 44, 0.258);
+  width: 100%;
+  border: 1px solid #503938;
+  backdrop-filter: blur(10px);
+
+  /* border: #eb0029 solid 2px; */
+  border-radius: 10px;
+  margin: 2rem 0 2rem 0;
+  color: white;
+  letter-spacing: 1px;
+  font-size: large;
+  transition: 300ms;
+}
+
+.getPass:hover {
+  border: 1px solid #eb0029;
+  box-shadow: 0px 0px 40px 1px #eb002787;
+}
+
 @media screen and (width < 930px) {
   .details {
     display: block;
