@@ -79,7 +79,8 @@ const WorkshopItem: React.FC = () => {
             )}
             <br />
             <h2>Event Coordinator</h2>
-            <p>{`${work?.coord}  ${work?.ph}`}</p>
+            <p>{`${work?.coord}`}</p>
+            <p>{`${work?.ph}`}</p>
             <a href={work!.link.toString()}>
               <button className={styles.getPass}>Register Now</button>
             </a>

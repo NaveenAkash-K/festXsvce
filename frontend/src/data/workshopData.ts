@@ -139,8 +139,8 @@ const workshopData: {
     rules: ["Nil"],
     // coord: ["Dr. M. Mohandass","Mr. A. Ranjith Raj","Dr. A. Saravanan"],
     // ph: "TBA",
-    coord: ["Sabarish Kumar A.S"],
-    ph: "+91 6369 212 503",
+    coord: ["Dr. M Mohandass"],
+    ph: "Sabarish Kumar A.S  -  +91 6369 212 503",
   },
 
   {
