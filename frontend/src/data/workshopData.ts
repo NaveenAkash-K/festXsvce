@@ -16,6 +16,25 @@ const workshopData: {
 }[] = [
   {
     id: 0,
+    link:"https://forms.gle/ZsRJrV2nfdwM8eCK7",
+    dept: "Information Technology",
+    name: "Digital Detective: Cyber Forensics and IoT Workshop",
+    duration: "10:00AM - 1:00PM",
+    shrtDesc:
+      "Explore cyber forensics and IoT, tracing digital footprints and uncovering vulnerabilities in this hands-on workshop.",
+    desc: [
+      "Join us for an immersive workshop where participants will delve into the intricate world of cyber forensics intersecting with the Internet of Things (IoT). Throughout this dynamic event, attendees will gain a comprehensive understanding of cutting-edge techniques and tools essential for investigating cyber incidents within IoT networks. From tracing digital footprints to uncovering hidden vulnerabilities, participants will learn how to navigate complex digital landscapes effectively. Through hands-on activities and expert-led sessions, attendees will leave equipped with the skills and knowledge needed to tackle real-world cyber challenges confidently. Don't miss this opportunity to expand your expertise and become a proficient investigator in the realm of cyber forensics and IoT.",
+    ],
+    venue: "IT Department, PG LAB",
+    req: ["Participants should bring their notepad and pen"],
+    maxPeople: null,
+    day: "15th March",
+    rules: ["Nil"],
+    coord: ["Rashmika R S"],
+    ph: "+91 88256 01866",
+  },
+  {
+    id: 1,
     link: "https://docs.google.com/forms/d/e/1FAIpQLScuJvK1xogjeics-3i10gbBreK04GpOTwjFT1ypcM-M0hqctg/viewform?usp=sf_link",
     dept: "Association of Computer Engineers (ACE)",
     name: "A Mixed Reality AR & VR Experience",
@@ -48,7 +67,7 @@ const workshopData: {
     ph: "+91 82209 69058,+91 63805 84312",
   },
   {
-    id: 1,
+    id: 2,
     link: "https://forms.gle/xCqmWKQSQMP3WEGE6",
     dept: "SAE Collegiate club of SVCE, AAE",
     name: "Basics of Automotive tuning",
@@ -71,7 +90,7 @@ const workshopData: {
     ph: "+91 94433 04280",
   },
   {
-    id: 2,
+    id: 3,
     link:"https://forms.gle/CYzwd5Wcarw2af8R7",
     dept: "Indian Institute of Chemical Engineers",
     name: "Basics Of Process Flow Sheeting using DWSIM",
@@ -90,7 +109,7 @@ const workshopData: {
     ph: "+91 85086 66551",
   },
   {
-    id: 3,
+    id: 4,
     link:"https://forms.gle/5dY2i4z6CFzbcDfF8",
     dept: "Robotics And Artificial Intelligence Club",
     name: "ChipConnect:Embedded Systems",
@@ -118,7 +137,7 @@ const workshopData: {
   },
 
   {
-    id: 4,
+    id: 5,
     link:"https://forms.gle/vgxS63rMhiXU7u5D6",
     dept: "Mechanical Engineering",
     name: "Industrial Robotics Programming and Operation",
@@ -144,7 +163,7 @@ const workshopData: {
   },
 
   {
-    id: 5,
+    id: 6,
     link:"https://forms.gle/WMLqis2j4MkrvFTA7",
     dept: "Marine Engineering",
     name: "Robotic Wire Arc Additive Manufacturing",
@@ -164,25 +183,6 @@ const workshopData: {
     rules: ["All The Marine Students Should Attend The Workshop In Proper Marine Uniform Only",],
     coord: ["Naveenkumar"],
     ph: "+91 6381886850",
-  },
-  {
-    id: 6,
-    link:"https://forms.gle/ZsRJrV2nfdwM8eCK7",
-    dept: "Information Technology",
-    name: "Digital Detective: Cyber Forensics and IoT Workshop",
-    duration: "10:00AM - 1:00PM",
-    shrtDesc:
-      "Explore cyber forensics and IoT, tracing digital footprints and uncovering vulnerabilities in this hands-on workshop.",
-    desc: [
-      "Join us for an immersive workshop where participants will delve into the intricate world of cyber forensics intersecting with the Internet of Things (IoT). Throughout this dynamic event, attendees will gain a comprehensive understanding of cutting-edge techniques and tools essential for investigating cyber incidents within IoT networks. From tracing digital footprints to uncovering hidden vulnerabilities, participants will learn how to navigate complex digital landscapes effectively. Through hands-on activities and expert-led sessions, attendees will leave equipped with the skills and knowledge needed to tackle real-world cyber challenges confidently. Don't miss this opportunity to expand your expertise and become a proficient investigator in the realm of cyber forensics and IoT.",
-    ],
-    venue: "IT Department, PG LAB",
-    req: ["Participants should bring their notepad and pen"],
-    maxPeople: null,
-    day: "15th March",
-    rules: ["Nil"],
-    coord: ["Rashmika R S"],
-    ph: "+91 88256 01866",
   },
 ];
 
