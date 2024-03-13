@@ -184,6 +184,25 @@ const workshopData: {
     coord: ["Naveenkumar"],
     ph: "+91 6381886850",
   },
+  {
+    id: 7,
+    link:"https://forms.gle/YZcEAW9ePxQNAzBh7",
+    dept: "Civil Engineering",
+    name: "Concrete 3D Printing: The future of construction industry",
+    duration: "10:00AM -11:30AM",
+    shrtDesc:
+      "Insights into Concrete 3D Printing",
+    desc: [
+      "Engage and learn from Resource Persons from TVASTA MANUFACTURING SOLUTIONS PRIVATE LIMITED (The company which had completed India’s first 3D-printed house & bus shelter)",
+    ],
+    venue: "Biotech Seminar Hall",
+    req: ["Nil"],
+    maxPeople: null,
+    day: "16th March",
+    rules: ["Nil",],
+    coord: ["KALAIVANNAN R"],
+    ph: "+91 9597874677",
+  },
 ];
 
 export default workshopData;
