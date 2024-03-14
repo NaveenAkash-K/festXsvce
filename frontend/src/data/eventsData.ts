@@ -82,7 +82,7 @@ const eventsData: {
         link: null,
         date: "15th March",
         time: "1:00PM - 3:00PM",
-        venue: "1st Floor Classroom in Marine Block",
+        venue: "Biotech Seminar Hall",
         team: "Minimum of 2 members & Maximum of 3 members per team",
         description: [
           "SEGMENT1:",
