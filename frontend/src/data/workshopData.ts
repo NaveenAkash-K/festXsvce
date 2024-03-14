@@ -154,7 +154,7 @@ const workshopData: {
     venue: "PG Cad Lab Mechanical Department",
     req: ["Nil"],
     maxPeople: null,
-    day: "16th March",
+    day: "15th March",
     rules: ["Nil"],
     // coord: ["Dr. M. Mohandass","Mr. A. Ranjith Raj","Dr. A. Saravanan"],
     // ph: "TBA",
