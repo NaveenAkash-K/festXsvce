@@ -3,10 +3,10 @@ import Header from "../components/Header";
 import styles from "../styles/page/location.module.css";
 
 const Location = () => {
-  useEffect(()=>{
-    window.scrollTo(0,0);
-    document.title = "Location | Technoways"
-  })
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    document.title = "Location | Technoways";
+  });
   return (
     <>
       <Header />
@@ -22,14 +22,34 @@ const Location = () => {
             <div className={styles.locationDetails}>
               <h1>Sri Venkateswara College of Engineering</h1>
               <p>
-                Post Bag No.1,Pennalur Village Chennai - Bangaluru High Road 
+                Post Bag No.1,Pennalur Village Chennai - Bangaluru High Road
                 Sriperumbudur Tk, Tamil Nadu 602117
               </p>
               <br />
               <div className={styles.buttonContainer}>
-                <button className={styles.routeButton} onClick={()=>window.open("https://www.svce.ac.in/facilities/transport/bus-route-informations/","_blank")}>
-              Enroute
-              </button>
+                <button
+                  className={styles.routeButton}
+                  onClick={() =>
+                    window.open(
+                      "https://www.svce.ac.in/facilities/transport/bus-route-informations/",
+                      "_blank"
+                    )
+                  }
+                >
+                  Enroute
+                </button>
+                <button
+                  className={styles.titleHighlight}
+                  style={{ textDecoration: "none", color: "white" }}
+                  onClick={() =>
+                    window.open(
+                      "https://svce-bus-tracking-v2.vercel.app/",
+                      "_blank"
+                    )
+                  }
+                >
+                  Live Tracking
+                </button>
               </div>
             </div>
           </div>
