@@ -153,6 +153,7 @@ mongoose.connect(process.env.MONGO_URI, {
 
 app.get("/qrData/:ordId",async (req, res) => {
     const user= await User.findOne({ordId:req.params.ordId});
+    console.log(user);
     res.json(user);
 });
 
