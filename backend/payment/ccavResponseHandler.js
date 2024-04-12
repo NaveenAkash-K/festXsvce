@@ -140,7 +140,7 @@ exports.postRes = async function (request, response) {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Technoways E-Ticket</title>
+            <title>Highways E-Ticket</title>
             <style>
                 body {
                     font-family: Arial, sans-serif;
@@ -178,17 +178,17 @@ exports.postRes = async function (request, response) {
                 }
         
                 /* Different colors for ticket types */
-                .ticket-header.day1 {
+                .ticket-header.Day1 {
                     background-color: #3498db;
                     color: #fff;
                 }
         
-                .ticket-header.day2 {
+                .ticket-header.Day2 {
                     background-color: #27ae60;
                     color: #fff;
                 }
         
-                .ticket-header.combo {
+                .ticket-header.Combo {
                     background-color: #ffd700;
                     color: #black;
                 }

@@ -66,14 +66,13 @@ app.post("/ccavRequestHandler", async (req, res) => {
     to: "naveen.akash0904@gmail.com",
     subject: "QR Code Email",
     html: `
-
     <!DOCTYPE html>
     <html lang="en">
-
+    
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Technoways Symposium Ticket</title>
+        <title>Highways E-Ticket</title>
         <style>
             body {
                 font-family: Arial, sans-serif;
@@ -82,7 +81,7 @@ app.post("/ccavRequestHandler", async (req, res) => {
                 padding: 0;
                 text-align: center;
             }
-
+    
             .ticket-container {
                 max-width: 600px;
                 margin: 50px auto;
@@ -91,49 +90,70 @@ app.post("/ccavRequestHandler", async (req, res) => {
                 border-radius: 8px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             }
-
+    
             .ticket-header {
-                background-color: #3498db;
-                color: #fff;
                 padding: 10px;
                 border-radius: 8px 8px 0 0;
             }
-
+    
             .ticket-content {
                 padding: 20px;
             }
-
+    
             .qr-code {
                 margin-top: 20px;
             }
-
+    
             .footer-text {
                 margin-top: 20px;
                 color: #888;
             }
+    
+            /* Different colors for ticket types */
+            .ticket-header.Day1 {
+                background-color: #3498db;
+                color: #fff;
+            }
+    
+            .ticket-header.Day2 {
+                background-color: #27ae60;
+                color: #fff;
+            }
+    
+            .ticket-header.Combo {
+                background-color: #ffd700;
+                color: #black;
+            }
         </style>
     </head>
-
+    
     <body>
         <div class="ticket-container">
-            <div class="ticket-header">
-                <h2>Technoways Symposium Ticket</h2>
+            <div class="ticket-header Day1">
+                <center>
+                    <h2>Highways E-Ticket</h2>
+                </center>
+                <center>
+                    <h1>Day1 Ticket</h1>
+                </center>
             </div>
             <div class="ticket-content">
-                <p>Hello [User's Name],</p>
-                <p>Thank you for registering for Technoways Symposium. Below is your e-ticket details:</p>
+                <p>Hi [user.username]</p>
+                <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the __ and __ dates. We look forward to welcoming you!</p>
                 <div class="qr-code">
-                    <p>Dear recipient,</p>
-                    <p>Here is your QR code:</p>
+                    <p>Hello valued participant,</p>
+                    <p>Your personalized QR code awaits you below:</p>
                     <!-- Add QR Code here using the provided code snippet -->
-                    <img src="cid:qrcode@unique" width=100% alt="QR Code"/>
+                    <img src="cid:qrcode@unique" width=100% alt="QR Code" />
                 </div>
+                <p class="footer-text">Kindly allow a moment for the QR code to be generated. Thank you for your patience.</p>
                 <p class="footer-text">Please present this QR code at the entrance during the event.</p>
             </div>
         </div>
     </body>
-
+    
     </html>
+    
   `,
   attachments: [
     {
