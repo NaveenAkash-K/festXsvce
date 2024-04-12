@@ -132,7 +132,7 @@ exports.postRes = async function (request, response) {
       const mailOptions = {
         from: process.env.EMAIL,
         to: parsedData.billing_email.trim(),
-        subject: "QR Code Email",
+        subject: "Highways Ticket",
         html: `
         <!DOCTYPE html>
         <html lang="en">
@@ -160,8 +160,6 @@ exports.postRes = async function (request, response) {
                 }
         
                 .ticket-header {
-                    background-color: #3498db;
-                    color: #fff;
                     padding: 10px;
                     border-radius: 8px 8px 0 0;
                 }
@@ -178,35 +176,52 @@ exports.postRes = async function (request, response) {
                     margin-top: 20px;
                     color: #888;
                 }
+        
+                /* Different colors for ticket types */
+                .ticket-header.day1 {
+                    background-color: #3498db;
+                    color: #fff;
+                }
+        
+                .ticket-header.day2 {
+                    background-color: #27ae60;
+                    color: #fff;
+                }
+        
+                .ticket-header.combo {
+                    background-color: #ffd700;
+                    color: #black;
+                }
             </style>
         </head>
         
         <body>
             <div class="ticket-container">
-            <div class="ticket-header">
-            <center>
-            <h2>Technoways E-Ticket</h2>
-            </center>
-            <center>
-            <h1>${user.pass} Ticket</h1>
-            </center>
+                <div class="ticket-header ${user.pass}">
+                    <center>
+                        <h2>Highways E-Ticket</h2>
+                    </center>
+                    <center>
+                        <h1>${user.pass} Ticket</h1>
+                    </center>
                 </div>
                 <div class="ticket-content">
-                    <p>Hello ${user.username}</p>
-                    <p>Thank you for registering for Technoways Symposium. Below is your e-ticket details:</p>
+                    <p>Hi ${user.username}</p>
+                    <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the __ and __ dates. We look forward to welcoming you!</p>
                     <div class="qr-code">
-                    <p>Dear recipient,</p>
-                    <p>Here is your QR code:</p>
-                    <!-- Add QR Code here using the provided code snippet -->
-                    <img src="cid:qrcode@unique" width=100% alt="QR Code"/>
+                        <p>Hello valued participant,</p>
+                        <p>Your personalized QR code awaits you below:</p>
+                        <!-- Add QR Code here using the provided code snippet -->
+                        <img src="cid:qrcode@unique" width=100% alt="QR Code" />
                     </div>
-                    <p>Please wait few seconds for QR to get generated</p>
+                    <p class="footer-text">Kindly allow a moment for the QR code to be generated. Thank you for your patience.</p>
                     <p class="footer-text">Please present this QR code at the entrance during the event.</p>
                 </div>
             </div>
         </body>
         
         </html>
+        
       `,
         attachments: [
           {
