@@ -114,6 +114,10 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  department: {
+    type: String,
+    required: true,
+  },
   college: {
     type: String,
     required: true,
@@ -134,6 +138,10 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  paid:{
+    type: Boolean,
+    required: true,
+  }
 });
 
 const User = mongoose.model("User", schema);
