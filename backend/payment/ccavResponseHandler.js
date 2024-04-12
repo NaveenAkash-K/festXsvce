@@ -98,7 +98,7 @@ exports.postRes = async function (request, response) {
             <div class="failure-icon">&#10008;</div>
             <h1>Payment Failed</h1>
             <p>Unfortunately, there was an issue processing your payment. Please try again later or contact 95514 49859 for support.</p>
-            <a href="https://technoways-svce.vercel.app" class="btn">Back to home</a>
+            <a href="https://highway-s24.vercel.app" class="btn">Back to home</a>
         </div>
     </body>
     </html>
@@ -298,7 +298,7 @@ exports.postRes = async function (request, response) {
               <div class="success-icon">&#10004;</div>
               <h1>Payment Successful</h1>
               <p>Your payment was successfully processed. The QR code for your ticket has been sent to ${parsedData.billing_email}.</p>
-              <a href="https://technoways-svce.vercel.app" class="btn">Continue</a>
+              <a href="https://highway-s24.vercel.app" class="btn">Continue</a>
           </div>
       </body>
       </html>

@@ -165,7 +165,7 @@ app.post("/ccavRequestHandler", async (req, res) => {
   ],
   };
 
-  const info = await transporter.sendMail(mailOptions);
+  // const info = await transporter.sendMail(mailOptions);
   console.log("Email sent:", info);
 
   ccavReqHandler.postReq(req, res);
