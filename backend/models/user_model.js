@@ -83,11 +83,13 @@
 
 // module.exports = User;
 
-
-
 const mongoose = require("mongoose");
 
 const schema = new mongoose.Schema({
+  customerId: {
+    type: String,
+    required: true,
+  },
   username: {
     type: String,
     required: true,
@@ -104,12 +106,24 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  address: {
+    type: String,
+    required: true,
+  },
+  city: {
+    type: String,
+    required: true,
+  },
   college: {
     type: String,
     required: true,
   },
   year: {
     type: String,
+    required: true,
+  },
+  amount: {
+    type: Number,
     required: true,
   },
   pass: {

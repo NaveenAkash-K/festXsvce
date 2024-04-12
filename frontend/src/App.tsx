@@ -23,6 +23,7 @@ import WorkshopItem from "./components/WorkshopItem";
 import TermsAndConditions from "./page/terms";
 // import EventForm from "./page/EventForm";
 import { Analytics } from "@vercel/analytics/react";
+import EventForm from "./page/EventForm";
 
 ReactGA.initialize("UA-228658137-1");
 
@@ -66,15 +67,15 @@ const router = createBrowserRouter([
     path: "/termsandconditions",
     element: <TermsAndConditions />,
   },
-  // {
-  //   path: "/getPass",
-  //   element: (
-  //     <>
-  //       <EventForm />
-  //       {/* <Footer /> */}
-  //     </>
-  //   ),
-  // },
+  {
+    path: "/getPass",
+    element: (
+      <>
+        <EventForm />
+        {/* <Footer /> */}
+      </>
+    ),
+  },
   // {
   //   path: "/getPass",
   //   element: <GetPass />

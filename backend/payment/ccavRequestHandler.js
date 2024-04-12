@@ -19,10 +19,11 @@ exports.postReq = async function (request, response) {
   var ordId;
   var customerId;
   var amount;
-  var eventArray = [];
-  var isTechpass = false;
-  var isProshows = false;
-  var isElite = false;
+  var pass;
+  // var eventArray = [];
+  // var isTechpass = false;
+  // var isProshows = false;
+  // var isElite = false;
   var body = "",
     workingKey = "BC9E44F0087D201330A6DE18039F21E0", //Put in the 32-Bit key shared by CCAvenues.
     accessCode = "AVGY68LC16AH21YGHA", //Put in the Access Code shared by CCAvenues.
@@ -36,68 +37,76 @@ exports.postReq = async function (request, response) {
     console.log(parsedData);
     customerId = Date.now() + "_" + parsedData.regNo;
 
-    if (parsedData.pass === "Proshows") {
-      isProshows = true;
-    } else if (parsedData.pass === "TechPass") {
-      isTechpass = true;
-    } else if (parsedData.pass === "Elite") {
-      isElite = true;
+    if (parsedData.pass === "day1") {
+      pass = "day1";
+    } else if (parsedData.pass === "day2") {
+      pass = "day2";
+    } else if (parsedData.pass === "combo") {
+      pass = "combo";
     }
 
-    for (let key in parsedData) {
-      if (
-        key.startsWith("billing") ||
-        key === "college" ||
-        key === "year" ||
-        key === "regNo" ||
-        key === "department" ||
-        key === "pass"
-      ) {
-        continue;
-      }
-
-      // if (key === "proshows") {
-      //   continue;
-      // } else if (key === "techpass") {
-      //   isTechpass = true;
-      //   continue;
-      // } else if (key === "elite") {
-      //   isElite = true;
-      //   continue;
-      // }
-
-      eventArray.push(key);
+    if (pass === "day1") {
+      amount = 1;
+    } else if (pass === "day2") {
+      amount = 2;
+    } else if (pass === "combo") {
+      amount = 3;
     }
 
-    if (isProshows) {
-      amount = 299;
-    }
+    // for (let key in parsedData) {
+    //   if (
+    //     key.startsWith("billing") ||
+    //     key === "college" ||
+    //     key === "year" ||
+    //     key === "regNo" ||
+    //     key === "department" ||
+    //     key === "pass"
+    //   ) {
+    //     continue;
+    //   }
 
-    if (parsedData.billing_email.trim().endsWith("svce.ac.in")) {
-      if (isTechpass) {
-        amount = 199;
-      }
-      if (isProshows && isTechpass) {
-        isElite = true;
-      }
-      if (isElite) {
-        amount = 399;
-      }
-    } else {
-      if (isTechpass) {
-        amount = 299;
-      }
-      if (isProshows && isTechpass) {
-        isElite = true;
-      }
-      if (isElite) {
-        amount = 499;
-      }
-    }
+    //   // if (key === "proshows") {
+    //   //   continue;
+    //   // } else if (key === "techpass") {
+    //   //   isTechpass = true;
+    //   //   continue;
+    //   // } else if (key === "elite") {
+    //   //   isElite = true;
+    //   //   continue;
+    //   // }
 
-    if (!isTechpass && !isElite && !isProshows) {
-      return;
-    }
+    //   eventArray.push(key);
+    // }
+
+    // if (isProshows) {
+    //   amount = 299;
+    // }
+
+    // if (parsedData.billing_email.trim().endsWith("svce.ac.in")) {
+    //   if (isTechpass) {
+    //     amount = 199;
+    //   }
+    //   if (isProshows && isTechpass) {
+    //     isElite = true;
+    //   }
+    //   if (isElite) {
+    //     amount = 399;
+    //   }
+    // } else {
+    //   if (isTechpass) {
+    //     amount = 299;
+    //   }
+    //   if (isProshows && isTechpass) {
+    //     isElite = true;
+    //   }
+    //   if (isElite) {
+    //     amount = 499;
+    //   }
+    // }
+
+    // if (!isTechpass && !isElite && !isProshows) {
+    //   return;
+    // }
 
     body += `&merchant_id=3342525
       &order_id=${ordId}
@@ -118,9 +127,9 @@ exports.postReq = async function (request, response) {
   });
 
   request.on("end", async function () {
-    const existingUser = await User.findOne({
-      email: parsedData.billing_email.trim(),
-    });
+    // const existingUser = await User.findOne({
+    //   email: parsedData.billing_email.trim(),
+    // });
 
     response.writeHeader(200, { "Content-Type": "text/html" });
 
@@ -145,7 +154,7 @@ exports.postReq = async function (request, response) {
       email: parsedData.billing_email.trim(),
       pass: parsedData.pass,
       ordId: ordId,
-      eventsArray: eventArray,
+      // eventsArray: eventArray,
       amount: amount,
       year: parsedData.year,
       paid: false,
