@@ -38,18 +38,18 @@ exports.postReq = async function (request, response) {
     customerId = Date.now() + "_" + parsedData.regNo;
 
     if (parsedData.pass === "day1") {
-      pass = "Day1";
+      pass = "day1";
     } else if (parsedData.pass === "day2") {
-      pass = "Day2";
+      pass = "day2";
     } else if (parsedData.pass === "combo") {
-      pass = "Combo";
+      pass = "combo";
     }
 
-    if (pass === "Day1") {
+    if (pass === "day1") {
       amount = 1;
-    } else if (pass === "Day2") {
+    } else if (pass === "day2") {
       amount = 2;
-    } else if (pass === "Combo") {
+    } else if (pass === "combo") {
       amount = 3;
     }
 

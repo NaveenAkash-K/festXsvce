@@ -178,17 +178,17 @@ exports.postRes = async function (request, response) {
                 }
         
                 /* Different colors for ticket types */
-                .ticket-header.Day1 {
+                .ticket-header.day1 {
                     background-color: #3498db;
                     color: #fff;
                 }
         
-                .ticket-header.Day2 {
+                .ticket-header.day2 {
                     background-color: #27ae60;
                     color: #fff;
                 }
         
-                .ticket-header.Combo {
+                .ticket-header.combo {
                     background-color: #ffd700;
                     color: #black;
                 }
@@ -202,7 +202,7 @@ exports.postRes = async function (request, response) {
                         <h2>Highways E-Ticket</h2>
                     </center>
                     <center>
-                        <h1>${user.pass} Ticket</h1>
+                        <h1>${user.pass === "day1" ? "Day 1" : user.pass === "day2" ? "Day 2" : "Combo"} Ticket</h1>
                     </center>
                 </div>
                 <div class="ticket-content">
