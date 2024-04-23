@@ -111,7 +111,6 @@ exports.postReq = async function (request, response) {
       &redirect_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &cancel_url=https://technoways-svce-backend.vercel.app/ccavResponseHandler
       &language=EN
-      &discount_value=500
       &billing_country=India
       &customer_identifier=${customerId}`;
     encRequest = ccav.encrypt(body, workingKey);
