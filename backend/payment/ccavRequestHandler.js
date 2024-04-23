@@ -45,13 +45,13 @@ exports.postReq = async function (request, response) {
       pass = "combo";
     }
 
-    if (pass === "day1") {
-      amount = 1;
-    } else if (pass === "day2") {
-      amount = 2;
-    } else if (pass === "combo") {
-      amount = 3;
-    }
+    // if (pass === "day1") {
+    //   amount = 1000;
+    // } else if (pass === "day2") {
+    //   amount = 1000;
+    // } else if (pass === "combo") {
+    //   amount = 699;
+    // }
 
     // for (let key in parsedData) {
     //   if (
@@ -82,27 +82,23 @@ exports.postReq = async function (request, response) {
     //   amount = 299;
     // }
 
-    // if (parsedData.billing_email.trim().endsWith("svce.ac.in")) {
-    //   if (isTechpass) {
-    //     amount = 199;
-    //   }
-    //   if (isProshows && isTechpass) {
-    //     isElite = true;
-    //   }
-    //   if (isElite) {
-    //     amount = 399;
-    //   }
-    // } else {
-    //   if (isTechpass) {
-    //     amount = 299;
-    //   }
-    //   if (isProshows && isTechpass) {
-    //     isElite = true;
-    //   }
-    //   if (isElite) {
-    //     amount = 499;
-    //   }
-    // }
+    if (parsedData.billing_email.trim().endsWith("svce.ac.in")) {
+      if (pass === "day1") {
+        amount = 1000;
+      } else if (pass === "day2") {
+        amount = 1000;
+      } else if (pass === "combo") {
+        amount = 699;
+      }
+    } else {
+      if (pass === "day1") {
+        amount = 1000;
+      } else if (pass === "day2") {
+        amount = 1000;
+      } else if (pass === "combo") {
+        amount = 799;
+      }
+    }
 
     // if (!isTechpass && !isElite && !isProshows) {
     //   return;
