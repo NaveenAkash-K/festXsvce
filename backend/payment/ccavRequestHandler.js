@@ -88,7 +88,7 @@ exports.postReq = async function (request, response) {
       } else if (pass === "day2") {
         amount = 1000;
       } else if (pass === "combo") {
-        amount = 699;
+        amount = 599;
       }
     } else {
       if (pass === "day1") {
