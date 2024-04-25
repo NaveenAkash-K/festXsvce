@@ -188,7 +188,7 @@ exports.postRes = async function (request, response) {
                     color: #fff;
                 }
         
-                .ticket-header.early_bird {
+                .ticket-header.earlyBird {
                     background-color: #ffd700;
                     color: black;
                 }
