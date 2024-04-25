@@ -88,7 +88,8 @@ exports.postReq = async function (request, response) {
       } else if (pass === "day2") {
         amount = 1000;
       } else if (pass === "early_bird") {
-        amount = 599;
+        // amount = 599;
+        amount = 1;
       }
     } else {
       if (pass === "day1") {
@@ -96,7 +97,8 @@ exports.postReq = async function (request, response) {
       } else if (pass === "day2") {
         amount = 1000;
       } else if (pass === "early_bird") {
-        amount = 799;
+        // amount = 799;
+        amount = 1;
       }
     }
 
