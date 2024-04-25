@@ -199,10 +199,10 @@ exports.postRes = async function (request, response) {
             <div class="ticket-container">
                 <div class="ticket-header ${user.pass}">
                     <center>
-                        <h2 style="color:black;">Highways E-Ticket</h2>
+                        <h2>Highways E-Ticket</h2>
                     </center>
                     <center>
-                        <h1 style="color:black;">${user.pass === "day1" ? "Day 1" : user.pass === "day2" ? "Day 2" : "Early Bird"} Ticket</h1>
+                        <h1>${user.pass === "day1" ? "Day 1" : user.pass === "day2" ? "Day 2" : "Early Bird"} Ticket</h1>
                     </center>
                 </div>
                 <div class="ticket-content">
