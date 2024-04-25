@@ -150,7 +150,7 @@ exports.postReq = async function (request, response) {
       college: parsedData.college,
       department: parsedData.department,
       email: parsedData.billing_email.trim(),
-      pass: parsedData.pass,
+      pass: pass,
       ordId: ordId,
       // eventsArray: eventArray,
       amount: amount,
