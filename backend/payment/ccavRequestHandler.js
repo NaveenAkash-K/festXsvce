@@ -42,7 +42,7 @@ exports.postReq = async function (request, response) {
     } else if (parsedData.pass === "day2") {
       pass = "day2";
     } else if (parsedData.pass === "combo") {
-      pass = "combo";
+      pass = "early_bird";
     }
 
     // if (pass === "day1") {
@@ -87,7 +87,7 @@ exports.postReq = async function (request, response) {
         amount = 1000;
       } else if (pass === "day2") {
         amount = 1000;
-      } else if (pass === "combo") {
+      } else if (pass === "early_bird") {
         amount = 599;
       }
     } else {
@@ -95,7 +95,7 @@ exports.postReq = async function (request, response) {
         amount = 1000;
       } else if (pass === "day2") {
         amount = 1000;
-      } else if (pass === "combo") {
+      } else if (pass === "early_bird") {
         amount = 799;
       }
     }

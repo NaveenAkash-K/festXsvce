@@ -188,7 +188,7 @@ exports.postRes = async function (request, response) {
                     color: #fff;
                 }
         
-                .ticket-header.combo {
+                .ticket-header.early_bird {
                     background-color: #ffd700;
                     color: #black;
                 }
@@ -202,12 +202,13 @@ exports.postRes = async function (request, response) {
                         <h2>Highways E-Ticket</h2>
                     </center>
                     <center>
-                        <h1>${user.pass === "day1" ? "Day 1" : user.pass === "day2" ? "Day 2" : "Combo"} Ticket</h1>
+                        <h1>${user.pass === "day1" ? "Day 1" : user.pass === "day2" ? "Day 2" : "Early Bird"} Ticket</h1>
                     </center>
                 </div>
                 <div class="ticket-content">
                     <p>Hi ${user.username}</p>
-                    <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the __ and __ dates. We look forward to welcoming you!</p>
+                    <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the 7th and 8th May. We look forward to welcoming you!</p>
+                    <p>For more updates follow <a href="https://www.instagram.com/svce_highways?igsh=d3djZHRrZG00cm5r">Highways Page</a></p>
                     <div class="qr-code">
                         <p>Hello valued participant,</p>
                         <p>Your personalized QR code awaits you below:</p>
