@@ -20,6 +20,7 @@ exports.postRes = async function (request, response) {
     ccavPOST = qs.parse(ccavEncResponse);
     var encryption = ccavPOST.encResp;
     ccavResponse = ccav.decrypt(encryption, workingKey);
+    console.log("ccavResponse");
     console.log(ccavResponse);
   });
 
@@ -27,7 +28,8 @@ exports.postRes = async function (request, response) {
     var pData = "";
     response.writeHeader(200, { "Content-Type": "text/html" });
     var parsedData = qs.parse(ccavResponse);
-    // console.log(parsedData.regNo);
+    console.log("parsedData");
+    console.log(parsedData.regNo);
     // console.log(parsedData.amount);
 
     if (
