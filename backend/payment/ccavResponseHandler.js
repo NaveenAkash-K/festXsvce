@@ -33,6 +33,19 @@ exports.postRes = async function (request, response) {
     // console.log(parsedData.amount);
 
     if (
+      parsedData.order_status !== "Success" &&
+      status_message.startsWith("Transaction Successful")
+    ) {
+      await User.findOneAndUpdate(
+        { ordId: parsedData.order_id },
+        { $set: { pass: "hacked" } }
+      );
+      response.write("Nah Nah Nah !");
+      response.end();
+      return;
+    }
+
+    if (
       parsedData.order_status === "Failure" ||
       parsedData.order_status === "Aborted" ||
       parsedData.order_status === "Invalid"
@@ -119,9 +132,7 @@ exports.postRes = async function (request, response) {
 
       const user = await User.findOne({ ordId: parsedData.order_id });
 
-      const qrCodeBuffer = await QRCode.toBuffer(
-        parsedData.order_id
-      );
+      const qrCodeBuffer = await QRCode.toBuffer(parsedData.order_id);
       const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
@@ -205,7 +216,13 @@ exports.postRes = async function (request, response) {
                         <h2>Highways E-Ticket</h2>
                     </center>
                     <center>
-                        <h1>${user.pass === "day1" ? "Day 1" : user.pass === "day2" ? "Day 2" : "Early Bird"} Ticket</h1>
+                        <h1>${
+                          user.pass === "day1"
+                            ? "Day 1"
+                            : user.pass === "day2"
+                            ? "Day 2"
+                            : "Early Bird"
+                        } Ticket</h1>
                     </center>
                 </div>
                 <div class="ticket-content">
