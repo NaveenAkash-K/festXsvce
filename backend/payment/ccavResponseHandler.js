@@ -207,7 +207,9 @@ exports.postRes = async function (request, response) {
                             ? "Day 1"
                             : user.pass === "day2"
                             ? "Day 2"
-                            : "Early Bird"
+                            : user.pass === "earlyBird"
+                            ? "Early Bird"
+                            : "Invalid"
                         } Ticket</h1>
                     </center>
                 </div>
