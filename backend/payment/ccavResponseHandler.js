@@ -33,9 +33,8 @@ exports.postRes = async function (request, response) {
     // console.log(parsedData.amount);
 
     if (
-      parsedData.order_status === "Failure" ||
-      parsedData.order_status === "Aborted" ||
-      parsedData.order_status === "Invalid"
+      parsedData.order_status !== "Success" &&
+      !parsedData.status_message.startsWith("Transaction Successful")
     ) {
       // await User.deleteOne({ email: parsedData.billing_email });
       response.write(`
@@ -106,17 +105,6 @@ exports.postRes = async function (request, response) {
     </body>
     </html>
     `);
-      response.end();
-      return;
-    } else if (
-      parsedData.order_status !== "Success" &&
-      !parsedData.status_message.startsWith("Transaction Successful")
-    ) {
-      await User.findOneAndUpdate(
-        { ordId: parsedData.order_id },
-        { $set: { pass: "hacked" } }
-      );
-      response.write("Nah Nah Nah !");
       response.end();
       return;
     } else {
