@@ -36,14 +36,16 @@ mongoose.connect(process.env.MONGO_URI, {
 
 app.use(cors());
 
-
-
 app.use(express.static("public"));
 app.set("views", __dirname + "./payment/public");
 app.engine("html", require("ejs").renderFile);
 
 app.get("/about", function (req, res) {
   res.render("dataFrom.html");
+});
+
+app.get("/test", (req, res, next) => {
+  
 });
 
 app.post("/ccavRequestHandler", async (req, res) => {
@@ -68,7 +70,7 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //   html: `
   //   <!DOCTYPE html>
   //   <html lang="en">
-    
+
   //   <head>
   //       <meta charset="UTF-8">
   //       <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -81,7 +83,7 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //               padding: 0;
   //               text-align: center;
   //           }
-    
+
   //           .ticket-container {
   //               max-width: 600px;
   //               margin: 50px auto;
@@ -90,43 +92,43 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //               border-radius: 8px;
   //               box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   //           }
-    
+
   //           .ticket-header {
   //               padding: 10px;
   //               border-radius: 8px 8px 0 0;
   //           }
-    
+
   //           .ticket-content {
   //               padding: 20px;
   //           }
-    
+
   //           .qr-code {
   //               margin-top: 20px;
   //           }
-    
+
   //           .footer-text {
   //               margin-top: 20px;
   //               color: #888;
   //           }
-    
+
   //           /* Different colors for ticket types */
   //           .ticket-header.Day1 {
   //               background-color: #3498db;
   //               color: #fff;
   //           }
-    
+
   //           .ticket-header.Day2 {
   //               background-color: #27ae60;
   //               color: #fff;
   //           }
-    
+
   //           .ticket-header.Combo {
   //               background-color: #ffd700;
   //               color: #black;
   //           }
   //       </style>
   //   </head>
-    
+
   //   <body>
   //       <div class="ticket-container">
   //           <div class="ticket-header Day1">
@@ -151,9 +153,9 @@ app.post("/ccavRequestHandler", async (req, res) => {
   //           </div>
   //       </div>
   //   </body>
-    
+
   //   </html>
-    
+
   // `,
   // attachments: [
   //   {
@@ -171,10 +173,10 @@ app.post("/ccavRequestHandler", async (req, res) => {
   ccavReqHandler.postReq(req, res);
 });
 
-app.get("/qrData/:ordId",async (req, res) => {
-    const user= await User.findOne({ordId:req.params.ordId});
-    console.log(user);
-    res.json(user);
+app.get("/qrData/:ordId", async (req, res) => {
+  const user = await User.findOne({ ordId: req.params.ordId });
+  console.log(user);
+  res.json(user);
 });
 
 app.post("/ccavResponseHandler", (req, res) => {
