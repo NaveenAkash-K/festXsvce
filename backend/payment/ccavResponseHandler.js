@@ -34,7 +34,7 @@ exports.postRes = async function (request, response) {
 
     if (
       parsedData.order_status !== "Success" &&
-      status_message.startsWith("Transaction Successful")
+      !status_message.startsWith("Transaction Successful")
     ) {
       await User.findOneAndUpdate(
         { ordId: parsedData.order_id },
