@@ -45,23 +45,7 @@ app.get("/about", function (req, res) {
 });
 
 app.get("/test", (req, res, next) => {
-  await new User({
-    username: parsedData.billing_name,
-    customerId: customerId,
-    regNo: parsedData.regNo,
-    address: parsedData.billing_address,
-    phoneNo: parsedData.billing_tel,
-    city: parsedData.billing_city,
-    college: parsedData.college,
-    department: parsedData.department,
-    email: parsedData.billing_email.trim(),
-    pass: pass,
-    ordId: ordId,
-    // eventsArray: eventArray,
-    amount: amount,
-    year: parsedData.year,
-    paid: false,
-  }).save();
+
 });
 
 app.post("/ccavRequestHandler", async (req, res) => {
