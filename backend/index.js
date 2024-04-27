@@ -65,7 +65,7 @@ app.get("/getTime", (req, res) => {
   });
 });
 
-app.get("/getExcel/:pass", async (req, res) => {
+app.get("/soldout/:pass", async (req, res) => {
   const pass = req.params.pass.toLowerCase();
   if (pass !== "mcwhale@2002") {
     res.send("Not authenticated");
@@ -101,7 +101,7 @@ app.get("/getExcel/:pass", async (req, res) => {
       const json2csvParser = new json2csv({ fields });
       const csv = json2csvParser.parse(transformedData);
       const now = new Date(Date.now());
-      const fileName = `${now.getDate()}-${now.getMonth()}___${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}_soldout.csv`;
+      const fileName = `${now.getDate()}-${now.getMonth()}-${now.getFullYear()}__${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}_soldout.csv`;
 
       res.setHeader(
         "Content-Disposition",
