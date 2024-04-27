@@ -32,12 +32,13 @@ exports.postRes = async function (request, response) {
     console.log(parsedData);
     // console.log(parsedData.amount);
 
-    if (
-      parsedData.order_status !== "Success" &&
-      !parsedData.status_message.startsWith("Transaction Successful")
-    ) {
-      // await User.deleteOne({ email: parsedData.billing_email });
-      response.write(`
+    if (parsedData.order_status && parsedData.status_message) {
+      if (
+        parsedData.order_status !== "Success" &&
+        !parsedData.status_message.startsWith("Transaction Successful")
+      ) {
+        // await User.deleteOne({ email: parsedData.billing_email });
+        response.write(`
         <!DOCTYPE html>
     <html lang="en">
     <head>
@@ -105,8 +106,9 @@ exports.postRes = async function (request, response) {
     </body>
     </html>
     `);
-      response.end();
-      return;
+        response.end();
+        return;
+      }
     } else {
       // console.log("Response");
       // console.log(parsedData);
