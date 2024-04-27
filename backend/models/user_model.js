@@ -104,7 +104,7 @@ const schema = new mongoose.Schema({
   },
   regNo: {
     type: String,
-    required: true,
+    required: false,
   },
   address: {
     type: String,
@@ -120,11 +120,15 @@ const schema = new mongoose.Schema({
   },
   college: {
     type: String,
-    required: true,
+    required: false,
   },
   year: {
     type: String,
-    required: true,
+    required: false,
+  },
+  alumni: {
+    type: Boolean,
+    required: false,
   },
   amount: {
     type: Number,
@@ -138,10 +142,10 @@ const schema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  paid:{
+  paid: {
     type: Boolean,
     required: true,
-  }
+  },
 });
 
 const User = mongoose.model("User", schema);

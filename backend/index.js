@@ -118,22 +118,25 @@ app.get("/soldout/:pass", async (req, res) => {
 });
 
 app.get("/addUser", async (req, res, next) => {
-  let cusId = Date.now() + "_" + "2127200801047";
-  let ordId = "ORD_" + uuidv4();
+  // let cusId = Date.now() + "_" + "2127200801047";
+  // let ordId = "ORD_" + uuidv4();
+  let cusId = "1714225137466_312418106130";
+  let ordId = "ORD_9bb86230-431a-43b3-a070-629cecda1ee0";
+  let name = "Sanjithkumar";
   await new User({
-    username: "Krithik",
+    username: name,
     customerId: cusId,
-    regNo: "2127200801047",
-    address: "7/11, nsk road, ullagaram",
-    phoneNo: "7806903916",
+    regNo: "312418106130",
+    address: "Sholinganallur",
+    phoneNo: "9626156505",
     city: "Chennai",
-    college: "SVCE",
-    department: "IT",
-    email: "2020it0644@svce.ac.in",
+    college: "St Joseph's Institute of Technology",
+    department: "Electronics and Communication Engineering",
+    email: "sanjithkumar612@gmail.com",
     pass: "earlyBird",
     ordId: ordId,
-    amount: "599",
-    year: "4",
+    amount: "799",
+    year: "2",
     paid: true,
   }).save();
 
@@ -148,7 +151,7 @@ app.get("/addUser", async (req, res, next) => {
 
   const mailOptions = {
     from: process.env.EMAIL,
-    to: "2020it0644@svce.ac.in",
+    to: "sanjithkumar612@gmail.com",
     subject: "Highways Ticket",
     html: `
     <!DOCTYPE html>
@@ -223,7 +226,7 @@ app.get("/addUser", async (req, res, next) => {
                 </center>
             </div>
             <div class="ticket-content">
-                <p>Hi Krithik</p>
+                <p>Hi ${name}</p>
                 <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the 7th and 8th May. We look forward to welcoming you!</p>
                 <p>For more updates follow <a href="https://www.instagram.com/svce_highways?igsh=d3djZHRrZG00cm5r">Highways Page</a></p>
                 <div class="qr-code">

@@ -43,6 +43,8 @@ exports.postReq = async function (request, response) {
       pass = "day2";
     } else if (parsedData.pass === "combo") {
       pass = "earlyBird";
+    } else if (parsedData.pass === "alumni") {
+      pass = "alumni_pass";
     } else if (parsedData.pass === "09naveen") {
       pass = "test";
     } else {
@@ -97,6 +99,8 @@ exports.postReq = async function (request, response) {
       } else if (pass === "test") {
         amount = 1;
         // amount = 1;
+      } else if (pass === "alumni_pass") {
+        amount = 999;
       } else {
         amount = 1000;
       }
@@ -111,6 +115,8 @@ exports.postReq = async function (request, response) {
       } else if (pass === "test") {
         amount = 1;
         // amount = 1;
+      } else if (pass === "alumni_pass") {
+        amount = 999;
       } else {
         amount = 1000;
       }
@@ -154,23 +160,44 @@ exports.postReq = async function (request, response) {
     //   await User.deleteOne({ email: parsedData.billing_email });
     // }
 
-    await new User({
-      username: parsedData.billing_name,
-      customerId: customerId,
-      regNo: parsedData.regNo,
-      address: parsedData.billing_address,
-      phoneNo: parsedData.billing_tel,
-      city: parsedData.billing_city,
-      college: parsedData.college,
-      department: parsedData.department,
-      email: parsedData.billing_email.trim(),
-      pass: pass,
-      ordId: ordId,
-      // eventsArray: eventArray,
-      amount: amount,
-      year: parsedData.year,
-      paid: false,
-    }).save();
+    if (parsedData.userType === "student") {
+      await new User({
+        username: parsedData.billing_name,
+        customerId: customerId,
+        regNo: parsedData.regNo,
+        address: parsedData.billing_address,
+        phoneNo: parsedData.billing_tel,
+        city: parsedData.billing_city,
+        college: parsedData.college,
+        department: parsedData.department,
+        email: parsedData.billing_email.trim(),
+        pass: pass,
+        ordId: ordId,
+        alumni: false,
+        // eventsArray: eventArray,
+        amount: amount,
+        year: parsedData.year,
+        paid: false,
+      }).save();
+    } else if (parsedData.userType === "alumni") {
+      await new User({
+        username: parsedData.billing_name,
+        customerId: customerId,
+        address: parsedData.billing_address,
+        phoneNo: parsedData.billing_tel,
+        city: parsedData.billing_city,
+        department: parsedData.department,
+        email: parsedData.billing_email.trim(),
+        pass: pass,
+        ordId: ordId,
+        alumni: true,
+        amount: amount,
+        year: parsedData.year,
+        paid: false,
+      }).save();
+
+    }
+
     // .then((result) => {
     //   console.log("Insert result");
     //   console.log(result);
