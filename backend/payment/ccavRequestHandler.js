@@ -88,7 +88,7 @@ exports.postReq = async function (request, response) {
     //   amount = 299;
     // }
 
-    if (parsedData.billing_email.trim().endsWith("svce.ac.in")) {
+    if (parsedData.billing_email.trim().toLowerCase().endsWith("svce.ac.in")) {
       if (pass === "day1") {
         amount = 1000;
       } else if (pass === "day2") {
