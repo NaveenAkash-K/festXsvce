@@ -99,7 +99,7 @@ exports.postRes = async function (request, response) {
         <div class="container">
             <div class="failure-icon">&#10008;</div>
             <h1>Payment Failed</h1>
-            <p>Unfortunately, there was an issue processing your payment. Please try again later or contact 95514 49859 for support.</p>
+            <p>Unfortunately, there was an issue processing your payment. Please try again later or Whatsapp 96770 83576 for support.</p>
             <a href="https://highway-s24.vercel.app" class="btn">Back to home</a>
         </div>
     </body>
