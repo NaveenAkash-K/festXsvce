@@ -130,6 +130,16 @@ const schema = new mongoose.Schema({
     type: Boolean,
     required: false,
   },
+  scanned_day1:{
+    type: Boolean,
+    required: false,
+    default: false
+  },
+  scanned_day2:{
+    type: Boolean,
+    required: false,
+    default: false
+  },
   amount: {
     type: Number,
     required: true,
