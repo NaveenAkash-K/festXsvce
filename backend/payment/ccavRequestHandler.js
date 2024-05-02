@@ -102,7 +102,7 @@ exports.postReq = async function (request, response) {
       } else if (pass === "alumni_pass") {
         amount = 999;
       } else {
-        amount = 1000;
+        amount = 10000;
       }
     } else {
       if (pass === "day1") {
@@ -118,7 +118,7 @@ exports.postReq = async function (request, response) {
       } else if (pass === "alumni_pass") {
         amount = 999;
       } else {
-        amount = 1000;
+        amount = 10000;
       }
     }
 
