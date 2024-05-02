@@ -182,6 +182,10 @@ exports.postRes = async function (request, response) {
                     background-color: #3498db;
                     color: #fff;
                 }
+                .ticket-header.test {
+                    background-color: #3498db;
+                    color: #fff;
+                }
         
                 .ticket-header.day2 {
                     background-color: #27ae60;

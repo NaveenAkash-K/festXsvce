@@ -46,7 +46,7 @@ exports.postReq = async function (request, response) {
     } else if (parsedData.pass === "alumni") {
       pass = "alumni_pass";
     } else if (parsedData.pass === "09naveen") {
-      pass = "Combo";
+      pass = "test";
     } else {
       pass = "modified";
     }
