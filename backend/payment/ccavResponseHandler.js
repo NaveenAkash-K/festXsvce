@@ -33,8 +33,7 @@ exports.postRes = async function (request, response) {
     // console.log(parsedData.amount);
 
     if (
-      parsedData.order_status !== "Success" &&
-      !parsedData.status_message.startsWith("Transaction Successful")
+      parsedData.order_status !== "Success"
     ) {
       // await User.deleteOne({ email: parsedData.billing_email });
       response.write(`
