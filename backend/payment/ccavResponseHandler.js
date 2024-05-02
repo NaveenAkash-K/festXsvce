@@ -178,7 +178,7 @@ exports.postRes = async function (request, response) {
                 }
         
                 /* Different colors for ticket types */
-                .ticket-header.day1 {
+                .ticket-header.Combo {
                     background-color: #3498db;
                     color: #fff;
                 }
@@ -207,8 +207,8 @@ exports.postRes = async function (request, response) {
                             ? "Day 1"
                             : user.pass === "day2"
                             ? "Day 2"
-                            : user.pass === "earlyBird"
-                            ? "Early Bird"
+                            : user.pass === "Combo"
+                            ? "Combo"
                             : "Invalid"
                         } Ticket</h1>
                     </center>

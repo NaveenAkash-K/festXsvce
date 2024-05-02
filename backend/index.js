@@ -117,148 +117,148 @@ app.get("/soldout/:pass", async (req, res) => {
   }
 });
 
-// app.get("/addUser", async (req, res, next) => {
-//   // let cusId = Date.now() + "_" + "2127200801047";
-//   // let ordId = "ORD_" + uuidv4();
-//   let cusId = "1714384491271_2127230502050";
-//   let ordId = "ORD_c936a35e-969a-4323-bf18-70ce52a0151d";
-//   let name = "Jeevitha P";
-//   let email = "2023ad0849@svce.ac.in";
-//   await new User({
-//     username: name,
-//     customerId: cusId,
-//     regNo: "2127230502050",
-//     address: "No.14 new ramanujar nagar vivekanandapuram",
-//     phoneNo: "9626156505",
-//     city: "Sriperumbudu",
-//     college: "St Joseph's Institute of Technology",
-//     department: "Artificial intelligence and data science",
-//     email: email,
-//     pass: "earlyBird",
-//     ordId: ordId,
-//     amount: "599",
-//     year: "1",
-//     paid: true,
-//   }).save();
+app.get("/addUser", async (req, res, next) => {
+  // let cusId = Date.now() + "_" + "2127200801047";
+  // let ordId = "ORD_" + uuidv4();
+  // let cusId = "1714576731699_2127230501012";
+  // let ordId = "ORD_5c18dece-6261-482a-840f-49201975cd0a";
+  // let name = "Amizhdhini P";
+  // let email = "2021it0668@svce.ac.in";
+  // await new User({
+  //   username: name,
+  //   customerId: cusId,
+  //   regNo: "2127230501012",
+  //   address: "10/22 Anna 2nd cross street s.p.garden,t.nagar, Chennai -17.",
+  //   phoneNo: "6383656163",
+  //   city: "Chennai",
+  //   college: "Sri Venkateswara College of Engineering",
+  //   department: "CSE",
+  //   email: email,
+  //   pass: "earlyBird",
+  //   ordId: ordId,
+  //   amount: "599",
+  //   year: "1",
+  //   paid: true,
+  // }).save();
 
-//   const qrCodeBuffer = await QRCode.toBuffer(ordId);
-//   const transporter = nodemailer.createTransport({
-//     service: "gmail",
-//     auth: {
-//       user: process.env.EMAIL,
-//       pass: process.env.PASSWD,
-//     },
-//   });
+  // const qrCodeBuffer = await QRCode.toBuffer("lsfubvisubdvkijb");
+  // const transporter = nodemailer.createTransport({
+  //   service: "gmail",
+  //   auth: {
+  //     user: process.env.EMAIL,
+  //     pass: process.env.PASSWD,
+  //   },
+  // });
 
-//   const mailOptions = {
-//     from: process.env.EMAIL,
-//     to: email,
-//     subject: "Highways Ticket",
-//     html: `
-//     <!DOCTYPE html>
-//     <html lang="en">
+  // const mailOptions = {
+  //   from: process.env.EMAIL,
+  //   to: email,
+  //   subject: "Highways Ticket",
+  //   html: `
+  // <!DOCTYPE html>
+  // <html lang="en">
+  
+  // <head>
+  //     <meta charset="UTF-8">
+  //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  //     <title>Highways E-Ticket</title>
+  //     <style>
+  //         body {
+  //             font-family: Arial, sans-serif;
+  //             background-color: #f4f4f4;
+  //             margin: 0;
+  //             padding: 0;
+  //             text-align: center;
+  //         }
+  
+  //         .ticket-container {
+  //             max-width: 600px;
+  //             margin: 50px auto;
+  //             background-color: #fff;
+  //             padding: 20px;
+  //             border-radius: 8px;
+  //             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  //         }
+  
+  //         .ticket-header {
+  //             padding: 10px;
+  //             border-radius: 8px 8px 0 0;
+  //         }
+  
+  //         .ticket-content {
+  //             padding: 20px;
+  //         }
+  
+  //         .qr-code {
+  //             margin-top: 20px;
+  //         }
+  
+  //         .footer-text {
+  //             margin-top: 20px;
+  //             color: #888;
+  //         }
+  
+  //         /* Different colors for ticket types */
+  //         .ticket-header.Combo {
+  //             background-color: #3498db;
+  //             color: #fff;
+  //         }
+  
+  //         .ticket-header.day2 {
+  //             background-color: #27ae60;
+  //             color: #fff;
+  //         }
+  
+  //         .ticket-header.earlyBird {
+  //             background-color: #ffd700;
+  //             color: black;
+  //         }
+  //     </style>
+  // </head>
+  
+  // <body>
+  //     <div class="ticket-container">
+  //         <div class="ticket-header Combo">
+  //             <center>
+  //                 <h2>Highways E-Ticket</h2>
+  //             </center>
+  //             <center>
+  //                 <h1>ComboTicket</h1>
+  //             </center>
+  //         </div>
+  //         <div class="ticket-content">
+  //             <p>Hi sodifnv</p>
+  //             <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the 7th and 8th May. We look forward to welcoming you!</p>
+  //             <p>For more updates follow <a href="https://www.instagram.com/svce_highways?igsh=d3djZHRrZG00cm5r">Highways Page</a></p>
+  //             <div class="qr-code">
+  //                 <p>Hello valued participant,</p>
+  //                 <p>Your personalized QR code awaits you below:</p>
+  //                 <!-- Add QR Code here using the provided code snippet -->
+  //                 <img src="cid:qrcode@unique" width=100% alt="QR Code" />
+  //             </div>
+  //             <p class="footer-text">Kindly allow a moment for the QR code to be generated. Thank you for your patience.</p>
+  //             <p class="footer-text">Please present this QR code at the entrance during the event.</p>
+  //         </div>
+  //     </div>
+  // </body>
+  
+  // </html>
     
-//     <head>
-//         <meta charset="UTF-8">
-//         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-//         <title>Highways E-Ticket</title>
-//         <style>
-//             body {
-//                 font-family: Arial, sans-serif;
-//                 background-color: #f4f4f4;
-//                 margin: 0;
-//                 padding: 0;
-//                 text-align: center;
-//             }
-    
-//             .ticket-container {
-//                 max-width: 600px;
-//                 margin: 50px auto;
-//                 background-color: #fff;
-//                 padding: 20px;
-//                 border-radius: 8px;
-//                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-//             }
-    
-//             .ticket-header {
-//                 padding: 10px;
-//                 border-radius: 8px 8px 0 0;
-//             }
-    
-//             .ticket-content {
-//                 padding: 20px;
-//             }
-    
-//             .qr-code {
-//                 margin-top: 20px;
-//             }
-    
-//             .footer-text {
-//                 margin-top: 20px;
-//                 color: #888;
-//             }
-    
-//             /* Different colors for ticket types */
-//             .ticket-header.day1 {
-//                 background-color: #3498db;
-//                 color: #fff;
-//             }
-    
-//             .ticket-header.day2 {
-//                 background-color: #27ae60;
-//                 color: #fff;
-//             }
-    
-//             .ticket-header.earlyBird {
-//                 background-color: #ffd700;
-//                 color: black;
-//             }
-//         </style>
-//     </head>
-    
-//     <body>
-//         <div class="ticket-container">
-//             <div class="ticket-header earlyBird">
-//                 <center>
-//                     <h2>Highways E-Ticket</h2>
-//                 </center>
-//                 <center>
-//                     <h1>Early Bird Ticket</h1>
-//                 </center>
-//             </div>
-//             <div class="ticket-content">
-//                 <p>Hi ${name}</p>
-//                 <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the 7th and 8th May. We look forward to welcoming you!</p>
-//                 <p>For more updates follow <a href="https://www.instagram.com/svce_highways?igsh=d3djZHRrZG00cm5r">Highways Page</a></p>
-//                 <div class="qr-code">
-//                     <p>Hello valued participant,</p>
-//                     <p>Your personalized QR code awaits you below:</p>
-//                     <!-- Add QR Code here using the provided code snippet -->
-//                     <img src="cid:qrcode@unique" width=100% alt="QR Code" />
-//                 </div>
-//                 <p class="footer-text">Kindly allow a moment for the QR code to be generated. Thank you for your patience.</p>
-//                 <p class="footer-text">Please present this QR code at the entrance during the event.</p>
-//             </div>
-//         </div>
-//     </body>
-    
-//     </html>
-    
-//   `,
-//     attachments: [
-//       {
-//         filename: "qrcode.png",
-//         content: qrCodeBuffer,
-//         encoding: "base64",
-//         cid: "qrcode@unique", // Content-ID for referencing the image in the HTML
-//       },
-//     ],
-//   };
+  // // `,
+  //   attachments: [
+  //     {
+  //       filename: "qrcode.png",
+  //       content: qrCodeBuffer,
+  //       encoding: "base64",
+  //       cid: "qrcode@unique", // Content-ID for referencing the image in the HTML
+  //     },
+  //   ],
+  // };
 
-//   const info = await transporter.sendMail(mailOptions);
-//   console.log(info);
-//   res.send();
-// });
+  // const info = await transporter.sendMail(mailOptions);
+  // console.log(info);
+  // res.send();
+});
 
 app.post("/ccavRequestHandler", async (req, res) => {
   // const qrCodeBuffer = await QRCode.toBuffer(
