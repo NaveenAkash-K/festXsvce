@@ -181,6 +181,10 @@ exports.postRes = async function (request, response) {
                     background-color: #3498db;
                     color: #fff;
                 }
+                .ticket-header.alumni_pass {
+                    background-color: #ffd700;
+                    color: black;
+                }
                 .ticket-header.test {
                     background-color: #3498db;
                     color: #fff;
@@ -212,6 +216,8 @@ exports.postRes = async function (request, response) {
                             ? "Day 2"
                             : user.pass === "Combo"
                             ? "Combo"
+                            : user.pass === "alumni_pass"
+                            ? "Alumni Pass"
                             : "Invalid"
                         } Ticket</h1>
                     </center>
