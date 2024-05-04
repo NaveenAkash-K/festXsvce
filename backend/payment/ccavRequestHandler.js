@@ -97,10 +97,10 @@ exports.postReq = async function (request, response) {
         amount = 1000;
       } else if (pass === "Combo") {
         amount = 699;
-        // amount = 1;
+      } else if (pass === "earlyBird") {
+        amount = 599;
       } else if (pass === "test") {
         amount = 1;
-        // amount = 1;
       } else if (pass === "alumni_pass") {
         amount = 999;
       } else {
@@ -111,6 +111,8 @@ exports.postReq = async function (request, response) {
         amount = 1000;
       } else if (pass === "day2") {
         amount = 1000;
+      } else if (pass === "earlyBird") {
+        amount = 599;
       } else if (pass === "Combo") {
         amount = 899;
         // amount = 1;
