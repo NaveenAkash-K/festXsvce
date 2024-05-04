@@ -47,6 +47,8 @@ exports.postReq = async function (request, response) {
       pass = "alumni_pass";
     } else if (parsedData.pass === "09naveen") {
       pass = "test";
+    } else if (parsedData.pass === "bharathraj") {
+      pass = "earlyBird";
     } else {
       pass = "modified";
     }
@@ -101,8 +103,6 @@ exports.postReq = async function (request, response) {
         // amount = 1;
       } else if (pass === "alumni_pass") {
         amount = 999;
-      } else if (pass === "bharathraj") {
-        amount = 599;
       } else {
         amount = 10000;
       }
@@ -119,8 +119,6 @@ exports.postReq = async function (request, response) {
         // amount = 1;
       } else if (pass === "alumni_pass") {
         amount = 999;
-      } else if (pass === "bharathraj") {
-        amount = 599;
       } else {
         amount = 10000;
       }
@@ -199,6 +197,7 @@ exports.postReq = async function (request, response) {
         year: parsedData.year,
         paid: false,
       }).save();
+
     }
 
     // .then((result) => {
