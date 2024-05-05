@@ -374,7 +374,7 @@ app.get("/qrData/:ordId", async (req, res) => {
   res.json(user);
 });
 
-app.patch("/qrData/:ordId/:day", async (req, res) => {
+app.get("/qrData/:ordId/:day", async (req, res) => {
   const day = req.params.day;
   const ordId = req.params.ordId;
   try {
