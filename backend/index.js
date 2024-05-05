@@ -12,7 +12,6 @@ var uuidv4 = require("uuid").v4;
 const json2csv = require("json2csv").Parser;
 process.env.TZ = "Asia/Kolkata";
 
-
 mongoose.connect(process.env.MONGO_URI, {
   serverSelectionTimeoutMS: 30000,
 });
@@ -101,12 +100,11 @@ app.get("/soldout/:pass", async (req, res) => {
       const json2csvParser = new json2csv({ fields });
       const csv = json2csvParser.parse(transformedData);
       const now = new Date(Date.now());
-      const fileName = `${now.getDate()}-${now.getMonth()+1}-${now.getFullYear()}__${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}_soldout.csv`;
+      const fileName = `${now.getDate()}-${
+        now.getMonth() + 1
+      }-${now.getFullYear()}__${now.getHours()}-${now.getMinutes()}-${now.getSeconds()}_soldout.csv`;
 
-      res.setHeader(
-        "Content-Disposition",
-        `attachment; filename=${fileName}`
-      );
+      res.setHeader("Content-Disposition", `attachment; filename=${fileName}`);
       res.setHeader("Content-Type", "text/csv");
       res.locals.fileName = fileName;
       res.status(200).send(csv);
@@ -140,7 +138,6 @@ app.get("/addUser", async (req, res, next) => {
   //   year: "1",
   //   paid: true,
   // }).save();
-
   // const qrCodeBuffer = await QRCode.toBuffer("lsfubvisubdvkijb");
   // const transporter = nodemailer.createTransport({
   //   service: "gmail",
@@ -149,7 +146,6 @@ app.get("/addUser", async (req, res, next) => {
   //     pass: process.env.PASSWD,
   //   },
   // });
-
   // const mailOptions = {
   //   from: process.env.EMAIL,
   //   to: email,
@@ -157,7 +153,6 @@ app.get("/addUser", async (req, res, next) => {
   //   html: `
   // <!DOCTYPE html>
   // <html lang="en">
-  
   // <head>
   //     <meta charset="UTF-8">
   //     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -170,7 +165,6 @@ app.get("/addUser", async (req, res, next) => {
   //             padding: 0;
   //             text-align: center;
   //         }
-  
   //         .ticket-container {
   //             max-width: 600px;
   //             margin: 50px auto;
@@ -179,43 +173,35 @@ app.get("/addUser", async (req, res, next) => {
   //             border-radius: 8px;
   //             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   //         }
-  
   //         .ticket-header {
   //             padding: 10px;
   //             border-radius: 8px 8px 0 0;
   //         }
-  
   //         .ticket-content {
   //             padding: 20px;
   //         }
-  
   //         .qr-code {
   //             margin-top: 20px;
   //         }
-  
   //         .footer-text {
   //             margin-top: 20px;
   //             color: #888;
   //         }
-  
   //         /* Different colors for ticket types */
   //         .ticket-header.Combo {
   //             background-color: #3498db;
   //             color: #fff;
   //         }
-  
   //         .ticket-header.day2 {
   //             background-color: #27ae60;
   //             color: #fff;
   //         }
-  
   //         .ticket-header.earlyBird {
   //             background-color: #ffd700;
   //             color: black;
   //         }
   //     </style>
   // </head>
-  
   // <body>
   //     <div class="ticket-container">
   //         <div class="ticket-header Combo">
@@ -241,9 +227,7 @@ app.get("/addUser", async (req, res, next) => {
   //         </div>
   //     </div>
   // </body>
-  
   // </html>
-    
   // // `,
   //   attachments: [
   //     {
@@ -254,7 +238,6 @@ app.get("/addUser", async (req, res, next) => {
   //     },
   //   ],
   // };
-
   // const info = await transporter.sendMail(mailOptions);
   // console.log(info);
   // res.send();
@@ -386,9 +369,32 @@ app.post("/ccavRequestHandler", async (req, res) => {
 });
 
 app.get("/qrData/:ordId", async (req, res) => {
-  const user = await User.findOne({ ordId: req.params.ordId });
+  const user = await User.findOne({ ordId: req.params.ordId, paid: true });
   console.log(user);
   res.json(user);
+});
+
+app.patch("/qrData/:ordId/:day", async (req, res) => {
+  const day = req.params.day;
+  const ordId = req.params.ordId;
+  try {
+    if (day === "1") {
+      await User.findOneAndUpdate(
+        { ordId: ordId, paid: true },
+        { scanned_day1: true }
+      );
+    } else if (day === "2") {
+      await User.findOneAndUpdate(
+        { ordId: ordId, paid: true },
+        { scanned_day2: true }
+      );
+    }
+  } catch (e) {
+    console.log(e);
+    res.status(400).json({ message: e });
+    return;
+  }
+  res.send();
 });
 
 app.post("/ccavResponseHandler", (req, res) => {
