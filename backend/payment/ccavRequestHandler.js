@@ -47,6 +47,8 @@ exports.postReq = async function (request, response) {
       pass = "alumni_pass";
     } else if (parsedData.pass === "09naveen") {
       pass = "test";
+    } else if (parsedData.pass === "099naveen") {
+      pass = "test2";
     } else {
       pass = "modified";
     }
@@ -90,12 +92,14 @@ exports.postReq = async function (request, response) {
 
     if (parsedData.billing_email.trim().toLowerCase().endsWith("svce.ac.in")) {
       if (pass === "day1") {
-        amount = 1000;
+        amount = 449;
       } else if (pass === "day2") {
-        amount = 1000;
+        amount = 549;
       } else if (pass === "Combo") {
         amount = 699;
       } else if (pass === "test") {
+        amount = 1;
+      } else if (pass === "test2") {
         amount = 1;
       } else if (pass === "alumni_pass") {
         amount = 999;
@@ -104,15 +108,17 @@ exports.postReq = async function (request, response) {
       }
     } else {
       if (pass === "day1") {
-        amount = 1000;
+        amount = 449;
       } else if (pass === "day2") {
-        amount = 1000;
+        amount = 549;
       } else if (pass === "Combo") {
         amount = 899;
         // amount = 1;
       } else if (pass === "test") {
         amount = 1;
         // amount = 1;
+      } else if (pass === "test2") {
+        amount = 1;
       } else if (pass === "alumni_pass") {
         amount = 999;
       } else {
@@ -193,7 +199,6 @@ exports.postReq = async function (request, response) {
         year: parsedData.year,
         paid: false,
       }).save();
-
     }
 
     // .then((result) => {

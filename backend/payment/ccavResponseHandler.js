@@ -186,12 +186,21 @@ exports.postRes = async function (request, response) {
                     color: black;
                 }
                 .ticket-header.test {
-                    background-color: #3498db;
+                    background-color: #9b59b6;
+                    color: #fff;
+                }
+                .ticket-header.test2 {
+                    background-color: #e74c3c;
                     color: #fff;
                 }
         
+                .ticket-header.day1 {
+                    background-color: #9b59b6;
+                    color: #fff;
+                }
+
                 .ticket-header.day2 {
-                    background-color: #27ae60;
+                    background-color: #e74c3c;
                     color: #fff;
                 }
         
