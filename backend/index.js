@@ -71,7 +71,7 @@ app.get("/soldout/:pass", async (req, res) => {
     return;
   }
   try {
-    const documents = await User.find({ paid: true });
+    const documents = await User.find({ paid: true, g: true });
 
     if (documents.length > 0) {
       const fieldMapping = {
