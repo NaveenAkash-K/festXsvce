@@ -389,12 +389,12 @@ app.get("/qrData/:ordId/:day", async (req, res) => {
         { scanned_day2: true }
       );
     }
+    res.send();
   } catch (e) {
     console.log(e);
     res.status(400).json({ message: e });
     return;
   }
-  res.send();
 });
 
 app.post("/ccavResponseHandler", (req, res) => {
