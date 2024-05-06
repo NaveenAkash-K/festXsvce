@@ -42,7 +42,7 @@ exports.postReq = async function (request, response) {
     } else if (parsedData.pass === "day2") {
       pass = "day2";
     } else if (parsedData.pass === "combo") {
-      pass = "Combo";
+      pass = "earlyBird";
     } else if (parsedData.pass === "alumni") {
       pass = "alumni_pass";
     } else if (parsedData.pass === "09naveen") {
@@ -97,6 +97,8 @@ exports.postReq = async function (request, response) {
         amount = 549;
       } else if (pass === "Combo") {
         amount = 699;
+      } else if (pass === "earlyBird") {
+        amount = 599;
       } else if (pass === "test") {
         amount = 1;
       } else if (pass === "test2") {
@@ -114,6 +116,8 @@ exports.postReq = async function (request, response) {
       } else if (pass === "Combo") {
         amount = 899;
         // amount = 1;
+      } else if (pass === "earlyBird") {
+        amount = 799;
       } else if (pass === "test") {
         amount = 1;
         // amount = 1;

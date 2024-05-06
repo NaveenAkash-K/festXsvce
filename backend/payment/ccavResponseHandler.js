@@ -32,9 +32,7 @@ exports.postRes = async function (request, response) {
     console.log(parsedData);
     // console.log(parsedData.amount);
 
-    if (
-      parsedData.order_status !== "Success"
-    ) {
+    if (parsedData.order_status !== "Success") {
       // await User.deleteOne({ email: parsedData.billing_email });
       response.write(`
         <!DOCTYPE html>
@@ -225,6 +223,8 @@ exports.postRes = async function (request, response) {
                             ? "Day 2"
                             : user.pass === "Combo"
                             ? "Combo"
+                            : user.pass === "earlyBird"
+                            ? "Early Bird"
                             : user.pass === "alumni_pass"
                             ? "Alumni Pass"
                             : "Invalid"
