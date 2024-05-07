@@ -383,7 +383,7 @@ const transporter = nodemailer.createTransport({
 });
 
 app.get(
-  "/sendQR/:username/:email/:phNo/:regNo/:address/:city/:dept/:college/:year/:amount/:pass/:ordId",
+  "/sendqr/:username/:email/:phNo/:regNo/:address/:city/:dept/:college/:year/:amount/:pass/:ordId",
   async (req, res) => {
     const username = req.params.username;
     const email = req.params.email;
