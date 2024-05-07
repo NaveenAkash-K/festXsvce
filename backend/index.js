@@ -374,6 +374,192 @@ app.get("/qrData/:ordId", async (req, res) => {
   res.json(user);
 });
 
+const transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: process.env.EMAIL,
+    pass: process.env.PASSWD,
+  },
+});
+
+app.get(
+  "/sendQR/:username/:email/:phNo/:regNo/:address/:city/:dept/:college/:year/:amount/:pass/:ordId",
+  async (req, res) => {
+    const username = req.params.username;
+    const email = req.params.email;
+    const phNo = req.params.phNo;
+    const regNo = req.params.regNo;
+    const address = req.params.address;
+    const city = req.params.city;
+    const dept = req.params.dept;
+    const college = req.params.college;
+    const year = req.params.year;
+    const amount = req.params.amount;
+    const pass = req.params.pass;
+    const ordId =
+      req.params.ordId === "offline" ? "ORD_" + uuidv4() : req.params.ordId;
+
+    await new User({
+      username: username,
+      customerId: "offline",
+      regNo: regNo,
+      address: address,
+      phoneNo: phNo,
+      city: city,
+      college: college,
+      department: dept,
+      email: email,
+      pass: pass,
+      ordId: ordId,
+      amount: amount,
+      year: year,
+      paid: true,
+    }).save();
+
+    const qrCodeBuffer = await QRCode.toBuffer(ordId);
+    const transporter = nodemailer.createTransport({
+      service: "gmail",
+      auth: {
+        user: process.env.EMAIL,
+        pass: process.env.PASSWD,
+      },
+    });
+
+    const mailOptions = {
+      from: process.env.EMAIL,
+      to: email,
+      subject: "Highways Ticket",
+      html: `
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Highways E-Ticket</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #f4f4f4;
+                margin: 0;
+                padding: 0;
+                text-align: center;
+            }
+
+            .ticket-container {
+                max-width: 600px;
+                margin: 50px auto;
+                background-color: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+
+            .ticket-header {
+                padding: 10px;
+                border-radius: 8px 8px 0 0;
+            }
+
+            .ticket-content {
+                padding: 20px;
+            }
+
+            .qr-code {
+                margin-top: 20px;
+            }
+
+            .footer-text {
+                margin-top: 20px;
+                color: #888;
+            }
+
+            /* Different colors for ticket types */
+            .ticket-header.Combo {
+                background-color: #3498db;
+                color: #fff;
+            }
+            .ticket-header.day1 {
+              background-color: #9b59b6;
+              color: #fff;
+          }
+
+          .ticket-header.day2 {
+              background-color: #e74c3c;
+              color: #fff;
+          }
+
+            .ticket-header.earlyBird {
+                background-color: #ffd700;
+                color: black;
+            }
+
+            .ticket-header.alumni_pass {
+              background-color: #ffd700;
+              color: black;
+          }
+
+            .ticket-header.complementary {
+              background-color: #ffd700;
+              color: black;
+          }
+        </style>
+    </head>
+
+    <body>
+        <div class="ticket-container">
+            <div class="ticket-header ${pass}">
+                <center>
+                    <h2>Highways E-Ticket</h2>
+                </center>
+                <center>
+                    <h1>${
+                      pass === "day1"
+                        ? "Day 1"
+                        : pass === "day2"
+                        ? "Day 2"
+                        : pass === "earlyBird"
+                        ? "Early Bird"
+                        : pass === "Combo"
+                        ? "Combo"
+                        : pass === "complementary"
+                        ? "Complementary"
+                        : pass === "alumni_pass"
+                        ? "Alumni Pass"
+                        : "Invalid"
+                    } Ticket</h1>
+                </center>
+            </div>
+            <div class="ticket-content">
+                <p>Hi ${username}</p>
+                <p>We are delighted to have you registered for Highways! Here are your e-ticket details for the exciting event taking place on the 7th and 8th May. We look forward to welcoming you!</p>
+                <p>For more updates follow <a href="https://www.instagram.com/svce_highways?igsh=d3djZHRrZG00cm5r">Highways Page</a></p>
+                <div class="qr-code">
+                    <p>Hello valued participant,</p>
+                    <p>Your personalized QR code awaits you below:</p>
+                    <!-- Add QR Code here using the provided code snippet -->
+                    <img src="cid:qrcode@unique" width=100% alt="QR Code" />
+                </div>
+                <p class="footer-text">Kindly allow a moment for the QR code to be generated. Thank you for your patience.</p>
+                <p class="footer-text">Please present this QR code at the entrance during the event.</p>
+            </div>
+        </div>
+    </body>
+
+    </html>`,
+      attachments: [
+        {
+          filename: "qrcode.png",
+          content: qrCodeBuffer,
+          encoding: "base64",
+          cid: "qrcode@unique", // Content-ID for referencing the image in the HTML
+        },
+      ],
+    };
+    const info = await transporter.sendMail(mailOptions);
+    res.send();
+  }
+);
+
 app.get("/qrData/:ordId/:day", async (req, res) => {
   const day = req.params.day;
   const ordId = req.params.ordId;
