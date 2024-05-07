@@ -519,7 +519,7 @@ app.get(
                         ? "Day 2"
                         : pass === "earlyBird"
                         ? "Early Bird"
-                        : pass === "Combo"
+                        : pass === "combo"
                         ? "Combo"
                         : pass === "complementary"
                         ? "Complementary"
